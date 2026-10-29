@@ -17,6 +17,11 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Calibration on Deluge: backdrop color inside the render lands within deltaE 2.2 of Josh's hand made v1.
 - finish.py crashed on `"#73D2AB"` because it parsed the hex without stripping the `#`, though CLAUDE.md passes it that way. Fixed to accept both (Oct 29 2026).
 - A render whose glow is much lighter than the swatch finishes too dark. Traycee B glowed at L 86 against Mint at L 78, finish.py fit a lightness gamma of 1.74, and the corners and extended floor went deep green with dark streaks while the glow still measured deltaE 1.69. deltaE alone does not pass a finish. Look at the full frame next to Deluge (Oct 29 2026).
+- Root cause of that failure, found Oct 29 2026: finish.py extended each render edge by extrapolating its lightness slope, so a bright floor glow at the bottom edge became a dark streak further out, and the gamma curve then stretched every dark. Josh called it terrible.
+- The fix, set Oct 29 2026: every cover's backdrop falls off like Deluge v1. `backdrop_template.py` measures Deluge v1's lightness and hue relative to its glow, finish.py colors that to the swatch, shifts the render's lightness instead of curving it, and hands the broad light from render to template on a smooth radial weight, inside the render too, so the render's rectangle never shows. Shadows, mottle and grain stay the render's own. Traycee B: glow 1.0 off Mint, corners -29 -31 -5 -10 against Deluge's -32 -33 -6 -11.
+- First pass of the template left a faint box at the render's border because only the extension followed the template. Blending the broad light inside the render's backdrop as well removed it (Oct 29 2026).
+- Never take a median of hue angles. They wrap at 180 degrees and Traycee's grey glow sat right on the wrap, so the hue came out 40 degrees off. Take the median of Lab a and b, then the angle (Oct 29 2026).
+- Regression test for any finish.py change: re-finish Deluge from `01-deluge-4k-render.jpg` with #65B8E5 and run check.py against v1. Oct 29 2026 baseline: deltaE 2.4 inside the render, 2.8 in the margins.
 
 ## Crop and 4K
 
