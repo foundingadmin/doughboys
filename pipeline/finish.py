@@ -8,7 +8,9 @@
 
   1. isolate device and dough (rembg u2net + isnet, holes filled)
   2. backdrop lightness = swatch lightness + falloff x the Deluge template, on a 6704 square
-  3. contact shadows: the render's own darkening (never its brightening) at the floor line under each
+  3. optional cyclorama horizon (--horizon): a soft band of shade where the floor curves into the wall,
+     just above the highest floor contact so it passes behind the device
+  3b. contact shadows: the render's own darkening (never its brightening) at the floor line under each
      part of the device and in a narrow band hugging it, so gaps between parts stay in shade
   4. grain synthesized from the render's own backdrop, lightness only
   5. one paper: OKLab lightness kept, hue and chroma from the swatch
@@ -28,6 +30,8 @@ ELLIPSE = (0.51, 0.534, 0.207, 0.37)  # cx, cy, rx, ry as canvas fractions, from
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backdrop_template.npz')
 SHADOW_REF = 0.02  # canvas fraction: blur that defines the local floor brightness a contact shadow is measured against
 SHADOW_ZONE = (0.035, 0.06)  # canvas fraction above and below each column's floor line where shadows are kept
+HORIZON_SPREAD = (0.012, 0.04)  # canvas fraction: soft edge above the cyc horizon (wall) and longer fade below (floor curve)
+HORIZON_GAP = 0.03  # canvas fraction the horizon sits above the highest floor contact, so it always passes behind the device
 SHADOW_HUG = (0.006, 0.012)  # canvas fraction: shade kept fully this close to the device, fading out by the second value (gaps, occlusion)
 
 
@@ -160,8 +164,10 @@ def main():
     ap.add_argument('--report')
     ap.add_argument('--quality', type=int, default=97)
     ap.add_argument('--falloff', type=float, default=1.0, help='depth of the template falloff, 1.0 = Deluge v1, lower = lighter corners')
+    ap.add_argument('--horizon', type=float, default=0.0, help='cyclorama horizon shadow, share of light lost at its center line, 0 = none')
+    ap.add_argument('--horizon-y', type=float, default=None, help='horizon height as a canvas fraction, default sits just above the highest floor contact')
     a = ap.parse_args()
-    rep = {'falloff': a.falloff}
+    rep = {'falloff': a.falloff, 'horizon': a.horizon}
     R = np.array(Image.open(a.render).convert('RGB'))
     H, W = R.shape[:2]
     S = max(a.canvas, W, H)
@@ -210,6 +216,9 @@ def main():
     zone = np.maximum(zone, hug * hug * (3 - 2 * hug))
     sh2 = 1 - zone * (1 - sh2)
     rep['shadow_min'] = round(float(sh2.min()), 3)
+    floor_lines = bottom[bottom >= 0] * 2 + oy                                    # full res canvas rows
+    hy = a.horizon_y if a.horizon_y is not None else float(np.clip(floor_lines.min() / S - HORIZON_GAP, 0.45, 0.65)) if floor_lines.size else 0.58
+    rep['horizon_y'] = round(hy, 4)
     shade_r = cv2.resize(sh2, (W, H), interpolation=cv2.INTER_LINEAR)
     del R2, A2, k2, Y2, Yref, zone, sh2, dist, hug
 
@@ -231,6 +240,11 @@ def main():
         canvas_lab[..., 0] += synth_texture((S, S), amp, np.random.default_rng(7))[..., 0]
     shade_f = np.ones((S, S), np.float32); shade_f[oy:oy + H, ox:ox + W] = shade_r
     del shade_r
+    if a.horizon > 0:
+        # cyclorama horizon: a soft band of shade where the floor curves up into the wall
+        yy = np.arange(S, dtype=np.float32) / S - hy
+        sig = np.where(yy < 0, HORIZON_SPREAD[0], HORIZON_SPREAD[1])
+        shade_f *= (1 - a.horizon * np.exp(-0.5 * (yy / sig) ** 2))[:, None]
     canvas = np.empty((S, S, 3), np.float32)
     for y in range(0, S, step):
         lin = srgb_to_lin(np.clip(cv2.cvtColor(canvas_lab[y:y + step], cv2.COLOR_LAB2RGB), 0, 1)) * shade_f[y:y + step, :, None]

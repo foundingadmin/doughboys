@@ -229,7 +229,7 @@
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
    "status": "finish depth under review",
-   "next": "Josh picks a falloff depth (1.0, 0.75, 0.5) on Figma board 146:77, smooth backdrop version. Re-finish B at that depth, make it the default in finish.py, then place in the Photo slot.",
+   "next": "Josh picks a horizon strength (0.16, 0.25, 0.35) on Figma board 147:77 at falloff 0.75. Make depth and horizon the finish.py defaults, finish B as 05-traycee-final-v1.jpg, place in the Photo slot.",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -337,6 +337,12 @@
      "date": "2026-10-29",
      "what": "Smooth rebuilt backdrop: depth 1.0, 0.75, 0.5 with swatch chips, before and after on the flagged hotspots, Deluge regression",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=146-77"
+    },
+    {
+     "node": "147:77",
+     "date": "2026-10-29",
+     "what": "Cyclorama horizon strength 0, 0.16, 0.25, 0.35 at falloff 0.75, swatch chips, side crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=147-77"
     }
    ],
    "render_pick": "B",
