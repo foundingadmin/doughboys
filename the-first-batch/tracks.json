@@ -1,0 +1,370 @@
+{
+ "album": "The First Batch",
+ "band": "Chillsbury Doughboys (CBDB)",
+ "updated": "2026-10-29",
+ "canvas_px": 6704,
+ "dough_hex": "#E9D3A8",
+ "paper_hex": "#F5EEDC",
+ "ink_hex": "#2A2522",
+ "figma_file": "lcNDgyPE02C9Ldw8n2THee",
+ "figma_track_collection": "VariableCollectionId:114:90",
+ "drive_track_covers": "1g-RHVswNtj1Jp1VKjKmd3OZwDprvnKfB",
+ "tracks": [
+  {
+   "n": "01",
+   "slug": "01-deluge",
+   "title": "Deluge",
+   "catalog": "CBDB 01",
+   "ground": "bondi",
+   "ground_hex": "#65B8E5",
+   "ring": "tangerine",
+   "ring_hex": "#DE9F65",
+   "device": "Silver dual deck boombox",
+   "subhead": "Dual Cassette Boombox With Overflow Control",
+   "silhouette": "Both tape doors stuffed, one spilling more, a wide flat pool across the surface",
+   "status": "master done",
+   "next": "Place Deluge v1 in Figma (Cover, Post, Canvas are on placeholder). Good first test of the Figma wiring.",
+   "source": {
+    "figma_node": "15:2",
+    "image_hash": "1934e5dd5e589999fb4075383a9979914f66e84d",
+    "note": "1264 explore frame, named Boombox on Page 1"
+   },
+   "render_4k": "the-first-batch/assets/photos/01-deluge/01-deluge-4k-render.jpg",
+   "master": "the-first-batch/assets/photos/01-deluge/01-deluge-final-v1.jpg",
+   "master_note": "Josh's Photoshop master, 6704 square, 12.3 MB. finish.py reproduces its backdrop color to deltaE 2.2",
+   "figma": {
+    "mode_id": "114:2",
+    "section": "118:265",
+    "cover": "118:266",
+    "post": "118:326",
+    "canvas": "118:383",
+    "photo_hash": null,
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1012
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2199
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "transforms_note": "From framing.py on the automated Deluge finish, which shares v1 geometry. Upload v1 to get photo_hash"
+   },
+   "drive": {
+    "track_folder": "1fayUmYVWNWhBiyV_iJUnn2u36pZ8mWRP",
+    "masters": "1GGPzF8xO4QQsM4CcCRxI3XL0nAc0IwhN",
+    "exports": "1lRwGEXhuMVlI7s9K7xWnz9xVtGtcS8rM",
+    "archive": "1Aa233DBWgHb2FNJMs2OOGmXy8C9yvt1V"
+   },
+   "drive_masters_files": {
+    "01-deluge-final-v1.jpg": "1dz7vz14gf1HqfousUUvPq6buDGiGybTe",
+    "01-deluge-4k-render.jpg": "1Bde1e83lbL75QQVrBmh6WzWDAVfeiupr"
+   }
+  },
+  {
+   "n": "02",
+   "slug": "02-spice",
+   "title": "Spice",
+   "catalog": "CBDB 02",
+   "ground": "butter",
+   "ground_hex": "#ECCE7B",
+   "ring": "bondi",
+   "ring_hex": "#65B8E5",
+   "device": "Yellow sports Walkman",
+   "subhead": "Waterproof Sports Cassette Player",
+   "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
+   "status": "source approved, 4K queued",
+   "next": "Crop tight (upright, expect 3:4 or 4:5), render 4K with prompts/4k/02-spice.md, check, finish with #ECCE7B, place.",
+   "source": {
+    "figma_node": "53:2",
+    "pick": "F2",
+    "approved": "2026-10-19",
+    "image_hash": "204bd3391d72543e3dcfdbaf0038e51421d7f1fa",
+    "repo": "the-first-batch/assets/photos/02-spice/02-spice-source-f2.jpg",
+    "note": "Repo copy is a compressed 1024 preview. Pull the full original from Figma node 53:2 first if the session can reach www.figma.com"
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/02-spice.md",
+   "figma": {
+    "mode_id": "114:3",
+    "section": "118:398",
+    "cover": "118:399",
+    "post": "118:444",
+    "canvas": "118:486",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "1f2cER8F5utcrGxMwU9c0ULAPjJiFK9Au",
+    "masters": "1LjU2cFNCr7jqfJGJD4IH1WsZJAhYfoFN",
+    "exports": "1bnZBapHcSF32-VlrEIFJ13dH8nQpyyLz",
+    "archive": "18HZ9qP7_B4GW61oVIMOmvKzlxK-_rImX"
+   }
+  },
+  {
+   "n": "03",
+   "slug": "03-bopkins",
+   "title": "Bopkins",
+   "formerly": "Danish",
+   "catalog": "CBDB 03",
+   "ground": "bubblegum",
+   "ground_hex": "#E99CC2",
+   "ring": "bondi",
+   "ring_hex": "#65B8E5",
+   "device": "Silver direct drive turntable",
+   "subhead": "Direct Drive Turntable With Pitch Control",
+   "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
+   "status": "source approved, 4K queued",
+   "next": "Crop tight (expect 4:3), render 4K with prompts/4k/03-bopkins.md, check, finish with #E99CC2, place.",
+   "source": {
+    "figma_node": "58:2",
+    "pick": "G1",
+    "approved": "2026-10-19",
+    "image_hash": "4d923e198a3abd25710bc3a7e13413edeb5b5502",
+    "repo": "the-first-batch/assets/photos/03-bopkins/03-bopkins-source-g1.jpg",
+    "note": "Repo copy is a compressed 1024 preview. Pull the full original from Figma node 58:2 first if the session can reach www.figma.com"
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/03-bopkins.md",
+   "figma": {
+    "mode_id": "114:4",
+    "section": "118:501",
+    "cover": "118:502",
+    "post": "118:547",
+    "canvas": "118:589",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "1Xtd_T7o-swfNCBbcLJ7gMRvVdc7FuxAA",
+    "masters": "1qF7bICzhHruvceQSu7BUxoX4H-YG0Vph",
+    "exports": "1K_AJV984-apz8KX9ER9TyvgOJzkTeX2R",
+    "archive": "1LXu1B_p_DOO_4Ygl2rF0sewueAeQmhTr"
+   }
+  },
+  {
+   "n": "04",
+   "slug": "04-suavecita",
+   "title": "Suavecita",
+   "catalog": "CBDB 04",
+   "ground": "cherry",
+   "ground_hex": "#C77171",
+   "ring": "bondi",
+   "ring_hex": "#65B8E5",
+   "device": "Virtual pet in a clear pink shell",
+   "subhead": "Virtual Pet With Built In Clock",
+   "silhouette": "No slot. The egg leans back in a firm dough nest, the front lip folded down to the floor",
+   "status": "source approved, 4K queued",
+   "next": "Crop tight (upright, expect 3:4 or 4:5), render 4K with prompts/4k/04-suavecita.md, check, finish with #C77171, place.",
+   "source": {
+    "figma_node": "73:2",
+    "pick": "I4",
+    "approved": "2026-10-19",
+    "image_hash": "ccaab3f1b160068551901d95a16eeffaec02c8d2",
+    "repo": "the-first-batch/assets/photos/04-suavecita/04-suavecita-source-i4.jpg",
+    "note": "Repo copy is a compressed 1024 preview. Pull the full original from Figma node 73:2 first if the session can reach www.figma.com"
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/04-suavecita.md",
+   "figma": {
+    "mode_id": "114:5",
+    "section": "118:604",
+    "cover": "118:605",
+    "post": "118:650",
+    "canvas": "118:692",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "1XKldlp0KkUSxXnh5Q8u5oqGzxYQotwXo",
+    "masters": "17WHDhdVFnPtXIcPL2DBu-N9MXxGOAVxE",
+    "exports": "1c7NaapM_QCBA7esQPiY08UcyKfrz2dEz",
+    "archive": "1DxglXXRekhfXiCZP-RtqrvFaQumFjo__"
+   }
+  },
+  {
+   "n": "05",
+   "slug": "05-traycee",
+   "title": "Traycee",
+   "formerly": "TraySea",
+   "catalog": "CBDB 05",
+   "ground": "mint",
+   "ground_hex": "#73D2AB",
+   "ring": "tangerine",
+   "ring_hex": "#DE9F65",
+   "device": "Tube monitor and tower PC",
+   "subhead": "Multimedia PC With Motorized Disc Tray",
+   "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
+   "status": "first 4K runs done square, tight crop re-run next",
+   "next": "Crop the 81:2 source tight (expect 16:9 or 3:2), render 4K with prompts/4k/05-traycee.md, check, finish with #73D2AB, place.",
+   "source": {
+    "figma_node": "81:2",
+    "pick": "81:2",
+    "approved": "2026-10-28",
+    "image_hash": "457bd0de7b45a530757639d7d4b5a402143414a1",
+    "repo": "the-first-batch/assets/photos/05-traycee/05-traycee-source-81-2.png",
+    "note": "Full 1024 original. Josh moved Traycee from K4 (85:2) to 81:2 on Oct 28 2026"
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/05-traycee.md",
+   "history": "Oct 28 2026 AI Studio 4K run at 1:1 left the device at about 87 percent of 4096, which started the crop tight rule. Oct 29 2026 Weave 4K run (23 credits) saved to Drive Masters as 05-traycee-4k-render-weave.png, file 1zjXrPuPdCxtAb3BM4sfdw2wb_UkhDWeR. Usable as a fallback master if the tight crop run disappoints",
+   "figma": {
+    "mode_id": "114:6",
+    "section": "118:707",
+    "cover": "118:708",
+    "post": "118:753",
+    "canvas": "118:795",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "15dW0M4WTCFOZSmmUqfxR-Skv4KsmDj31",
+    "masters": "1Cr1MdsqddIsNT5pRs7cLGDHywBZ2HSKf",
+    "exports": "1HWI_KBl2BVEC0h9KZaZ1Pa7Ko5J5uEeo",
+    "archive": "1yzb76WdJ1trrEgTqiDapa0a-rIIt2SzV"
+   }
+  },
+  {
+   "n": "06",
+   "slug": "06-determinator",
+   "title": "Determinator",
+   "catalog": "CBDB 06",
+   "ground": "blueberry",
+   "ground_hex": "#6C8DCE",
+   "ring": "tangerine",
+   "ring_hex": "#DE9F65",
+   "device": "TV VCR combo",
+   "subhead": "13 Inch TV With Built In VCR",
+   "silhouette": "A dough brick shaped like a VHS tape, half in the slot, the screen glowing video blue",
+   "status": "exploring",
+   "next": "Explore a fresh round from the series lock with the brick silhouette. Oct 19 2026 picks were M1 (brick half in the slot) and runner up M5 (whole batch heaped on the floor, one fold crammed in). Those frames live only on Figma Page 1",
+   "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
+   "figma": {
+    "mode_id": "114:7",
+    "section": "118:810",
+    "cover": "118:811",
+    "post": "118:856",
+    "canvas": "118:898",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "15G_FYqhA1Wbetc5ItEGome2YX9O6JSsz",
+    "masters": "1MlpvV_prh2XcDILGemDAvNhRYsJh0vBp",
+    "exports": "1Q-59wm934KPl3xpTtYw1Ywc5aBEef97g",
+    "archive": "1SHU-RvPaBG9ypxXDv4_fIfjcCH3auK9b"
+   }
+  },
+  {
+   "n": "07",
+   "slug": "07-boombap",
+   "title": "Boombap",
+   "formerly": "Midnight Honey",
+   "catalog": "CBDB 07",
+   "ground": "tangerine",
+   "ground_hex": "#DE9F65",
+   "ring": "bondi",
+   "ring_hex": "#65B8E5",
+   "device": "Wood grain clock radio",
+   "subhead": "Clock Radio With Snooze and Sleep Timer",
+   "silhouette": "No slot. A flat topped clump plopped on top hours ago, thick droopy sides",
+   "status": "not started",
+   "next": "Explore round 1 from the series lock.",
+   "figma": {
+    "mode_id": "114:8",
+    "section": "118:913",
+    "cover": "118:914",
+    "post": "118:959",
+    "canvas": "118:1001",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "1hMSYqkDIOpBKVsTtpjfxQ7wLRsHf9vza",
+    "masters": "1nZ_EeRBj7wRXSk69Ac15eko5S2sI0NET",
+    "exports": "1ZA2fuUiHjIbrV2HGZ5C5t0S2na16KupF",
+    "archive": "1OD46R0jTK9PInim3AykRqc2VY-n8mg0K"
+   }
+  },
+  {
+   "n": "08",
+   "slug": "08-mancub",
+   "title": "Mancub",
+   "catalog": "CBDB 08",
+   "ground": "lime",
+   "ground_hex": "#82A967",
+   "ring": "tangerine",
+   "ring_hex": "#DE9F65",
+   "device": "Classic grey handheld game console, no logos",
+   "subhead": "Pocket Game System for Young Players",
+   "silhouette": "Standing upright in a pile of dough spilling out from behind the cartridge slot",
+   "status": "not started",
+   "next": "Explore round 1 from the series lock. No real console branding or recognizable game characters.",
+   "figma": {
+    "mode_id": "114:9",
+    "section": "118:1016",
+    "cover": "118:1017",
+    "post": "118:1062",
+    "canvas": "118:1104",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "1OnYmlaFG3IWp9q8bmFRZrSFRa6CktTay",
+    "masters": "1G6Z91x22CfVsqeH66_OdOwjr0O83g0dg",
+    "exports": "1gwg1eFuEOOMecV41hK4zA0lwuC2RKCMT",
+    "archive": "1sBlFOO1gd61TlXh-pqLUSDz73gZBD5pk"
+   }
+  },
+  {
+   "n": "09",
+   "slug": "09-show-me-your-love",
+   "title": "Show Me Your Love",
+   "catalog": "CBDB 09",
+   "ground": "grape",
+   "ground_hex": "#8E74B7",
+   "ring": "tangerine",
+   "ring_hex": "#DE9F65",
+   "device": "Talkboy style handheld tape recorder, badged Doughboy",
+   "subhead": "Handheld Tape Recorder With Extending Mic",
+   "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
+   "status": "not started",
+   "next": "Explore round 1 from the series lock. The only readable word on the device is the Doughboy badge, supplied in the 4K prompt",
+   "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
+   "figma": {
+    "mode_id": "114:10",
+    "section": "118:1119",
+    "cover": "118:1120",
+    "post": "118:1165",
+    "canvas": "118:1207",
+    "photo_hash": null,
+    "post_transform": null,
+    "canvas_transform": null
+   },
+   "drive": {
+    "track_folder": "15M14ZVxgxcMoEOZDf7zX9dznzbbKTfLU",
+    "masters": "1EDdrSw_X3xbZLVzfvp6pY_2VB1473x1X",
+    "exports": "15NF3pwX6dr6WDQCTbJwWoHELaZcCR60H",
+    "archive": "1iKDWSXZ2xWQpueDsGAyqIFf0JFtCg8BK"
+   }
+  }
+ ]
+}
