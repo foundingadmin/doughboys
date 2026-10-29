@@ -9,7 +9,10 @@
      colored to the swatch. Near the render the render's own backdrop wins, fading into the template
      with distance, so every cover falls off like Deluge. Film grain and mottle are synthesized from
      the render's own backdrop
-  5. export a max quality 4:4:4 JPG, about 12 to 19 MB at 6704 square
+  5. one paper, lit unevenly: every backdrop pixel keeps its OKLab lightness and takes hue and chroma
+     from the swatch, like Deluge v1, so the backdrop holds one green (or blue) and only light, shadow
+     and grain vary
+  6. export a max quality 4:4:4 JPG, about 12 to 14 MB at 6704 square
 
 usage: python3 pipeline/finish.py RENDER HEX OUT.jpg [--falloff 1.0] [--canvas 6704] [--report report.json] [--quality 97]
   always prints the report as JSON. Also writes OUT_alpha_small.npy (device mask) for pipeline/framing.py
@@ -26,6 +29,45 @@ HUE_KEEP = 0.5     # share of the render's own hue drift kept after the recolor
 FADE = 0.04        # canvas fraction over which the render's edge detail fades out past its border
 BROAD = 0.05       # blur, as a canvas fraction, that splits broad light from shadows and mottle
 HANDOVER = (0.45, 1.05)  # radial distance from the glow (0.5 = canvas edge) where broad light goes from render to template
+
+
+def srgb_to_lin(c):
+    return np.where(c <= 0.04045, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
+
+
+def lin_to_srgb(c):
+    c = np.clip(c, 0, 1)
+    return np.where(c <= 0.0031308, c * 12.92, 1.055 * np.power(c, 1 / 2.4) - 0.055)
+
+
+M1 = np.array([[0.4122214708, 0.5363325363, 0.0514459929], [0.2119034982, 0.6806995451, 0.1073969566], [0.0883024619, 0.2817188376, 0.6299787005]], np.float32)
+M2 = np.array([[0.2104542553, 0.7936177850, -0.0040720468], [1.9779984951, -2.4285922050, 0.4505937099], [0.0259040371, 0.7827717662, -0.8086757660]], np.float32)
+M2i, M1i = np.linalg.inv(M2).astype(np.float32), np.linalg.inv(M1).astype(np.float32)
+
+
+def oklab(lin):
+    return np.cbrt(lin @ M1.T) @ M2.T
+
+
+def oklab_to_lin(lab):
+    return (lab @ M2i.T) ** 3 @ M1i.T
+
+
+def one_paper(rgb255, sw_ok):
+    """One paper, lit unevenly: keep each pixel's OKLab lightness, take hue and chroma from the swatch.
+    That is how Deluge v1 behaves (flat OKLab chroma, hue within 4 degrees). Where a light or dark pixel
+    cannot hold the swatch chroma inside sRGB, chroma eases off instead of clipping, so hue never moves."""
+    L = oklab(srgb_to_lin(rgb255 / 255.))[..., 0]
+    out = np.empty(L.shape + (3,), np.float32)
+    k = np.ones(L.shape, np.float32)
+    for _ in range(12):
+        lab = np.stack([L, sw_ok[1] * k, sw_ok[2] * k], -1)
+        out = oklab_to_lin(lab)
+        bad = (out.min(-1) < -1e-4) | (out.max(-1) > 1 + 1e-4)
+        if not bad.any():
+            break
+        k = np.where(bad, k * 0.85, k)
+    return lin_to_srgb(out) * 255.
 
 
 def wrap(a):
@@ -233,6 +275,17 @@ def main():
     del sub, ramp, Rr
     A = np.zeros((S, S), np.float32); A[oy:oy + H, ox:ox + W] = alpha
 
+    # ---- one paper: backdrop hue and chroma come only from the swatch ----
+    sw_ok = oklab(srgb_to_lin(np.array([int(a.hex.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)], np.float32) / 255.))
+    # keep a few pixels around the device as they are, so soft mask edges carrying device light do not turn into a bright rim
+    P = np.zeros((S, S), np.float32)
+    P[oy:oy + H, ox:ox + W] = cv2.GaussianBlur(cv2.dilate((alpha > 0.05).astype(np.uint8), np.ones((9, 9))).astype(np.float32), (0, 0), 2.5)
+    P = np.maximum(P, A)
+    for y in range(0, S, step):
+        al = P[y:y + step, :, None]
+        canvas[y:y + step] = one_paper(canvas[y:y + step], sw_ok) * (1 - al) + canvas[y:y + step] * al
+    del P
+
     # ---- check: glow vs swatch, corners vs the template ----
     m = S // LOW
     cs = cv2.resize(canvas, (m, m), interpolation=cv2.INTER_AREA) / 255.
@@ -245,6 +298,12 @@ def main():
     g2 = np.median(lab_c[bgm], axis=0)
     rep['glow_after_rgb'] = np.median(cs[bgm] * 255, axis=0).round(1).tolist()
     rep['deltaE_glow_vs_swatch'] = round(float(np.linalg.norm(g2 - t)), 2)
+    def ok_hue(rgb):
+        lab = oklab(srgb_to_lin(rgb))
+        return np.degrees(np.arctan2(lab[..., 2], lab[..., 1]))
+    bgall = cv2.dilate((As_c > 0.02).astype(np.uint8), np.ones((7, 7))) == 0
+    hb = ok_hue(cs.astype(np.float32))[bgall]
+    rep['backdrop_hue_spread_deg'] = round(float(np.percentile(hb, 95) - np.percentile(hb, 5)), 2)
     c = m // 16
     rep['corner_L_minus_glow'] = [round(float(np.median(lab_c[sl][..., 0]) - g2[0]), 1) for sl in
                                   ((slice(0, c), slice(0, c)), (slice(0, c), slice(m - c, m)), (slice(m - c, m), slice(0, c)), (slice(m - c, m), slice(m - c, m)))]

@@ -229,7 +229,7 @@
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
    "status": "finish depth under review",
-   "next": "Josh picks a falloff depth (1.0, 0.75, 0.5) on Figma board 136:77. Re-finish B at that depth, make it the default in finish.py, then place in the Photo slot.",
+   "next": "Josh picks a falloff depth (1.0, 0.75, 0.5) on Figma board 142:77, one green version. Re-finish B at that depth, make it the default in finish.py, then place in the Photo slot.",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -325,6 +325,12 @@
      "date": "2026-10-29",
      "what": "Falloff depth 1.0 vs 0.75 vs 0.5 with Mint swatch chips, Deluge v1 reference",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=136-77"
+    },
+    {
+     "node": "142:77",
+     "date": "2026-10-29",
+     "what": "One green backdrop: depth 1.0, 0.75, 0.5 with swatch chips, before and after, Deluge regression",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=142-77"
     }
    ],
    "render_pick": "B",
