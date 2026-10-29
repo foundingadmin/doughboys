@@ -3,8 +3,9 @@
 Release artwork for The First Batch by Chillsbury Doughboys. Updated Oct 29 2026. Living doc: Claude Code updates it in the repo as tracks move (CLAUDE.md, Keeping the docs current).
 
 - [Creative brief](https://claude.ai/code/artifact/e34a1d07-501a-4033-ba3d-b4bcc4d3668e)
-- [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Kit (variables and components), Brand Guide and Album Art (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Page 1 keeps every generated test at full size
+- [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Toolkits (variables and components), Brand Guide, Album Art and Review (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Archive (was Page 1) keeps every generated test at full size
 - [Production repo](https://github.com/foundingadmin/doughboys) · Claude Code runs the device photo workflow end to end from here. CLAUDE.md is the manual, the-first-batch/tracks.json holds each track's state
+- **Reviews happen in Figma** · set by Josh Oct 29 2026. Every image up for review is assembled on the Review page, options side by side with matched crops and a pass or fail note under each
 - [Design canvas](https://claude.ai/artifact/AKevZru2Tw5MbhUfXc8KkH) · retired Oct 29 2026, kept for reference
 
 ## 4K queue · approved frames waiting for their 4K run
@@ -65,7 +66,7 @@ No people, no hands, no logos.
 
 ### Traycee · 81:2 · tight crop 4K re-run Oct 29 2026 · waiting on Josh's yes
 - **Source image** · [Figma node 81:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=81-2), 1024 square, cropped tight by gen.py crop to 3:2 (906 × 604) with a thin strip of mint on every side and the floor shadows kept. The device box is about 1.59 wide, so 3:2 beat 16:9. Josh moved Traycee from K4 (node 85:2) to 81:2 on Oct 28 2026
-- **Runs** · Oct 29 2026 through the Gemini API, 3:2, 4K, 5056 × 3392. Render A used the first prompt and came back with garbled CD player buttons, fake taskbar text and a hole through the dough. Render B used the sharper prompt below and passed every named fix. B is the pick to finish. Both are in the repo with check crops in the-first-batch/review/05-traycee
+- **Runs** · Oct 29 2026 through the Gemini API, 3:2, 4K, 5056 × 3392. Render A used the first prompt and came back with garbled CD player buttons, fake taskbar text and a hole through the dough. Render B used the sharper prompt below and passed every named fix. B is the pick to finish. Side by side on the [Figma Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=128-78) Both are in the repo with check crops in the-first-batch/review/05-traycee
 - **Prompt** · render B
 
 ```

@@ -45,4 +45,7 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 
 - See docs/figma.md. Scripts are atomic, pages reset per call, fonts load before any text change.
 - `upload_assets` caps a file at 10 MB, so a 12 MB master will not go. Figma also stores images at 4096 px max. Upload a 4096 square JPG q95 downscale of the master (about 2.4 MB for Deluge). The repo and Drive keep the full 6704 (Oct 29 2026).
+- Josh reviews in Figma, not on GitHub or in chat. Every review gets a board on the Review page (Oct 29 2026).
+- `upload_assets` with `nodeIds` drops each image straight into an existing rectangle, so build the board first and upload into its slots. 16 images in parallel took a few seconds (Oct 29 2026).
+- Josh renamed Kit to Toolkits and Page 1 to Archive, and added a `---` divider page (seen Oct 29 2026).
 - `upload_assets` without a target node drops a new frame on the page. Delete it in the same `use_figma` call that fills the boards (Oct 29 2026).

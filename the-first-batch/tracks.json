@@ -213,7 +213,7 @@
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
    "status": "tight crop 4K done, waiting on Josh",
-   "next": "Josh picks render B (or A) at full size. On his yes, finish B with #73D2AB, check seams, place in Figma.",
+   "next": "Josh picks A or B on the Figma Review board (node 128:78). On his yes, fix the finish.py falloff, finish the pick with #73D2AB, put it on the board next to Deluge, then place.",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -305,7 +305,15 @@
     ],
     "review": "the-first-batch/review/05-traycee/finish-preview-b-full.jpg",
     "note": "Glow matches Mint but the corners and the extended floor go much deeper than Deluge, with dark streaks below and left of the render. Render glow sat at L 86 against a swatch at L 78, and the lightness gamma of 1.74 crushes the falloff. Not committed as a master. Fix finish.py before the real run"
-   }
+   },
+   "review_boards": [
+    {
+     "node": "128:78",
+     "date": "2026-10-29",
+     "what": "4K tight crop A vs B, matched crops, finish preview of B next to Deluge v1",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=128-78"
+    }
+   ]
   },
   {
    "n": "06",
@@ -434,5 +442,6 @@
     "archive": "1iKDWSXZ2xWQpueDsGAyqIFf0JFtCg8BK"
    }
   }
- ]
+ ],
+ "figma_review_page": "128:77"
 }

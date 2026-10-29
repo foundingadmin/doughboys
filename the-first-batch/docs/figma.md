@@ -59,6 +59,16 @@ return done;
 4. `get_screenshot` the track's section (all three boards in one image) and save it to `the-first-batch/review/NN-track/figma-boards-v1.png`. Look at it: device not clipped by the sticker or the type, ground continuous from photo edge to board edge.
 5. Record the hash and transforms in tracks.json, and update art-direction.md (see CLAUDE.md, Keeping the docs current).
 
+## Review boards
+
+Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, stacked newest at the bottom.
+
+1. Make the images in `work/NN-track/figma/`. Full frames downscaled to 4096 wide, check crops cut from the full render at native pixels, the same boxes for every option. JPG, under 10 MB each.
+2. Copy `pipeline/figma_review_board.js`, fill in `BOARD` and `ROWS`, run it as one `use_figma` call. It returns `slots` with an empty rectangle per file.
+3. `upload_assets` with `count` and `nodeIds` in slot order, then POST each file to its URL. Each image lands in its slot.
+4. `get_screenshot` the board, look at it, give Josh the link `https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=<board id with - for :>`.
+5. Record the board id in tracks.json under the track's `review_boards`.
+
 ## Gotchas learned building it
 
 - Every `use_figma` script is atomic. One error rolls back the whole script, so a failed call changed nothing.
