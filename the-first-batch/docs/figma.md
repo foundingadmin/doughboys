@@ -21,7 +21,15 @@ File key `lcNDgyPE02C9Ldw8n2THee`. Built Oct 29 2026 from the Claude design canv
 
 ## Placing a finished master
 
-1. Upload the master with the Figma `upload_assets` tool, without a target node, and keep the returned image hash. The upload goes from this container to `mcp.figma.com`, so that host must be allowed.
+1. Make the Figma copy: the master downscaled to 4096 square, JPG quality 95, in `work/` (uploads cap at 10 MB and Figma stores 4096 max anyway). Upload it with the Figma `upload_assets` tool, without a target node, and keep the returned image hash and `placedOnNodeId`. The upload goes from this container to `mcp.figma.com`, so that host must be allowed.
+
+```bash
+python3 -c "from PIL import Image; Image.open('MASTER.jpg').resize((4096,4096), Image.LANCZOS).save('work/NN-track/figma4096.jpg', quality=95, subsampling=0)"
+```
+
+```bash
+curl -sS -X POST -F "file=@work/NN-track/figma4096.jpg;type=image/jpeg" "SUBMIT_URL"
+```
 2. Get the Post and Canvas crop: `python3 pipeline/framing.py MASTER_alpha_small.npy` (finish.py writes that file next to the master). It prints both transforms.
 3. Run one `use_figma` call on the Album Art page:
 
@@ -42,11 +50,14 @@ for (const [k, b] of Object.entries(boards)) {
   inst.setProperties({ "Show placeholder#116:0": false });
   done[k] = photo.id;
 }
+// the upload dropped a temporary frame on the page, remove it
+const tmp = await figma.getNodeByIdAsync("<placedOnNodeId>");
+if (tmp && tmp.parent && tmp.parent.type === "PAGE") tmp.remove();
 return done;
 ```
 
-4. `get_screenshot` each of the three boards and look at them: device not clipped by the sticker or the type, ground continuous from photo edge to board edge.
-5. Record the hash and transforms in tracks.json.
+4. `get_screenshot` the track's section (all three boards in one image) and save it to `the-first-batch/review/NN-track/figma-boards-v1.png`. Look at it: device not clipped by the sticker or the type, ground continuous from photo edge to board edge.
+5. Record the hash and transforms in tracks.json, and update art-direction.md (see CLAUDE.md, Keeping the docs current).
 
 ## Gotchas learned building it
 

@@ -22,8 +22,8 @@
    "device": "Silver dual deck boombox",
    "subhead": "Dual Cassette Boombox With Overflow Control",
    "silhouette": "Both tape doors stuffed, one spilling more, a wide flat pool across the surface",
-   "status": "master done",
-   "next": "Place Deluge v1 in Figma (Cover, Post, Canvas are on placeholder). Good first test of the Figma wiring.",
+   "status": "placed in Figma",
+   "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Master is already in Drive Masters.",
    "source": {
     "figma_node": "15:2",
     "image_hash": "1934e5dd5e589999fb4075383a9979914f66e84d",
@@ -38,7 +38,7 @@
     "cover": "118:266",
     "post": "118:326",
     "canvas": "118:383",
-    "photo_hash": null,
+    "photo_hash": "1419471e018a654ff8a9e9a5e8ed364834169f0f",
     "post_transform": [
      [
       0.8,
@@ -63,7 +63,9 @@
       0
      ]
     ],
-    "transforms_note": "From framing.py on the automated Deluge finish, which shares v1 geometry. Upload v1 to get photo_hash"
+    "transforms_note": "From framing.py on the automated Deluge finish, which shares v1 geometry. Upload v1 to get photo_hash",
+    "photo_note": "Uploaded Oct 29 2026 as a 4096 square JPG q95 downscale of v1 (Figma caps uploads at 10 MB and stores images at 4096 max). Cover FILL, Post and Canvas CROP with the transforms in this block",
+    "review": "the-first-batch/review/01-deluge/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "1fayUmYVWNWhBiyV_iJUnn2u36pZ8mWRP",
@@ -210,8 +212,8 @@
    "device": "Tube monitor and tower PC",
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
-   "status": "first 4K runs done square, tight crop re-run next",
-   "next": "Crop the 81:2 source tight (expect 16:9 or 3:2), render 4K with prompts/4k/05-traycee.md, check, finish with #73D2AB, place.",
+   "status": "tight crop 4K done, waiting on Josh",
+   "next": "Josh picks render B (or A) at full size. On his yes, finish B with #73D2AB, check seams, place in Figma.",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -237,6 +239,72 @@
     "masters": "1Cr1MdsqddIsNT5pRs7cLGDHywBZ2HSKf",
     "exports": "1HWI_KBl2BVEC0h9KZaZ1Pa7Ko5J5uEeo",
     "archive": "1yzb76WdJ1trrEgTqiDapa0a-rIIt2SzV"
+   },
+   "crop": {
+    "file": "the-first-batch/assets/photos/05-traycee/05-traycee-crop-3x2.png",
+    "aspect": "3:2",
+    "box": [
+     61,
+     282,
+     967,
+     886
+    ],
+    "note": "gen.py crop auto pick. Device box is about 1.59 wide so 3:2 beat 16:9"
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/05-traycee/05-traycee-4k-render-3x2-a.jpg",
+     "size": "5056x3392",
+     "date": "2026-10-29",
+     "prompt": "first 05-traycee.md, fixes 1 to 3",
+     "check": "Title bar, display and screen corner pass. Fails: garbled glyphs on the CD player buttons, fake text on the taskbar, hole through the dough column"
+    },
+    {
+     "file": "the-first-batch/assets/photos/05-traycee/05-traycee-4k-render-3x2-b.jpg",
+     "size": "5056x3392",
+     "date": "2026-10-29",
+     "prompt": "current 05-traycee.md, fixes 1 to 5",
+     "check": "All named fixes pass. Clean play, pause, stop, eject buttons, plain taskbar, solid dough column. One dark speck of a few pixels in the screen's top left corner, Photoshop level",
+     "recommended": true
+    }
+   ],
+   "review": "the-first-batch/review/05-traycee/",
+   "finish_preview": {
+    "date": "2026-10-29",
+    "render": "B",
+    "offset": [
+     824,
+     1656
+    ],
+    "deltaE_glow_vs_swatch": 1.69,
+    "device_touches_edge": false,
+    "L_gamma": 1.7449,
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1006
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2193
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "review": "the-first-batch/review/05-traycee/finish-preview-b-full.jpg",
+    "note": "Glow matches Mint but the corners and the extended floor go much deeper than Deluge, with dark streaks below and left of the render. Render glow sat at L 86 against a swatch at L 78, and the lightness gamma of 1.74 crushes the falloff. Not committed as a master. Fix finish.py before the real run"
    }
   },
   {
