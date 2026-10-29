@@ -63,9 +63,25 @@
       0
      ]
     ],
-    "transforms_note": "From framing.py on the automated Deluge finish, which shares v1 geometry. Upload v1 to get photo_hash",
-    "photo_note": "Uploaded Oct 29 2026 as a 4096 square JPG q95 downscale of v1 (Figma caps uploads at 10 MB and stores images at 4096 max). Cover FILL, Post and Canvas CROP with the transforms in this block",
-    "review": "the-first-batch/review/01-deluge/figma-boards-v1.png"
+    "photo_note": "Uploaded Oct 29 2026 as a 4096 square JPG q95 downscale of v1. Since Oct 29 2026 it sits as a free image layer in each board's Photo slot, square at its natural aspect, offset by x. Josh may have moved it since, read the layer before replacing",
+    "review": "the-first-batch/review/01-deluge/figma-boards-v1.png",
+    "photo_slot": {
+     "cover": {
+      "layer": "133:1030",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "133:1033",
+      "x": -91.08,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "133:1036",
+      "x": -211.1,
+      "size": 960
+     }
+    }
    },
    "drive": {
     "track_folder": "1fayUmYVWNWhBiyV_iJUnn2u36pZ8mWRP",
@@ -212,8 +228,8 @@
    "device": "Tube monitor and tower PC",
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
-   "status": "tight crop 4K done, waiting on Josh",
-   "next": "Josh picks render B (or A) at full size. On his yes, finish B with #73D2AB, check seams, place in Figma.",
+   "status": "finish depth under review",
+   "next": "Josh picks a horizon strength (0.16, 0.25, 0.35) on Figma board 147:77 at falloff 0.75. Make depth and horizon the finish.py defaults, finish B as 05-traycee-final-v1.jpg, place in the Photo slot.",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -231,8 +247,30 @@
     "post": "118:753",
     "canvas": "118:795",
     "photo_hash": null,
-    "post_transform": null,
-    "canvas_transform": null
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1006
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2193
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ]
    },
    "drive": {
     "track_folder": "15dW0M4WTCFOZSmmUqfxR-Skv4KsmDj31",
@@ -269,43 +307,47 @@
     }
    ],
    "review": "the-first-batch/review/05-traycee/",
-   "finish_preview": {
-    "date": "2026-10-29",
-    "render": "B",
-    "offset": [
-     824,
-     1656
-    ],
-    "deltaE_glow_vs_swatch": 1.69,
-    "device_touches_edge": false,
-    "L_gamma": 1.7449,
-    "post_transform": [
-     [
-      0.8,
-      0,
-      0.1006
-     ],
-     [
-      0,
-      1,
-      0
-     ]
-    ],
-    "canvas_transform": [
-     [
-      0.5625,
-      0,
-      0.2193
-     ],
-     [
-      0,
-      1,
-      0
-     ]
-    ],
-    "review": "the-first-batch/review/05-traycee/finish-preview-b-full.jpg",
-    "note": "Glow matches Mint but the corners and the extended floor go much deeper than Deluge, with dark streaks below and left of the render. Render glow sat at L 86 against a swatch at L 78, and the lightness gamma of 1.74 crushes the falloff. Not committed as a master. Fix finish.py before the real run"
-   }
+   "review_boards": [
+    {
+     "node": "128:78",
+     "date": "2026-10-29",
+     "what": "4K tight crop A vs B, matched crops, finish preview of B next to Deluge v1",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=128-78"
+    },
+    {
+     "node": "132:77",
+     "date": "2026-10-29",
+     "what": "Backdrop finish fix: Traycee next to Deluge, old vs new, corner and floor crops, Deluge regression",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=132-77"
+    },
+    {
+     "node": "136:77",
+     "date": "2026-10-29",
+     "what": "Falloff depth 1.0 vs 0.75 vs 0.5 with Mint swatch chips, Deluge v1 reference",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=136-77"
+    },
+    {
+     "node": "142:77",
+     "date": "2026-10-29",
+     "what": "One green backdrop: depth 1.0, 0.75, 0.5 with swatch chips, before and after, Deluge regression",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=142-77"
+    },
+    {
+     "node": "146:77",
+     "date": "2026-10-29",
+     "what": "Smooth rebuilt backdrop: depth 1.0, 0.75, 0.5 with swatch chips, before and after on the flagged hotspots, Deluge regression",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=146-77"
+    },
+    {
+     "node": "147:77",
+     "date": "2026-10-29",
+     "what": "Cyclorama horizon strength 0, 0.16, 0.25, 0.35 at falloff 0.75, swatch chips, side crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=147-77"
+    }
+   ],
+   "render_pick": "B",
+   "master": "the-first-batch/assets/photos/05-traycee/05-traycee-final-v1.jpg",
+   "master_note": "finish.py with the Deluge v1 template, Oct 29 2026. 6704 square, 13.3 MB. Glow deltaE 1.02 vs Mint, corners L minus glow -28.6 -31.4 -4.8 -9.9"
   },
   {
    "n": "06",
@@ -434,5 +476,17 @@
     "archive": "1iKDWSXZ2xWQpueDsGAyqIFf0JFtCg8BK"
    }
   }
- ]
+ ],
+ "figma_review_page": "128:77",
+ "figma_photo_slot": {
+  "property": "Photo#133:0",
+  "cover": "133:169",
+  "post": "133:170",
+  "canvas": "133:171"
+ },
+ "figma_album_photo_slot": {
+  "property": "Photo#135:0",
+  "ad": "135:179",
+  "store": "135:180"
+ }
 }
