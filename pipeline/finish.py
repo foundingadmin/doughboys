@@ -1,18 +1,19 @@
 """The First Batch finish step, 4K render in, track cover master out.
 
-  1. isolate device and dough from the backdrop (rembg u2net + isnet, holes filled)
-  2. recolor the render's backdrop only: shift lightness so the glow behind the device (Josh's Deluge
-     check ellipse, real render pixels) lands on the swatch, keep the render's own light shape, pull
-     chroma almost flat to the swatch and ease hue drift toward it. Device and dough stay untouched
-  3. place the render at 1:1 in the center of a square canvas (6704 by default, Deluge v1's size)
-  4. extend the backdrop with the falloff template from Deluge v1 (pipeline/backdrop_template.npz),
-     colored to the swatch. Near the render the render's own backdrop wins, fading into the template
-     with distance, so every cover falls off like Deluge. Film grain and mottle are synthesized from
-     the render's own backdrop
-  5. one paper, lit unevenly: every backdrop pixel keeps its OKLab lightness and takes hue and chroma
-     from the swatch, like Deluge v1, so the backdrop holds one green (or blue) and only light, shadow
-     and grain vary
-  6. export a max quality 4:4:4 JPG, about 12 to 14 MB at 6704 square
+  The backdrop is rebuilt, never kept: a smooth gradation of the track swatch, shaped like Josh's
+  Deluge v1 Photoshop backdrop (pipeline/backdrop_template.npz), one hue and chroma edge to edge.
+  From the render it takes only three things: the device and dough (untouched, edges cleaned of the
+  old backdrop color), the contact shadows where they meet the floor, and the film grain.
+  Every other light or dark patch the generator painted into its backdrop is dropped.
+
+  1. isolate device and dough (rembg u2net + isnet, holes filled)
+  2. backdrop lightness = swatch lightness + falloff x the Deluge template, on a 6704 square
+  3. contact shadows: the render's own darkening (never its brightening) at the floor line under each
+     part of the device and in a narrow band hugging it, so gaps between parts stay in shade
+  4. grain synthesized from the render's own backdrop, lightness only
+  5. one paper: OKLab lightness kept, hue and chroma from the swatch
+  6. the render placed at 1:1 in the center, device composited with its edge pixels decontaminated
+  7. export a max quality 4:4:4 JPG
 
 usage: python3 pipeline/finish.py RENDER HEX OUT.jpg [--falloff 1.0] [--canvas 6704] [--report report.json] [--quality 97]
   always prints the report as JSON. Also writes OUT_alpha_small.npy (device mask) for pipeline/framing.py
@@ -25,10 +26,9 @@ Image.MAX_IMAGE_PIXELS = None
 LOW = 8
 ELLIPSE = (0.51, 0.534, 0.207, 0.37)  # cx, cy, rx, ry as canvas fractions, from Josh's Deluge check
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backdrop_template.npz')
-HUE_KEEP = 0.5     # share of the render's own hue drift kept after the recolor
-FADE = 0.04        # canvas fraction over which the render's edge detail fades out past its border
-BROAD = 0.05       # blur, as a canvas fraction, that splits broad light from shadows and mottle
-HANDOVER = (0.45, 1.05)  # radial distance from the glow (0.5 = canvas edge) where broad light goes from render to template
+SHADOW_REF = 0.02  # canvas fraction: blur that defines the local floor brightness a contact shadow is measured against
+SHADOW_ZONE = (0.035, 0.06)  # canvas fraction above and below each column's floor line where shadows are kept
+SHADOW_HUG = (0.006, 0.012)  # canvas fraction: shade kept fully this close to the device, fading out by the second value (gaps, occlusion)
 
 
 def srgb_to_lin(c):
@@ -167,148 +167,107 @@ def main():
     S = max(a.canvas, W, H)
     ox, oy = (S - W) // 2, (S - H) // 2
     rep.update(render=[W, H], canvas=S, offset=[ox, oy])
+    step = 1024
 
     alpha = device_mask(R)
+    alpha = np.clip((alpha - 0.1) / 0.8, 0, 1); alpha = alpha * alpha * (3 - 2 * alpha)   # tighter soft edge, no fringe of old floor
     edge_fg = max(alpha[:24].max(), alpha[-24:].max(), alpha[:, :24].max(), alpha[:, -24:].max())
     rep['device_touches_edge'] = bool(edge_fg > 0.5)
-
-    # ---- glow behind the device, real render pixels inside Josh's ellipse ----
-    hs, ws = H // LOW, W // LOW
-    Rs = cv2.cvtColor(cv2.resize(R, (ws, hs), interpolation=cv2.INTER_AREA).astype(np.float32) / 255., cv2.COLOR_RGB2LAB)
-    As = cv2.resize(alpha, (ws, hs), interpolation=cv2.INTER_AREA)
-    fg = cv2.dilate((As > 0.02).astype(np.uint8), np.ones((5, 5)))
-    known = (fg == 0).astype(np.float32)
-    gy, gx = np.mgrid[0:hs, 0:ws].astype(np.float32)
-    gx = (gx * LOW + ox) / S; gy = (gy * LOW + oy) / S
-    ecx, ecy, erx, ery = ELLIPSE
-    ell = (((gx - ecx) / erx) ** 2 + ((gy - ecy) / ery) ** 2 <= 1) & (cv2.dilate(fg, np.ones((11, 11))) == 0)
-    ell[:4] = ell[-4:] = False; ell[:, :4] = ell[:, -4:] = False
-    g = np.median(Rs[ell], axis=0)   # median per Lab channel, never per hue angle (it wraps at 180)
-    Lg, Cg, hg = [float(v) for v in lch(g)]
     t = hex_lab(a.hex)
-    Lt, Ct, ht = [float(v) for v in lch(t)]
-    dLs = Lt - Lg
-    rep.update(glow_before_lab=[round(Lg, 2), round(Cg, 2), round(float(np.degrees(hg)), 2)], target_lab=t.round(2).tolist(),
-               L_shift=round(dLs, 2), chroma_before=round(Cg, 2), chroma_target=round(Ct, 2))
+    Lt = float(t[0])
+    sw_rgb = np.array([int(a.hex.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)], np.float32) / 255.
+    sw_ok = oklab(srgb_to_lin(sw_rgb))
 
-    def recolor(lab):
-        L, C, h = lch(lab)
-        L2 = np.clip(L + dLs, 0, 100)
-        C2 = Ct * np.power(np.maximum(C, 1e-3) / max(Cg, 1e-3), 0.12)
-        h2 = ht + HUE_KEEP * wrap(h - hg)
-        return np.stack([L2, C2 * np.cos(h2), C2 * np.sin(h2)], -1).astype(np.float32)
-
-    # ---- recolor the render's backdrop, device untouched ----
-    step = 1024
-    Rr = np.empty((H, W, 3), np.float32)
-    for y in range(0, H, step):
-        lab = cv2.cvtColor(R[y:y + step].astype(np.float32) / 255., cv2.COLOR_RGB2LAB)
-        rgb2 = np.clip(cv2.cvtColor(recolor(lab), cv2.COLOR_LAB2RGB), 0, 1) * 255.
-        al = alpha[y:y + step, :, None]
-        Rr[y:y + step] = rgb2 * (1 - al) + R[y:y + step].astype(np.float32) * al
-    del R
-
-    # ---- backdrop, low res Lab over the whole canvas ----
-    # broad light hands over from the render (near the device) to the Deluge template (toward the edges)
-    # on a smooth radial weight, inside the render too, so there is no box at the render's border.
-    # Shadows, mottle and grain stay the render's own.
+    # ---- low res: the old render backdrop with the device filled, used to clean the device's edge pixels ----
     n = S // LOW
+    hs, ws = H // LOW, W // LOW
     oys, oxs = oy // LOW, ox // LOW
-    Rs = recolor(Rs)
-    Rb = np.where(known[..., None] > 0, Rs, push_pull(Rs, known))      # backdrop only, device filled
-    Rb = cv2.GaussianBlur(Rb, (0, 0), 1.5)
-    tp = np.load(TEMPLATE)
-    TL = Lt + a.falloff * cv2.resize(tp['dL'], (n, n), interpolation=cv2.INTER_CUBIC)
-    Th = ht + cv2.resize(tp['dh'], (n, n), interpolation=cv2.INTER_CUBIC)
-    T = np.stack([TL, Ct * np.cos(Th), Ct * np.sin(Th)], -1).astype(np.float32)
-    rep['template'] = str(tp['source'])
-    inside = np.zeros((n, n), np.float32); inside[oys:oys + hs, oxs:oxs + ws] = 1
-    placed = np.zeros((n, n, 3), np.float32); placed[oys:oys + hs, oxs:oxs + ws] = Rb
-    broad = cv2.GaussianBlur(push_pull(placed, inside), (0, 0), n * BROAD)   # render's broad light, carried outward smoothly
-    yy, xx = np.mgrid[0:n, 0:n].astype(np.float32)
-    rr = np.hypot((xx / n - ecx) / 0.5, (yy / n - ecy) / 0.5)
-    r0, r1 = HANDOVER
-    u = np.clip((rr - r0) / (r1 - r0), 0, 1); wgt = (u * u * (3 - 2 * u))[..., None]
-    corr = wgt * (T - broad)                                             # added to the render backdrop and the extension alike
-    # outside the render: broad light plus the render's edge detail fading out, plus the handover
-    detail = cv2.copyMakeBorder(Rb - broad[oys:oys + hs, oxs:oxs + ws], oys, n - hs - oys, oxs, n - ws - oxs, cv2.BORDER_REPLICATE)
-    d_top = np.clip(oys - yy, 0, None); d_bot = np.clip(yy - (oys + hs - 1), 0, None)
-    d_lft = np.clip(oxs - xx, 0, None); d_rgt = np.clip(xx - (oxs + ws - 1), 0, None)
-    dist = np.hypot(np.maximum(d_top, d_bot), np.maximum(d_lft, d_rgt))
-    k = (1 - np.exp(-dist / (n * 0.03)))[..., None]
-    detail = detail * (1 - k) + cv2.GaussianBlur(detail, (0, 0), n * 0.03) * k
-    ext = broad + detail * np.exp(-dist / (n * FADE))[..., None] + corr
-    del yy, xx, T, placed, detail, k, broad
-    # the handover inside the render, at full res, backdrop only
-    corr_r = cv2.resize(corr[oys:oys + hs, oxs:oxs + ws], (W, H), interpolation=cv2.INTER_CUBIC)
-    del corr
-    for y in range(0, H, step):
-        lab = cv2.cvtColor(Rr[y:y + step] / 255., cv2.COLOR_RGB2LAB) + corr_r[y:y + step]
-        rgb2 = np.clip(cv2.cvtColor(lab, cv2.COLOR_LAB2RGB), 0, 1) * 255.
-        al = alpha[y:y + step, :, None]
-        Rr[y:y + step] = rgb2 * (1 - al) + Rr[y:y + step] * al
-    del corr_r
+    Rs = cv2.resize(R, (ws, hs), interpolation=cv2.INTER_AREA).astype(np.float32) / 255.
+    As = cv2.resize(alpha, (ws, hs), interpolation=cv2.INTER_AREA)
+    known = (As < 0.1).astype(np.float32)                                     # tight, so floor pixels right at the device count
+    Rb = np.where(known[..., None] > 0, Rs, push_pull(Rs, known))            # old backdrop, device filled
 
-    # ---- full res: smooth extension + matched texture, then the render on top ----
-    Rr_lab = np.empty((H, W, 3), np.float32)
+    # ---- contact shadows at half res: darker than the local floor, only in a band at each column's floor line ----
+    h2, w2 = H // 2, W // 2
+    R2 = cv2.resize(R, (w2, h2), interpolation=cv2.INTER_AREA).astype(np.float32) / 255.
+    A2 = cv2.resize(alpha, (w2, h2), interpolation=cv2.INTER_AREA)
+    k2 = (A2 < 0.05).astype(np.float32)
+    Y2 = srgb_to_lin(R2) @ np.array([0.2126, 0.7152, 0.0722], np.float32)
+    Y2 = np.where(k2 > 0, Y2, push_pull(np.repeat(Y2[..., None], 3, -1), k2)[..., 0])
+    Yref = cv2.GaussianBlur(Y2, (0, 0), (S / 2) * SHADOW_REF)
+    sh2 = np.clip(Y2 / np.maximum(Yref, 1e-4), 0, 1)
+    dev = A2 > 0.5
+    rows = np.arange(h2, dtype=np.float32)[:, None]
+    bottom = np.where(dev.any(0), (dev * rows).max(0), -1).astype(np.float32)
+    span = max(1, int(S / 2 * 0.03))
+    bottom = cv2.dilate(bottom[None], np.ones((1, 2 * span + 1)))[0]           # bridge small gaps between parts
+    up, down = S / 2 * SHADOW_ZONE[0], S / 2 * SHADOW_ZONE[1]
+    zone = ((rows >= bottom[None] - up) & (rows <= bottom[None] + down) & (bottom[None] >= 0)).astype(np.float32)
+    zone = cv2.GaussianBlur(zone, (0, 0), S / 2 * 0.01)
+    dist = cv2.distanceTransform((A2 < 0.5).astype(np.uint8), cv2.DIST_L2, 5)
+    h0, h1 = S / 2 * SHADOW_HUG[0], S / 2 * SHADOW_HUG[1]
+    hug = np.clip((h1 - dist) / (h1 - h0), 0, 1)
+    zone = np.maximum(zone, hug * hug * (3 - 2 * hug))
+    sh2 = 1 - zone * (1 - sh2)
+    rep['shadow_min'] = round(float(sh2.min()), 3)
+    shade_r = cv2.resize(sh2, (W, H), interpolation=cv2.INTER_LINEAR)
+    del R2, A2, k2, Y2, Yref, zone, sh2, dist, hug
+
+    # ---- backdrop: smooth swatch gradation from the Deluge template ----
+    tp = np.load(TEMPLATE)
+    rep['template'] = str(tp['source'])
+    TL = Lt + a.falloff * cv2.resize(tp['dL'], (n, n), interpolation=cv2.INTER_CUBIC)
+    lab_n = np.stack([np.clip(TL, 0, 100), np.full((n, n), t[1]), np.full((n, n), t[2])], -1).astype(np.float32)
+
+    # ---- full res: gradation + grain, contact shadows in linear light, one paper ----
+    R_lab = np.empty((H, W, 3), np.float32)
     for y in range(0, H, step):
-        Rr_lab[y:y + step] = cv2.cvtColor(Rr[y:y + step] / 255., cv2.COLOR_RGB2LAB)
-    amp, npatch = texture_spectra(Rr_lab, alpha)
+        R_lab[y:y + step] = cv2.cvtColor(R[y:y + step].astype(np.float32) / 255., cv2.COLOR_RGB2LAB)
+    amp, npatch = texture_spectra(R_lab, alpha)
     rep['texture_patches'] = npatch
-    del Rr_lab
-    canvas_lab = cv2.resize(ext, (S, S), interpolation=cv2.INTER_CUBIC)
-    del ext
+    del R_lab
+    canvas_lab = cv2.resize(lab_n, (S, S), interpolation=cv2.INTER_CUBIC)
     if amp is not None:
-        canvas_lab += synth_texture((S, S), amp, np.random.default_rng(7))
+        canvas_lab[..., 0] += synth_texture((S, S), amp, np.random.default_rng(7))[..., 0]
+    shade_f = np.ones((S, S), np.float32); shade_f[oy:oy + H, ox:ox + W] = shade_r
+    del shade_r
     canvas = np.empty((S, S, 3), np.float32)
     for y in range(0, S, step):
-        canvas[y:y + step] = np.clip(cv2.cvtColor(canvas_lab[y:y + step], cv2.COLOR_LAB2RGB), 0, 1) * 255.
-    del canvas_lab
-    fw = 32
-    ramp = np.ones((H, W), np.float32)
-    r = np.linspace(0, 1, fw, dtype=np.float32)
-    ramp[:fw] *= r[:, None]; ramp[-fw:] *= r[::-1][:, None]
-    ramp[:, :fw] *= r[None]; ramp[:, -fw:] *= r[::-1][None]
-    ramp = np.maximum(ramp, (alpha > 0.02).astype(np.float32))
-    sub = canvas[oy:oy + H, ox:ox + W]
-    canvas[oy:oy + H, ox:ox + W] = Rr * ramp[..., None] + sub * (1 - ramp[..., None])
-    del sub, ramp, Rr
+        lin = srgb_to_lin(np.clip(cv2.cvtColor(canvas_lab[y:y + step], cv2.COLOR_LAB2RGB), 0, 1)) * shade_f[y:y + step, :, None]
+        canvas[y:y + step] = one_paper(lin_to_srgb(lin) * 255., sw_ok)
+    del canvas_lab, shade_f
+
+    # ---- the device on top, edge pixels freed of the old backdrop color ----
+    Bold = cv2.resize(Rb, (W, H), interpolation=cv2.INTER_LINEAR) * 255.
+    for y in range(0, H, step):
+        al = alpha[y:y + step, :, None]
+        C = R[y:y + step].astype(np.float32)
+        F = np.where(al > 0.98, C, np.clip((C - (1 - al) * Bold[y:y + step]) / np.maximum(al, 0.02), 0, 255))
+        sub = canvas[oy + y:oy + y + al.shape[0], ox:ox + W]
+        canvas[oy + y:oy + y + al.shape[0], ox:ox + W] = F * al + sub * (1 - al)
+    del Bold
     A = np.zeros((S, S), np.float32); A[oy:oy + H, ox:ox + W] = alpha
 
-    # ---- one paper: backdrop hue and chroma come only from the swatch ----
-    sw_ok = oklab(srgb_to_lin(np.array([int(a.hex.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)], np.float32) / 255.))
-    # keep a few pixels around the device as they are, so soft mask edges carrying device light do not turn into a bright rim
-    P = np.zeros((S, S), np.float32)
-    P[oy:oy + H, ox:ox + W] = cv2.GaussianBlur(cv2.dilate((alpha > 0.05).astype(np.uint8), np.ones((9, 9))).astype(np.float32), (0, 0), 2.5)
-    P = np.maximum(P, A)
-    for y in range(0, S, step):
-        al = P[y:y + step, :, None]
-        canvas[y:y + step] = one_paper(canvas[y:y + step], sw_ok) * (1 - al) + canvas[y:y + step] * al
-    del P
-
-    # ---- check: glow vs swatch, corners vs the template ----
+    # ---- check: glow vs swatch, corners, hue spread ----
     m = S // LOW
     cs = cv2.resize(canvas, (m, m), interpolation=cv2.INTER_AREA) / 255.
     As_c = cv2.resize(A, (m, m), interpolation=cv2.INTER_AREA)
     gy, gx = np.mgrid[0:m, 0:m] / m
+    ecx, ecy, erx, ery = ELLIPSE
     ellc = ((gx - ecx) / erx) ** 2 + ((gy - ecy) / ery) ** 2 <= 1
-    real = np.zeros((m, m), bool); real[oy // LOW + 4:(oy + H) // LOW - 4, ox // LOW + 4:(ox + W) // LOW - 4] = True
-    bgm = ellc & real & (cv2.dilate((As_c > 0.02).astype(np.uint8), np.ones((15, 15))) == 0)
+    bgall = cv2.dilate((As_c > 0.02).astype(np.uint8), np.ones((15, 15))) == 0
     lab_c = cv2.cvtColor(cs.astype(np.float32), cv2.COLOR_RGB2LAB)
-    g2 = np.median(lab_c[bgm], axis=0)
-    rep['glow_after_rgb'] = np.median(cs[bgm] * 255, axis=0).round(1).tolist()
+    g2 = np.median(lab_c[ellc & bgall], axis=0)
+    rep['glow_after_rgb'] = np.median(cs[ellc & bgall] * 255, axis=0).round(1).tolist()
     rep['deltaE_glow_vs_swatch'] = round(float(np.linalg.norm(g2 - t)), 2)
-    def ok_hue(rgb):
-        lab = oklab(srgb_to_lin(rgb))
-        return np.degrees(np.arctan2(lab[..., 2], lab[..., 1]))
-    bgall = cv2.dilate((As_c > 0.02).astype(np.uint8), np.ones((7, 7))) == 0
-    hb = ok_hue(cs.astype(np.float32))[bgall]
+    okc = oklab(srgb_to_lin(cs.astype(np.float32)))
+    hb = np.degrees(np.arctan2(okc[..., 2], okc[..., 1]))[bgall]
     rep['backdrop_hue_spread_deg'] = round(float(np.percentile(hb, 95) - np.percentile(hb, 5)), 2)
     c = m // 16
     rep['corner_L_minus_glow'] = [round(float(np.median(lab_c[sl][..., 0]) - g2[0]), 1) for sl in
                                   ((slice(0, c), slice(0, c)), (slice(0, c), slice(m - c, m)), (slice(m - c, m), slice(0, c)), (slice(m - c, m), slice(m - c, m)))]
 
-    Image.fromarray(np.round(canvas).astype(np.uint8)).save(a.out, quality=a.quality, subsampling=0, optimize=True, dpi=(72, 72))
+    Image.fromarray(np.round(np.clip(canvas, 0, 255)).astype(np.uint8)).save(a.out, quality=a.quality, subsampling=0, optimize=True, dpi=(72, 72))
     rep['out_bytes'] = os.path.getsize(a.out)
     np.save(os.path.splitext(a.out)[0] + '_alpha_small.npy', cv2.resize(A, (S // 4, S // 4), interpolation=cv2.INTER_AREA))
     if a.report:
