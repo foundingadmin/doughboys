@@ -29,8 +29,10 @@ Read this file, then `the-first-batch/tracks.json` (the state of all nine tracks
 | Track state | `the-first-batch/tracks.json`. Update it and commit whenever a track moves forward |
 | Approved 4K prompts | `the-first-batch/prompts/4k/` |
 | Explore prompt blocks | `the-first-batch/prompts/explore/series-lock.md` |
+| Art direction (the brief) | `the-first-batch/docs/art-direction.md`. Josh's master brief, the same file he keeps for the creative brief. Keep it current, see below |
 | Lessons learned | `the-first-batch/docs/lessons.md`. Add to it when something fails or surprises you |
 | Figma wiring recipe | `the-first-batch/docs/figma.md` |
+| Review images | `the-first-batch/review/NN-track/`. Check crops and Figma board screenshots Josh looks at |
 
 ## Session start · smoke test
 
@@ -57,6 +59,21 @@ Josh will usually open with a track and a step, like "Traycee, run the tight cro
 7. **Finish.** `python3 pipeline/finish.py R.png "#HEX" the-first-batch/assets/photos/NN-track/NN-track-final-v1.jpg` with the track's `ground_hex`. It takes a few minutes on CPU. It places the render untouched at 1:1 on a 6704 canvas, extends the backdrop, isolates the device, recolors the backdrop so the glow lands on the swatch, and exports a JPG of about 12 MB. It prints a JSON report: `deltaE_glow_vs_swatch` under 3 is a match, and `device_touches_edge` true means the crop cut into the device, so go back to step 4. Run `python3 pipeline/check.py MASTER.jpg --ox X --oy Y --w W --h H --name work/NN` using the report's `offset` and `render` size, and look at the seam crops.
 8. **Place in Figma.** Follow `docs/figma.md`. Upload the master, fill the Photo layer on the track's Cover, Post and Canvas instances (`pipeline/framing.py` gives the Post and Canvas crop), turn off Show placeholder, then screenshot the three boards and look at them.
 9. **Commit and hand off.** Commit the master, the prompt and the tracks.json update, push, and tell Josh it is ready. Exports are preset on every board in Figma (cover JPG 3000 square, post 1080 × 1350, Canvas 1080 × 1920). Josh exports them and drops the master and exports into the track's Masters and Exports folders on Drive, unless a Drive upload path is available in your session.
+
+## Keeping the docs current
+
+Three files carry state between sessions. A step is not done until all three agree with what happened. Update them in the same commit as the work.
+
+1. **`tracks.json`** · machine state. `status`, `next`, hashes, transforms, file paths.
+2. **`docs/art-direction.md`** · Josh's brief, read by people. Update when a track moves forward or a rule changes:
+   - **Track list** line for that track: where it stands and the date.
+   - **4K queue**: add a track when its source and prompt are approved, change its heading when a run happens, remove it once the master is placed in Figma.
+   - **Workflow**, **Series lock** or **Locked decisions** only when Josh sets or changes a rule. Quote his call and date it.
+   - Bump the `Updated` date on line 3.
+   - Keep his voice. Same terse style as the rest of the file, no em or en dashes, dates written like Oct 29 2026.
+3. **`docs/lessons.md`** · add a dated line whenever a tool, model or step fails or surprises you. If the lesson changes how prompts are written, also fold it into `prompts/explore/series-lock.md` or the brief.
+
+Before ending a session, run `git status` and `git diff --stat` and confirm all three moved if the work moved. Josh may upload a newer art-direction.md at the start of a session: diff it against the repo copy. His edits win. Keep any session updates his copy does not contradict, commit the merge, and hand him the merged file.
 
 ## Fallbacks
 

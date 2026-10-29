@@ -28,5 +28,6 @@ After that, talk to it per track: "Spice, run the 4K", "Determinator, explore a 
 | `the-first-batch/prompts/` | Approved 4K prompts and the explore series lock |
 | `the-first-batch/assets/` | Approved sources, renders, masters, textures, brand |
 | `the-first-batch/docs/` | Art direction, Figma recipe, lessons |
+| `the-first-batch/review/` | Check crops and Figma board screenshots for Josh |
 
 Design lives in Figma: https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee

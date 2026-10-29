@@ -1,6 +1,6 @@
 # The First Batch · Art Direction
 
-Release artwork for The First Batch by Chillsbury Doughboys. Updated Oct 29 2026.
+Release artwork for The First Batch by Chillsbury Doughboys. Updated Oct 29 2026. Living doc: Claude Code updates it in the repo as tracks move (CLAUDE.md, Keeping the docs current).
 
 - [Creative brief](https://claude.ai/code/artifact/e34a1d07-501a-4033-ba3d-b4bcc4d3668e)
 - [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Kit (variables and components), Brand Guide and Album Art (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Page 1 keeps every generated test at full size
@@ -63,17 +63,19 @@ Keep this exact photograph. Same camera position, framing, lighting, virtual pet
 No people, no hands, no logos.
 ```
 
-### Traycee · 81:2 · first 4K run Oct 28 2026 · tight crop re-run next
-- **Source image** · Josh's first AI Studio 4K render of [Figma node 81:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=81-2), cropped tight to 16:9 in Photoshop with a thin strip of mint on every side and the floor shadows kept. Josh moved Traycee from K4 (node 85:2) to 81:2 on Oct 28 2026. The square run left the computer at about 87 percent of a 4096 square, so the re-run spends the 4K output on the device instead of backdrop
-- **Run** · aspect ratio 16:9, 4K. Expect about 5504 × 3072
-- **Prompt**
+### Traycee · 81:2 · tight crop 4K re-run Oct 29 2026 · waiting on Josh's yes
+- **Source image** · [Figma node 81:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=81-2), 1024 square, cropped tight by gen.py crop to 3:2 (906 × 604) with a thin strip of mint on every side and the floor shadows kept. The device box is about 1.59 wide, so 3:2 beat 16:9. Josh moved Traycee from K4 (node 85:2) to 81:2 on Oct 28 2026
+- **Runs** · Oct 29 2026 through the Gemini API, 3:2, 4K, 5056 × 3392. Render A used the first prompt and came back with garbled CD player buttons, fake taskbar text and a hole through the dough. Render B used the sharper prompt below and passed every named fix. B is the pick to finish. Both are in the repo with check crops in the-first-batch/review/05-traycee
+- **Prompt** · render B
 
 ```
 Keep this exact photograph. Same camera position, lighting, tower, monitor, speakers, dough and backdrop, and keep this tight framing exactly as it is. Do not zoom out, add backdrop, move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1996 mail order catalog, with fine film grain and crisp, true detail in every surface: the dough's stretch lines and folds, the drive bay edges, the speaker cloth and the monitor's plastic. Make only these fixes:
 
-1. CD player window: remove the small icon at the right end of the title bar so the title bar is plain grey. The display still reads 05 and 00:00 in green digits, with the transport buttons below it.
+1. CD player window: remove the small icon at the right end of the title bar so the title bar is plain grey. The display still reads 05 and 00:00 in green digits. Below it, a row of small grey transport buttons, each with one clean black symbol: play triangle, pause bars, stop square, eject triangle over a bar. No other marks, scratches or dotted lines on the window.
 2. Screen: remove the faint mark in the top left corner so the teal desktop is clean edge to edge.
-3. Frame edges: every edge keeps a thin strip of seamless mint backdrop, with the floor and the soft contact shadows under the dough, tower, monitor and speakers. Nothing touches or crosses the edge of the frame.
+3. Taskbar: the thin grey bar along the bottom of the screen is plain grey with no words, no letters and no numbers anywhere on it. The start button at the left is a plain raised grey key with no label. No clock text at the right.
+4. Dough: the column falling from the tray to the mound is one solid mass with no hole or tunnel through it. Keep its shape, folds and stretch lines exactly as they are.
+5. Frame edges: every edge keeps a thin strip of seamless mint backdrop, with the floor and the soft contact shadows under the dough, tower, monitor and speakers. Nothing touches or crosses the edge of the frame.
 
 No people, no hands, no logos, no readable text other than the CD player display.
 ```
@@ -127,11 +129,11 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 - **Rollout** · Spotify first, then Instagram, then other platforms once the distributor is chosen
 
 ## Track list · best match colors as of Oct 19 2026
-1. Deluge · Silver dual deck boombox · Bondi #65B8E5 · Deluge v1 final (drips retouched, square expand, color corrected to Bondi). In the repo and Drive Masters, Figma placement is Claude Code's first job
+1. Deluge · Silver dual deck boombox · Bondi #65B8E5 · Deluge v1 final (drips retouched, square expand, color corrected to Bondi). In the repo and Drive Masters. Placed in Figma on Cover, Post and Canvas Oct 29 2026, exports next
 2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Queued for 4K
 3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. Queued for 4K
 4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. Queued for 4K
-5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026, tight 16:9 crop re-run next
+5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026, render B passed the check and waits on Josh's yes before finish
 6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in)
 7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65
 8. Mancub · Classic grey handheld game console, no logos · Lime #82A967
