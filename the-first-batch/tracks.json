@@ -268,7 +268,44 @@
      "recommended": true
     }
    ],
-   "review": "the-first-batch/review/05-traycee/"
+   "review": "the-first-batch/review/05-traycee/",
+   "finish_preview": {
+    "date": "2026-10-29",
+    "render": "B",
+    "offset": [
+     824,
+     1656
+    ],
+    "deltaE_glow_vs_swatch": 1.69,
+    "device_touches_edge": false,
+    "L_gamma": 1.7449,
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1006
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2193
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "review": "the-first-batch/review/05-traycee/finish-preview-b-full.jpg",
+    "note": "Glow matches Mint but the corners and the extended floor go much deeper than Deluge, with dark streaks below and left of the render. Render glow sat at L 86 against a swatch at L 78, and the lightness gamma of 1.74 crushes the falloff. Not committed as a master. Fix finish.py before the real run"
+   }
   },
   {
    "n": "06",

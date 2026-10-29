@@ -16,6 +16,7 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Measure the glow only on real render pixels inside Josh's check ellipse, never on the generated extension.
 - Calibration on Deluge: backdrop color inside the render lands within deltaE 2.2 of Josh's hand made v1.
 - finish.py crashed on `"#73D2AB"` because it parsed the hex without stripping the `#`, though CLAUDE.md passes it that way. Fixed to accept both (Oct 29 2026).
+- A render whose glow is much lighter than the swatch finishes too dark. Traycee B glowed at L 86 against Mint at L 78, finish.py fit a lightness gamma of 1.74, and the corners and extended floor went deep green with dark streaks while the glow still measured deltaE 1.69. deltaE alone does not pass a finish. Look at the full frame next to Deluge (Oct 29 2026).
 
 ## Crop and 4K
 
