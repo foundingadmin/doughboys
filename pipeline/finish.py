@@ -111,6 +111,7 @@ def synth_texture(shape, amp, rng):
 
 
 def hex_lab(hexs):
+    hexs = hexs.lstrip("#")
     rgb = np.array([[[int(hexs[i:i + 2], 16) for i in (0, 2, 4)]]], np.float32) / 255.
     return cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB)[0, 0]
 

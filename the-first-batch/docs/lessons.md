@@ -15,6 +15,7 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Scaling chroma blew the gamut in the corners. Josh's correction behaves like a colorize: keep lightness shape, pull chroma to the target almost flat, shift hue. That is what the recolor does now.
 - Measure the glow only on real render pixels inside Josh's check ellipse, never on the generated extension.
 - Calibration on Deluge: backdrop color inside the render lands within deltaE 2.2 of Josh's hand made v1.
+- finish.py crashed on `"#73D2AB"` because it parsed the hex without stripping the `#`, though CLAUDE.md passes it that way. Fixed to accept both (Oct 29 2026).
 
 ## Crop and 4K
 
