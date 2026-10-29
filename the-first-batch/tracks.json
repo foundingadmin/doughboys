@@ -63,9 +63,25 @@
       0
      ]
     ],
-    "transforms_note": "From framing.py on the automated Deluge finish, which shares v1 geometry. Upload v1 to get photo_hash",
-    "photo_note": "Uploaded Oct 29 2026 as a 4096 square JPG q95 downscale of v1 (Figma caps uploads at 10 MB and stores images at 4096 max). Cover FILL, Post and Canvas CROP with the transforms in this block",
-    "review": "the-first-batch/review/01-deluge/figma-boards-v1.png"
+    "photo_note": "Uploaded Oct 29 2026 as a 4096 square JPG q95 downscale of v1. Since Oct 29 2026 it sits as a free image layer in each board's Photo slot, square at its natural aspect, offset by x. Josh may have moved it since, read the layer before replacing",
+    "review": "the-first-batch/review/01-deluge/figma-boards-v1.png",
+    "photo_slot": {
+     "cover": {
+      "layer": "133:1030",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "133:1033",
+      "x": -91.08,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "133:1036",
+      "x": -211.1,
+      "size": 960
+     }
+    }
    },
    "drive": {
     "track_folder": "1fayUmYVWNWhBiyV_iJUnn2u36pZ8mWRP",
@@ -437,5 +453,11 @@
    }
   }
  ],
- "figma_review_page": "128:77"
+ "figma_review_page": "128:77",
+ "figma_photo_slot": {
+  "property": "Photo#133:0",
+  "cover": "133:169",
+  "post": "133:170",
+  "canvas": "133:171"
+ }
 }

@@ -53,4 +53,5 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Josh reviews in Figma, not on GitHub or in chat. Every review gets a board on the Review page (Oct 29 2026).
 - `upload_assets` with `nodeIds` drops each image straight into an existing rectangle, so build the board first and upload into its slots. 16 images in parallel took a few seconds (Oct 29 2026).
 - Josh renamed Kit to Toolkits and Page 1 to Archive, and added a `---` divider page (seen Oct 29 2026).
+- A plain image fill on a component layer can be swapped on an instance but never moved or scaled. Josh needed to reposition the Deluge boombox, so Photo became a slot on Oct 29 2026. Slot content on an instance is free to move, scale and swap.
 - `upload_assets` without a target node drops a new frame on the page. Delete it in the same `use_figma` call that fills the boards (Oct 29 2026).
