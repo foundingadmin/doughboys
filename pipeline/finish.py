@@ -11,7 +11,7 @@
      the render's own backdrop
   5. export a max quality 4:4:4 JPG, about 12 to 19 MB at 6704 square
 
-usage: python3 pipeline/finish.py RENDER HEX OUT.jpg [--canvas 6704] [--report report.json] [--quality 97]
+usage: python3 pipeline/finish.py RENDER HEX OUT.jpg [--falloff 1.0] [--canvas 6704] [--report report.json] [--quality 97]
   always prints the report as JSON. Also writes OUT_alpha_small.npy (device mask) for pipeline/framing.py
 """
 import argparse, json, os
@@ -117,8 +117,9 @@ def main():
     ap.add_argument('--canvas', type=int, default=6704)
     ap.add_argument('--report')
     ap.add_argument('--quality', type=int, default=97)
+    ap.add_argument('--falloff', type=float, default=1.0, help='depth of the template falloff, 1.0 = Deluge v1, lower = lighter corners')
     a = ap.parse_args()
-    rep = {}
+    rep = {'falloff': a.falloff}
     R = np.array(Image.open(a.render).convert('RGB'))
     H, W = R.shape[:2]
     S = max(a.canvas, W, H)
@@ -175,7 +176,7 @@ def main():
     Rb = np.where(known[..., None] > 0, Rs, push_pull(Rs, known))      # backdrop only, device filled
     Rb = cv2.GaussianBlur(Rb, (0, 0), 1.5)
     tp = np.load(TEMPLATE)
-    TL = Lt + cv2.resize(tp['dL'], (n, n), interpolation=cv2.INTER_CUBIC)
+    TL = Lt + a.falloff * cv2.resize(tp['dL'], (n, n), interpolation=cv2.INTER_CUBIC)
     Th = ht + cv2.resize(tp['dh'], (n, n), interpolation=cv2.INTER_CUBIC)
     T = np.stack([TL, Ct * np.cos(Th), Ct * np.sin(Th)], -1).astype(np.float32)
     rep['template'] = str(tp['source'])
