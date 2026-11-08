@@ -40,14 +40,14 @@ const text = (s, family, style, size, v, width) => {
   if (width) { t.textAutoResize = "HEIGHT"; t.resize(width, t.height); }
   return t;
 };
-// New boards stack below the existing ones, newest at the bottom
-let maxY = 0;
-for (const c of page.children) maxY = Math.max(maxY, c.y + c.height);
+// Boards run left to right in one row, top aligned, newest at the right (Josh, Nov 8 2026)
+let maxX = 0;
+for (const c of page.children) maxX = Math.max(maxX, c.x + c.width);
 
 const COL = 1600, GAP = 48;
 const board = figma.createAutoLayout("VERTICAL", { name: BOARD.name, itemSpacing: 96, paddingLeft: 96, paddingRight: 96, paddingTop: 96, paddingBottom: 96 });
 board.fills = [paint(vPage)];
-board.x = 0; board.y = maxY ? maxY + 400 : 0;
+board.x = maxX ? maxX + 400 : 0; board.y = 0;
 const head = figma.createAutoLayout("VERTICAL", { name: "Header", itemSpacing: 16 });
 board.appendChild(head);
 head.appendChild(text(BOARD.title, "Anton", "Regular", 120, vInk));

@@ -73,3 +73,4 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - "Keep this exact photograph" anchors screen content. Suavecita's LCD icons survived six runs, including "redraw the LCD from scratch and replace every icon". Fix screen content in the source before the 4K run, or in Photoshop after (Nov 8 2026).
 - `cover.py` loads tracks.json at the start of a step and saves it at the end, so two steps in parallel lose one update. Chain cover.py steps, and run parallel explores through `gen.py explore` directly, then record state (Nov 8 2026).
 - Explore wording: "rope" made Mancub's spill a snake, "stacked mound" made Show Me Your Love's mound coil like soft serve. Both fixed in one round, rules folded into series-lock.md (Nov 8 2026).
+- Josh wants Review boards in one row left to right, newest at the right, not stacked in a column. Moved all thirteen and changed `figma_review_board.js` to place new boards after the rightmost one (Nov 8 2026).
