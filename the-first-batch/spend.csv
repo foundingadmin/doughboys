@@ -1,0 +1,13 @@
+time,model,size,what,est_usd,josh_approval
+2026-11-08 13:00,gemini-3-pro-image-preview,1K,"backfill: 60 explore frames (Determinator, Boombap, Mancub, Show Me Your Love), 60 x 0.134",8.040,""
+2026-11-08 13:00,gemini-3-pro-image-preview,4K,"backfill: 18 4K runs (Spice 2, Bopkins 10, Suavecita 6), 18 x 0.24",4.320,"approved before Nov 8 2026 (Spice, Bopkins, Suavecita prompts in the 4K queue)"
+2026-11-08 14:20,gemini-3.1-flash-image-preview,1K,"backfill: 1 Suavecita explore frame before the 402",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3a.md 1",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3b.md 1",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3c.md 1",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3a.md 2",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3b.md 2",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3c.md 2",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3b.md 3",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3c.md 3",0.067,""
+2026-11-08 22:40,gemini-3.1-flash-image-preview,1K,"explore the-first-batch/prompts/explore/04-suavecita-round-3a.md 1",0.067,""

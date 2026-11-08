@@ -475,8 +475,8 @@
    "device": "Virtual pet in a clear pink shell",
    "subhead": "Virtual Pet With Built In Clock",
    "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
-   "status": "exploring, round 3 blocked on Gemini credits",
-   "next": "Top up Gemini prepaid credits, then gen.py explore for prompts/explore/04-suavecita-round-3a, 3b, 3c (3 frames each, 1K, gemini-3.1-flash-image-preview). Only round-3a/01 came back before the 402. Low res only, no 4K until Josh picks",
+   "status": "exploring, round 3 ready for Josh",
+   "next": "Josh picks on board 177:12 (Claude recommends 3c-3, runner up 3b-3). Then point Josh to the pick in Figma and get his written yes before any 4K run, reusing device_4k_recipe",
    "source": {
     "figma_node": "73:2",
     "pick": "I4",
@@ -624,6 +624,12 @@
      "date": "2026-11-08",
      "what": "4K renders A to F, screen crops for every run, chain, lip and buttons on F",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-137"
+    },
+    {
+     "node": "177:12",
+     "date": "2026-11-08",
+     "what": "Explore round 3 on Flash: 3a ball, 3b disc, 3c tucked",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=177-12"
     }
    ],
    "device_4k_recipe": "Josh liked the 4K virtual pet device (Nov 8 2026). Reuse on the new pick: lock the source, tight crop, prompts/4k/04-suavecita.md (shell, buttons, chain wording). Fix the screen icons in the source before the 4K run, the edit will not redraw them",
@@ -632,19 +638,25 @@
      "round": "3a",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/04-suavecita-round-3a.md",
-     "frames": "work/04-suavecita/round-3a"
+     "frames": "work/04-suavecita/round-3a",
+     "model": "gemini-3.1-flash-image-preview",
+     "contact_sheet": "the-first-batch/explore/04-suavecita/round-3a/contact-sheet.jpg"
     },
     {
      "round": "3b",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/04-suavecita-round-3b.md",
-     "frames": "work/04-suavecita/round-3b"
+     "frames": "work/04-suavecita/round-3b",
+     "model": "gemini-3.1-flash-image-preview",
+     "contact_sheet": "the-first-batch/explore/04-suavecita/round-3b/contact-sheet.jpg"
     },
     {
      "round": "3c",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/04-suavecita-round-3c.md",
-     "frames": "work/04-suavecita/round-3c"
+     "frames": "work/04-suavecita/round-3c",
+     "model": "gemini-3.1-flash-image-preview",
+     "contact_sheet": "the-first-batch/explore/04-suavecita/round-3c/contact-sheet.jpg"
     }
    ]
   },
@@ -869,13 +881,15 @@
      "round": "2a",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/06-determinator-round-2a.md",
-     "frames": "work/06-determinator/round-2a"
+     "frames": "work/06-determinator/round-2a",
+     "contact_sheet": "the-first-batch/explore/06-determinator/round-2a/contact-sheet.jpg"
     },
     {
      "round": "2b",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/06-determinator-round-2b.md",
-     "frames": "work/06-determinator/round-2b"
+     "frames": "work/06-determinator/round-2b",
+     "contact_sheet": "the-first-batch/explore/06-determinator/round-2b/contact-sheet.jpg"
     }
    ],
    "review_boards": [
@@ -936,13 +950,15 @@
      "round": "2a",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/07-boombap-round-2a.md",
-     "frames": "work/07-boombap/round-2a"
+     "frames": "work/07-boombap/round-2a",
+     "contact_sheet": "the-first-batch/explore/07-boombap/round-2a/contact-sheet.jpg"
     },
     {
      "round": "2b",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/07-boombap-round-2b.md",
-     "frames": "work/07-boombap/round-2b"
+     "frames": "work/07-boombap/round-2b",
+     "contact_sheet": "the-first-batch/explore/07-boombap/round-2b/contact-sheet.jpg"
     }
    ],
    "review_boards": [
@@ -1010,7 +1026,8 @@
      "round": "3",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/08-mancub-round-3.md",
-     "frames": "work/08-mancub/round-3"
+     "frames": "work/08-mancub/round-3",
+     "contact_sheet": "the-first-batch/explore/08-mancub/round-3/contact-sheet.jpg"
     }
    ],
    "review_boards": [
@@ -1078,7 +1095,8 @@
      "round": "3",
      "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-3.md",
-     "frames": "work/09-show-me-your-love/round-3"
+     "frames": "work/09-show-me-your-love/round-3",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-3/contact-sheet.jpg"
     }
    ],
    "review_boards": [
@@ -1115,5 +1133,7 @@
   "horizon": 0.16,
   "set": "2026-11-08",
   "by": "Josh on Traycee, cyc horizon board 147:77"
- }
+ },
+ "spend_log": "the-first-batch/spend.csv",
+ "four_k_gate": "No 4K run without Josh's fresh written yes in the session, given after Claude links him to the explore frame in Figma, even if approved before (Josh, Nov 8 2026). cover.py render and gen.py render4k require --approved"
 }

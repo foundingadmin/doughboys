@@ -7,7 +7,7 @@ description: Build or continue a track cover for The First Batch, from low res e
 
 The per track playbook. CLAUDE.md is the manual and wins on conflict. Josh's voice rules apply to every message: date and Denver time first, no em or en dashes, terse, lead with the answer.
 
-Every step has one command in `pipeline/cover.py`. It writes files where the repo keeps them and records state in `the-first-batch/tracks.json`, so a later session resumes from `status` and `next`. **Josh approves at four gates. Never pass a gate without his yes in this conversation.**
+Every step has one command in `pipeline/cover.py`. It writes files where the repo keeps them and records state in `the-first-batch/tracks.json`, so a later session resumes from `status` and `next`. **Josh approves at four gates. Never pass a gate without his yes in this conversation.** Before every 4K run, first or re-run, point him to the explore frame on its Figma board and get a fresh written yes, even if it was approved in an earlier session (Josh, Nov 8 2026). It goes into `--approved`.
 
 ## 0 · Find the track
 
@@ -28,7 +28,7 @@ Every step has one command in `pipeline/cover.py`. It writes files where the rep
 
 1. `python3 pipeline/cover.py prompt NN --round R` drafts `the-first-batch/prompts/explore/NN-track-round-R.md` from the series lock, with the track's device, silhouette and ground filled in.
 2. Replace every bracket with plain prose: name the device part by part, give real proportions, and describe this track's own dough silhouette. Follow `prompts/explore/series-lock.md` rules word for word. Never name a softbox, never ask for pink or gluten strands.
-3. `python3 pipeline/cover.py explore NN --round R` makes 6 frames at 1K and the contact sheet.
+3. `python3 pipeline/cover.py explore NN --round R --n 3` makes 3 frames at 1K on Nano Banana 2 Flash and the contact sheet. One direction per run, only the rounds Josh asks for.
 4. Look at every frame. Build a Figma Review board: frames numbered 1 to 6, a line under each on what works and what is off (device real, silhouette right, dough firm, nothing cropped, no softbox in the corner, no text). Recipe in `docs/figma.md`, Review boards.
 5. Commit and push. Give Josh the board link. **Gate 1: Josh picks a frame** (or asks for another round with notes; fold his notes into round R+1).
 
@@ -42,7 +42,7 @@ Write `the-first-batch/prompts/4k/NN-track.md`. Open with "Keep this exact photo
 
 ## 4 · Crop and render 4K (automated)
 
-`python3 pipeline/cover.py render NN --runs 2` crops tight to the device at the closest aspect, runs Gemini 3 Pro Image at 4K twice from the same prompt, saves both renders as `NN-track-4k-render-<aspect>-a.jpg` and `-b.jpg`, and cuts a 3 by 2 grid of native check crops per render into `work/NN-track/check`.
+Gate first: link Josh to the explore frame in Figma and get his written yes in this conversation. Then `python3 pipeline/cover.py render NN --approved "<his words>"` crops tight to the device at the closest aspect, runs Gemini 3 Pro Image at 4K once, saves the render as `NN-track-4k-render-<aspect>-<letter>.jpg`, and cuts a 3 by 2 grid of native check crops per render into `work/NN-track/check`.
 
 If the track's `source.note` says the repo copy is a compressed preview, pull the full original from its Figma node first (Archive page, `get_screenshot` of that node at its native size, or the image fill's download), save it over the source and pass it with `--source`.
 
@@ -50,7 +50,7 @@ Read the crop first: nothing cut off, floor shadows kept. If the crop step cut i
 
 ## 5 · Check
 
-Look at each render at full size and in crops: every label and button, dough edges and holes, frame edges, top left corner for a softbox, any screen or UI for fake text. Add targeted native crops for anything the grid splits. Build a Review board: full renders side by side, matched crops as pairs, a pass or fail note under each, the passing one marked. If something fails, sharpen the 4K prompt and run again: two sharper re-runs at most, then bring the best with the flaw named. **Gate 3: Josh picks the render.**
+Look at each render at full size and in crops: every label and button, dough edges and holes, frame edges, top left corner for a softbox, any screen or UI for fake text. Add targeted native crops for anything the grid splits. Build a Review board: full renders side by side, matched crops as pairs, a pass or fail note under each, the passing one marked. If something fails, sharpen the 4K prompt and ask Josh before running again: two sharper re-runs at most, then bring the best with the flaw named. For small print, feed the best render back in with a prompt that changes only the printing (Bopkins G, Nov 8 2026). **Gate 3: Josh picks the render.**
 
 ## 6 · Finish
 
@@ -74,4 +74,4 @@ Update the brief (Track list line, remove the track from the 4K queue, Updated d
 
 ## Keep moving
 
-When Josh says "build the covers" or "keep going", run tracks in album order and batch the waiting: start explore for the next track while he reviews the current one, and put each gate on its own board so he can answer them in any order. Never spend Weave credits without asking.
+When Josh says "build the covers" or "keep going", run tracks in album order and batch the waiting: start explore for the next track while he reviews the current one, and put each gate on its own board so he can answer them in any order. Never spend Weave credits without asking, and never run a 4K without the fresh written yes. Check `the-first-batch/spend.csv` before a big batch.
