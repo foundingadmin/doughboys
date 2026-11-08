@@ -1,6 +1,6 @@
 # The First Batch · Art Direction
 
-Release artwork for The First Batch by Chillsbury Doughboys. Updated Oct 29 2026. Living doc: Claude Code updates it in the repo as tracks move (CLAUDE.md, Keeping the docs current).
+Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 8 2026. Living doc: Claude Code updates it in the repo as tracks move (CLAUDE.md, Keeping the docs current).
 
 - [Creative brief](https://claude.ai/code/artifact/e34a1d07-501a-4033-ba3d-b4bcc4d3668e)
 - [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Toolkits (variables and components), Brand Guide, Album Art and Review (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Archive (was Page 1) keeps every generated test at full size
@@ -9,7 +9,7 @@ Release artwork for The First Batch by Chillsbury Doughboys. Updated Oct 29 2026
 - [Design canvas](https://claude.ai/artifact/AKevZru2Tw5MbhUfXc8KkH) · retired Oct 29 2026, kept for reference
 
 ## 4K queue · approved frames waiting for their 4K run
-Claude Code runs these from the repo (prompts/4k) through the Gemini API: tight crop, 4K edit, check, finish. Manual route if needed: crop tight, then Google AI Studio, Gemini 3 Pro Image (Nano Banana Pro), resolution 4K, aspect ratio matched to the crop, prompt pasted as an edit in the same chat.
+Claude Code runs these from the repo (prompts/4k) through the Gemini API: tight crop, 4K edit, check, finish. Say "build a track cover" and it follows `.claude/skills/build-track-cover`, stopping at four gates for Josh: the explore pick, the 4K prompt, the render pick and the finished master. Manual route if needed: crop tight, then Google AI Studio, Gemini 3 Pro Image (Nano Banana Pro), resolution 4K, aspect ratio matched to the crop, prompt pasted as an edit in the same chat.
 
 ### Spice · F2 · approved Oct 19 2026
 - **Source image** · [Figma node 53:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=53-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 02 Spice · E4 set"
@@ -64,23 +64,6 @@ Keep this exact photograph. Same camera position, framing, lighting, virtual pet
 No people, no hands, no logos.
 ```
 
-### Traycee · 81:2 · render B picked and finished Oct 29 2026 · waiting on Josh's yes to place
-- **Source image** · [Figma node 81:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=81-2), 1024 square, cropped tight by gen.py crop to 3:2 (906 × 604) with a thin strip of mint on every side and the floor shadows kept. The device box is about 1.59 wide, so 3:2 beat 16:9. Josh moved Traycee from K4 (node 85:2) to 81:2 on Oct 28 2026
-- **Runs** · Oct 29 2026 through the Gemini API, 3:2, 4K, 5056 × 3392. Render A used the first prompt and came back with garbled CD player buttons, fake taskbar text and a hole through the dough. Render B used the sharper prompt below and passed every named fix. B is the pick to finish. Side by side on the [Figma Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=128-78) Both are in the repo with check crops in the-first-batch/review/05-traycee
-- **Prompt** · render B
-
-```
-Keep this exact photograph. Same camera position, lighting, tower, monitor, speakers, dough and backdrop, and keep this tight framing exactly as it is. Do not zoom out, add backdrop, move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1996 mail order catalog, with fine film grain and crisp, true detail in every surface: the dough's stretch lines and folds, the drive bay edges, the speaker cloth and the monitor's plastic. Make only these fixes:
-
-1. CD player window: remove the small icon at the right end of the title bar so the title bar is plain grey. The display still reads 05 and 00:00 in green digits. Below it, a row of small grey transport buttons, each with one clean black symbol: play triangle, pause bars, stop square, eject triangle over a bar. No other marks, scratches or dotted lines on the window.
-2. Screen: remove the faint mark in the top left corner so the teal desktop is clean edge to edge.
-3. Taskbar: the thin grey bar along the bottom of the screen is plain grey with no words, no letters and no numbers anywhere on it. The start button at the left is a plain raised grey key with no label. No clock text at the right.
-4. Dough: the column falling from the tray to the mound is one solid mass with no hole or tunnel through it. Keep its shape, folds and stretch lines exactly as they are.
-5. Frame edges: every edge keeps a thin strip of seamless mint backdrop, with the floor and the soft contact shadows under the dough, tower, monitor and speakers. Nothing touches or crosses the edge of the frame.
-
-No people, no hands, no logos, no readable text other than the CD player display.
-```
-
 ## Concept
 The dough is the media. The only way to play a Doughboys record is to stuff a wad of raw dough into your boombox where the cassette goes. Shot like a 1990 catalog page. Real ink, real paper, scanned for the archive. Nostalgia, youthful joy, fun, curiosity. Flat, dry, ironic humor.
 
@@ -92,7 +75,7 @@ From Oct 29 2026 Claude Code runs every step below from the doughboys repo with 
 3. **Crop tight · set by Josh Oct 28 2026.** Before the 4K run, crop the source to the device's own shape with only a thin strip of backdrop on every side and the floor shadows kept. AI Studio spends about the same 17 megapixels on any shape, so every inch of empty backdrop is device detail thrown away. Pick the aspect ratio closest to the device: 16:9 for the boombox and the PC, 4:3 for the turntable, 3:4 or 4:5 for upright devices like the Walkman and the virtual pet. Backdrop for the cover comes back in the finish step.
 4. **Render at 4K.** Claude Code sends the crop plus the prompt to Gemini 3 Pro Image (Nano Banana Pro) as an edit, resolution 4K, aspect ratio matched to the crop. Josh's manual route was the same run in Google AI Studio. Output at 4K is about 5504 × 3072 at 16:9, 5056 × 3392 at 3:2 and 4096 square at 1:1.
 5. **Check.** Claude checks text, drips, pairs and small details at full size and shows Josh the crops. Josh gives the yes.
-6. **Finish · fixed Oct 29 2026 after Josh called the first Traycee finish terrible.** pipeline/finish.py places the untouched 4K render at 1:1 on a 6704 square canvas and builds the rest of the backdrop from Deluge v1's own falloff, colored to the track swatch, so every cover's backdrop falls off like Deluge and the nine read as a set. The backdrop is rebuilt, never kept: one smooth gradation of the swatch like the Deluge Photoshop backdrop, the swatch's own hue and chroma edge to edge. From the render it keeps only the device, its contact shadows and the grain. No hotspots, no bands (Josh flagged mixed greens and hotspots on Traycee Oct 29 2026). The finish adds a really subtle cyclorama horizon, a soft shade where the floor curves into the wall, passing behind the device (Josh, Oct 29 2026). Explore and 4K prompts still ask for no horizon line, the finish owns it. The glow behind the device lands on the swatch, the device is never touched, export is a JPG of about 13 MB. Deluge v1 went from 5056 × 3392 to 6704 square this way in Photoshop with Generative Expand (measured Oct 28 2026), and the template finish re-made from the raw Deluge render lands within deltaE 2.4 of it (Oct 29 2026). Photoshop stays available for last small fixes.
+6. **Finish · fixed Oct 29 2026 after Josh called the first Traycee finish terrible.** pipeline/finish.py places the untouched 4K render at 1:1 on a 6704 square canvas and builds the rest of the backdrop from Deluge v1's own falloff, colored to the track swatch, so every cover's backdrop falls off like Deluge and the nine read as a set. The backdrop is rebuilt, never kept: one smooth gradation of the swatch like the Deluge Photoshop backdrop, the swatch's own hue and chroma edge to edge. From the render it keeps only the device, its contact shadows and the grain. No hotspots, no bands (Josh flagged mixed greens and hotspots on Traycee Oct 29 2026). The finish adds a really subtle cyclorama horizon, a soft shade where the floor curves into the wall, passing behind the device. Depth 0.75 of Deluge's corners and horizon 0.16, picked by Josh on Traycee Nov 8 2026, are the defaults for every cover. Explore and 4K prompts still ask for no horizon line, the finish owns it. The glow behind the device lands on the swatch, the device is never touched, export is a JPG of about 13 MB. Deluge v1 went from 5056 × 3392 to 6704 square this way in Photoshop with Generative Expand (measured Oct 28 2026), and the template finish re-made from the raw Deluge render lands within deltaE 2.4 of it (Oct 29 2026). Photoshop stays available for last small fixes.
 7. **Place.** The master goes into the Photo layer of the track's Cover, Post and Canvas boards in Figma. Exports are preset on every board.
 
 Upscaling a 1264 px render does not work. Topaz Gigapixel invented grille and panel detail in the Oct 18 2026 test.
@@ -134,7 +117,7 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Queued for 4K
 3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. Queued for 4K
 4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. Queued for 4K
-5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026. Josh picked render B. Finished Oct 29 2026 with the Deluge falloff, waiting on his yes before placement
+5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026, Josh picked render B. Finished with the rebuilt backdrop at depth 0.75 and cyc horizon 0.16, placed in Figma Nov 8 2026, exports next
 6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in)
 7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65
 8. Mancub · Classic grey handheld game console, no logos · Lime #82A967

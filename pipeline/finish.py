@@ -17,7 +17,7 @@
   6. the render placed at 1:1 in the center, device composited with its edge pixels decontaminated
   7. export a max quality 4:4:4 JPG
 
-usage: python3 pipeline/finish.py RENDER HEX OUT.jpg [--falloff 1.0] [--canvas 6704] [--report report.json] [--quality 97]
+usage: python3 pipeline/finish.py RENDER HEX OUT.jpg [--falloff 0.75] [--horizon 0.16] [--canvas 6704] [--report report.json] [--quality 97]
   always prints the report as JSON. Also writes OUT_alpha_small.npy (device mask) for pipeline/framing.py
 """
 import argparse, json, os
@@ -163,8 +163,8 @@ def main():
     ap.add_argument('--canvas', type=int, default=6704)
     ap.add_argument('--report')
     ap.add_argument('--quality', type=int, default=97)
-    ap.add_argument('--falloff', type=float, default=1.0, help='depth of the template falloff, 1.0 = Deluge v1, lower = lighter corners')
-    ap.add_argument('--horizon', type=float, default=0.0, help='cyclorama horizon shadow, share of light lost at its center line, 0 = none')
+    ap.add_argument('--falloff', type=float, default=0.75, help='depth of the template falloff, 1.0 = Deluge v1, lower = lighter corners. 0.75 set by Josh Nov 8 2026')
+    ap.add_argument('--horizon', type=float, default=0.16, help='cyclorama horizon shadow, share of light lost at its center line, 0 = none. 0.16 set by Josh Nov 8 2026')
     ap.add_argument('--horizon-y', type=float, default=None, help='horizon height as a canvas fraction, default sits just above the highest floor contact')
     a = ap.parse_args()
     rep = {'falloff': a.falloff, 'horizon': a.horizon}
