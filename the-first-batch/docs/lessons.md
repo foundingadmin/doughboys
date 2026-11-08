@@ -29,6 +29,7 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Josh picked depth 0.75 and cyc horizon 0.16 on Traycee (Nov 8 2026). They are now finish.py defaults. At 0.16 the horizon is felt more than seen, which is what he wanted.
 - The Drive connector cannot carry masters. An Apps Script web app running as Josh (`pipeline/drive_drop.gs`) takes the upload, keyed by an environment variable and limited to the Track Covers tree (Nov 8 2026).
 - On Canvas 9:16 a wide device set clips at the sides. The Photo slot lets Josh scale it, so place it at the default framing and say so (Traycee, Nov 8 2026).
+- Attaching the master and render to the chat reply with SendUserFile, plus a link to the Masters folder, was the fastest Drive hand off for Josh (Nov 8 2026). It is now the standard, alongside the Drive drop upload.
 - Never take a median of hue angles. They wrap at 180 degrees and Traycee's grey glow sat right on the wrap, so the hue came out 40 degrees off. Take the median of Lab a and b, then the angle (Oct 29 2026).
 - Regression test for any finish.py change: re-finish Deluge from `01-deluge-4k-render.jpg` with #65B8E5 and run check.py against v1. Oct 29 2026 baseline: deltaE 2.4 inside the render, 2.8 in the margins.
 

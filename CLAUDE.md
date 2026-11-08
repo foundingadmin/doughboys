@@ -14,6 +14,7 @@ Read this file, then `the-first-batch/tracks.json` (the state of all nine tracks
 - No decorative emoji.
 - Make the call and state it. Ask only when a choice is expensive to undo or truly his (which frame to pick, whether a 4K render passes).
 - **Every image Josh reviews is assembled in Figma** on the Review page, never only in the repo or in chat. One board per review, options side by side, matched crops at native pixels, a pass or fail note under each. Build it with `pipeline/figma_review_board.js` (see `docs/figma.md`), screenshot it, and give Josh the board link. Repo copies under `review/` are the backup (Josh, Oct 29 2026).
+- **Hand Josh finished files in chat.** Whenever a 4K render pick or a master is ready for Drive, attach the files to your reply with the SendUserFile tool (`display: attach`), one caption naming the track, and give the link to the track's Masters folder (`https://drive.google.com/drive/folders/<masters id from tracks.json>`). Do this even when Drive drop is wired, so he can grab them fast (Josh, Nov 8 2026).
 - Punk rock = simple = results. Fewest moving parts that work.
 - Cross-check every date you write.
 - Never abbreviate the album name. The band abbreviates to CBDB. Catalog numbers run CBDB 00 (album) and CBDB 01 to CBDB 09.

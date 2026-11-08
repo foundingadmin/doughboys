@@ -46,6 +46,10 @@ python3 pipeline/drive.py list --track 05
 
 `put` replaces a file of the same name in that folder (the old one goes to Drive's trash) unless `--keep`. Masters uploads are recorded in `tracks.json` under `drive_masters_files`.
 
+## Hand off in chat, always
+
+When a render pick or master is ready, attach both files to the reply with SendUserFile (`display: attach`) and link the track's Masters folder. Josh asked for this on Nov 8 2026 so he can download and drop them in fast, wired or not.
+
 ## When it is not wired
 
 `drive.py` stops with a clear message. Commit the files and tell Josh which two to drop into which Masters folder. Small files (under about 1 MB, like contact sheets) can still go through the Drive connector's `create_file` with `base64Content`.

@@ -68,7 +68,7 @@ Follow `docs/figma.md`, Placing a finished master. Upload the 4096 copy, drop it
 
 ## 9 · Save to Drive and hand off
 
-`python3 pipeline/cover.py drive NN` saves the picked 4K render and the master into the track's Masters folder on Drive and records the file ids. If it says Drive is not wired, follow `docs/drive.md` once, or commit and tell Josh to drop the two files into Masters by hand.
+Attach the picked 4K render and the master to your reply with SendUserFile (`display: attach`) and link the track's Masters folder, so Josh can download and drop them in fast (Josh, Nov 8 2026). Then `python3 pipeline/cover.py drive NN` saves the same two files into Masters and records the file ids. If it says Drive is not wired, the attached files are the hand off: Josh drags them in. Once they show up in Masters, record their ids in `tracks.json` under `drive_masters_files` (Drive connector `search_files` with `parentId = '<masters id>'`).
 
 Update the brief (Track list line, remove the track from the 4K queue, Updated date), lessons if anything surprised you, and `tracks.json`. Commit, push, open or update the pull request. Tell Josh the cover is placed, give the section link, and that exports are preset on every board.
 
