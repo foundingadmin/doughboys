@@ -229,7 +229,7 @@
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
    "status": "placed in Figma",
-   "next": "Josh exports Cover, Post and Canvas and drops them in Drive Exports. Render B and the master go to Drive Masters with cover.py drive 05 once Drive drop is wired.",
+   "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Master and render B are in Drive Masters (Nov 8 2026).",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -386,6 +386,11 @@
      5056,
      3392
     ]
+   },
+   "drive_masters_files": {
+    "05-traycee-final-v1.jpg": "1uPYO5y9580YiTwo9HCiRMc7jyz4bK8s-",
+    "05-traycee-4k-render-3x2-b.jpg": "1KpqqXR6z1IahM9Yq0rp3OSOrY3mJNcGs",
+    "05-traycee-4k-render-weave.png": "1zjXrPuPdCxtAb3BM4sfdw2wb_UkhDWeR"
    }
   },
   {
