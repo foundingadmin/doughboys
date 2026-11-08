@@ -947,8 +947,8 @@
    "device": "TV VCR combo",
    "subhead": "13 Inch TV With Built In VCR",
    "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
-   "status": "exploring, round 3 texture variations ready for Josh",
-   "next": "Josh picks a texture on board 181:12 (Claude recommends 3 pillowy, runner up 1 smooth satin). Then link him to the pick and get a written yes before any 4K",
+   "status": "4K rendered, Josh passes render A on board 201:12",
+   "next": "Josh passes A (or asks for a re-run with his written yes), then cover.py finish 06 --render the-first-batch/assets/photos/06-determinator/06-determinator-4k-render-1x1-a.jpg",
    "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
    "figma": {
     "mode_id": "114:7",
@@ -1016,9 +1016,55 @@
      "date": "2026-11-08",
      "what": "Round 3: six dough textures on 2b-2, device kept",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=181-12"
+    },
+    {
+     "node": "201:12",
+     "date": "2026-11-08",
+     "what": "4K render A from R3-5, native crops of the dough, buttons, slot, vents, screen, corner",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=201-12"
     }
    ],
-   "pick_progress": "Josh liked 2b-2 (Nov 8 2026): device as is, facing right, dough over most buttons, power button and red light showing. Round 3 varies only the dough texture"
+   "pick_progress": "Josh liked 2b-2 (Nov 8 2026): device as is, facing right, dough over most buttons, power button and red light showing. Round 3 varies only the dough texture",
+   "source": {
+    "pick": "R3-5",
+    "approved": "2026-11-08",
+    "repo": "the-first-batch/assets/photos/06-determinator/06-determinator-source-r3-5.png",
+    "from": "work/06-determinator/round-3/05.png",
+    "figma_board": "181:12",
+    "note": "R3-5 rustic, a Flash edit of R2b-2, 1024. Josh: the finger dimples and the buttons left showing feel real (Nov 8 2026)"
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/06-determinator/06-determinator-4k-render-1x1-a.jpg",
+     "letter": "a",
+     "aspect": "1:1",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/06-determinator.md",
+     "crop": "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png",
+     "check_tiles": [
+      "work/06-determinator/check/a-tile1.jpg",
+      "work/06-determinator/check/a-tile2.jpg",
+      "work/06-determinator/check/a-tile3.jpg",
+      "work/06-determinator/check/a-tile4.jpg",
+      "work/06-determinator/check/a-tile5.jpg",
+      "work/06-determinator/check/a-tile6.jpg"
+     ],
+     "josh_approval": "Josh, Nov 8 2026: determinator exploration 5 rustic is perfect ... 5 rustic is great. 4k it! APPROVED SPEND!",
+     "check": "Pass. Dimples kept, lower left creases rounded, POWER crisp, buttons in view, plain blue screen. One thin hairline low on the left of the dough, Photoshop level",
+     "recommended": true
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png",
+    "aspect": "1:1",
+    "box": [
+     100,
+     143,
+     916,
+     958
+    ]
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/06-determinator.md"
   },
   {
    "n": "07",
