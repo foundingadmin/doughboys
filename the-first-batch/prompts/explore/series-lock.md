@@ -39,3 +39,6 @@ One cohesive mass of raw kneaded bread dough, pale oatmeal beige like raw pizza 
 - The dough's weight sits at the left third where it can, so the covers read as a set. That sets where the weight goes, never the shape.
 - Dough is lifeless. It never rises, reaches, crawls, pushes a door open or gets ejected. No accidental faces or matched pairs that read as eyes.
 - Exploration says no readable text. The 4K prompt supplies the exact label words later.
+- Never describe the spill as a rope. "A thick rounded rope" made Mancub's dough read as a snake or an arm on four of six frames. "One thick wide fold, as wide as the device, never a thin rope, never coiled, never arched like an arm" fixed it in round 2 (Nov 8 2026).
+- Never ask for a stacked mound. "A firm stacked mound" coiled like soft serve on five of six Show Me Your Love frames. "One low broad rounded mound like a loaf that slumped, never coiled, stacked, swirled or piped" fixed it (Nov 8 2026).
+- Watch for faces. Dough poking out of a front door reads as a tongue, and a badge beside a round speaker grille reads as a pair of eyes. Say "nothing pokes out like a tongue" and put a badge centered above the grille (Nov 8 2026).

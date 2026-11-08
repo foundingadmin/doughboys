@@ -1,0 +1,11 @@
+A real 1990 mail order catalog photograph shot on medium format film with an 80mm lens, fine film grain, muted print color. A 1984 wood grain clock radio: a low rectangular cabinet in walnut vinyl wood grain with a cream plastic front panel. On the left half a woven cloth speaker grille, on the right half a dark smoked window with a glowing red LED clock display, and beneath it a slim AM FM tuner dial with a thin red needle. On top, a long chrome snooze bar. Two small knobs on the right side for volume and tuning, small sliding switches along the top back edge, and a small glowing red power light beside the clock. The cabinet is about 30 centimeters wide, 10 centimeters tall and 15 centimeters deep, the size of a shoebox cut in half. The snooze bar runs most of the width.
+
+Firm, freshly kneaded raw bread dough that holds its shape, one cohesive mass, pale oatmeal beige like raw pizza dough, never pink and never meaty. Satin matte skin with fine stretch lines and soft folds, no holes, no lace, no webbing. Where it meets the floor it stays thick and rounded. No pool, no puddle, nothing runny, wet or glossy. Shaped only by gravity.
+
+No slot. The whole batch was plopped on top of the clock radio hours ago and has settled: a heavy flat topped clump about the size of a round loaf of bread covering most of the top, the snooze bar buried under it. Its top is flat and slightly domed at the edges. Its sides droop down over the edges of the cabinet in thick rounded folds, longest and heaviest down the left end, where a fat lobe slumps down the side to rest on the floor at the left third. On the front it hangs only a little over the top edge, so the clock window and speaker grille stay in clear view.
+
+Camera straight on at the device's own height, squared up to its front. The device fills about half the frame height. Every object, accessories and dough included, sits inside the frame with clear backdrop at every edge. Nothing cropped.
+
+Seamless Tangerine paper sweep, no horizon line, no seams, no studio equipment. Soft diffused light from the upper left, from a source well outside the frame, soft contact shadow only. A brighter glow behind the device and on the floor, falling to a deeper Tangerine in the top corners.
+
+No people, no hands, no logos, no brand names, no readable text.
