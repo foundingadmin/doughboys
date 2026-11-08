@@ -1,7 +1,7 @@
 {
  "album": "The First Batch",
  "band": "Chillsbury Doughboys (CBDB)",
- "updated": "2026-10-29",
+ "updated": "2026-11-08",
  "canvas_px": 6704,
  "dough_hex": "#E9D3A8",
  "paper_hex": "#F5EEDC",
@@ -106,15 +106,16 @@
    "device": "Yellow sports Walkman",
    "subhead": "Waterproof Sports Cassette Player",
    "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
-   "status": "source approved, 4K queued",
-   "next": "cover.py render 02 --runs 2 with prompts/4k/02-spice.md (already approved), check on a Review board, Josh picks, cover.py finish, place, cover.py drive.",
+   "status": "4K rendered, Josh picks on board 163:12",
+   "next": "Josh picks the render (Claude recommends B), then cover.py finish 02 --render the-first-batch/assets/photos/02-spice/02-spice-4k-render-4x3-b.jpg",
    "source": {
     "figma_node": "53:2",
     "pick": "F2",
     "approved": "2026-10-19",
     "image_hash": "204bd3391d72543e3dcfdbaf0038e51421d7f1fa",
     "repo": "the-first-batch/assets/photos/02-spice/02-spice-source-f2.jpg",
-    "note": "Repo copy is a compressed 1024 preview. Pull the full original from Figma node 53:2 first if the session can reach www.figma.com"
+    "note": "Figma raw image fill pulled Nov 8 2026, SHA1 matches image_hash, so it is the true 1024 original. The older repo jpg is a re-encode. 4K runs use the figma_original",
+    "figma_original": "the-first-batch/assets/photos/02-spice/02-spice-source-f2-figma.jpg"
    },
    "prompt_4k": "the-first-batch/prompts/4k/02-spice.md",
    "figma": {
@@ -132,7 +133,62 @@
     "masters": "1LjU2cFNCr7jqfJGJD4IH1WsZJAhYfoFN",
     "exports": "1bnZBapHcSF32-VlrEIFJ13dH8nQpyyLz",
     "archive": "18HZ9qP7_B4GW61oVIMOmvKzlxK-_rImX"
-   }
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/02-spice/02-spice-4k-render-4x3-a.jpg",
+     "letter": "a",
+     "aspect": "4:3",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/02-spice.md",
+     "crop": "the-first-batch/assets/photos/02-spice/02-spice-crop.png",
+     "check_tiles": [
+      "work/02-spice/check/a-tile1.jpg",
+      "work/02-spice/check/a-tile2.jpg",
+      "work/02-spice/check/a-tile3.jpg",
+      "work/02-spice/check/a-tile4.jpg",
+      "work/02-spice/check/a-tile5.jpg",
+      "work/02-spice/check/a-tile6.jpg"
+     ],
+     "check": "Fails: tuner scale garbled, threads off the left of the dough, yellow tab on the door edge"
+    },
+    {
+     "file": "the-first-batch/assets/photos/02-spice/02-spice-4k-render-4x3-b.jpg",
+     "letter": "b",
+     "aspect": "4:3",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/02-spice.md",
+     "crop": "the-first-batch/assets/photos/02-spice/02-spice-crop.png",
+     "check_tiles": [
+      "work/02-spice/check/b-tile1.jpg",
+      "work/02-spice/check/b-tile2.jpg",
+      "work/02-spice/check/b-tile3.jpg",
+      "work/02-spice/check/b-tile4.jpg",
+      "work/02-spice/check/b-tile5.jpg",
+      "work/02-spice/check/b-tile6.jpg"
+     ],
+     "check": "Pass on every named fix: tuner scale, plain door edge, no strings, smoked window, headphones in frame",
+     "recommended": true
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/02-spice/02-spice-crop.png",
+    "aspect": "4:3",
+    "box": [
+     59,
+     168,
+     1014,
+     883
+    ]
+   },
+   "review_boards": [
+    {
+     "node": "163:12",
+     "date": "2026-11-08",
+     "what": "4K tight crop A vs B, matched crops on tuner, door edge, dough, window, headphones, corner",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-12"
+    }
+   ]
   },
   {
    "n": "03",
@@ -147,15 +203,16 @@
    "device": "Silver direct drive turntable",
    "subhead": "Direct Drive Turntable With Pitch Control",
    "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
-   "status": "source approved, 4K queued",
-   "next": "cover.py render 03 --runs 2 with prompts/4k/03-bopkins.md (already approved), check on a Review board, Josh picks, cover.py finish, place, cover.py drive.",
+   "status": "4K rendered A to F, two sharper re-runs spent, Josh picks on board 164:12",
+   "next": "Josh picks (Claude recommends F, with the lid badge and pitch scale as Photoshop fixes; D is the fallback), then cover.py finish 03 --render <pick>",
    "source": {
     "figma_node": "58:2",
     "pick": "G1",
     "approved": "2026-10-19",
     "image_hash": "4d923e198a3abd25710bc3a7e13413edeb5b5502",
     "repo": "the-first-batch/assets/photos/03-bopkins/03-bopkins-source-g1.jpg",
-    "note": "Repo copy is a compressed 1024 preview. Pull the full original from Figma node 58:2 first if the session can reach www.figma.com"
+    "note": "Figma raw image fill pulled Nov 8 2026, SHA1 matches image_hash, so it is the true 1024 original. The older repo jpg is a re-encode. 4K runs use the figma_original",
+    "figma_original": "the-first-batch/assets/photos/03-bopkins/03-bopkins-source-g1-figma.jpg"
    },
    "prompt_4k": "the-first-batch/prompts/4k/03-bopkins.md",
    "figma": {
@@ -173,7 +230,130 @@
     "masters": "1qF7bICzhHruvceQSu7BUxoX4H-YG0Vph",
     "exports": "1K_AJV984-apz8KX9ER9TyvgOJzkTeX2R",
     "archive": "1LXu1B_p_DOO_4Ygl2rF0sewueAeQmhTr"
-   }
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-a.jpg",
+     "letter": "a",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins.md",
+     "crop": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+     "check_tiles": [
+      "work/03-bopkins/check/a-tile1.jpg",
+      "work/03-bopkins/check/a-tile2.jpg",
+      "work/03-bopkins/check/a-tile3.jpg",
+      "work/03-bopkins/check/a-tile4.jpg",
+      "work/03-bopkins/check/a-tile5.jpg",
+      "work/03-bopkins/check/a-tile6.jpg"
+     ],
+     "check": "First prompt. Lid clean. Fails: fake words on the plate and buttons, mark on the knob"
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-b.jpg",
+     "letter": "b",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins.md",
+     "crop": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+     "check_tiles": [
+      "work/03-bopkins/check/b-tile1.jpg",
+      "work/03-bopkins/check/b-tile2.jpg",
+      "work/03-bopkins/check/b-tile3.jpg",
+      "work/03-bopkins/check/b-tile4.jpg",
+      "work/03-bopkins/check/b-tile5.jpg",
+      "work/03-bopkins/check/b-tile6.jpg"
+     ],
+     "check": "First prompt. Same fails as A"
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-c.jpg",
+     "letter": "c",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins.md",
+     "crop": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+     "check_tiles": [
+      "work/03-bopkins/check/c-tile1.jpg",
+      "work/03-bopkins/check/c-tile2.jpg",
+      "work/03-bopkins/check/c-tile3.jpg",
+      "work/03-bopkins/check/c-tile4.jpg",
+      "work/03-bopkins/check/c-tile5.jpg",
+      "work/03-bopkins/check/c-tile6.jpg"
+     ],
+     "check": "Sharper 1. Knob and plate plain. Fails: lid badge back, button words mush"
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-d.jpg",
+     "letter": "d",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins.md",
+     "crop": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+     "check_tiles": [
+      "work/03-bopkins/check/d-tile1.jpg",
+      "work/03-bopkins/check/d-tile2.jpg",
+      "work/03-bopkins/check/d-tile3.jpg",
+      "work/03-bopkins/check/d-tile4.jpg",
+      "work/03-bopkins/check/d-tile5.jpg",
+      "work/03-bopkins/check/d-tile6.jpg"
+     ],
+     "check": "Sharper 1. Knob, plate, lid clean. Fails: button words and pitch scale mush"
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-e.jpg",
+     "letter": "e",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins.md",
+     "crop": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+     "check_tiles": [
+      "work/03-bopkins/check/e-tile1.jpg",
+      "work/03-bopkins/check/e-tile2.jpg",
+      "work/03-bopkins/check/e-tile3.jpg",
+      "work/03-bopkins/check/e-tile4.jpg",
+      "work/03-bopkins/check/e-tile5.jpg",
+      "work/03-bopkins/check/e-tile6.jpg"
+     ],
+     "check": "Sharper 2. Lid clean. Fails: button words mush, faint marks on plate and knob"
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-f.jpg",
+     "letter": "f",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins.md",
+     "crop": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+     "check_tiles": [
+      "work/03-bopkins/check/f-tile1.jpg",
+      "work/03-bopkins/check/f-tile2.jpg",
+      "work/03-bopkins/check/f-tile3.jpg",
+      "work/03-bopkins/check/f-tile4.jpg",
+      "work/03-bopkins/check/f-tile5.jpg",
+      "work/03-bopkins/check/f-tile6.jpg"
+     ],
+     "check": "Sharper 2. Buttons read START STOP 33 45, knob and plate plain. Flaws: small blank badge on the lid, mushy pitch scale. Photoshop level",
+     "recommended": true
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-crop.png",
+    "aspect": "5:4",
+    "box": [
+     36,
+     179,
+     932,
+     895
+    ]
+   },
+   "review_boards": [
+    {
+     "node": "164:12",
+     "date": "2026-11-08",
+     "what": "4K renders A to F, first prompt plus two sharper re-runs, crops on front left, front right, dust cover",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-12"
+    }
+   ]
   },
   {
    "n": "04",
@@ -187,15 +367,16 @@
    "device": "Virtual pet in a clear pink shell",
    "subhead": "Virtual Pet With Built In Clock",
    "silhouette": "No slot. The egg leans back in a firm dough nest, the front lip folded down to the floor",
-   "status": "source approved, 4K queued",
-   "next": "cover.py render 04 --runs 2 with prompts/4k/04-suavecita.md (already approved), check on a Review board, Josh picks, cover.py finish, place, cover.py drive.",
+   "status": "4K rendered A to F, screen icons will not redraw, Josh decides on board 164:137",
+   "next": "Josh picks: finish F as is, approve a screen only pass on the source then one fresh 4K run (Claude recommends), or Photoshop. Then cover.py finish 04 --render <pick>",
    "source": {
     "figma_node": "73:2",
     "pick": "I4",
     "approved": "2026-10-19",
     "image_hash": "ccaab3f1b160068551901d95a16eeffaec02c8d2",
     "repo": "the-first-batch/assets/photos/04-suavecita/04-suavecita-source-i4.jpg",
-    "note": "Repo copy is a compressed 1024 preview. Pull the full original from Figma node 73:2 first if the session can reach www.figma.com"
+    "note": "Figma raw image fill pulled Nov 8 2026, SHA1 matches image_hash, so it is the true 1024 original. The older repo jpg is a re-encode. 4K runs use the figma_original",
+    "figma_original": "the-first-batch/assets/photos/04-suavecita/04-suavecita-source-i4-figma.jpg"
    },
    "prompt_4k": "the-first-batch/prompts/4k/04-suavecita.md",
    "figma": {
@@ -213,7 +394,130 @@
     "masters": "17WHDhdVFnPtXIcPL2DBu-N9MXxGOAVxE",
     "exports": "1c7NaapM_QCBA7esQPiY08UcyKfrz2dEz",
     "archive": "1DxglXXRekhfXiCZP-RtqrvFaQumFjo__"
-   }
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-4k-render-3x2-a.jpg",
+     "letter": "a",
+     "aspect": "3:2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/04-suavecita.md",
+     "crop": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+     "check_tiles": [
+      "work/04-suavecita/check/a-tile1.jpg",
+      "work/04-suavecita/check/a-tile2.jpg",
+      "work/04-suavecita/check/a-tile3.jpg",
+      "work/04-suavecita/check/a-tile4.jpg",
+      "work/04-suavecita/check/a-tile5.jpg",
+      "work/04-suavecita/check/a-tile6.jpg"
+     ],
+     "check": "First prompt. Shell, buttons, chain, dough pass. Screen fails: smudged icons, mottled LCD"
+    },
+    {
+     "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-4k-render-3x2-b.jpg",
+     "letter": "b",
+     "aspect": "3:2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/04-suavecita.md",
+     "crop": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+     "check_tiles": [
+      "work/04-suavecita/check/b-tile1.jpg",
+      "work/04-suavecita/check/b-tile2.jpg",
+      "work/04-suavecita/check/b-tile3.jpg",
+      "work/04-suavecita/check/b-tile4.jpg",
+      "work/04-suavecita/check/b-tile5.jpg",
+      "work/04-suavecita/check/b-tile6.jpg"
+     ],
+     "check": "Same as A"
+    },
+    {
+     "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-4k-render-3x2-c.jpg",
+     "letter": "c",
+     "aspect": "3:2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/04-suavecita.md",
+     "crop": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+     "check_tiles": [
+      "work/04-suavecita/check/c-tile1.jpg",
+      "work/04-suavecita/check/c-tile2.jpg",
+      "work/04-suavecita/check/c-tile3.jpg",
+      "work/04-suavecita/check/c-tile4.jpg",
+      "work/04-suavecita/check/c-tile5.jpg",
+      "work/04-suavecita/check/c-tile6.jpg"
+     ],
+     "check": "Sharper 1. Same screen"
+    },
+    {
+     "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-4k-render-3x2-d.jpg",
+     "letter": "d",
+     "aspect": "3:2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/04-suavecita.md",
+     "crop": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+     "check_tiles": [
+      "work/04-suavecita/check/d-tile1.jpg",
+      "work/04-suavecita/check/d-tile2.jpg",
+      "work/04-suavecita/check/d-tile3.jpg",
+      "work/04-suavecita/check/d-tile4.jpg",
+      "work/04-suavecita/check/d-tile5.jpg",
+      "work/04-suavecita/check/d-tile6.jpg"
+     ],
+     "check": "Sharper 1. Same screen"
+    },
+    {
+     "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-4k-render-3x2-e.jpg",
+     "letter": "e",
+     "aspect": "3:2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/04-suavecita.md",
+     "crop": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+     "check_tiles": [
+      "work/04-suavecita/check/e-tile1.jpg",
+      "work/04-suavecita/check/e-tile2.jpg",
+      "work/04-suavecita/check/e-tile3.jpg",
+      "work/04-suavecita/check/e-tile4.jpg",
+      "work/04-suavecita/check/e-tile5.jpg",
+      "work/04-suavecita/check/e-tile6.jpg"
+     ],
+     "check": "Sharper 2, redraw from scratch. Screen unchanged"
+    },
+    {
+     "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-4k-render-3x2-f.jpg",
+     "letter": "f",
+     "aspect": "3:2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/04-suavecita.md",
+     "crop": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+     "check_tiles": [
+      "work/04-suavecita/check/f-tile1.jpg",
+      "work/04-suavecita/check/f-tile2.jpg",
+      "work/04-suavecita/check/f-tile3.jpg",
+      "work/04-suavecita/check/f-tile4.jpg",
+      "work/04-suavecita/check/f-tile5.jpg",
+      "work/04-suavecita/check/f-tile6.jpg"
+     ],
+     "check": "Sharper 2. Bowl icon lands, other seven icons and the mottled LCD stay",
+     "recommended": true
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/04-suavecita/04-suavecita-crop.png",
+    "aspect": "3:2",
+    "box": [
+     77,
+     289,
+     980,
+     891
+    ]
+   },
+   "review_boards": [
+    {
+     "node": "164:137",
+     "date": "2026-11-08",
+     "what": "4K renders A to F, screen crops for every run, chain, lip and buttons on F",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-137"
+    }
+   ]
   },
   {
    "n": "05",
@@ -405,8 +709,8 @@
    "device": "TV VCR combo",
    "subhead": "13 Inch TV With Built In VCR",
    "silhouette": "A dough brick shaped like a VHS tape, half in the slot, the screen glowing video blue",
-   "status": "exploring",
-   "next": "Explore a fresh round from the series lock with the brick silhouette. Oct 19 2026 picks were M1 (brick half in the slot) and runner up M5 (whole batch heaped on the floor, one fold crammed in). Those frames live only on Figma Page 1",
+   "status": "exploring, round 1 ready for Josh",
+   "next": "Josh picks on board 163:94 (Claude recommends 1, runner up 5), then cover.py lock 06 work/06-determinator/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
    "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
    "figma": {
     "mode_id": "114:7",
@@ -423,7 +727,24 @@
     "masters": "1MlpvV_prh2XcDILGemDAvNhRYsJh0vBp",
     "exports": "1Q-59wm934KPl3xpTtYw1Ywc5aBEef97g",
     "archive": "1SHU-RvPaBG9ypxXDv4_fIfjcCH3auK9b"
-   }
+   },
+   "explore_rounds": [
+    {
+     "round": "1",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/06-determinator-round-1.md",
+     "frames": "work/06-determinator/round-1",
+     "contact_sheet": "the-first-batch/explore/06-determinator/round-1/contact-sheet.jpg"
+    }
+   ],
+   "review_boards": [
+    {
+     "node": "163:94",
+     "date": "2026-11-08",
+     "what": "Explore round 1, VHS brick silhouette",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-94"
+    }
+   ]
   },
   {
    "n": "07",
@@ -438,8 +759,8 @@
    "device": "Wood grain clock radio",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
    "silhouette": "No slot. A flat topped clump plopped on top hours ago, thick droopy sides",
-   "status": "not started",
-   "next": "Explore round 1 from the series lock.",
+   "status": "exploring, round 1 ready for Josh",
+   "next": "Josh picks on board 163:129 (Claude recommends 4, runner up 2), then cover.py lock 07 work/07-boombap/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
@@ -455,7 +776,24 @@
     "masters": "1nZ_EeRBj7wRXSk69Ac15eko5S2sI0NET",
     "exports": "1ZA2fuUiHjIbrV2HGZ5C5t0S2na16KupF",
     "archive": "1OD46R0jTK9PInim3AykRqc2VY-n8mg0K"
-   }
+   },
+   "explore_rounds": [
+    {
+     "round": "1",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/07-boombap-round-1.md",
+     "frames": "work/07-boombap/round-1",
+     "contact_sheet": "the-first-batch/explore/07-boombap/round-1/contact-sheet.jpg"
+    }
+   ],
+   "review_boards": [
+    {
+     "node": "163:129",
+     "date": "2026-11-08",
+     "what": "Explore round 1, flat topped clump on top",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-129"
+    }
+   ]
   },
   {
    "n": "08",
@@ -469,8 +807,8 @@
    "device": "Classic grey handheld game console, no logos",
    "subhead": "Pocket Game System for Young Players",
    "silhouette": "Standing upright in a pile of dough spilling out from behind the cartridge slot",
-   "status": "not started",
-   "next": "Explore round 1 from the series lock. No real console branding or recognizable game characters.",
+   "status": "exploring, round 2 ready for Josh",
+   "next": "Josh picks on board 163:164 (Claude recommends R2-5, runner up R2-3), then cover.py lock 08 work/08-mancub/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
    "figma": {
     "mode_id": "114:9",
     "section": "118:1016",
@@ -486,7 +824,31 @@
     "masters": "1G6Z91x22CfVsqeH66_OdOwjr0O83g0dg",
     "exports": "1gwg1eFuEOOMecV41hK4zA0lwuC2RKCMT",
     "archive": "1sBlFOO1gd61TlXh-pqLUSDz73gZBD5pk"
-   }
+   },
+   "explore_rounds": [
+    {
+     "round": "1",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/08-mancub-round-1.md",
+     "frames": "work/08-mancub/round-1",
+     "contact_sheet": "the-first-batch/explore/08-mancub/round-1/contact-sheet.jpg"
+    },
+    {
+     "round": "2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/08-mancub-round-2.md",
+     "frames": "work/08-mancub/round-2",
+     "contact_sheet": "the-first-batch/explore/08-mancub/round-2/contact-sheet.jpg"
+    }
+   ],
+   "review_boards": [
+    {
+     "node": "163:164",
+     "date": "2026-11-08",
+     "what": "Explore rounds 1 and 2, round 2 drops the rope",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-164"
+    }
+   ]
   },
   {
    "n": "09",
@@ -500,8 +862,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "not started",
-   "next": "Explore round 1 from the series lock. The only readable word on the device is the Doughboy badge, supplied in the 4K prompt",
+   "status": "exploring, round 2 ready for Josh",
+   "next": "Josh picks on board 163:229 (Claude recommends R2-3), then cover.py lock 09 work/09-show-me-your-love/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -518,7 +880,31 @@
     "masters": "1EDdrSw_X3xbZLVzfvp6pY_2VB1473x1X",
     "exports": "15NF3pwX6dr6WDQCTbJwWoHELaZcCR60H",
     "archive": "1iKDWSXZ2xWQpueDsGAyqIFf0JFtCg8BK"
-   }
+   },
+   "explore_rounds": [
+    {
+     "round": "1",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-1.md",
+     "frames": "work/09-show-me-your-love/round-1",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-1/contact-sheet.jpg"
+    },
+    {
+     "round": "2",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-2.md",
+     "frames": "work/09-show-me-your-love/round-2",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-2/contact-sheet.jpg"
+    }
+   ],
+   "review_boards": [
+    {
+     "node": "163:229",
+     "date": "2026-11-08",
+     "what": "Explore rounds 1 and 2, round 2 drops the coiled mound and the tongue",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-229"
+    }
+   ]
   }
  ],
  "figma_review_page": "128:77",

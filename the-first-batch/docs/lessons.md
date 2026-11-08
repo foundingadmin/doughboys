@@ -65,3 +65,11 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Josh renamed Kit to Toolkits and Page 1 to Archive, and added a `---` divider page (seen Oct 29 2026).
 - A plain image fill on a component layer can be swapped on an instance but never moved or scaled. Josh needed to reposition the Deluge boombox, so Photo became a slot on Oct 29 2026. Slot content on an instance is free to move, scale and swap.
 - `upload_assets` without a target node drops a new frame on the page. Delete it in the same `use_figma` call that fills the boards (Oct 29 2026).
+
+## Nov 8 2026 batch (Spice, Bopkins, Suavecita 4K, explore 06 to 09)
+
+- The "compressed preview" note on Spice, Bopkins and Suavecita was half right. Figma's raw image fills are 1024 JPEGs whose SHA1 equals the recorded `image_hash`, so they are the true originals, and the repo jpgs were a re-encode. Pull the raw fill with `download_assets` and check the hash (Nov 8 2026).
+- Small printed words fail at 4K even when named. Bopkins buttons came back as mush on four of six runs. Two things worked: telling a surface it is plain ("plain brushed aluminum with nothing printed on it" cleared the plate and the knob), and asking for words in bold black capitals that fill most of the button (F printed START, STOP, 33, 45). Each pass can also bring back something an earlier pass fixed, like the lid badge on C and F (Nov 8 2026).
+- "Keep this exact photograph" anchors screen content. Suavecita's LCD icons survived six runs, including "redraw the LCD from scratch and replace every icon". Fix screen content in the source before the 4K run, or in Photoshop after (Nov 8 2026).
+- `cover.py` loads tracks.json at the start of a step and saves it at the end, so two steps in parallel lose one update. Chain cover.py steps, and run parallel explores through `gen.py explore` directly, then record state (Nov 8 2026).
+- Explore wording: "rope" made Mancub's spill a snake, "stacked mound" made Show Me Your Love's mound coil like soft serve. Both fixed in one round, rules folded into series-lock.md (Nov 8 2026).
