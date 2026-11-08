@@ -195,7 +195,7 @@ def cmd_finish(a):
     Image.open(out).resize((4096, 4096), Image.LANCZOS).save(fig, quality=95, subsampling=0)
     t['master'] = rel(out)
     t['render_pick'] = rel(a.render) if os.path.isabs(a.render) else a.render
-    t['finish_report'] = {k: r[k] for k in ('falloff', 'horizon', 'deltaE_glow_vs_swatch', 'backdrop_hue_spread_deg', 'corner_L_minus_glow', 'device_touches_edge', 'offset', 'render') if k in r}
+    t['finish_report'] = {k: r[k] for k in ('falloff', 'horizon', 'holes_opened', 'deltaE_glow_vs_swatch', 'backdrop_hue_spread_deg', 'corner_L_minus_glow', 'device_touches_edge', 'offset', 'render') if k in r}
     t['figma']['post_transform'] = fr['post']; t['figma']['canvas_transform'] = fr['canvas']
     t['status'] = f'master {a.version} finished, Josh yes then place'
     t['next'] = 'Put the master next to Deluge v1 on a Review board, on Josh\'s yes place it in the Photo slots and cover.py drive ' + t['n']

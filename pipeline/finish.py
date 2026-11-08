@@ -78,6 +78,9 @@ def wrap(a):
     return (a + np.pi) % (2 * np.pi) - np.pi
 
 
+HOLE_DE = 8.0   # a hole within this Oklab x100 distance of the backdrop beside it is backdrop
+
+
 def device_mask(rgb):
     from rembg import remove, new_session
     h, w = rgb.shape[:2]
@@ -90,7 +93,28 @@ def device_mask(rgb):
     pad = np.zeros((ff.shape[0] + 2, ff.shape[1] + 2), np.uint8)
     cv2.floodFill(ff, pad, (0, 0), 2)
     m = m.astype(np.float32) / 255.
-    m[ff == 0] = 1.0  # enclosed holes belong to the device
+    # Enclosed holes belong to the device, unless the hole is plain backdrop seen through a loop
+    # (Spice headphone cord, Nov 8 2026): its color matches the backdrop beside it at the same height.
+    lab = oklab(srgb_to_lin(np.asarray(small, np.float32) / 255.))
+    bg = ff == 2
+    n, lbl = cv2.connectedComponents((ff == 0).astype(np.uint8) * (hard == 0).astype(np.uint8))
+    opened = []; holes_seen = []
+    for i in range(1, n):
+        hole = lbl == i
+        area = int(hole.sum())
+        if area < 400:            # specks inside the device stay filled
+            m[hole] = 1.0; continue
+        rows = np.where(hole.any(1))[0]
+        band = bg[rows.min():rows.max() + 1]
+        if band.sum() < 100:
+            m[hole] = 1.0; continue
+        d = np.linalg.norm(np.median(lab[hole], 0) - np.median(lab[rows.min():rows.max() + 1][band], 0)) * 100
+        holes_seen.append(round(float(d), 2))
+        if d < HOLE_DE:
+            m[hole] = np.minimum(m[hole], 0.0); opened.append({'area_px_1600': area, 'deltaE': round(float(d), 2)})
+        else:
+            m[hole] = 1.0
+    device_mask.opened = opened; device_mask.seen = holes_seen
     m = cv2.resize(m, (w, h), interpolation=cv2.INTER_LINEAR)
     return np.clip(cv2.GaussianBlur(m, (0, 0), 1.5), 0, 1)
 
@@ -179,6 +203,7 @@ def main():
     alpha = np.clip((alpha - 0.1) / 0.8, 0, 1); alpha = alpha * alpha * (3 - 2 * alpha)   # tighter soft edge, no fringe of old floor
     edge_fg = max(alpha[:24].max(), alpha[-24:].max(), alpha[:, :24].max(), alpha[:, -24:].max())
     rep['device_touches_edge'] = bool(edge_fg > 0.5)
+    rep['holes_opened'] = getattr(device_mask, 'opened', [])
     t = hex_lab(a.hex)
     Lt = float(t[0])
     sw_rgb = np.array([int(a.hex.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)], np.float32) / 255.

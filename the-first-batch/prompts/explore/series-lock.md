@@ -21,7 +21,7 @@ No people, no hands, no logos, no brand names, no readable text.
 **Firm, the default from Oct 19 2026**
 
 ```
-Firm, freshly kneaded raw bread dough that holds its shape, one cohesive mass, pale oatmeal beige like raw pizza dough, never pink and never meaty. Satin matte skin with fine stretch lines and soft folds, no holes, no lace, no webbing. Where it meets the floor it stays thick and rounded. No pool, no puddle, nothing runny, wet or glossy. Shaped only by gravity.
+Firm and moist, freshly mixed raw bread dough, thick, heavy, plump and saggy, one cohesive mass in one even pale oatmeal beige like raw pizza dough, never pink and never meaty. Satin matte skin with fine stretch lines and soft folds. Never dry or stringy: no strands, threads or torn edges stretching between pieces, no holes, no lace, no webbing. Where it meets the floor it stays thick and rounded. No pool, no puddle, nothing runny, wet, slimy or glossy. Shaped only by gravity, an object and never a creature.
 ```
 
 **Poured, used on Deluge, Spice and Bopkins**
@@ -29,6 +29,10 @@ Firm, freshly kneaded raw bread dough that holds its shape, one cohesive mass, p
 ```
 One cohesive mass of raw kneaded bread dough, pale oatmeal beige like raw pizza dough, never pink and never meaty. Satin matte skin with fine stretch lines, no holes, no lace, no webbing. One thick heavy lobe. The pool is a thick soft edged puddle with a dull satin surface, not liquid and not glossy. Shaped only by gravity.
 ```
+
+## Brand guide · Good dough, bad dough (Josh, Nov 8 2026)
+
+Good is thick, heavy, plump and saggy. Bad is pink (reads as meat paste), wet (slime or batter), dry (stringy strands stretching between pieces) and holes. One color, pale oatmeal beige, color corrected in every photo and never used as a design color. Firm and moist, freshly mixed and heavy. Inanimate: it never stands upward, reaches or crawls, and never feels alive.
 
 ## Rules that came from failures
 

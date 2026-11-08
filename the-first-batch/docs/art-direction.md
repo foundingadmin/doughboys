@@ -11,7 +11,7 @@ Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 8 2026.
 ## 4K queue · approved frames waiting for their 4K run
 Claude Code runs these from the repo (prompts/4k) through the Gemini API: tight crop, 4K edit, check, finish. Say "build a track cover" and it follows `.claude/skills/build-track-cover`, stopping at four gates for Josh: the explore pick, the 4K prompt, the render pick and the finished master. Manual route if needed: crop tight, then Google AI Studio, Gemini 3 Pro Image (Nano Banana Pro), resolution 4K, aspect ratio matched to the crop, prompt pasted as an edit in the same chat.
 
-### Spice · F2 · approved Oct 19 2026 · 4K run Nov 8 2026, waiting on Josh's pick
+### Spice · F2 · approved Oct 19 2026 · Josh picked render B Nov 8 2026, master v1 on its board
 - **Run** · two renders at 4:3 from the Figma original. B passes every named fix, A misses the tuner, the threads and the door tab. [Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-12)
 - **Source image** · [Figma node 53:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=53-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 02 Spice · E4 set"
 - **Prompt**
@@ -30,7 +30,7 @@ Keep this exact photograph. Same camera position, framing, lighting, Walkman, he
 No people, no hands, no logos, no readable text other than the tuner scale.
 ```
 
-### Bopkins (was Danish) · G1 · approved Oct 19 2026 · 4K runs Nov 8 2026, waiting on Josh's pick
+### Bopkins (was Danish) · G1 · approved Oct 19 2026 · text pass G Nov 8 2026, waiting on Josh's pick
 - **Run** · six renders at 5:4, the approved prompt plus two sharper re-runs on the control labels (prompt below is the original, the repo copy is the sharpened one). Only F prints START, STOP, 33, 45 cleanly; it brought back a small blank badge on the lid and the pitch scale stays mushy. [Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-12)
 - **Source image** · [Figma node 58:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=58-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 03 Danish · round 1"
 - **Prompt**
@@ -49,7 +49,7 @@ Keep this exact photograph. Same camera position, framing, lighting, turntable, 
 No people, no hands, no logos.
 ```
 
-### Suavecita · I4 · approved Oct 19 2026 · 4K runs Nov 8 2026, waiting on Josh's call
+### Suavecita · I4 · approved Oct 19 2026 · back to explore Nov 8 2026, prompt kept for the device
 - **Run** · six renders at 3:2, the approved prompt plus two sharper re-runs on the screen. Everything off the screen passes. The edit will not redraw the LCD: seven of the eight named icons never land and the background stays mottled. [Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-137)
 - **Source image** · [Figma node 73:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=73-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 04 Suavecita · lean back set"
 - **Prompt**
@@ -110,6 +110,8 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 - **Type** · Anton for titles, Archivo for band name and fine print, Share Tech Mono for model numbers and runtimes. Free Google Fonts only
 - **Track covers** · catalog layout set by Josh on the Deluge cover Oct 18 2026. Meta row and rule, big title with the subhead tight under it, device photo filling about 85 percent of the width and sitting on the footer. Fresh Batch sticker tilted 18 degrees clockwise at the upper right, overlapping the device. Footer is runtime left, band name and legal line centered, spec list right. No features column, no spec rule, halftone and paper textures off for now. Sticker ring is Bondi on warm grounds, Tangerine on cool grounds
 - **Instagram** · native 4:5 post for every track, same layout as the cover scaled to 720 wide with the spec list reading Out Now. The album post is the cover shown as a 7 inch single on paper. The 3:4 profile grid trims the sides, so type stays inside the crop
+- **Iconic devices · set by Josh Nov 8 2026** · where a track's device is a household icon, it must look exactly like the real one or the cultural connection breaks. Boombap is the classic 1985 bedside digital clock radio (dark brown wedge, wood grain slatted top, long snooze bar, red LED clock left, FM AM dial right). Show Me Your Love is the 1993 Talkboy, side profile, with the Doughboy script in place of its name. Other logos stay off
+- **Dough shapes · set by Josh Nov 8 2026** · never a brick (Determinator). Never forced to hang off the top of a device, it looks fake (Mancub). Good dough is thick, heavy, plump and saggy; bad dough is pink, wet, dry and stringy, or full of holes (brand guide, Good dough, bad dough)
 - **Production** · image generation, no photoshoot (decided Oct 18 2026). See the device photo workflow above
 - **Device photo recipe** · name the device parts, add analog knobs and buttons, and a small glowing red power light where a real one would sit (a lit screen counts). No people, hands, logos or brand names. Exploration renders say no readable text, the 4K prompt supplies the exact real label words. Scene and dough come from the series lock
 - **Canva** · any image Claude generates in Canva moves straight into the Titus Tests folder
@@ -117,14 +119,14 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 
 ## Track list · best match colors as of Oct 19 2026
 1. Deluge · Silver dual deck boombox · Bondi #65B8E5 · Deluge v1 final (drips retouched, square expand, color corrected to Bondi). In the repo and Drive Masters. Placed in Figma on Cover, Post and Canvas Oct 29 2026, exports next
-2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. 4K run Nov 8 2026, render B passes, Josh picks next
-3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. 4K runs Nov 8 2026, best is F with two Photoshop level flaws, Josh picks next
-4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. 4K runs Nov 8 2026, screen icons will not redraw, Josh decides the route
+2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Josh picked render B Nov 8 2026. Finished master v1 at Butter on its Review board, placing on Josh's yes
+3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. 4K runs Nov 8 2026. Josh called F the best, then a text pass on F made G, every button and pitch scale mark clean. Josh Photoshops the lid square
+4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. 4K runs Nov 8 2026 made a device Josh likes, but he dropped the nest shape. Back to explore Nov 8 2026 (round 3: ball, disc, tucked), low res only. Reuse the 4K device recipe on the new pick
 5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026, Josh picked render B. Finished with the rebuilt backdrop at depth 0.75 and cyc horizon 0.16, placed in Figma Nov 8 2026, exports next
-6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in). Fresh round 1 from the repo Nov 8 2026 on the brick silhouette, on its Review board for Josh's pick (Claude recommends 1, runner up 5)
-7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65 · Walnut wood grain 1984 clock radio, a flat topped clump on top with thick droopy sides, the left lobe to the floor. Round 1 Nov 8 2026 on its Review board for Josh's pick (Claude recommends 4, runner up 2)
-8. Mancub · Classic grey handheld game console, no logos · Lime #82A967 · Upright in a broad heap, one wide fold out of the cartridge slot down the left. Rounds 1 and 2 Nov 8 2026 on one Review board (Claude recommends R2-5, runner up R2-3). Round 1 dough read as a rope, round 2 fixed it. Watch: the console shape sits close to a real 1989 handheld, so no logos ever
-9. Show Me Your Love · Talkboy with its logo changed to Doughboy · Grape #8E74B7 · Silver kids' tape recorder with a telescoping mic, door stuffed and hanging open, the overflow slumping to one round mound at the left third. Rounds 1 and 2 Nov 8 2026 on one Review board (Claude recommends R2-3). Round 1 mounds coiled like soft serve, round 2 fixed it. The badge stays blank until the 4K prompt writes Doughboy
+6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in). Josh Nov 8 2026: never a brick. Round 2 tries a ball tied to the slot and a soft bulge sagging out of it, on its Review board
+7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65 · The classic 1985 bedside digital clock radio, exactly as Josh's reference. Round 2 Nov 8 2026 shows dough on top and dough underneath, on its Review board
+8. Mancub · Classic grey handheld game console, no logos · Lime #82A967 · Console stuck upright into a floor mound, nothing hanging off the top (Josh rejected rounds 1 and 2 Nov 8 2026). Round 3 on its Review board. No logos ever
+9. Show Me Your Love · Talkboy with its logo changed to Doughboy · Grape #8E74B7 · Must look exactly like the 1993 Talkboy, side profile, Doughboy script in place of its name. Round 3 Nov 8 2026 on its Review board, door stuffed, overflow slumping to a mound at the left third
 
 Watch outs · Bopkins into Suavecita is the one weak border in track order (18.7), so it always gets a gutter. On the 1:1 cover the upper right sticker clips long titles (Determinator, Show Me Your Love). The softbox edge kept sneaking into the top left corner until the series lock stopped naming it (Oct 19 2026). Still check every frame for it.
 

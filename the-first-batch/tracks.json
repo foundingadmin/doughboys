@@ -106,8 +106,8 @@
    "device": "Yellow sports Walkman",
    "subhead": "Waterproof Sports Cassette Player",
    "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
-   "status": "4K rendered, Josh picks on board 163:12",
-   "next": "Josh picks the render (Claude recommends B), then cover.py finish 02 --render the-first-batch/assets/photos/02-spice/02-spice-4k-render-4x3-b.jpg",
+   "status": "master v1 finished, Josh yes then place",
+   "next": "Josh says yes on board 174:12 (or names depth, horizon or re-render), then place in Figma per docs/figma.md and hand off the files",
    "source": {
     "figma_node": "53:2",
     "pick": "F2",
@@ -125,8 +125,30 @@
     "post": "118:444",
     "canvas": "118:486",
     "photo_hash": null,
-    "post_transform": null,
-    "canvas_transform": null
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1006
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2193
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ]
    },
    "drive": {
     "track_folder": "1f2cER8F5utcrGxMwU9c0ULAPjJiFK9Au",
@@ -187,8 +209,57 @@
      "date": "2026-11-08",
      "what": "4K tight crop A vs B, matched crops on tuner, door edge, dough, window, headphones, corner",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-12"
+    },
+    {
+     "node": "174:12",
+     "date": "2026-11-08",
+     "what": "Finished master v1 next to Deluge v1 and Traycee v1, Butter chips and swatch bars, cord loop, floor and seam crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-12"
     }
-   ]
+   ],
+   "master": "the-first-batch/assets/photos/02-spice/02-spice-final-v1.jpg",
+   "render_pick": "the-first-batch/assets/photos/02-spice/02-spice-4k-render-4x3-b.jpg",
+   "finish_report": {
+    "falloff": 0.75,
+    "horizon": 0.16,
+    "holes_opened": [
+     {
+      "area_px_1600": 93763,
+      "deltaE": 4.69
+     },
+     {
+      "area_px_1600": 493,
+      "deltaE": 1.9
+     },
+     {
+      "area_px_1600": 2780,
+      "deltaE": 2.63
+     },
+     {
+      "area_px_1600": 3278,
+      "deltaE": 0.88
+     }
+    ],
+    "deltaE_glow_vs_swatch": 1.07,
+    "backdrop_hue_spread_deg": 0.0,
+    "corner_L_minus_glow": [
+     -20.6,
+     -23.1,
+     -2.7,
+     -6.5
+    ],
+    "device_touches_edge": false,
+    "offset": [
+     952,
+     1560
+    ],
+    "render": [
+     4800,
+     3584
+    ]
+   },
+   "render_pick_by_josh": "2026-11-08",
+   "finish_note": "First finish kept the old backdrop inside the headphone cord loop. finish.py now opens enclosed holes that match the backdrop beside them (holes_opened in the report), re-run Nov 8 2026"
   },
   {
    "n": "03",
@@ -203,8 +274,8 @@
    "device": "Silver direct drive turntable",
    "subhead": "Direct Drive Turntable With Pitch Control",
    "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
-   "status": "4K rendered A to F, two sharper re-runs spent, Josh picks on board 164:12",
-   "next": "Josh picks (Claude recommends F, with the lid badge and pitch scale as Photoshop fixes; D is the fallback), then cover.py finish 03 --render <pick>",
+   "status": "4K text pass G and H done, Josh picks on board 176:12",
+   "next": "Josh picks (Claude recommends G), then cover.py finish 03 --render the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-g.jpg. Josh Photoshops the lid square",
    "source": {
     "figma_node": "58:2",
     "pick": "G1",
@@ -332,8 +403,26 @@
       "work/03-bopkins/check/f-tile5.jpg",
       "work/03-bopkins/check/f-tile6.jpg"
      ],
-     "check": "Sharper 2. Buttons read START STOP 33 45, knob and plate plain. Flaws: small blank badge on the lid, mushy pitch scale. Photoshop level",
+     "check": "Sharper 2. Buttons read START STOP 33 45, knob and plate plain. Flaws: small blank badge on the lid, mushy pitch scale. Photoshop level. Josh: best so far, he Photoshops the lid square (Nov 8 2026)"
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-g.jpg",
+     "letter": "g",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins-text-pass.md",
+     "source": "render F",
+     "check": "Text pass on F. START STOP 33 45, PITCH and +8 +4 0 -4 -8 all clean at native size. Lid square and two faint specks above 33 and 45 left for Photoshop",
      "recommended": true
+    },
+    {
+     "file": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-h.jpg",
+     "letter": "h",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/03-bopkins-text-pass.md",
+     "source": "render F",
+     "check": "Text pass on F. Buttons clean, pitch scale out of order"
     }
    ],
    "crop": {
@@ -352,8 +441,27 @@
      "date": "2026-11-08",
      "what": "4K renders A to F, first prompt plus two sharper re-runs, crops on front left, front right, dust cover",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-12"
+    },
+    {
+     "node": "176:12",
+     "date": "2026-11-08",
+     "what": "Text pass G and H from F, native crops of the controls, close up patches",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=176-12"
     }
-   ]
+   ],
+   "text_patch": {
+    "files": [
+     "work/03-bopkins/figma/patch-1.jpg",
+     "work/03-bopkins/figma/patch-2.jpg"
+    ],
+    "box_in_F": [
+     3041,
+     1856,
+     4470,
+     2673
+    ],
+    "note": "Front right controls crop of F rendered alone at 4K (5504 x 3072). Patch 2 fully correct. Not composited, G already passes"
+   }
   },
   {
    "n": "04",
@@ -366,9 +474,9 @@
    "ring_hex": "#65B8E5",
    "device": "Virtual pet in a clear pink shell",
    "subhead": "Virtual Pet With Built In Clock",
-   "silhouette": "No slot. The egg leans back in a firm dough nest, the front lip folded down to the floor",
-   "status": "4K rendered A to F, screen icons will not redraw, Josh decides on board 164:137",
-   "next": "Josh picks: finish F as is, approve a screen only pass on the source then one fresh 4K run (Claude recommends), or Photoshop. Then cover.py finish 04 --render <pick>",
+   "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
+   "status": "exploring, round 3 blocked on Gemini credits",
+   "next": "Top up Gemini prepaid credits, then gen.py explore for prompts/explore/04-suavecita-round-3a, 3b, 3c (3 frames each, 1K, gemini-3.1-flash-image-preview). Only round-3a/01 came back before the 402. Low res only, no 4K until Josh picks",
    "source": {
     "figma_node": "73:2",
     "pick": "I4",
@@ -516,6 +624,27 @@
      "date": "2026-11-08",
      "what": "4K renders A to F, screen crops for every run, chain, lip and buttons on F",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-137"
+    }
+   ],
+   "device_4k_recipe": "Josh liked the 4K virtual pet device (Nov 8 2026). Reuse on the new pick: lock the source, tight crop, prompts/4k/04-suavecita.md (shell, buttons, chain wording). Fix the screen icons in the source before the 4K run, the edit will not redraw them",
+   "explore_rounds": [
+    {
+     "round": "3a",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/04-suavecita-round-3a.md",
+     "frames": "work/04-suavecita/round-3a"
+    },
+    {
+     "round": "3b",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/04-suavecita-round-3b.md",
+     "frames": "work/04-suavecita/round-3b"
+    },
+    {
+     "round": "3c",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/04-suavecita-round-3c.md",
+     "frames": "work/04-suavecita/round-3c"
     }
    ]
   },
@@ -708,9 +837,9 @@
    "ring_hex": "#DE9F65",
    "device": "TV VCR combo",
    "subhead": "13 Inch TV With Built In VCR",
-   "silhouette": "A dough brick shaped like a VHS tape, half in the slot, the screen glowing video blue",
-   "status": "exploring, round 1 ready for Josh",
-   "next": "Josh picks on board 163:94 (Claude recommends 1, runner up 5), then cover.py lock 06 work/06-determinator/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
+   "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
+   "status": "exploring, round 2 ready for Josh",
+   "next": "Josh picks on board 174:77 (Claude recommends 2b-1, runner up 2a-2), then cover.py lock 06",
    "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
    "figma": {
     "mode_id": "114:7",
@@ -735,6 +864,18 @@
      "prompt": "the-first-batch/prompts/explore/06-determinator-round-1.md",
      "frames": "work/06-determinator/round-1",
      "contact_sheet": "the-first-batch/explore/06-determinator/round-1/contact-sheet.jpg"
+    },
+    {
+     "round": "2a",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/06-determinator-round-2a.md",
+     "frames": "work/06-determinator/round-2a"
+    },
+    {
+     "round": "2b",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/06-determinator-round-2b.md",
+     "frames": "work/06-determinator/round-2b"
     }
    ],
    "review_boards": [
@@ -743,6 +884,12 @@
      "date": "2026-11-08",
      "what": "Explore round 1, VHS brick silhouette",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-94"
+    },
+    {
+     "node": "174:77",
+     "date": "2026-11-08",
+     "what": "Explore round 2, no brick: 2a ball, 2b pillow",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-77"
     }
    ]
   },
@@ -756,11 +903,11 @@
    "ground_hex": "#DE9F65",
    "ring": "bondi",
    "ring_hex": "#65B8E5",
-   "device": "Wood grain clock radio",
+   "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
-   "silhouette": "No slot. A flat topped clump plopped on top hours ago, thick droopy sides",
-   "status": "exploring, round 1 ready for Josh",
-   "next": "Josh picks on board 163:129 (Claude recommends 4, runner up 2), then cover.py lock 07 work/07-boombap/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
+   "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
+   "status": "exploring, round 2 ready for Josh",
+   "next": "Josh picks on board 174:112 (Claude recommends 2b-1 underneath, or 2a-3 on top), then cover.py lock 07",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
@@ -784,6 +931,18 @@
      "prompt": "the-first-batch/prompts/explore/07-boombap-round-1.md",
      "frames": "work/07-boombap/round-1",
      "contact_sheet": "the-first-batch/explore/07-boombap/round-1/contact-sheet.jpg"
+    },
+    {
+     "round": "2a",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/07-boombap-round-2a.md",
+     "frames": "work/07-boombap/round-2a"
+    },
+    {
+     "round": "2b",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/07-boombap-round-2b.md",
+     "frames": "work/07-boombap/round-2b"
     }
    ],
    "review_boards": [
@@ -792,8 +951,15 @@
      "date": "2026-11-08",
      "what": "Explore round 1, flat topped clump on top",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-129"
+    },
+    {
+     "node": "174:112",
+     "date": "2026-11-08",
+     "what": "Explore round 2, reference clock radio, 2a on top, 2b underneath",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-112"
     }
-   ]
+   ],
+   "device_rule": "Must look exactly like the reference model, a cultural icon (Josh, Nov 8 2026)"
   },
   {
    "n": "08",
@@ -806,9 +972,9 @@
    "ring_hex": "#DE9F65",
    "device": "Classic grey handheld game console, no logos",
    "subhead": "Pocket Game System for Young Players",
-   "silhouette": "Standing upright in a pile of dough spilling out from behind the cartridge slot",
-   "status": "exploring, round 2 ready for Josh",
-   "next": "Josh picks on board 163:164 (Claude recommends R2-5, runner up R2-3), then cover.py lock 08 work/08-mancub/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
+   "silhouette": "Dough on the floor only, console stuck upright into it, nothing hanging off the top (Josh, Nov 8 2026: the hanging dough looks fake)",
+   "status": "exploring, round 3 ready for Josh",
+   "next": "Josh picks on board 174:147 (Claude recommends 6, runner up 4). Rounds 1 and 2 rejected",
    "figma": {
     "mode_id": "114:9",
     "section": "118:1016",
@@ -839,6 +1005,12 @@
      "prompt": "the-first-batch/prompts/explore/08-mancub-round-2.md",
      "frames": "work/08-mancub/round-2",
      "contact_sheet": "the-first-batch/explore/08-mancub/round-2/contact-sheet.jpg"
+    },
+    {
+     "round": "3",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/08-mancub-round-3.md",
+     "frames": "work/08-mancub/round-3"
     }
    ],
    "review_boards": [
@@ -847,6 +1019,12 @@
      "date": "2026-11-08",
      "what": "Explore rounds 1 and 2, round 2 drops the rope",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-164"
+    },
+    {
+     "node": "174:147",
+     "date": "2026-11-08",
+     "what": "Explore round 3, console planted upright in a floor mound",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-147"
     }
    ]
   },
@@ -862,8 +1040,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "exploring, round 2 ready for Josh",
-   "next": "Josh picks on board 163:229 (Claude recommends R2-3), then cover.py lock 09 work/09-show-me-your-love/round-<R>/0<F>.png --pick R<R>-<F>. Frames live in work/, which is scratch: if the session ended, pull the pick from its board tile",
+   "status": "exploring, round 3 ready for Josh",
+   "next": "Josh picks on board 174:182 (Claude recommends 1, runner up 3)",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -895,6 +1073,12 @@
      "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-2.md",
      "frames": "work/09-show-me-your-love/round-2",
      "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-2/contact-sheet.jpg"
+    },
+    {
+     "round": "3",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-3.md",
+     "frames": "work/09-show-me-your-love/round-3"
     }
    ],
    "review_boards": [
@@ -903,8 +1087,15 @@
      "date": "2026-11-08",
      "what": "Explore rounds 1 and 2, round 2 drops the coiled mound and the tongue",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-229"
+    },
+    {
+     "node": "174:182",
+     "date": "2026-11-08",
+     "what": "Explore round 3, the reference recorder in side profile with the Doughboy script",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-182"
     }
-   ]
+   ],
+   "device_rule": "Must look exactly like the 1993 Talkboy, a cultural icon, with the Doughboy script in place of its name (Josh, Nov 8 2026)"
   }
  ],
  "figma_review_page": "128:77",
