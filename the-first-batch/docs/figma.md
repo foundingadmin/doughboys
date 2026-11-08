@@ -68,7 +68,7 @@ return out;
 
 ## Review boards
 
-Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, in one row left to right, top aligned, 400 apart, newest at the right (Josh, Nov 8 2026).
+Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, one column per track in album order left to right, each track's rounds stacked top to bottom with the oldest at the top, 400 apart (Josh, Nov 8 2026). Name every board starting `CBDB NN`; `figma_review_board.js` re-lays the page after adding one.
 
 1. Make the images in `work/NN-track/figma/`. Full frames downscaled to 4096 wide, check crops cut from the full render at native pixels, the same boxes for every option. JPG, under 10 MB each.
 2. Copy `pipeline/figma_review_board.js`, fill in `BOARD` and `ROWS`, run it as one `use_figma` call. It returns `slots` with an empty rectangle per file.

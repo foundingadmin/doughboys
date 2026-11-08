@@ -40,14 +40,13 @@ const text = (s, family, style, size, v, width) => {
   if (width) { t.textAutoResize = "HEIGHT"; t.resize(width, t.height); }
   return t;
 };
-// Boards run left to right in one row, top aligned, newest at the right (Josh, Nov 8 2026)
-let maxX = 0;
-for (const c of page.children) maxX = Math.max(maxX, c.x + c.width);
+// Layout (Josh, Nov 8 2026): one column per track, album order left to right,
+// rounds stacked oldest at the top. BOARD.name must start "CBDB NN". The pass at the end re-lays the page.
 
 const COL = 1600, GAP = 48;
 const board = figma.createAutoLayout("VERTICAL", { name: BOARD.name, itemSpacing: 96, paddingLeft: 96, paddingRight: 96, paddingTop: 96, paddingBottom: 96 });
 board.fills = [paint(vPage)];
-board.x = maxX ? maxX + 400 : 0; board.y = 0;
+board.x = -100000; board.y = 0;   // placed by the layout pass below
 const head = figma.createAutoLayout("VERTICAL", { name: "Header", itemSpacing: 16 });
 board.appendChild(head);
 head.appendChild(text(BOARD.title, "Anton", "Regular", 120, vInk));
@@ -73,4 +72,14 @@ for (const [title, ...tiles] of ROWS) {
   s.appendChild(r);
   for (const t of tiles) tile(r, t);
 }
+const num = id => id.split(":").map(Number);
+const cols = {}, rest = [];
+for (const n of page.children) { const m = n.name.match(/^CBDB (\d\d)/); if (m) (cols[m[1]] ||= []).push(n); else rest.push(n); }
+let cx = 0;
+for (const k of Object.keys(cols).sort()) {
+  let y = 0, w = 0;
+  for (const b of cols[k].sort((a, b) => { const [a1, a2] = num(a.id), [b1, b2] = num(b.id); return a1 - b1 || a2 - b2; })) { b.x = cx; b.y = y; y += b.height + 400; w = Math.max(w, b.width); }
+  cx += w + 400;
+}
+for (const b of rest) { b.x = cx; b.y = 0; cx += b.width + 400; }
 return { pageId: page.id, boardId: board.id, size: [board.width, board.height], slots };
