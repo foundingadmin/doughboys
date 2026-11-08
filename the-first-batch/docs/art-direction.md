@@ -5,7 +5,7 @@ Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 8 2026.
 - [Creative brief](https://claude.ai/code/artifact/e34a1d07-501a-4033-ba3d-b4bcc4d3668e)
 - [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Toolkits (variables and components), Brand Guide, Album Art and Review (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Archive (was Page 1) keeps every generated test at full size
 - [Production repo](https://github.com/foundingadmin/doughboys) · Claude Code runs the device photo workflow end to end from here. CLAUDE.md is the manual, the-first-batch/tracks.json holds each track's state
-- **Reviews happen in Figma** · set by Josh Oct 29 2026. Every image up for review is assembled on the Review page, options side by side with matched crops and a pass or fail note under each
+- **Reviews happen in Figma** · set by Josh Oct 29 2026. From Nov 8 2026 the Review page has three sections by stage, Exploration, 4K and Complete, with one column per track inside. Every image up for review is assembled on the Review page, options side by side with matched crops and a pass or fail note under each
 - [Design canvas](https://claude.ai/artifact/AKevZru2Tw5MbhUfXc8KkH) · retired Oct 29 2026, kept for reference
 
 ## 4K queue · approved frames waiting for their 4K run
@@ -28,6 +28,11 @@ Keep this exact photograph. Same camera position, framing, lighting, virtual pet
 
 No people, no hands, no logos.
 ```
+
+### Boombap · R4 +20 · approved Nov 8 2026 · 4K render A Nov 8 2026, waiting on Josh
+- **Source image** · [Review board 209:12](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=209-30), the +20 percent width
+- **Prompt** · the-first-batch/prompts/4k/07-boombap.md. 6:30 with only AM lit, FM and AM dial rows, SNOOZE, key and switch labels, straight edges
+- **Run** · [Review board 215:12](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=215-12)
 
 ## Concept
 The dough is the media. The only way to play a Doughboys record is to stuff a wad of raw dough into your boombox where the cassette goes. Shot like a 1990 catalog page. Real ink, real paper, scanned for the archive. Nostalgia, youthful joy, fun, curiosity. Flat, dry, ironic humor.
@@ -86,9 +91,9 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. 4K runs Nov 8 2026 made a device Josh likes, but he dropped the nest shape. Back to explore Nov 8 2026. Round 3 on Flash (ball, disc, tucked) on its Review board. Reuse the 4K device recipe on the new pick
 5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026, Josh picked render B. Finished with the rebuilt backdrop at depth 0.75 and cyc horizon 0.16, placed in Figma Nov 8 2026, exports next
 6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in). Josh Nov 8 2026: never a brick. He liked 2b-2 (device turned right, dough over most buttons, power light showing), then picked R3-5 rustic, finger dimples and some buttons left showing so it reads real. Josh passed render A Nov 8 2026. Master v1 finished at Blueberry, Josh approved and it was placed in Figma Nov 8 2026. The TV top touches the subhead on Cover and Post, Josh nudges or Claude re-finishes smaller
-7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65 · The classic 1985 bedside digital clock radio, exactly as Josh's reference. Josh picked dough on top, then R3-3 with the heavier lobe, device nailed (Nov 8 2026). Round 4 sets 6:30 with only AM lit and widens the face, on its Review board
+7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65 · The classic 1985 bedside digital clock radio, exactly as Josh's reference. Josh picked dough on top, then R3-3 with the heavier lobe, device nailed, then the +20 percent wider face with 6:30 and only AM lit (Nov 8 2026). 4K render A on its Review board, tiny key labels still fake
 8. Mancub · Classic grey handheld game console, no logos · Lime #82A967 · Console stuck upright into the dough, nothing hanging off the top. Device as R3-4 with the grey screen frame. Dough uneven and lopsided, never a perfect round mound (Josh Nov 8 2026). R4-1 dough with its finger smear, a minimal crease and a slight counterclockwise lean, round 5 on its Review board. No logos ever
-9. Show Me Your Love · Talkboy with its logo changed to Doughboy · Grape #8E74B7 · Must look exactly like the 1993 Talkboy, side profile. Josh liked the R3-3 dough, inside the tape drawer and spilling out one side (Nov 8 2026). Explore generates the original Talkboy script, Josh retypes it as Doughboy in Photoshop in the same style. Round 4 Nov 8 2026 on its Review board
+9. Show Me Your Love · Talkboy with its logo changed to Doughboy · Grape #8E74B7 · Must look exactly like the 1993 Talkboy, side profile. Josh liked the R3-3 dough, inside the tape drawer and spilling out one side (Nov 8 2026). Explore generates the original Talkboy script, Josh retypes it as Doughboy in Photoshop in the same style. Round 5 Nov 8 2026 combines the best parts of round 4 with Josh's reference photo, on its Review board
 
 Watch outs · Bopkins into Suavecita is the one weak border in track order (18.7), so it always gets a gutter. On the 1:1 cover the upper right sticker clips long titles (Determinator, Show Me Your Love). The softbox edge kept sneaking into the top left corner until the series lock stopped naming it (Oct 19 2026). Still check every frame for it.
 

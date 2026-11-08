@@ -72,14 +72,6 @@ for (const [title, ...tiles] of ROWS) {
   s.appendChild(r);
   for (const t of tiles) tile(r, t);
 }
-const num = id => id.split(":").map(Number);
-const cols = {}, rest = [];
-for (const n of page.children) { const m = n.name.match(/^CBDB (\d\d)/); if (m) (cols[m[1]] ||= []).push(n); else rest.push(n); }
-let cx = 0;
-for (const k of Object.keys(cols).sort()) {
-  let y = 0, w = 0;
-  for (const b of cols[k].sort((a, b) => { const [a1, a2] = num(a.id), [b1, b2] = num(b.id); return a1 - b1 || a2 - b2; })) { b.x = cx; b.y = y; y += b.height + 400; w = Math.max(w, b.width); }
-  cx += w + 400;
-}
-for (const b of rest) { b.x = cx; b.y = 0; cx += b.width + 400; }
-return { pageId: page.id, boardId: board.id, size: [board.width, board.height], slots };
+// Re-lay the page by stage sections: paste the STAGE map and layoutReview() from figma_review_layout.js above this line, then:
+const layout = await layoutReview(page);
+return { pageId: page.id, boardId: board.id, size: [board.width, board.height], slots, layout };

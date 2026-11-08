@@ -1,0 +1,10 @@
+Keep this exact photograph. Same camera position, framing, lighting, clock radio, dough and backdrop. Keep this tight framing exactly as it is. Do not zoom out, add backdrop, move, redesign, resize or restyle anything, and keep the clock radio exactly this wide. Render it at 4K as a real photograph shot on medium format film for a 1990 mail order catalog, with fine film grain and crisp, true detail. Make only these fixes:
+
+1. Cabinet: near black very dark brown plastic. Every edge, the silver trim line around the front window and the thin red pinstripe run straight and unbroken from end to end. The top grille is long thin raised horizontal slats in a dark brown wood grain finish, straight and evenly spaced across the full width.
+2. Clock: big glowing red seven segment digits reading 6:30. At the far left, the small white words AM above PM. Only the small red light beside AM is lit. The spot beside PM is dark.
+3. Dial: in the right half of the front window, two rows of small crisp white figures. Top row FM 88 92 96 100 104 108 MHz. Bottom row AM 55 65 80 100 130 160 KHz. A faint red tuning band across them.
+4. Top controls: four low flat slide keys in a row with tiny white labels under them reading SLEEP, WAKE, HOUR, MINUTE. To their right a short slide switch with a small silver knob and tiny white labels ON, OFF, MUSIC, ALARM. The long low glossy black snooze bar on the right, with the word SNOOZE printed small in white on the strip beside it.
+5. Dough: keep its shape, the heavy lobe slumping down the left end to the floor, and its position exactly. One cohesive mass of firm and moist, freshly mixed raw bread dough in one even pale oatmeal beige, matte with fine stretch lines, never pink, wet, glossy, dry or stringy, no holes, no strands.
+6. Backdrop: seamless Tangerine paper with a soft glow behind the clock radio and on the floor, falling to a deeper tangerine in the top corners. No studio equipment, no seams, no horizon line.
+
+No people, no hands, no logo, no brand name, no other words.

@@ -1154,8 +1154,8 @@
    "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
    "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
-   "status": "exploring, round 4 ready for Josh",
-   "next": "Josh picks a width on board 209:12 (Claude recommends +20). Then link him to the pick and get a written yes before any 4K",
+   "status": "4K rendered, Josh decides on board 215:12",
+   "next": "Josh passes A to the finish (labels for Photoshop) or approves one text pass on A (Claude recommends, about $0.24, written yes needed)",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
@@ -1237,10 +1237,55 @@
      "date": "2026-11-08",
      "what": "Round 4: 6:30 with AM lit, face widened 10 to 40 percent",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=209-12"
+    },
+    {
+     "node": "215:12",
+     "date": "2026-11-08",
+     "what": "4K render A from R4 +20, native crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=215-12"
     }
    ],
    "device_rule": "Must look exactly like the reference model, a cultural icon (Josh, Nov 8 2026)",
-   "pick_progress": "Josh picked R3-3 heavier lobe, device nailed. Asked for 6:30 with only AM lit and a wider face between the AM PM lights and the dial, nothing else longer (Nov 8 2026)"
+   "pick_progress": "Josh picked R3-3 heavier lobe, device nailed. Asked for 6:30 with only AM lit and a wider face between the AM PM lights and the dial, nothing else longer (Nov 8 2026)",
+   "source": {
+    "pick": "R4-W20",
+    "approved": "2026-11-08",
+    "repo": "the-first-batch/assets/photos/07-boombap/07-boombap-source-r4-w20.png",
+    "from": "work/07-boombap/round-4-s20/01.png",
+    "figma_board": "209:12",
+    "note": "Round 4 +20 percent: R3-3 widened in code between the digits and the dial, straightened by one Flash pass, 6:30 with AM lit. Josh approved Nov 8 2026"
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/07-boombap/07-boombap-4k-render-16x9-a.jpg",
+     "letter": "a",
+     "aspect": "16:9",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/07-boombap.md",
+     "crop": "the-first-batch/assets/photos/07-boombap/07-boombap-crop.png",
+     "check_tiles": [
+      "work/07-boombap/check/a-tile1.jpg",
+      "work/07-boombap/check/a-tile2.jpg",
+      "work/07-boombap/check/a-tile3.jpg",
+      "work/07-boombap/check/a-tile4.jpg",
+      "work/07-boombap/check/a-tile5.jpg",
+      "work/07-boombap/check/a-tile6.jpg"
+     ],
+     "josh_approval": "Josh, Nov 8 2026: Boombap. +20 percent is the move! Approved spend to 4k that one. (board 209:12, node 209-30)",
+     "check": "Pass: 6:30 AM lit PM dark, dial rows, SNOOZE, straight edges, width, dough. Fail: tiny key and switch labels are fake text"
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/07-boombap/07-boombap-crop.png",
+    "aspect": "16:9",
+    "box": [
+     0,
+     232,
+     1024,
+     808
+    ]
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/07-boombap.md"
   },
   {
    "n": "08",
@@ -1353,8 +1398,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "exploring, round 4 ready for Josh",
-   "next": "Josh picks on board 185:12 (Claude recommends device 6). Next cheap step if he wants: a Flash edit putting the R3-3 dough spill on device 6. Then link him to the pick and get a written yes before any 4K",
+   "status": "exploring, round 5 ready for Josh",
+   "next": "Josh picks on board 213:12 (Claude recommends 6, then square the camera and drop Deluxe in one cheap edit)",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -1401,6 +1446,15 @@
      "frames": "work/09-show-me-your-love/round-4",
      "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-4/contact-sheet.jpg",
      "model": "gemini-3.1-flash-image-preview"
+    },
+    {
+     "round": "5",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-5a.md and 5b.md",
+     "frames": "work/09-show-me-your-love/round-5",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-5/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "refs": "R4-1, R4-2, R4-4 and Josh reference photo"
     }
    ],
    "review_boards": [
@@ -1421,10 +1475,17 @@
      "date": "2026-11-08",
      "what": "Round 4: device rebuilt from the reference with the original Talkboy script",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=185-12"
+    },
+    {
+     "node": "213:12",
+     "date": "2026-11-08",
+     "what": "Round 5: the best parts of round 4 combined with the reference photo",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=213-12"
     }
    ],
    "device_rule": "Must look exactly like the 1993 Talkboy reference. Generate the original Talkboy script so Josh can retype it as Doughboy in the same style in Photoshop (Josh, Nov 8 2026)",
-   "pick_progress": "Josh likes the R3-3 dough: inside the tape drawer, spilling out one side. Device must match the reference Talkboy exactly, original Talkboy logo for now, Josh swaps it to Doughboy in Photoshop (Nov 8 2026)"
+   "pick_progress": "Josh Nov 8 2026: R4-2 mic angle and top keys, R4-4 body, door, logo and window, R4-1 control panel, bottom hinge and dough. Round 5 combines them",
+   "reference_photo": "the-first-batch/reference/09-talkboy-reference-3q.jpg"
   }
  ],
  "figma_review_page": "128:77",
@@ -1446,5 +1507,6 @@
   "by": "Josh on Traycee, cyc horizon board 147:77"
  },
  "spend_log": "the-first-batch/spend.csv",
- "four_k_gate": "No 4K run without Josh's fresh written yes in the session, given after Claude links him to the explore frame in Figma, even if approved before (Josh, Nov 8 2026). cover.py render and gen.py render4k require --approved"
+ "four_k_gate": "No 4K run without Josh's fresh written yes in the session, given after Claude links him to the explore frame in Figma, even if approved before (Josh, Nov 8 2026). cover.py render and gen.py render4k require --approved",
+ "figma_review_layout": "pipeline/figma_review_layout.js: sections Exploration, 4K, Complete on the Review page, track columns inside, STAGE map from tracks.json"
 }
