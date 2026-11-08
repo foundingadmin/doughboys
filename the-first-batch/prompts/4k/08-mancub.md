@@ -1,0 +1,11 @@
+Keep this exact first photograph. Same camera position, framing, lighting, console, its counterclockwise tilt, dough and backdrop. Keep this tight framing exactly as it is. Do not zoom out, add backdrop, move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1990 mail order catalog, with fine film grain and crisp, true detail. The second and third photographs are close ups of the real console. Use them only for colors, textures and the exact printed words listed below. Copy no logo from them. Make only these fixes:
+
+1. Body: warm light grey matte plastic with a fine molded texture, a row of fine ribs along the right edge, and a small molded OFF ON slide marking on the top edge.
+2. Screen frame: the dark grey frame around the screen. Across its top, two thin parallel lines, magenta over blue, at the top left and the top right, with the words DOT MATRIX WITH STEREO SOUND in small white capitals between them. At the left of the screen a tiny red power light with the word BATTERY in small white capitals under it.
+3. Screen: stays blank, an even pale olive green with nothing on it.
+4. Below the screen: plain grey plastic. No logo, no brand name, no words.
+5. Controls: a black cross shaped direction pad with a small round dimple in its center. Two round magenta buttons set at a slant on the right, with the letters B and A in small blue purple capitals under them. Two grey rubber pill buttons at a slant between them, with the words SELECT and START in small blue purple italic capitals under them. Six angled speaker slots in the lower right corner, and the word PHONES molded faintly into the lower left edge.
+6. Dough: keep its lopsided shape, the finger smear on its right surface, the one minimal crease and its position exactly. One cohesive mass of firm and moist, freshly mixed raw bread dough in one even pale oatmeal beige, matte with fine stretch lines, never pink, wet, glossy, dry or stringy, no holes.
+7. Backdrop: seamless Lime paper with a soft glow behind the console and on the floor, falling to a deeper green in the top corners. No studio equipment, no seams, no horizon line.
+
+No people, no hands, no logos, no brand names, no other words.

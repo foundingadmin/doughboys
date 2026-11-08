@@ -1299,8 +1299,8 @@
    "device": "Classic grey handheld game console, no logos",
    "subhead": "Pocket Game System for Young Players",
    "silhouette": "Dough on the floor, console stuck upright in it, thick enough to hold it, uneven and lopsided, never a perfect round mound (Josh, Nov 8 2026)",
-   "status": "exploring, round 5 ready for Josh",
-   "next": "Josh picks on board 211:12 (Claude recommends 5, runner up 3). Then link him to the pick and get a written yes before any 4K",
+   "status": "4K rendered, Josh passes render A on board 216:12",
+   "next": "Josh passes A, then cover.py finish 08 --render the-first-batch/assets/photos/08-mancub/08-mancub-4k-render-5x4-a.jpg",
    "figma": {
     "mode_id": "114:9",
     "section": "118:1016",
@@ -1382,9 +1382,63 @@
      "date": "2026-11-08",
      "what": "Round 5: R4-1 dough, minimal crease, counterclockwise tilt",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=211-12"
+    },
+    {
+     "node": "216:12",
+     "date": "2026-11-08",
+     "what": "4K render A from R5-5 with Josh detail references, native crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=216-12"
     }
    ],
-   "pick_progress": "Josh: R4-1 lopsided dough with the finger smear on the right, a minimal crease like R4-3, console tilted a little counterclockwise, screen blank (Nov 8 2026)"
+   "pick_progress": "Josh: R4-1 lopsided dough with the finger smear on the right, a minimal crease like R4-3, console tilted a little counterclockwise, screen blank (Nov 8 2026)",
+   "source": {
+    "pick": "R5-5",
+    "approved": "2026-11-08",
+    "repo": "the-first-batch/assets/photos/08-mancub/08-mancub-source-r5-5.png",
+    "from": "work/08-mancub/round-5/05.png",
+    "figma_board": "211:12",
+    "note": "R5-5: R4-1 dough with the finger smear, one minimal crease, about 8 degrees counterclockwise, blank screen. Josh approved Nov 8 2026"
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/08-mancub/08-mancub-4k-render-5x4-a.jpg",
+     "letter": "a",
+     "aspect": "5:4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/08-mancub.md",
+     "crop": "the-first-batch/assets/photos/08-mancub/08-mancub-crop.png",
+     "check_tiles": [
+      "work/08-mancub/check/a-tile1.jpg",
+      "work/08-mancub/check/a-tile2.jpg",
+      "work/08-mancub/check/a-tile3.jpg",
+      "work/08-mancub/check/a-tile4.jpg",
+      "work/08-mancub/check/a-tile5.jpg",
+      "work/08-mancub/check/a-tile6.jpg"
+     ],
+     "josh_approval": "Josh, Nov 8 2026: mancub: 5 is approved! Take this one to 4k. Spend approved. (board 211:12, node 211-41)",
+     "refs": [
+      "the-first-batch/reference/08-mancub-detail-buttons.png",
+      "the-first-batch/reference/08-mancub-detail-screen.png"
+     ],
+     "check": "Pass: DOT MATRIX WITH STEREO SOUND, BATTERY and red light, magenta B A with labels, START, speaker, blank screen, no logo, dough smear and crease. Fail tiny: molded OFF ON on the top edge",
+     "recommended": true
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/08-mancub/08-mancub-crop.png",
+    "aspect": "5:4",
+    "box": [
+     0,
+     114,
+     1024,
+     933
+    ]
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/08-mancub.md",
+   "detail_refs": [
+    "the-first-batch/reference/08-mancub-detail-buttons.png",
+    "the-first-batch/reference/08-mancub-detail-screen.png"
+   ]
   },
   {
    "n": "09",

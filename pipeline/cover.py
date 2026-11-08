@@ -170,7 +170,7 @@ def cmd_render(a):
     for i in range(a.runs):
         L = letters[i]
         tmp = os.path.join(work(t), f'render-{L}.bin')
-        run(PY, 'pipeline/gen.py', 'render4k', '--source', crop, '--prompt-file', pf, '--out', tmp, '--approved', a.approved)
+        run(PY, 'pipeline/gen.py', 'render4k', '--source', crop, '--prompt-file', pf, '--out', tmp, '--approved', a.approved, *[x for r in a.ref for x in ('--ref', r)])
         out = os.path.join(photos(t), f"{t['slug']}-4k-render-{info['aspect'].replace(':', 'x')}-{L}.jpg")
         shutil.move(tmp, out)          # Gemini returns JPEG bytes whatever the name
         tiles = check_grid(out, chk, L)
@@ -230,7 +230,7 @@ def main():
     p = s.add_parser('prompt'); p.add_argument('n'); p.add_argument('--round', default='1'); p.add_argument('--force', action='store_true')
     p = s.add_parser('explore'); p.add_argument('n'); p.add_argument('--round', default='1'); p.add_argument('--n', dest='n_frames', type=int, default=3)
     p = s.add_parser('lock'); p.add_argument('n'); p.add_argument('frame'); p.add_argument('--pick', required=True)
-    p = s.add_parser('render'); p.add_argument('n'); p.add_argument('--runs', type=int, default=1); p.add_argument('--source'); p.add_argument('--approved', required=True, help="Josh's written yes, quoted, given after Claude pointed him to the explore frame in Figma this session")
+    p = s.add_parser('render'); p.add_argument('n'); p.add_argument('--runs', type=int, default=1); p.add_argument('--source'); p.add_argument('--ref', action='append', default=[], help='extra detail reference images'); p.add_argument('--approved', required=True, help="Josh's written yes, quoted, given after Claude pointed him to the explore frame in Figma this session")
     p = s.add_parser('finish'); p.add_argument('n'); p.add_argument('--render', required=True); p.add_argument('--version', default='v1'); p.add_argument('--glass-box', help='x0,y0,x1,y1 render fractions around a clear part, see finish.py')
     p = s.add_parser('drive'); p.add_argument('n'); p.add_argument('--what', default='both', choices=['render', 'master', 'both'])
     a = ap.parse_args()

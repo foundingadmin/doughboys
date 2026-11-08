@@ -88,4 +88,5 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - finish.py copied texture up to 48 px across as grain, and the Determinator render's soft backdrop mottle came through as blotches. Grain is now taken below 12 px only (GRAIN_SIGMA), the backdrop reads smooth like Deluge (Nov 8 2026).
 - Flash edits will not change a device's proportions: asked to widen the Boombap radio by a tenth to two fifths, all six came back within 2 px of the original. Widen in code instead (stretch a plain band of the face), then one Flash pass to straighten the bent edges. +10 and +20 percent came back clean, +30 and +40 kept the bend (Nov 8 2026).
 - A stringy looking tail can be what Josh likes: the R4-1 finger smear on Mancub, which I had called a fail. Flag it, do not discard it (Nov 8 2026).
+- Passing Josh's close up photos of the real device as extra references to the 4K edit (`--ref`) got small printed words right in one run on Mancub: DOT MATRIX WITH STEREO SOUND, BATTERY, B and A, START. Only a tiny molded marking missed. Ask for detail photos before a 4K on any device with printed text (Nov 8 2026).
 

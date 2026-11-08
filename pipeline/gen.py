@@ -147,6 +147,7 @@ def main():
     c = sub.add_parser("crop"); c.add_argument("--source", required=True); c.add_argument("--out", required=True); c.add_argument("--aspect", default="auto"); c.add_argument("--margin", type=float, default=0.025)
     r = sub.add_parser("render4k"); r.add_argument("--source", required=True); r.add_argument("--prompt-file", required=True); r.add_argument("--out", required=True)
     r.add_argument("--aspect", default=None); r.add_argument("--model", default=RENDER_MODEL); r.add_argument("--size", default="4K")
+    r.add_argument("--ref", action="append", default=[], help="extra reference images after the source, for details only (Mancub, Nov 8 2026)")
     r.add_argument("--approved", required=True, help="Josh's written yes from this conversation, quoted, after Claude pointed him to the explore frame in Figma. No 4K run without it (Josh, Nov 8 2026)")
     a = ap.parse_args()
     if a.cmd == "models":
@@ -175,7 +176,7 @@ def main():
             aspect = min(ASPECTS, key=lambda k: abs(math.log(ASPECTS[k] / (w / h))))
         if len(a.approved.strip()) < 3:
             sys.exit("render4k needs Josh's written approval in --approved")
-        save(generate(a.model, open(a.prompt_file).read(), [a.source], aspect, a.size), a.out)
+        save(generate(a.model, open(a.prompt_file).read(), [a.source] + a.ref, aspect, a.size), a.out)
         log_spend(a.model, a.size, f"render4k {a.source} {a.prompt_file}", a.approved)
 
 
