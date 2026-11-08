@@ -106,8 +106,8 @@
    "device": "Yellow sports Walkman",
    "subhead": "Waterproof Sports Cassette Player",
    "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
-   "status": "master v1 finished, Josh yes then place",
-   "next": "Josh says yes on board 174:12 (or names depth, horizon or re-render), then place in Figma per docs/figma.md and hand off the files",
+   "status": "placed in Figma",
+   "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Drive upload is not wired here, so Josh drops the master and render B into Masters by hand (files attached in chat Nov 8 2026)",
    "source": {
     "figma_node": "53:2",
     "pick": "F2",
@@ -124,7 +124,7 @@
     "cover": "118:399",
     "post": "118:444",
     "canvas": "118:486",
-    "photo_hash": null,
+    "photo_hash": "181c128450d9339c1a3dfb548ebec80e888580db",
     "post_transform": [
      [
       0.8,
@@ -148,7 +148,26 @@
       1,
       0
      ]
-    ]
+    ],
+    "photo_slot": {
+     "cover": {
+      "layer": "180:1091",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "180:1094",
+      "x": -90.54,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "180:1097",
+      "x": -210.53,
+      "size": 960
+     }
+    },
+    "photo_note": "Uploaded Nov 8 2026 as a 4096 square JPG q95 of final v1, free image layer in each Photo slot. Canvas 9:16 clips the dough tip and the right earcup and the player band crosses the lower Walkman, Josh can scale or move it in the slot",
+    "review": "the-first-batch/review/02-spice/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "1f2cER8F5utcrGxMwU9c0ULAPjJiFK9Au",
@@ -259,7 +278,8 @@
     ]
    },
    "render_pick_by_josh": "2026-11-08",
-   "finish_note": "First finish kept the old backdrop inside the headphone cord loop. finish.py now opens enclosed holes that match the backdrop beside them (holes_opened in the report), re-run Nov 8 2026"
+   "finish_note": "First finish kept the old backdrop inside the headphone cord loop. finish.py now opens enclosed holes that match the backdrop beside them (holes_opened in the report), re-run Nov 8 2026",
+   "master_approved": "2026-11-08"
   },
   {
    "n": "03",

@@ -11,25 +11,6 @@ Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 8 2026.
 ## 4K queue · approved frames waiting for their 4K run
 Claude Code runs these from the repo (prompts/4k) through the Gemini API: tight crop, 4K edit, check, finish. Say "build a track cover" and it follows `.claude/skills/build-track-cover`, stopping at four gates for Josh: the explore pick, the 4K prompt, the render pick and the finished master. Manual route if needed: crop tight, then Google AI Studio, Gemini 3 Pro Image (Nano Banana Pro), resolution 4K, aspect ratio matched to the crop, prompt pasted as an edit in the same chat.
 
-### Spice · F2 · approved Oct 19 2026 · Josh picked render B Nov 8 2026, master v1 on its board
-- **Run** · two renders at 4:3 from the Figma original. B passes every named fix, A misses the tuner, the threads and the door tab. [Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=163-12)
-- **Source image** · [Figma node 53:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=53-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 02 Spice · E4 set"
-- **Prompt**
-
-```
-Keep this exact photograph. Same camera position, framing, lighting, Walkman, headphones, dough, pool and backdrop. Do not move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1990 mail order catalog, with fine film grain and crisp, true detail. Make only these fixes:
-
-1. Cassette door: remove the small yellow tab on the left edge of the door so that edge is plain and flush. The door stays exactly as open as it is now, about 15 degrees, hinged on the right.
-2. Dough: remove the thin threads pulling off the left side of the dough. It is one cohesive mass of raw kneaded bread dough, pale oatmeal beige, satin matte skin with fine stretch lines, no strings, no holes. Keep its shape, the pinch at the door edge, and the pool exactly where and how big they are now.
-3. Tuner window: print a real analog tuner scale in the slim window across the top. Top row reads FM 88 92 96 100 104 108 MHz. Bottom row reads AM 530 600 800 1000 1300 1600 kHz. Small white type, fine tick marks, a thin red needle. No brand name or model number anywhere.
-4. Top edge: four low profile dark grey rubber transport buttons, evenly spaced and barely raised, with a tiny red power light glowing beside them. The headphone plug stays seated in the jack.
-5. Cassette window: dark smoked plastic set into the charcoal grey panel. Behind it, only the shadowy empty well and two reel spindles. No cassette.
-6. Headphones: yellow headband, round orange foam ear pads, thin grey cord, all fully inside the frame with clear backdrop around them.
-7. Backdrop: seamless butter yellow paper with a soft glow behind the device and on the floor, falling to a deeper golden yellow in the top corners. No studio equipment, no seams, no horizon line.
-
-No people, no hands, no logos, no readable text other than the tuner scale.
-```
-
 ### Bopkins (was Danish) · G1 · approved Oct 19 2026 · text pass G Nov 8 2026, waiting on Josh's pick
 - **Run** · six renders at 5:4, the approved prompt plus two sharper re-runs on the control labels (prompt below is the original, the repo copy is the sharpened one). Only F prints START, STOP, 33, 45 cleanly; it brought back a small blank badge on the lid and the pitch scale stays mushy. [Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-12)
 - **Source image** · [Figma node 58:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=58-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 03 Danish · round 1"
@@ -119,7 +100,7 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 
 ## Track list · best match colors as of Oct 19 2026
 1. Deluge · Silver dual deck boombox · Bondi #65B8E5 · Deluge v1 final (drips retouched, square expand, color corrected to Bondi). In the repo and Drive Masters. Placed in Figma on Cover, Post and Canvas Oct 29 2026, exports next
-2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Josh picked render B Nov 8 2026. Finished master v1 at Butter on its Review board, placing on Josh's yes
+2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Josh picked render B Nov 8 2026. Finished with the rebuilt Butter backdrop at depth 0.75 and cyc horizon 0.16, Josh approved and it was placed in Figma Nov 8 2026, exports next
 3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. 4K runs Nov 8 2026. Josh called F the best, then a text pass on F made G, every button and pitch scale mark clean. Josh Photoshops the lid square
 4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. 4K runs Nov 8 2026 made a device Josh likes, but he dropped the nest shape. Back to explore Nov 8 2026. Round 3 on Flash (ball, disc, tucked) on its Review board. Reuse the 4K device recipe on the new pick
 5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026, Josh picked render B. Finished with the rebuilt backdrop at depth 0.75 and cyc horizon 0.16, placed in Figma Nov 8 2026, exports next
