@@ -85,4 +85,7 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Cheap fine tuning works best as Flash edits of the picked frame (`gen.py explore --ref FRAME`), one prompt per variation. The device holds and only the named thing changes. Watch for drift: Mancub v6 turned the buttons maroon, Determinator creased and rustic dough read as faces (Nov 8 2026).
 - Swatch chips on finish boards carry no stroke: a white outline separates the chip from the backdrop and hides the match Josh is judging (Nov 8 2026).
 - Show Me Your Love: fresh text to image from a part by part description of the reference beat edits of an earlier frame, whose wrong geometry anchors the device. Edits keep the dough, fresh frames get the device. Combine them in a second cheap step (Nov 8 2026).
+- finish.py copied texture up to 48 px across as grain, and the Determinator render's soft backdrop mottle came through as blotches. Grain is now taken below 12 px only (GRAIN_SIGMA), the backdrop reads smooth like Deluge (Nov 8 2026).
+- Flash edits will not change a device's proportions: asked to widen the Boombap radio by a tenth to two fifths, all six came back within 2 px of the original. Widen in code instead (stretch a plain band of the face), then one Flash pass to straighten the bent edges. +10 and +20 percent came back clean, +30 and +40 kept the bend (Nov 8 2026).
+- A stringy looking tail can be what Josh likes: the R4-1 finger smear on Mancub, which I had called a fail. Flag it, do not discard it (Nov 8 2026).
 

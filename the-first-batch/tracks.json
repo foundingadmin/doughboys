@@ -947,8 +947,8 @@
    "device": "TV VCR combo",
    "subhead": "13 Inch TV With Built In VCR",
    "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
-   "status": "4K rendered, Josh passes render A on board 201:12",
-   "next": "Josh passes A (or asks for a re-run with his written yes), then cover.py finish 06 --render the-first-batch/assets/photos/06-determinator/06-determinator-4k-render-1x1-a.jpg",
+   "status": "master v1 finished, Josh reviews on board 210:12",
+   "next": "Josh says yes on board 210:12, then place in Figma and hand off the files",
    "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
    "figma": {
     "mode_id": "114:7",
@@ -957,8 +957,30 @@
     "post": "118:856",
     "canvas": "118:898",
     "photo_hash": null,
-    "post_transform": null,
-    "canvas_transform": null
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.0997
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2185
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ]
    },
    "drive": {
     "track_folder": "15G_FYqhA1Wbetc5ItEGome2YX9O6JSsz",
@@ -1022,6 +1044,12 @@
      "date": "2026-11-08",
      "what": "4K render A from R3-5, native crops of the dough, buttons, slot, vents, screen, corner",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=201-12"
+    },
+    {
+     "node": "210:12",
+     "date": "2026-11-08",
+     "what": "Finished master v1 next to Deluge v1 and Bopkins v1, Blueberry chips without stroke, floor, buttons and backdrop crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=210-12"
     }
    ],
    "pick_progress": "Josh liked 2b-2 (Nov 8 2026): device as is, facing right, dough over most buttons, power button and red light showing. Round 3 varies only the dough texture",
@@ -1051,7 +1079,8 @@
      ],
      "josh_approval": "Josh, Nov 8 2026: determinator exploration 5 rustic is perfect ... 5 rustic is great. 4k it! APPROVED SPEND!",
      "check": "Pass. Dimples kept, lower left creases rounded, POWER crisp, buttons in view, plain blue screen. One thin hairline low on the left of the dough, Photoshop level",
-     "recommended": true
+     "recommended": true,
+     "josh": "Passed to the finish Nov 8 2026 (\"nailed it\")"
     }
    ],
    "crop": {
@@ -1064,7 +1093,33 @@
      958
     ]
    },
-   "prompt_4k": "the-first-batch/prompts/4k/06-determinator.md"
+   "prompt_4k": "the-first-batch/prompts/4k/06-determinator.md",
+   "master": "the-first-batch/assets/photos/06-determinator/06-determinator-final-v1.jpg",
+   "render_pick": "the-first-batch/assets/photos/06-determinator/06-determinator-4k-render-1x1-a.jpg",
+   "finish_report": {
+    "falloff": 0.75,
+    "horizon": 0.16,
+    "holes_opened": [],
+    "deltaE_glow_vs_swatch": 0.97,
+    "backdrop_hue_spread_deg": 0.0,
+    "corner_L_minus_glow": [
+     -22.7,
+     -25.3,
+     -4.7,
+     -8.6
+    ],
+    "device_touches_edge": false,
+    "offset": [
+     1304,
+     1304
+    ],
+    "render": [
+     4096,
+     4096
+    ]
+   },
+   "render_pick_by_josh": "2026-11-08",
+   "finish_note": "First finish copied the render mottle into the backdrop as blotches. finish.py now copies only grain finer than 12 px, re-run Nov 8 2026"
   },
   {
    "n": "07",
@@ -1079,8 +1134,8 @@
    "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
    "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
-   "status": "exploring, round 3 ready for Josh",
-   "next": "Josh picks on board 182:12 (Claude recommends 4, runner up 3). Then link him to the pick and get a written yes before any 4K",
+   "status": "exploring, round 4 ready for Josh",
+   "next": "Josh picks a width on board 209:12 (Claude recommends +20). Then link him to the pick and get a written yes before any 4K",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
@@ -1127,6 +1182,15 @@
      "contact_sheet": "the-first-batch/explore/07-boombap/round-3/contact-sheet.jpg",
      "model": "gemini-3.1-flash-image-preview",
      "edit_of": "work/07-boombap/round-2a/03.png"
+    },
+    {
+     "round": "4",
+     "date": "2026-11-08",
+     "prompt": "prompts/explore/07-boombap-round-4-w1..w6.md (time), 07-boombap-round-4-straighten.md (width cleanup)",
+     "frames": "work/07-boombap/round-4-final",
+     "contact_sheet": "the-first-batch/explore/07-boombap/round-4/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "note": "Flash fixed the time but would not widen. Face widened in code between the digits and the dial by 10 to 40 percent, then one Flash straighten pass each. +10 and +20 came back clean"
     }
    ],
    "review_boards": [
@@ -1147,10 +1211,16 @@
      "date": "2026-11-08",
      "what": "Round 3: radio closer to the real model, dough nudges on 2a-3",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=182-12"
+    },
+    {
+     "node": "209:12",
+     "date": "2026-11-08",
+     "what": "Round 4: 6:30 with AM lit, face widened 10 to 40 percent",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=209-12"
     }
    ],
    "device_rule": "Must look exactly like the reference model, a cultural icon (Josh, Nov 8 2026)",
-   "pick_progress": "Josh prefers dough on top, best 2a-3 (Nov 8 2026). Round 3 pushes the radio to the real model with small dough nudges"
+   "pick_progress": "Josh picked R3-3 heavier lobe, device nailed. Asked for 6:30 with only AM lit and a wider face between the AM PM lights and the dial, nothing else longer (Nov 8 2026)"
   },
   {
    "n": "08",
@@ -1164,8 +1234,8 @@
    "device": "Classic grey handheld game console, no logos",
    "subhead": "Pocket Game System for Young Players",
    "silhouette": "Dough on the floor, console stuck upright in it, thick enough to hold it, uneven and lopsided, never a perfect round mound (Josh, Nov 8 2026)",
-   "status": "exploring, round 4 ready for Josh",
-   "next": "Josh picks on board 184:12 (Claude recommends 4, runner up 2). Then link him to the pick and get a written yes before any 4K",
+   "status": "exploring, round 5 ready for Josh",
+   "next": "Josh picks on board 211:12 (Claude recommends 5, runner up 3). Then link him to the pick and get a written yes before any 4K",
    "figma": {
     "mode_id": "114:9",
     "section": "118:1016",
@@ -1212,6 +1282,15 @@
      "contact_sheet": "the-first-batch/explore/08-mancub/round-4/contact-sheet.jpg",
      "model": "gemini-3.1-flash-image-preview",
      "edit_of": "work/08-mancub/round-3/04.png"
+    },
+    {
+     "round": "5",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/08-mancub-round-5-v1.md to v6.md",
+     "frames": "work/08-mancub/round-5",
+     "contact_sheet": "the-first-batch/explore/08-mancub/round-5/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "edit_of": "work/08-mancub/round-4/01.png with round-4/03.png as crease reference"
     }
    ],
    "review_boards": [
@@ -1232,9 +1311,15 @@
      "date": "2026-11-08",
      "what": "Round 4: R3-4 device, uneven dough shapes and textures",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=184-12"
+    },
+    {
+     "node": "211:12",
+     "date": "2026-11-08",
+     "what": "Round 5: R4-1 dough, minimal crease, counterclockwise tilt",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=211-12"
     }
    ],
-   "pick_progress": "Josh: R3-4 device is right (grey screen frame), R3-6 rejected for missing it. All round 3 dough too plump and round (Nov 8 2026)"
+   "pick_progress": "Josh: R4-1 lopsided dough with the finger smear on the right, a minimal crease like R4-3, console tilted a little counterclockwise, screen blank (Nov 8 2026)"
   },
   {
    "n": "09",

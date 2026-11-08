@@ -26,6 +26,7 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 LOW = 8
+GRAIN_SIGMA = 12  # px: only texture finer than this is copied from the render as film grain. 48 let the soft mottle of the Determinator render through as blotches (Nov 8 2026)
 GLASS_DE = 30.0  # Oklab x100: inside a --glass-box, pixels this close to the old backdrop are backdrop seen through the clear part
 ELLIPSE = (0.51, 0.534, 0.207, 0.37)  # cx, cy, rx, ry as canvas fractions, from Josh's Deluge check
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backdrop_template.npz')
@@ -267,7 +268,7 @@ def main():
     R_lab = np.empty((H, W, 3), np.float32)
     for y in range(0, H, step):
         R_lab[y:y + step] = cv2.cvtColor(R[y:y + step].astype(np.float32) / 255., cv2.COLOR_RGB2LAB)
-    amp, npatch = texture_spectra(R_lab, alpha)
+    amp, npatch = texture_spectra(R_lab, alpha, sigma=GRAIN_SIGMA)
     rep['texture_patches'] = npatch
     del R_lab
     canvas_lab = cv2.resize(lab_n, (S, S), interpolation=cv2.INTER_CUBIC)
