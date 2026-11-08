@@ -186,7 +186,9 @@ def cmd_finish(a):
     d = load(); t = get(d, a.n)
     out = os.path.join(photos(t), f"{t['slug']}-final-{a.version}.jpg")
     rep = os.path.join(work(t), f'finish-{a.version}.json')
-    run(PY, 'pipeline/finish.py', a.render, t['ground_hex'], out, '--report', rep)
+    extra = ['--glass-box', a.glass_box] if a.glass_box else []
+    run(PY, 'pipeline/finish.py', a.render, t['ground_hex'], out, '--report', rep, *extra)
+    if a.glass_box: t['finish_glass_box'] = a.glass_box
     r = json.load(open(rep))
     run(PY, 'pipeline/check.py', out, '--ox', str(r['offset'][0]), '--oy', str(r['offset'][1]), '--w', str(r['render'][0]), '--h', str(r['render'][1]), '--name', os.path.join(work(t), f'check-{a.version}'))
     fr = json.loads(run(PY, 'pipeline/framing.py', os.path.splitext(out)[0] + '_alpha_small.npy').strip().splitlines()[-1])
@@ -196,7 +198,7 @@ def cmd_finish(a):
     Image.open(out).resize((4096, 4096), Image.LANCZOS).save(fig, quality=95, subsampling=0)
     t['master'] = rel(out)
     t['render_pick'] = rel(a.render) if os.path.isabs(a.render) else a.render
-    t['finish_report'] = {k: r[k] for k in ('falloff', 'horizon', 'holes_opened', 'deltaE_glow_vs_swatch', 'backdrop_hue_spread_deg', 'corner_L_minus_glow', 'device_touches_edge', 'offset', 'render') if k in r}
+    t['finish_report'] = {k: r[k] for k in ('falloff', 'horizon', 'holes_opened', 'glass_share_of_device', 'deltaE_glow_vs_swatch', 'backdrop_hue_spread_deg', 'corner_L_minus_glow', 'device_touches_edge', 'offset', 'render') if k in r}
     t['figma']['post_transform'] = fr['post']; t['figma']['canvas_transform'] = fr['canvas']
     t['status'] = f'master {a.version} finished, Josh yes then place'
     t['next'] = 'Put the master next to Deluge v1 on a Review board, on Josh\'s yes place it in the Photo slots and cover.py drive ' + t['n']
@@ -229,7 +231,7 @@ def main():
     p = s.add_parser('explore'); p.add_argument('n'); p.add_argument('--round', default='1'); p.add_argument('--n', dest='n_frames', type=int, default=3)
     p = s.add_parser('lock'); p.add_argument('n'); p.add_argument('frame'); p.add_argument('--pick', required=True)
     p = s.add_parser('render'); p.add_argument('n'); p.add_argument('--runs', type=int, default=1); p.add_argument('--source'); p.add_argument('--approved', required=True, help="Josh's written yes, quoted, given after Claude pointed him to the explore frame in Figma this session")
-    p = s.add_parser('finish'); p.add_argument('n'); p.add_argument('--render', required=True); p.add_argument('--version', default='v1')
+    p = s.add_parser('finish'); p.add_argument('n'); p.add_argument('--render', required=True); p.add_argument('--version', default='v1'); p.add_argument('--glass-box', help='x0,y0,x1,y1 render fractions around a clear part, see finish.py')
     p = s.add_parser('drive'); p.add_argument('n'); p.add_argument('--what', default='both', choices=['render', 'master', 'both'])
     a = ap.parse_args()
     globals()['cmd_' + a.cmd](a)

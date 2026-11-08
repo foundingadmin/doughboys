@@ -294,8 +294,8 @@
    "device": "Silver direct drive turntable",
    "subhead": "Direct Drive Turntable With Pitch Control",
    "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
-   "status": "4K text pass G and H done, Josh picks on board 176:12",
-   "next": "Josh picks (Claude recommends G), then cover.py finish 03 --render the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-g.jpg. Josh Photoshops the lid square",
+   "status": "master v1 finished, Josh reviews on board 183:12",
+   "next": "Josh says yes or names a change on board 183:12, does his Photoshop pass on the lid square, then place in Figma and hand off the files. Josh asked to review before placing (Nov 8 2026)",
    "source": {
     "figma_node": "58:2",
     "pick": "G1",
@@ -313,8 +313,30 @@
     "post": "118:547",
     "canvas": "118:589",
     "photo_hash": null,
-    "post_transform": null,
-    "canvas_transform": null
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1003
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.219
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ]
    },
    "drive": {
     "track_folder": "1Xtd_T7o-swfNCBbcLJ7gMRvVdc7FuxAA",
@@ -467,6 +489,12 @@
      "date": "2026-11-08",
      "what": "Text pass G and H from F, native crops of the controls, close up patches",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=176-12"
+    },
+    {
+     "node": "183:12",
+     "date": "2026-11-08",
+     "what": "Finished master v1 next to Deluge v1 and Spice v1, Bubblegum chips, lid, controls, floor and backdrop crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=183-12"
     }
    ],
    "text_patch": {
@@ -481,7 +509,35 @@
      2673
     ],
     "note": "Front right controls crop of F rendered alone at 4K (5504 x 3072). Patch 2 fully correct. Not composited, G already passes"
-   }
+   },
+   "master": "the-first-batch/assets/photos/03-bopkins/03-bopkins-final-v1.jpg",
+   "render_pick": "the-first-batch/assets/photos/03-bopkins/03-bopkins-4k-render-5x4-g.jpg",
+   "finish_report": {
+    "falloff": 0.75,
+    "horizon": 0.16,
+    "holes_opened": [],
+    "glass_share_of_device": 0.406,
+    "deltaE_glow_vs_swatch": 1.14,
+    "backdrop_hue_spread_deg": 0.0,
+    "corner_L_minus_glow": [
+     -22.7,
+     -25.2,
+     -5.0,
+     -8.8
+    ],
+    "device_touches_edge": false,
+    "offset": [
+     1048,
+     1496
+    ],
+    "render": [
+     4608,
+     3712
+    ]
+   },
+   "finish_glass_box": "0.21,0.0,0.91,0.39",
+   "render_pick_by_josh": "2026-11-08",
+   "finish_note": "Finished from G with --glass-box 0.21,0.0,0.91,0.39 so the backdrop seen through the dust cover is relit to the new pink. Grain sampler now median and direction free, the first G finish streaked"
   },
   {
    "n": "04",
@@ -870,8 +926,8 @@
    "device": "TV VCR combo",
    "subhead": "13 Inch TV With Built In VCR",
    "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
-   "status": "exploring, round 2 ready for Josh",
-   "next": "Josh picks on board 174:77 (Claude recommends 2b-1, runner up 2a-2), then cover.py lock 06",
+   "status": "exploring, round 3 texture variations ready for Josh",
+   "next": "Josh picks a texture on board 181:12 (Claude recommends 3 pillowy, runner up 1 smooth satin). Then link him to the pick and get a written yes before any 4K",
    "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
    "figma": {
     "mode_id": "114:7",
@@ -910,6 +966,15 @@
      "prompt": "the-first-batch/prompts/explore/06-determinator-round-2b.md",
      "frames": "work/06-determinator/round-2b",
      "contact_sheet": "the-first-batch/explore/06-determinator/round-2b/contact-sheet.jpg"
+    },
+    {
+     "round": "3",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/06-determinator-round-3-t1.md to t6.md",
+     "frames": "work/06-determinator/round-3",
+     "contact_sheet": "the-first-batch/explore/06-determinator/round-3/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "edit_of": "work/06-determinator/round-2b/02.png"
     }
    ],
    "review_boards": [
@@ -924,8 +989,15 @@
      "date": "2026-11-08",
      "what": "Explore round 2, no brick: 2a ball, 2b pillow",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-77"
+    },
+    {
+     "node": "181:12",
+     "date": "2026-11-08",
+     "what": "Round 3: six dough textures on 2b-2, device kept",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=181-12"
     }
-   ]
+   ],
+   "pick_progress": "Josh liked 2b-2 (Nov 8 2026): device as is, facing right, dough over most buttons, power button and red light showing. Round 3 varies only the dough texture"
   },
   {
    "n": "07",
@@ -940,8 +1012,8 @@
    "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
    "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
-   "status": "exploring, round 2 ready for Josh",
-   "next": "Josh picks on board 174:112 (Claude recommends 2b-1 underneath, or 2a-3 on top), then cover.py lock 07",
+   "status": "exploring, round 3 ready for Josh",
+   "next": "Josh picks on board 182:12 (Claude recommends 4, runner up 3). Then link him to the pick and get a written yes before any 4K",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
@@ -979,6 +1051,15 @@
      "prompt": "the-first-batch/prompts/explore/07-boombap-round-2b.md",
      "frames": "work/07-boombap/round-2b",
      "contact_sheet": "the-first-batch/explore/07-boombap/round-2b/contact-sheet.jpg"
+    },
+    {
+     "round": "3",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/07-boombap-round-3-v1.md to v6.md",
+     "frames": "work/07-boombap/round-3",
+     "contact_sheet": "the-first-batch/explore/07-boombap/round-3/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "edit_of": "work/07-boombap/round-2a/03.png"
     }
    ],
    "review_boards": [
@@ -993,9 +1074,16 @@
      "date": "2026-11-08",
      "what": "Explore round 2, reference clock radio, 2a on top, 2b underneath",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-112"
+    },
+    {
+     "node": "182:12",
+     "date": "2026-11-08",
+     "what": "Round 3: radio closer to the real model, dough nudges on 2a-3",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=182-12"
     }
    ],
-   "device_rule": "Must look exactly like the reference model, a cultural icon (Josh, Nov 8 2026)"
+   "device_rule": "Must look exactly like the reference model, a cultural icon (Josh, Nov 8 2026)",
+   "pick_progress": "Josh prefers dough on top, best 2a-3 (Nov 8 2026). Round 3 pushes the radio to the real model with small dough nudges"
   },
   {
    "n": "08",
@@ -1008,9 +1096,9 @@
    "ring_hex": "#DE9F65",
    "device": "Classic grey handheld game console, no logos",
    "subhead": "Pocket Game System for Young Players",
-   "silhouette": "Dough on the floor only, console stuck upright into it, nothing hanging off the top (Josh, Nov 8 2026: the hanging dough looks fake)",
-   "status": "exploring, round 3 ready for Josh",
-   "next": "Josh picks on board 174:147 (Claude recommends 6, runner up 4). Rounds 1 and 2 rejected",
+   "silhouette": "Dough on the floor, console stuck upright in it, thick enough to hold it, uneven and lopsided, never a perfect round mound (Josh, Nov 8 2026)",
+   "status": "exploring, round 4 ready for Josh",
+   "next": "Josh picks on board 184:12 (Claude recommends 4, runner up 2). Then link him to the pick and get a written yes before any 4K",
    "figma": {
     "mode_id": "114:9",
     "section": "118:1016",
@@ -1048,6 +1136,15 @@
      "prompt": "the-first-batch/prompts/explore/08-mancub-round-3.md",
      "frames": "work/08-mancub/round-3",
      "contact_sheet": "the-first-batch/explore/08-mancub/round-3/contact-sheet.jpg"
+    },
+    {
+     "round": "4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/08-mancub-round-4-v1.md to v6.md",
+     "frames": "work/08-mancub/round-4",
+     "contact_sheet": "the-first-batch/explore/08-mancub/round-4/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "edit_of": "work/08-mancub/round-3/04.png"
     }
    ],
    "review_boards": [
@@ -1062,8 +1159,15 @@
      "date": "2026-11-08",
      "what": "Explore round 3, console planted upright in a floor mound",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-147"
+    },
+    {
+     "node": "184:12",
+     "date": "2026-11-08",
+     "what": "Round 4: R3-4 device, uneven dough shapes and textures",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=184-12"
     }
-   ]
+   ],
+   "pick_progress": "Josh: R3-4 device is right (grey screen frame), R3-6 rejected for missing it. All round 3 dough too plump and round (Nov 8 2026)"
   },
   {
    "n": "09",
