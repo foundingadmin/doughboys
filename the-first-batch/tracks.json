@@ -107,7 +107,7 @@
    "subhead": "Waterproof Sports Cassette Player",
    "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
    "status": "source approved, 4K queued",
-   "next": "Crop tight (upright, expect 3:4 or 4:5), render 4K with prompts/4k/02-spice.md, check, finish with #ECCE7B, place.",
+   "next": "cover.py render 02 --runs 2 with prompts/4k/02-spice.md (already approved), check on a Review board, Josh picks, cover.py finish, place, cover.py drive.",
    "source": {
     "figma_node": "53:2",
     "pick": "F2",
@@ -148,7 +148,7 @@
    "subhead": "Direct Drive Turntable With Pitch Control",
    "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
    "status": "source approved, 4K queued",
-   "next": "Crop tight (expect 4:3), render 4K with prompts/4k/03-bopkins.md, check, finish with #E99CC2, place.",
+   "next": "cover.py render 03 --runs 2 with prompts/4k/03-bopkins.md (already approved), check on a Review board, Josh picks, cover.py finish, place, cover.py drive.",
    "source": {
     "figma_node": "58:2",
     "pick": "G1",
@@ -188,7 +188,7 @@
    "subhead": "Virtual Pet With Built In Clock",
    "silhouette": "No slot. The egg leans back in a firm dough nest, the front lip folded down to the floor",
    "status": "source approved, 4K queued",
-   "next": "Crop tight (upright, expect 3:4 or 4:5), render 4K with prompts/4k/04-suavecita.md, check, finish with #C77171, place.",
+   "next": "cover.py render 04 --runs 2 with prompts/4k/04-suavecita.md (already approved), check on a Review board, Josh picks, cover.py finish, place, cover.py drive.",
    "source": {
     "figma_node": "73:2",
     "pick": "I4",
@@ -228,8 +228,8 @@
    "device": "Tube monitor and tower PC",
    "subhead": "Multimedia PC With Motorized Disc Tray",
    "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
-   "status": "finish depth under review",
-   "next": "Josh picks a horizon strength (0.16, 0.25, 0.35) on Figma board 147:77 at falloff 0.75. Make depth and horizon the finish.py defaults, finish B as 05-traycee-final-v1.jpg, place in the Photo slot.",
+   "status": "placed in Figma",
+   "next": "Josh exports Cover, Post and Canvas and drops them in Drive Exports. Render B and the master go to Drive Masters with cover.py drive 05 once Drive drop is wired.",
    "source": {
     "figma_node": "81:2",
     "pick": "81:2",
@@ -246,7 +246,7 @@
     "cover": "118:708",
     "post": "118:753",
     "canvas": "118:795",
-    "photo_hash": null,
+    "photo_hash": "090618d11d8635e985953d8fc05fb9ba9c46775e",
     "post_transform": [
      [
       0.8,
@@ -270,7 +270,25 @@
       1,
       0
      ]
-    ]
+    ],
+    "photo_slot": {
+     "cover": {
+      "layer": "161:1061",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "161:1064",
+      "x": -90.54,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "161:1067",
+      "x": -210.53,
+      "size": 960
+     }
+    },
+    "review": "the-first-batch/review/05-traycee/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "15dW0M4WTCFOZSmmUqfxR-Skv4KsmDj31",
@@ -345,9 +363,30 @@
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=147-77"
     }
    ],
-   "render_pick": "B",
+   "render_pick": "the-first-batch/assets/photos/05-traycee/05-traycee-4k-render-3x2-b.jpg",
    "master": "the-first-batch/assets/photos/05-traycee/05-traycee-final-v1.jpg",
-   "master_note": "finish.py with the Deluge v1 template, Oct 29 2026. 6704 square, 13.3 MB. Glow deltaE 1.02 vs Mint, corners L minus glow -28.6 -31.4 -4.8 -9.9"
+   "master_note": "finish.py rebuilt backdrop, Nov 8 2026. 6704 square, 9.3 MB",
+   "finish_report": {
+    "falloff": 0.75,
+    "horizon": 0.16,
+    "deltaE_glow_vs_swatch": 0.89,
+    "backdrop_hue_spread_deg": 0.0,
+    "corner_L_minus_glow": [
+     -22.5,
+     -24.9,
+     -4.6,
+     -8.5
+    ],
+    "device_touches_edge": false,
+    "offset": [
+     824,
+     1656
+    ],
+    "render": [
+     5056,
+     3392
+    ]
+   }
   },
   {
    "n": "06",
@@ -488,5 +527,11 @@
   "property": "Photo#135:0",
   "ad": "135:179",
   "store": "135:180"
+ },
+ "finish_defaults": {
+  "falloff": 0.75,
+  "horizon": 0.16,
+  "set": "2026-11-08",
+  "by": "Josh on Traycee, cyc horizon board 147:77"
  }
 }
