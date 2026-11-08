@@ -1316,15 +1316,15 @@
    "device": "Classic grey handheld game console, no logos",
    "subhead": "Pocket Game System for Young Players",
    "silhouette": "Dough on the floor, console stuck upright in it, thick enough to hold it, uneven and lopsided, never a perfect round mound (Josh, Nov 8 2026)",
-   "status": "master v1 finished, Josh reviews on board 219:12",
-   "next": "Josh says yes on board 219:12, then place in Figma and hand off",
+   "status": "placed in Figma",
+   "next": "Josh nudges the photo on the Cover if he wants the subhead clear, exports, and drops the master and render A into Masters (attached in chat Nov 8 2026)",
    "figma": {
     "mode_id": "114:9",
     "section": "118:1016",
     "cover": "118:1017",
     "post": "118:1062",
     "canvas": "118:1104",
-    "photo_hash": null,
+    "photo_hash": "47b4407759bfbe34f5860f477720f07aa1060c67",
     "post_transform": [
      [
       0.8,
@@ -1348,7 +1348,26 @@
       1,
       0
      ]
-    ]
+    ],
+    "photo_slot": {
+     "cover": {
+      "layer": "221:1088",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "221:1091",
+      "x": -99.63,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "221:1094",
+      "x": -220.32,
+      "size": 960
+     }
+    },
+    "photo_note": "Uploaded Nov 8 2026 as a 4096 square JPG q95 of final v1. On the Cover the console top touches the subhead line. Canvas clips the right of the dough and the player band crosses it. Josh can nudge in the slot",
+    "review": "the-first-batch/review/08-mancub/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "1OnYmlaFG3IWp9q8bmFRZrSFRa6CktTay",
@@ -1510,7 +1529,8 @@
     ]
    },
    "render_pick_by_josh": "2026-11-08",
-   "finish_note": "device_touches_edge flag is the console top within 24 px of the render edge, top is whole, checked Nov 8 2026"
+   "finish_note": "device_touches_edge flag is the console top within 24 px of the render edge, top is whole, checked Nov 8 2026",
+   "master_approved": "2026-11-08"
   },
   {
    "n": "09",

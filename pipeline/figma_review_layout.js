@@ -3,7 +3,7 @@
 // oldest at the top. Boards are named "CBDB NN ...". Fill STAGE from tracks.json before running:
 //   placed in Figma -> Complete; source approved, 4K rendered, master finished -> 4K; everything else -> Exploration.
 // figma_review_board.js runs this same pass after adding a board.
-const STAGE = { "01": "Complete", "02": "Complete", "03": "Complete", "04": "Exploration", "05": "Complete", "06": "Complete", "07": "4K", "08": "4K", "09": "Exploration" };
+const STAGE = { "01": "Complete", "02": "Complete", "03": "Complete", "04": "Exploration", "05": "Complete", "06": "Complete", "07": "4K", "08": "Complete", "09": "Exploration" };
 
 async function layoutReview(page) {
   await figma.loadFontAsync({ family: "Anton", style: "Regular" });
