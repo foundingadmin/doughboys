@@ -76,6 +76,10 @@ Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review p
 4. `get_screenshot` the board, look at it, give Josh the link `https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=<board id with - for :>`.
 5. Record the board id in tracks.json under the track's `review_boards`.
 
+## Finish review boards
+
+Put the master next to Deluge v1 and the last placed cover, with swatch chips of the track color on the top corners and over the glow, and a swatch bar under each master. Chips have no stroke (Josh, Nov 8 2026). Josh may add his own chip, for example over the middle of the device, and judges the match by eye.
+
 ## Gotchas learned building it
 
 - Every `use_figma` script is atomic. One error rolls back the whole script, so a failed call changed nothing.

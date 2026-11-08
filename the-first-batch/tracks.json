@@ -294,8 +294,8 @@
    "device": "Silver direct drive turntable",
    "subhead": "Direct Drive Turntable With Pitch Control",
    "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
-   "status": "master v1 finished, Josh reviews on board 183:12",
-   "next": "Josh says yes or names a change on board 183:12, does his Photoshop pass on the lid square, then place in Figma and hand off the files. Josh asked to review before placing (Nov 8 2026)",
+   "status": "placed in Figma",
+   "next": "Josh exports Cover, Post and Canvas and drops them in Drive Exports. Drive upload is not wired here, so Josh drops the master and render G into Masters by hand (attached in chat Nov 8 2026)",
    "source": {
     "figma_node": "58:2",
     "pick": "G1",
@@ -312,7 +312,7 @@
     "cover": "118:502",
     "post": "118:547",
     "canvas": "118:589",
-    "photo_hash": null,
+    "photo_hash": "67fdcf3aaed49a1fa3e972527cf008a3300b163b",
     "post_transform": [
      [
       0.8,
@@ -336,7 +336,26 @@
       1,
       0
      ]
-    ]
+    ],
+    "photo_slot": {
+     "cover": {
+      "layer": "185:1129",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "185:1132",
+      "x": -90.27,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "185:1135",
+      "x": -210.24,
+      "size": 960
+     }
+    },
+    "photo_note": "Uploaded Nov 8 2026 as a 4096 square JPG q95 of final v1, free image layer in each Photo slot. The sticker overlaps the dust cover top right corner on Cover and Post. Canvas 9:16 clips both ends of the deck and the player band crosses the pour",
+    "review": "the-first-batch/review/03-bopkins/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "1Xtd_T7o-swfNCBbcLJ7gMRvVdc7FuxAA",
@@ -537,7 +556,9 @@
    },
    "finish_glass_box": "0.21,0.0,0.91,0.39",
    "render_pick_by_josh": "2026-11-08",
-   "finish_note": "Finished from G with --glass-box 0.21,0.0,0.91,0.39 so the backdrop seen through the dust cover is relit to the new pink. Grain sampler now median and direction free, the first G finish streaked"
+   "finish_note": "Finished from G with --glass-box 0.21,0.0,0.91,0.39 so the backdrop seen through the dust cover is relit to the new pink. Grain sampler now median and direction free, the first G finish streaked",
+   "master_approved": "2026-11-08",
+   "master_note": "Josh approved v1 as is Nov 8 2026, lid square included (\"this master is done\")"
   },
   {
    "n": "04",
@@ -1181,8 +1202,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "exploring, round 3 ready for Josh",
-   "next": "Josh picks on board 174:182 (Claude recommends 1, runner up 3)",
+   "status": "exploring, round 4 ready for Josh",
+   "next": "Josh picks on board 185:12 (Claude recommends device 6). Next cheap step if he wants: a Flash edit putting the R3-3 dough spill on device 6. Then link him to the pick and get a written yes before any 4K",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -1221,6 +1242,14 @@
      "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-3.md",
      "frames": "work/09-show-me-your-love/round-3",
      "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-3/contact-sheet.jpg"
+    },
+    {
+     "round": "4",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-4-edit.md (1 to 3, edits of R3-3) and -fresh.md (4 to 6)",
+     "frames": "work/09-show-me-your-love/round-4",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-4/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview"
     }
    ],
    "review_boards": [
@@ -1235,9 +1264,16 @@
      "date": "2026-11-08",
      "what": "Explore round 3, the reference recorder in side profile with the Doughboy script",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=174-182"
+    },
+    {
+     "node": "185:12",
+     "date": "2026-11-08",
+     "what": "Round 4: device rebuilt from the reference with the original Talkboy script",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=185-12"
     }
    ],
-   "device_rule": "Must look exactly like the 1993 Talkboy, a cultural icon, with the Doughboy script in place of its name (Josh, Nov 8 2026)"
+   "device_rule": "Must look exactly like the 1993 Talkboy reference. Generate the original Talkboy script so Josh can retype it as Doughboy in the same style in Photoshop (Josh, Nov 8 2026)",
+   "pick_progress": "Josh likes the R3-3 dough: inside the tape drawer, spilling out one side. Device must match the reference Talkboy exactly, original Talkboy logo for now, Josh swaps it to Doughboy in Photoshop (Nov 8 2026)"
   }
  ],
  "figma_review_page": "128:77",
