@@ -947,8 +947,8 @@
    "device": "TV VCR combo",
    "subhead": "13 Inch TV With Built In VCR",
    "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
-   "status": "master v1 finished, Josh reviews on board 210:12",
-   "next": "Josh says yes on board 210:12, then place in Figma and hand off the files",
+   "status": "placed in Figma",
+   "next": "Josh decides: nudge the photo in the Cover and Post slots, or Claude re-finishes with a smaller device. Then Josh exports. Drive upload is not wired, Josh drops master and render A into Masters (attached in chat Nov 8 2026)",
    "watch": "Long title. On the 1:1 cover the sticker can clip it, check the board after placing",
    "figma": {
     "mode_id": "114:7",
@@ -956,7 +956,7 @@
     "cover": "118:811",
     "post": "118:856",
     "canvas": "118:898",
-    "photo_hash": null,
+    "photo_hash": "626e7d9769081b94ddb21d580270265c55159a7d",
     "post_transform": [
      [
       0.8,
@@ -980,7 +980,26 @@
       1,
       0
      ]
-    ]
+    ],
+    "photo_slot": {
+     "cover": {
+      "layer": "212:1097",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "212:1100",
+      "x": -89.73,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "212:1103",
+      "x": -209.76,
+      "size": 960
+     }
+    },
+    "photo_note": "Uploaded Nov 8 2026 as a 4096 square JPG q95 of final v1. On Cover and Post the TV top touches the subhead and the sticker overlaps its top right corner (square render, device large in frame). Josh to nudge in the slot, or re-finish with the device about 12 percent smaller",
+    "review": "the-first-batch/review/06-determinator/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "15G_FYqhA1Wbetc5ItEGome2YX9O6JSsz",
@@ -1119,7 +1138,8 @@
     ]
    },
    "render_pick_by_josh": "2026-11-08",
-   "finish_note": "First finish copied the render mottle into the backdrop as blotches. finish.py now copies only grain finer than 12 px, re-run Nov 8 2026"
+   "finish_note": "First finish copied the render mottle into the backdrop as blotches. finish.py now copies only grain finer than 12 px, re-run Nov 8 2026",
+   "master_approved": "2026-11-08"
   },
   {
    "n": "07",

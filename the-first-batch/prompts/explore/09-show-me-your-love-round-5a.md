@@ -1,0 +1,11 @@
+Keep the first photograph's camera, framing, lighting, backdrop, open door and dough. Make the cassette recorder match the real 1993 Talkboy in the last photograph exactly, part by part:
+Body: the silver grey molded plastic body of the third photograph, a wide box with its left end cut at a long slant, the round dark grey speaker cap with a grid of round holes low on that slanted end, and the true texture and molded lines of the plastic.
+Top keys: four black piano keys and one red key along the top, slightly recessed into the body, not sticking fully up above it.
+Control strip: just below the keys, as in the last photograph: a separate silver button with a green square for stop, a wide silver button with green double triangles pointing left and right, then a green play triangle pointing left, joined by a thin line to a small round red light at the right.
+Microphone: the black microphone handle sticks up and back to the right from behind the top right corner at the angle and position of the second photograph, built from three or four stacked segments that each get a little smaller toward the top, with a ribbed stepped tip, as in the last photograph.
+Cassette door: the big silver door with the original black italic script wordmark Talkboy and a small TM, a sweeping curved line that wraps around a round cassette window with a raised silver ring at the lower right, and three dark grey grip slats on the lower left, the top two shorter with angled ends and the bottom one longer. The door is hinged along its bottom edge and hangs open, its top edge flipped out and down toward the camera, as in the first photograph. Below the door, the dark grey molded base strip with its rectangular pattern.
+Only the Talkboy wordmark, no other words.
+
+Dough: as in the first photograph, realistically inside the open tape well, a glob spilling out of the left side of the door down to the floor and a chunk sitting at the top above the open door. One cohesive mass of firm and moist, freshly mixed raw bread dough in one even pale oatmeal beige, thick, heavy and saggy, never pink, wet, glossy, dry or stringy, no holes.
+
+Seamless grape purple paper backdrop, the same camera straight on the long side, soft light from the upper left, a real 1990 catalog photograph with fine grain. No people, no hands.
