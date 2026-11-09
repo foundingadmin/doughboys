@@ -2001,7 +2001,7 @@
   "album_cover_explore": {
     "catalog": "CBDB 00",
     "status": "R2-A1 with the Pinwheel rim label (Josh, Nov 8 2026). Josh dialed in the label type and rotated the rim wedges off the backdrop angles",
-    "next": "Josh decides whether the album Ad and Album Post drop Batch Electronics for Jungalow Records",
+    "next": "Josh answers the subhead questions, one fact per track",
     "rounds": [
       {
         "round": 1,
@@ -2104,7 +2104,7 @@
       "label_arc": "℗ © 2026 JUNGALOW RECORDS · CHILLSBURY DOUGHBOYS · THE FIRST BATCH, STEREO LP · RECORDED at THE KEEP · DENVER, COLORADO, USA · HAND MIXED by ANDREAS LANDECK · ALL RIGHTS RESERVED",
       "label_arc_note": "Josh's line Nov 8 2026, lowercase at and by on purpose. Josh set Archivo 8, arc rebuilt centered at the bottom, 217 degrees at r 234 (node 317:739). A text path cannot be rotated, rebuild the arc to recenter. Josh typed ANDREA, set as ANDREAS per his earlier message, confirm",
       "band_members_block": "TITUS bass · CHUK sax · JON keys · WILEY guitar · AARON drums, under the track list",
-      "still_batch_electronics": "Album Cover Ad 117:36 and copy 117:58, Album Post 4:5 maker 117:90, readme maker 118:162"
+      "batch_electronics": "retired Nov 8 2026, replaced by Jungalow Records on Album Cover Ad and copy, Album Post, readme, Brand Guide and Merch. Review and Archive pages left as history"
     }
   },
   "album_runtime": "43:02",
