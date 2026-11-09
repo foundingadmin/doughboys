@@ -11,7 +11,8 @@ File key `lcNDgyPE02C9Ldw8n2THee`. Built Oct 29 2026 from the Claude design canv
 
 **Components** (Kit page)
 - `Track Art` component set `116:104` with variants Format = Cover 1:1 `116:2`, Post 4:5 `116:47`, Canvas 9:16 `116:89`.
-  Properties: `Show placeholder#116:0`, `Print pass#116:4`, `Player zones#116:8`, `Photo#133:0` (slot).
+  Properties: `Show placeholder#116:0`, `Print pass#116:4`, `Player zones#116:8`, `Photo#133:0` (slot), `Sticker#253:0` (slot).
+  Sticker is a full bleed slot frame on Cover `253:138` and Post `253:139` (Canvas has no sticker), above Footer and below Print pass, holding the Fresh Batch sticker instance at its old default spot. On any track instance Josh drags, scales or rotates the sticker without detaching. Added Nov 8 2026 so the sticker can sit clear of each device (Josh, Nov 8 2026).
   Photo is a full bleed slot frame in each variant (Cover `133:169`, Post `133:170`, Canvas `133:171`), absolute, clipped, behind everything. Whatever sits in it on an instance can be moved, scaled or swapped without detaching. It replaced a plain Photo rectangle on Oct 29 2026 because Josh needed to reposition the boombox on the Deluge cover.
 - `Album Cover` set `117:87` (Ad `117:32`, Store `117:76`), properties `Show placeholder#117:0` and `Photo#135:0` (slot, Ad `135:179`, Store `135:180`, added Oct 29 2026). `Album Post 4:5` `117:88` carries the Ad cover as its Sleeve instance, so the sleeve has the slot too.
 - Parts: Spec row `115:21`, Runtime `115:32`, Fresh Batch sticker `115:39`, Nine Tracks sticker `117:70`.

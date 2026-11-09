@@ -1901,5 +1901,11 @@
   },
   "spend_log": "the-first-batch/spend.csv",
   "four_k_gate": "No 4K run without Josh's fresh written yes in the session, given after Claude links him to the explore frame in Figma, even if approved before (Josh, Nov 8 2026). cover.py render and gen.py render4k require --approved",
-  "figma_review_layout": "pipeline/figma_review_layout.js: sections Exploration, 4K, Complete on the Review page, track columns inside, STAGE map from tracks.json"
+  "figma_review_layout": "pipeline/figma_review_layout.js: sections Exploration, 4K, Complete on the Review page, track columns inside, STAGE map from tracks.json",
+  "figma_sticker_slot": {
+    "property": "Sticker#253:0",
+    "cover": "253:138",
+    "post": "253:139",
+    "note": "Fresh Batch sticker lives in this slot so Josh can move it per track without detaching (Nov 8 2026)"
+  }
 }
