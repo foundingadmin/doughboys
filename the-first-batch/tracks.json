@@ -2310,7 +2310,13 @@
       "album_back": {
         "component": "342:2163",
         "instance": "342:2277",
-        "holds": "header, title and subhead, tracklist with runtimes, total runtime, feature list and copy, credits, band name, short fine print, 9 Tracks sticker"
+        "holds": "header, title and subhead, tracklist with runtimes, total runtime, feature list and copy, credits, band name, short fine print, 9 Tracks sticker",
+        "runtime": "Runtime component 115:22 instance at 43:02, Total runtime (Josh, Nov 9 2026)"
+      },
+      "album_back_newspaper": {
+        "component": "347:2131",
+        "instance": "347:2370",
+        "note": "Second back option, dense on purpose, styled after the spec sheet 118:160 (Josh, Nov 9 2026). Side A and B with key, genre and vibe words, side totals 26:07 and 16:54, runtime 43:02, almanac, key tally, personnel, production, release, pressing notes, batch notes, method, palette, band, care, file under, UPC block"
       }
     },
     "drive": {
