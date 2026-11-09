@@ -2316,7 +2316,14 @@
       "album_back_newspaper": {
         "component": "347:2131",
         "instance": "347:2370",
-        "note": "Second back option, dense on purpose, styled after the spec sheet 118:160 (Josh, Nov 9 2026). Side A and B with key, genre and vibe words, side totals 26:07 and 16:54, runtime 43:02, almanac, key tally, personnel, production, release, pressing notes, batch notes, method, palette, band, care, file under, UPC block. Nov 9 2026: palette moved out of the column into a printer's color bar at the bottom left (registration marks, nine track colors in wheel order, ink 100 75 50 25, proof caption). Device list replaced by lead genre share per track (Josh: no device list). Nov 9 2026, rule from Josh: never show the same info twice, track names appear once. Side A and B columns are per song details only, full height (position, catalog, cover color, exact seconds, key and agreement, top three genre shares, vibe words, vocal or instrumental) with side totals. Almanac, key tally, colophon, file under and the separate share list removed. Total runtime moved to Batch Notes, the column for whole batch info"
+        "note": "Second back option, dense on purpose, styled after the spec sheet 118:160 (Josh, Nov 9 2026). Side A and B with key, genre and vibe words, side totals 26:07 and 16:54, runtime 43:02, almanac, key tally, personnel, production, release, pressing notes, batch notes, method, palette, band, care, file under, UPC block. Nov 9 2026: palette moved out of the column into a printer's color bar at the bottom left (registration marks, nine track colors in wheel order, ink 100 75 50 25, proof caption). Device list replaced by lead genre share per track (Josh: no device list). Nov 9 2026, rule from Josh: never show the same info twice, track names appear once. Side A and B columns are per song details only, full height (position, catalog, cover color, exact seconds, key and agreement, top three genre shares, vibe words, vocal or instrumental) with side totals. Almanac, key tally, colophon, file under and the separate share list removed. Total runtime moved to Batch Notes, the column for whole batch info",
+        "columns": {
+          "1 Batch Notes": "whole album: copy, features, total runtime, side totals, release, pressing notes, method, care",
+          "2 Side A": "tracks 01 to 05, standard fields",
+          "3 Side B": "tracks 06 to 09, standard fields",
+          "4 The Band": "members, production, studio address, about, label, UPC"
+        },
+        "track_fields": "title and runtime · side position, catalog, cover color, exact seconds · key and profile agreement · top three genre shares · vibe words · vocals"
       }
     },
     "drive": {
