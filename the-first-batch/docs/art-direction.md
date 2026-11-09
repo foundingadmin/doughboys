@@ -1,6 +1,6 @@
 # The First Batch · Art Direction
 
-Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 8 2026. Living doc: Claude Code updates it in the repo as tracks move (CLAUDE.md, Keeping the docs current).
+Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 9 2026. Living doc: Claude Code updates it in the repo as tracks move (CLAUDE.md, Keeping the docs current).
 
 - [Creative brief](https://claude.ai/code/artifact/e34a1d07-501a-4033-ba3d-b4bcc4d3668e)
 - [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Toolkits (variables and components), Brand Guide, Album Art and Review (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Archive (was Page 1) keeps every generated test at full size
