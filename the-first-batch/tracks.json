@@ -1154,15 +1154,15 @@
    "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
    "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
-   "status": "master v1 finished, Josh reviews on board 223:12",
-   "next": "Josh says yes on board 223:12 (SNOOZE centering and MINUTE for his Photoshop pass), then place in Figma and hand off",
+   "status": "placed in Figma",
+   "next": "Josh Photoshops SNOOZE to the middle of the bar if wanted, exports, and drops the master and render B into Masters (attached in chat Nov 8 2026)",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
     "cover": "118:914",
     "post": "118:959",
     "canvas": "118:1001",
-    "photo_hash": null,
+    "photo_hash": "12f4ff1e41a03f7acc4338e6ccd23e31844c02df",
     "post_transform": [
      [
       0.8,
@@ -1186,7 +1186,26 @@
       1,
       0
      ]
-    ]
+    ],
+    "photo_slot": {
+     "cover": {
+      "layer": "242:1080",
+      "x": 0,
+      "size": 900
+     },
+     "post": {
+      "layer": "242:1083",
+      "x": -90.81,
+      "size": 900
+     },
+     "canvas": {
+      "layer": "242:1086",
+      "x": -210.82,
+      "size": 960
+     }
+    },
+    "photo_note": "Uploaded Nov 8 2026 as a 4096 square JPG q95 of final v1. Sticker touches the back corner of the grille on the Cover and sits over the right of the grille on the Post. Canvas clips the right end and the player band crosses the clock. SNOOZE centering and MINUTE still for Josh in Photoshop",
+    "review": "the-first-batch/review/07-boombap/figma-boards-v1.png"
    },
    "drive": {
     "track_folder": "1hMSYqkDIOpBKVsTtpjfxQ7wLRsHf9vza",
@@ -1356,7 +1375,8 @@
      3072
     ]
    },
-   "render_pick_by_josh": "2026-11-08"
+   "render_pick_by_josh": "2026-11-08",
+   "master_approved": "2026-11-08"
   },
   {
    "n": "08",
