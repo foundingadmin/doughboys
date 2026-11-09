@@ -93,3 +93,4 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Bopkins style text pass worked again on Boombap: SLEEP, WAKE, HOUR, MINUTE and ON, OFF, MUSIC, ALARM came back clean in one run. Placement words ("centered on the top face of the bar") are weaker than spelling, SNOOZE landed on the bar but off center (Nov 8 2026).
 - The container clock is UTC, so after 5 PM in Denver it reads tomorrow. cover.py and the spend log now take the date from America/Denver. Check `TZ=America/Denver date` before writing any date (Nov 8 2026).
 
+- Gemini key lives only in the "Gemini API Access" cloud environment (GEMINI_API_KEY). A session started on Default cannot generate. Start image sessions there (Nov 8 2026).
