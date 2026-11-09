@@ -1910,8 +1910,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "exploring, round 1 ready for Josh",
-    "next": "Josh picks by number on board 296:12 which directions go to round 2",
+    "status": "exploring, round 2 ready for Josh",
+    "next": "Josh picks images and type direction on board 303:12",
     "rounds": [
       {
         "round": 1,
@@ -1936,6 +1936,48 @@
           "3-3",
           "2-2",
           "4-2"
+        ],
+        "josh_notes": "5-3 without the sleeve on the brand pinwheel; 4-2, 1-1, 3-2 and 6-1 into type layer tests; new versions of the sinking vat (Nov 8 2026)"
+      },
+      {
+        "round": 2,
+        "date": "2026-11-08",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 18,
+        "cost_usd": 1.21,
+        "directions": [
+          "A record on the brand pinwheel (edit of 5-3)",
+          "B1 to B6 sinking vat variations",
+          "H nine cassettes shingled",
+          "I striped sweep",
+          "J nine slices"
+        ],
+        "type_tests": {
+          "sources": [
+            "4-2",
+            "1-1",
+            "3-2",
+            "6-1",
+            "R2-A1"
+          ],
+          "treatments": [
+            "no type",
+            "Album Cover Store instance",
+            "Album Cover Ad instance",
+            "bakery label",
+            "quiet corners"
+          ]
+        },
+        "pinwheel": "the-first-batch/assets/brand/pinwheel-2048.png",
+        "prompts": "the-first-batch/prompts/explore/album/round-2/",
+        "contact_sheets": "the-first-batch/explore/00-album/round-2/",
+        "figma_board": "303:12",
+        "review": "the-first-batch/review/00-album/figma-board-explore-r2.png",
+        "claude_picks": [
+          "R2-A1",
+          "R2-J1",
+          "R2-B4"
         ]
       }
     ]
