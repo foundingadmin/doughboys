@@ -2072,8 +2072,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "4K render A done, on board 335:1018, Josh checks it",
-    "next": "Josh passes render A, then finish at 6704 on the exact code pinwheel and place in the Album Cover Photo slot with the label",
+    "status": "master v1 finished and placed in Figma on the Ad, Store and Album Post sleeve with the Pinwheel rim label",
+    "next": "Josh reviews the album boards on Album Art (section 118:9), nudges photo or type in the slots, exports",
     "rounds": [
       {
         "round": 1,
@@ -2276,7 +2276,35 @@
         "check": "Pass on outline, grooves, dough skin, label and edges. Wedges deltaE 1.7 to 5.2 from the hexes, the finish redraws them exact",
         "crops": "the-first-batch/review/00-album/4k-a/"
       }
-    ]
+    ],
+    "render_pick": "a, passed by Josh Nov 9 2026 (approved)",
+    "master": {
+      "file": "the-first-batch/assets/photos/00-album/00-album-final-v1.jpg",
+      "size": "6704x6704",
+      "made_with": "pipeline/finish_album.py: rembg u2net matte of render A, upscaled to 6704, backdrop redrawn in the exact hexes at the measured wedge angles, render shadow and grain kept",
+      "wedge_dE_max": 1.33,
+      "label_frac": {
+        "cx": 0.4996,
+        "cy": 0.5,
+        "d": 0.242
+      }
+    },
+    "figma": {
+      "section": "118:9",
+      "figma_hash": "2610cbc40c7a51cae5d25fa65d8d43c1a16f5c90",
+      "photo_frames": {
+        "ad": "338:2055",
+        "store": "338:2111",
+        "post_sleeve": "338:2149"
+      },
+      "note": "Each Photo slot holds a frame with the 4096 master and a Record Label Pinwheel rim instance, scaled to 0.242 of the slot and centered, so they move together"
+    },
+    "drive": {
+      "folder": "1O_Ti6onaJIo_XLUqlt85D-oA8oCl_Q87",
+      "masters": "1uK1avIK9JN5OqPyeMg811suMNKvObYeI",
+      "exports": "1Q3OAO-rC3VxrSZrW7aBNatyxDiKLvyCW",
+      "archive": "1kfAFybiGrKcoBdxdqpTP0mdarUfiOnuu"
+    }
   },
   "album_runtime": "43:02",
   "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
