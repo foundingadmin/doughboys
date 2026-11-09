@@ -2012,7 +2012,7 @@
       "label_of_record": "Jungalow Records",
       "status": "set in Record label · type 308:243",
       "label_arc": "℗ © 2026 JUNGALOW RECORDS · CHILLSBURY DOUGHBOYS · THE FIRST BATCH, STEREO LP · RECORDED at THE KEEP · DENVER, COLORADO, USA · HAND MIXED by ANDREAS LANDECK · ALL RIGHTS RESERVED",
-      "label_arc_note": "Josh's line Nov 8 2026, lowercase at and by on purpose. Arc built to length, 244 degrees at r 234, Archivo 9. Josh typed ANDREA, set as ANDREAS per his earlier message, confirm",
+      "label_arc_note": "Josh's line Nov 8 2026, lowercase at and by on purpose. Josh set Archivo 8, arc rebuilt centered at the bottom, 217 degrees at r 234 (node 317:739). A text path cannot be rotated, rebuild the arc to recenter. Josh typed ANDREA, set as ANDREAS per his earlier message, confirm",
       "band_members_block": "TITUS bass · CHUK sax · JON keys · WILEY guitar · AARON drums, under the track list"
     }
   }
