@@ -20,7 +20,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Silver dual deck boombox",
-      "subhead": "The Kind of Rain You Stay Out In",
+      "subhead": "Torrential · Brooding · Wide",
       "silhouette": "Both tape doors stuffed, one spilling more, a wide flat pool across the surface",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Master is already in Drive Masters.",
@@ -110,7 +110,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "The Kind of Rain You Stay Out In"
     },
     {
       "n": "02",
@@ -122,7 +123,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "Yellow sports Walkman",
-      "subhead": "Bright Heat With a Shadow in It",
+      "subhead": "Bright · Biting · Restless",
       "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Drive upload is not wired here, so Josh drops the master and render B into Masters by hand (files attached in chat Nov 8 2026)",
@@ -315,7 +316,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Bright Heat With a Shadow in It"
     },
     {
       "n": "03",
@@ -328,7 +330,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "Silver direct drive turntable",
-      "subhead": "Six Minutes of Turning It Over",
+      "subhead": "Winding · Smoky · Patient",
       "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas and drops them in Drive Exports. Drive upload is not wired here, so Josh drops the master and render G into Masters by hand (attached in chat Nov 8 2026)",
@@ -612,7 +614,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Six Minutes of Turning It Over"
     },
     {
       "n": "04",
@@ -624,7 +627,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "Virtual pet in a clear pink shell",
-      "subhead": "Soft Spoken, Then Not at All",
+      "subhead": "Tender · Sultry · Building",
       "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
       "status": "backlog",
       "next": "Parked by Josh Nov 8 2026. When it comes back, pick from round 3 on board 177:12, then reuse device_4k_recipe",
@@ -831,7 +834,8 @@
       "language": "Spanish",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": "Jon",
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Soft Spoken, Then Not at All"
     },
     {
       "n": "05",
@@ -844,7 +848,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Tube monitor and tower PC",
-      "subhead": "Sunday Light on a Sticky Floor",
+      "subhead": "Sunny · Nimble · Easy",
       "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Master and render B are in Drive Masters (Nov 8 2026).",
@@ -1027,7 +1031,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Sunday Light on a Sticky Floor"
     },
     {
       "n": "06",
@@ -1039,7 +1044,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "TV VCR combo",
-      "subhead": "Locked In and Leaning Forward",
+      "subhead": "Driven · Relentless · Locked",
       "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
       "status": "placed in Figma",
       "next": "Josh decides: nudge the photo in the Cover and Post slots, or Claude re-finishes with a smaller device. Then Josh exports. Drive upload is not wired, Josh drops master and render A into Masters (attached in chat Nov 8 2026)",
@@ -1251,7 +1256,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Locked In and Leaning Forward"
     },
     {
       "n": "07",
@@ -1264,7 +1270,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
-      "subhead": "Late, Low and Not Sorry",
+      "subhead": "Late · Low · Unbothered",
       "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
       "status": "placed in Figma",
       "next": "Josh Photoshops SNOOZE to the middle of the bar if wanted, exports, and drops the master and render B into Masters (attached in chat Nov 8 2026)",
@@ -1506,7 +1512,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Late, Low and Not Sorry"
     },
     {
       "n": "08",
@@ -1518,7 +1525,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Classic grey handheld game console, no logos",
-      "subhead": "Small Hours, Wide Eyes",
+      "subhead": "Curious · Untamed · Bouncing",
       "silhouette": "Dough on the floor, console stuck upright in it, thick enough to hold it, uneven and lopsided, never a perfect round mound (Josh, Nov 8 2026)",
       "status": "placed in Figma",
       "next": "Josh nudges the photo on the Cover if he wants the subhead clear, exports, and drops the master and render A into Masters (attached in chat Nov 8 2026)",
@@ -1752,7 +1759,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Small Hours, Wide Eyes"
     },
     {
       "n": "09",
@@ -1764,7 +1772,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Talkboy style handheld tape recorder, badged Doughboy",
-      "subhead": "Every Door Left Open on the Way Out",
+      "subhead": "Open · Yearning · Warm",
       "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
       "status": "master v1 placed in Figma Nov 8 2026, Josh Photoshops later",
       "next": "Josh retypes the Talkboy script as Doughboy in Photoshop and drops the render and master into Masters on Drive",
@@ -2040,7 +2048,8 @@
       "language": "Instrumental",
       "composers": "Titus, Chuk, Jon, Wiley, Aaron",
       "lyricist": null,
-      "producer": "Chillsbury Doughboys"
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Every Door Left Open on the Way Out"
     }
   ],
   "figma_review_page": "128:77",
