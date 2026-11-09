@@ -55,7 +55,23 @@ From a Reddit post Josh saved Nov 9 2026 (r/musicmarketing, a former label marke
 - **What Spotify actually weighs.** Saves, repeat listens, profile visits, people finishing the song, and people looking us up on purpose. Raw stream count matters far less
 - **The active listener ratio.** The post says Spotify wants more than half of all listeners to be active (listeners who chose us) and treats that as more important than total listeners. It's folklore with no source, so treat it as directional only
 
-**What this means for us.** Every listener we bring in should be someone who came looking for the band. That's a job for assets we're already making. The stickers, the Bread Clip pin backing card, the zine and the Instagram posts can each send people straight to our Spotify profile with one ask, save the album. A small crowd that saves and replays beats a big passive one.
+**What this means for us.** Every listener we bring in should be someone who came looking for the band. That's a job for assets we're already making. The stickers, the Bread Clip pin backing card, the zine and the Instagram posts can each send people to our own playlist (see the next section) with one ask, save it. A small crowd that saves and replays beats a big passive one.
+
+# Our own playlist as the landing page
+
+From a second Reddit post Josh saved Nov 9 2026. One independent artist with about 61,000 monthly listeners describing what worked for him. This is one person's results, not a rule, but it is the most concrete playbook we have.
+
+- **The move.** Build a playlist we own, give it a name people would actually search for, put the whole catalog in it and give it strong cover art. Every ad, link and QR code points there instead of at a single song. The promoted song sits at #1 and the rest autoplay behind it
+- **Why it works.** A listener who likes three of our songs tells Spotify far more than one stream does. Spotify then tests our songs on similar listeners in its own mixes and generated playlists. Each test that lands raises the song's popularity score and earns more testing. That is how a listener base compounds
+- **Find the winner.** He ran Meta ads (Facebook and Instagram) for each release and compared CPC (cost per click). Most songs cost about $0.70 to $0.80 a click, but one cost $0.30 to $0.40, which meant twice the audience for the same money. That song now stays pinned at #1, and each new release goes in at #2, riding the song people already like
+- **Cadence.** He says the best strategy is still a new single every 4 to 6 weeks
+- **Showcase campaigns.** A paid Spotify for Artists tool. On each release he targets the 3 countries with his highest share of active listeners, which his dashboard shows him
+- **The payoff took time.** After 9 months, over 60% of his streams came from the algorithm, and Spotify Radio alone outplayed his own playlist about 12 to 1
+
+**What this means for us.**
+1. **The playlist is a brand piece, and it's Josh's lane.** Name it for search, not for a joke. Its cover comes from the same catalog system as the album covers. Every sticker, pin card, zine and post QR code points to it
+2. **Nine tracks means nine releases.** A 4 to 6 week cadence turns the album into a 9 to 12 month run of singles. Each single gets its own pitch and its own Release Radar slot (one pitch at a time), plus its own Canvas, cover and post, all of which are already built per track. This makes the singles question in the brief a strategy decision, not just a scheduling one
+3. **Let the data pick the cover star.** Cheap ad tests on early singles show which track is our winner. That track holds #1 on the playlist and leads the merch ask
 
 # Sync licensing
 
@@ -64,7 +80,9 @@ Permission to use our music in commercials, film, video, trailers and games. A s
 # Open, tie back to the brief
 
 - Distributor (still open) decides how pitching and sync are handled
-- Which tracks release early as singles (still open) sets the pitch calendar
+- Which tracks release early as singles (still open) sets the pitch calendar. Option on the table Nov 9 2026 is all nine as singles, one every 4 to 6 weeks, before or around the full album
+- Our playlist's name and cover
+- Ad budget for Meta tests and Showcase campaigns, if any
 - Canvas motion recipe and loop type, settle against the gravity only rule
 - Runtimes per track (still open) cap how long a Canvas loop can feel natural
 
