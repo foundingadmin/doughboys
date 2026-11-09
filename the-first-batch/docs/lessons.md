@@ -93,3 +93,5 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 - Bopkins style text pass worked again on Boombap: SLEEP, WAKE, HOUR, MINUTE and ON, OFF, MUSIC, ALARM came back clean in one run. Placement words ("centered on the top face of the bar") are weaker than spelling, SNOOZE landed on the bar but off center (Nov 8 2026).
 - The container clock is UTC, so after 5 PM in Denver it reads tomorrow. cover.py and the spend log now take the date from America/Denver. Check `TZ=America/Denver date` before writing any date (Nov 8 2026).
 
+
+- Nov 8 2026 · Behind the scenes side project. Flash explore with the Deluge cover passed as `--ref` held the boombox and dough shape at set scale in all six frames, garage clutter and lighting gear came out convincing on the first pass. Watch for real brand logos on props (a shipping box smile showed up in frame 4) and garbled flour bag labels. Prompts live in `prompts/bts/`.
