@@ -1,7 +1,7 @@
 {
   "album": "The First Batch",
   "band": "Chillsbury Doughboys (CBDB)",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "canvas_px": 6704,
   "dough_hex": "#E9D3A8",
   "paper_hex": "#F5EEDC",
@@ -628,9 +628,9 @@
       "ring_hex": "#65B8E5",
       "device": "Virtual pet in a clear pink shell",
       "subhead": "Tender · Sultry · Building",
-      "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
-      "status": "backlog",
-      "next": "Parked by Josh Nov 8 2026. When it comes back, pick from round 3 on board 177:12, then reuse device_4k_recipe",
+      "silhouette": "Open. Round 4 Nov 9 2026 moves the dough inside a mid 1990s laptop: 4a lid shut on the dough, 4b dough filling the open keyboard well",
+      "status": "exploring, rounds 4a and 4b ready for Josh",
+      "next": "Josh picks a frame from round 4 on board 383:14 (1 to 3 are 4a, 4 to 6 are 4b), then cover.py lock 04 <frame> --pick R4b-<number>. The laptop replaces the virtual pet if he picks one, so the 4K prompt gets rewritten",
       "source": {
         "figma_node": "73:2",
         "pick": "I4",
@@ -784,6 +784,12 @@
           "date": "2026-11-08",
           "what": "Explore round 3 on Flash: 3a ball, 3b disc, 3c tucked",
           "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=177-12"
+        },
+        {
+          "node": "383:14",
+          "date": "2026-11-09",
+          "what": "Explore round 4 on Flash: dough inside a mid 1990s laptop, 4a lid shut (1 to 3), 4b open keyboard well (4 to 6). Recommended 5",
+          "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=383-14"
         }
       ],
       "device_4k_recipe": "Josh liked the 4K virtual pet device (Nov 8 2026). Reuse on the new pick: lock the source, tight crop, prompts/4k/04-suavecita.md (shell, buttons, chain wording). Fix the screen icons in the source before the 4K run, the edit will not redraw them",
@@ -811,11 +817,28 @@
           "frames": "work/04-suavecita/round-3c",
           "model": "gemini-3.1-flash-image-preview",
           "contact_sheet": "the-first-batch/explore/04-suavecita/round-3c/contact-sheet.jpg"
+        },
+        {
+          "round": "4a",
+          "date": "2026-11-09",
+          "prompt": "the-first-batch/prompts/explore/04-suavecita-round-4a.md",
+          "frames": "work/04-suavecita/round-4a",
+          "contact_sheet": "the-first-batch/explore/04-suavecita/round-4a/contact-sheet.jpg",
+          "model": "gemini-3.1-flash-image-preview"
+        },
+        {
+          "round": "4b",
+          "date": "2026-11-09",
+          "prompt": "the-first-batch/prompts/explore/04-suavecita-round-4b.md",
+          "frames": "work/04-suavecita/round-4b",
+          "contact_sheet": "the-first-batch/explore/04-suavecita/round-4b/contact-sheet.jpg",
+          "model": "gemini-3.1-flash-image-preview"
         }
       ],
       "backlog": {
         "date": "2026-11-08",
-        "by": "Josh"
+        "by": "Josh",
+        "resumed": "2026-11-09"
       },
       "genre": "Rock, Funk",
       "key": "A minor",
