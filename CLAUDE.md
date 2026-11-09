@@ -38,6 +38,7 @@ Read this file, then `the-first-batch/tracks.json` (the state of all nine tracks
 | Art direction (the brief) | `the-first-batch/docs/art-direction.md`. Josh's master brief, the same file he keeps for the creative brief. Keep it current, see below |
 | Lessons learned | `the-first-batch/docs/lessons.md`. Add to it when something fails or surprises you |
 | Figma wiring recipe | `the-first-batch/docs/figma.md` |
+| Behind the scenes | `pipeline/bts.py NN --round R` builds BTS frames in the locked garage (`prompts/bts/environment.md`, refs in `assets/bts/`), one camera and gear variation per frame. Boards live on the Figma page Behind The Scenes `264:12`, one column per track |
 | Review images | `the-first-batch/review/NN-track/`. Check crops and Figma board screenshots Josh looks at |
 
 ## Session start · smoke test

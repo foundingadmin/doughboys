@@ -1,0 +1,2 @@
+- The console stands upright, tilted a little, stuck in a lopsided mound of dough that sits on the paper sweep with a small smear trailing off one side. A real handheld console is only about 15 cm tall, so on the plywood it reads small, like a real tabletop product shot.
+- The camera's view of the set matches the cover: console centered on the sweep, softbox from the upper left.
