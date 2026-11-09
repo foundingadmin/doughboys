@@ -1910,8 +1910,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "exploring, round 2 ready for Josh",
-    "next": "Josh picks images and type direction on board 303:12",
+    "status": "R2-A1 picked by Josh, record label type on board 308:340",
+    "next": "Josh picks a label direction: Solid, Rings, Pinwheel rim or Stripes",
     "rounds": [
       {
         "round": 1,
@@ -1980,6 +1980,30 @@
           "R2-B4"
         ]
       }
-    ]
+    ],
+    "pick": {
+      "frame": "R2-A1",
+      "date": "2026-11-08",
+      "source": "work/00-album/r2/record-pinwheel/01.png",
+      "figma_hash": "75be89590999128a51da57559a7e6b3dc675d43d",
+      "label_center_px": [
+        511,
+        511
+      ],
+      "label_diameter_px": 244,
+      "label_hex": "#C3662E"
+    },
+    "label": {
+      "figma_board": "308:340",
+      "component_set": "308:339",
+      "type_component": "308:243",
+      "variants": {
+        "Solid": "308:259",
+        "Rings": "308:273",
+        "Pinwheel rim": "308:295",
+        "Stripes": "308:317"
+      },
+      "note": "Label designed at 600, placed at 214.5 on a 900 cover. Solid color layer 'Label color · swap me', bind it to track/ground and pick a Track mode to try the nine. Review copy: the-first-batch/review/00-album/figma-board-label-v1.png"
+    }
   }
 }
