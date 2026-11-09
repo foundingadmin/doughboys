@@ -1,7 +1,7 @@
 {
   "album": "The First Batch",
   "band": "Chillsbury Doughboys (CBDB)",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "canvas_px": 6704,
   "dough_hex": "#E9D3A8",
   "paper_hex": "#F5EEDC",
@@ -626,11 +626,11 @@
       "ground_hex": "#C77171",
       "ring": "bondi",
       "ring_hex": "#65B8E5",
-      "device": "Virtual pet in a clear pink shell",
+      "device": "MacBook with dough in the open keyboard well, no Apple logo (Josh Nov 9 2026, from R4-5). Era open: current silver or 2006 white",
       "subhead": "Tender · Sultry · Building",
-      "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
-      "status": "backlog",
-      "next": "Parked by Josh Nov 8 2026. When it comes back, pick from round 3 on board 177:12, then reuse device_4k_recipe",
+      "silhouette": "R4-5 dough (Josh Nov 9 2026): a heavy loaf heaped in the keyboard well, slumped off the left front corner to a low broad mound on the floor at the left third",
+      "status": "exploring, round 5 ready for Josh",
+      "next": "Josh picks a MacBook frame on board 386:14 (1 to 3 silver round 5a, 4 to 6 white round 5b), then cover.py lock 04 work/04-suavecita/round-5X/0F.png --pick R5X-F. Then a new 4K prompt for the MacBook, the virtual pet recipe no longer applies",
       "source": {
         "figma_node": "73:2",
         "pick": "I4",
@@ -784,6 +784,18 @@
           "date": "2026-11-08",
           "what": "Explore round 3 on Flash: 3a ball, 3b disc, 3c tucked",
           "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=177-12"
+        },
+        {
+          "node": "383:14",
+          "date": "2026-11-09",
+          "what": "Explore round 4 on Flash: dough inside a mid 1990s laptop, 4a lid shut (1 to 3), 4b open keyboard well (4 to 6). Recommended 5",
+          "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=383-14"
+        },
+        {
+          "node": "386:14",
+          "date": "2026-11-09",
+          "what": "Explore round 5, R4-5 edited into a MacBook: 5a silver (1 to 3), 5b 2006 white (4 to 6). Recommended 4",
+          "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=386-14"
         }
       ],
       "device_4k_recipe": "Josh liked the 4K virtual pet device (Nov 8 2026). Reuse on the new pick: lock the source, tight crop, prompts/4k/04-suavecita.md (shell, buttons, chain wording). Fix the screen icons in the source before the 4K run, the edit will not redraw them",
@@ -811,11 +823,46 @@
           "frames": "work/04-suavecita/round-3c",
           "model": "gemini-3.1-flash-image-preview",
           "contact_sheet": "the-first-batch/explore/04-suavecita/round-3c/contact-sheet.jpg"
+        },
+        {
+          "round": "4a",
+          "date": "2026-11-09",
+          "prompt": "the-first-batch/prompts/explore/04-suavecita-round-4a.md",
+          "frames": "work/04-suavecita/round-4a",
+          "contact_sheet": "the-first-batch/explore/04-suavecita/round-4a/contact-sheet.jpg",
+          "model": "gemini-3.1-flash-image-preview"
+        },
+        {
+          "round": "4b",
+          "date": "2026-11-09",
+          "prompt": "the-first-batch/prompts/explore/04-suavecita-round-4b.md",
+          "frames": "work/04-suavecita/round-4b",
+          "contact_sheet": "the-first-batch/explore/04-suavecita/round-4b/contact-sheet.jpg",
+          "model": "gemini-3.1-flash-image-preview"
+        },
+        {
+          "round": "5a",
+          "date": "2026-11-09",
+          "prompt": "the-first-batch/prompts/explore/04-suavecita-round-5a.md",
+          "frames": "work/04-suavecita/round-5a",
+          "model": "gemini-3.1-flash-image-preview",
+          "ref": "work/04-suavecita/round-4b/02.png",
+          "contact_sheet": "the-first-batch/explore/04-suavecita/round-5a/contact-sheet.jpg"
+        },
+        {
+          "round": "5b",
+          "date": "2026-11-09",
+          "prompt": "the-first-batch/prompts/explore/04-suavecita-round-5b.md",
+          "frames": "work/04-suavecita/round-5b",
+          "model": "gemini-3.1-flash-image-preview",
+          "ref": "work/04-suavecita/round-4b/02.png",
+          "contact_sheet": "the-first-batch/explore/04-suavecita/round-5b/contact-sheet.jpg"
         }
       ],
       "backlog": {
         "date": "2026-11-08",
-        "by": "Josh"
+        "by": "Josh",
+        "resumed": "2026-11-09"
       },
       "genre": "Rock, Funk",
       "key": "A minor",
