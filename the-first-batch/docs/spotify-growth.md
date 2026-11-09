@@ -16,7 +16,7 @@ As of Nov 9 2026 the band has no Spotify for Artists account and nothing on Spot
 One part of this cannot wait until the album is live.
 
 - **Pitch at least 7 days before release.** Spotify for Artists lets us pitch one unreleased song to the playlist editors. A pitch in by that deadline also drops the song into every follower's Release Radar. Miss the window and both are gone for that release
-- **One song per pitch.** The next pitch opens once the pitched song is live. So the singles plan (still open in the brief) decides how many pitches the album gets
+- **One song per pitch.** The next pitch opens once the pitched song is live, and only unreleased music can be pitched. The band is releasing the full album at once (decided Nov 9 2026), so we get exactly one pitch. Pick the focus track carefully
 - **The pitch form rewards detail.** Genre, mood, culture tags, the story behind the song, our marketing plan. The art direction doc already holds most of the story and the visuals
 
 # Canvas · the looping video behind each track
@@ -70,8 +70,8 @@ From a second Reddit post Josh saved Nov 9 2026. One independent artist with abo
 
 **What this means for us.**
 1. **The playlist is a brand piece, and it's Josh's lane.** Name it for search, not for a joke. Its cover comes from the same catalog system as the album covers. Every sticker, pin card, zine and post QR code points to it
-2. **Nine tracks means nine releases.** A 4 to 6 week cadence turns the album into a 9 to 12 month run of singles. Each single gets its own pitch and its own Release Radar slot (one pitch at a time), plus its own Canvas, cover and post, all of which are already built per track. This makes the singles question in the brief a strategy decision, not just a scheduling one
-3. **Let the data pick the cover star.** Cheap ad tests on early singles show which track is our winner. That track holds #1 on the playlist and leads the merch ask
+2. **Full album at once, then rotate a focus track (band decision Nov 9 2026).** No singles run. We keep the compounding by promoting one track at a time after launch, every 4 to 6 weeks. That track gets the #1 slot on our playlist, the Artist Pick on the profile, a fresh Canvas and its Instagram post. All of those can be changed anytime and are already built per track. What we give up is extra pitches and Release Radar slots, which matter little while we have almost no followers
+3. **Let the data pick the cover star.** Cheap ad tests across the first few focus tracks show which one is our winner. That track holds #1 on the playlist and leads the merch ask
 
 # Landing page or straight to Spotify
 
@@ -88,7 +88,8 @@ Permission to use our music in commercials, film, video, trailers and games. A s
 # Open, tie back to the brief
 
 - Distributor (still open) decides how pitching and sync are handled
-- Which tracks release early as singles (still open) sets the pitch calendar. Option on the table Nov 9 2026 is all nine as singles, one every 4 to 6 weeks, before or around the full album
+- Which track is the one pitch and the launch focus track. Band decided Nov 9 2026 to release the full album at once, no singles
+- Focus track rotation order after launch
 - Our playlist's name and cover
 - Band domain for the /listen redirect, and which smart link service runs the ad landing page
 - Ad budget for Meta tests and Showcase campaigns, if any
