@@ -2005,6 +2005,12 @@
       },
       "note": "Label designed at 600, placed at 214.5 on a 900 cover. Solid color layer 'Label color · swap me', bind it to track/ground and pick a Track mode to try the nine. Review copy: the-first-batch/review/00-album/figma-board-label-v1.png",
       "choice": "Pinwheel rim 308:295"
+    },
+    "fine_print": {
+      "recorded_at": "The Keep, Denver area",
+      "engineer": "to confirm, first name starts with A",
+      "label_of_record": "Jungalow",
+      "status": "options sent to Josh Nov 8 2026"
     }
   }
 }
