@@ -1622,8 +1622,8 @@
       "device": "Talkboy style handheld tape recorder, badged Doughboy",
       "subhead": "Handheld Tape Recorder With Extending Mic",
       "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-      "status": "master v1 finished, Josh reviews on board 248:12",
-      "next": "On Josh's yes place the master in the Photo slots (cover, post, canvas) and cover.py drive 09",
+      "status": "master v1 placed in Figma Nov 8 2026, Josh Photoshops later",
+      "next": "Josh retypes the Talkboy script as Doughboy in Photoshop and drops the render and master into Masters on Drive",
       "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
       "figma": {
         "mode_id": "114:10",
@@ -1631,7 +1631,7 @@
         "cover": "118:1120",
         "post": "118:1165",
         "canvas": "118:1207",
-        "photo_hash": null,
+        "photo_hash": "91a243f1af556337bae4db695de608838e44627e",
         "post_transform": [
           [
             0.8,
@@ -1655,7 +1655,26 @@
             1,
             0
           ]
-        ]
+        ],
+        "photo_slot": {
+          "cover": {
+            "layer": "251:1071",
+            "x": 0,
+            "size": 900
+          },
+          "post": {
+            "layer": "251:1074",
+            "x": -90.81,
+            "size": 900
+          },
+          "canvas": {
+            "layer": "251:1077",
+            "x": -210.82,
+            "size": 960
+          }
+        },
+        "photo_note": "Uploaded Nov 8 2026 as a 4096 square JPG q95 of final v1. Sticker sits over the mic on the Cover and Post. Canvas clips the speaker grille on the left and the mic tip on the right. Talkboy script still for Josh to retype as Doughboy in Photoshop",
+        "review": "the-first-batch/review/09-show-me-your-love/figma-boards-v1.png"
       },
       "drive": {
         "track_folder": "15M14ZVxgxcMoEOZDf7zX9dznzbbKTfLU",
@@ -1858,7 +1877,8 @@
           4096
         ]
       },
-      "render_pick_approved": "Josh Nov 8 2026: show me your love A approved. finalize and show me the swatches"
+      "render_pick_approved": "Josh Nov 8 2026: show me your love A approved. finalize and show me the swatches",
+      "master_approved": "Josh Nov 8 2026: Perfect. Place the show me your love 4k in design now"
     }
   ],
   "figma_review_page": "128:77",
