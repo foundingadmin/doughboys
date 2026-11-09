@@ -2,6 +2,15 @@
 
 Saved Nov 9 2026 from Josh's notes on the Spotify for Artists videos. Revisit when The First Batch is close to release and we want new listeners. Facts checked against Spotify's own help pages Nov 9 2026, recheck before acting since Spotify changes these.
 
+# Step zero · we have no Spotify presence yet
+
+As of Nov 9 2026 the band has no Spotify for Artists account and nothing on Spotify. Everything below depends on these, in order.
+
+1. **Pick a distributor.** Still open in the brief. This is the gate. Spotify takes music only through a distributor or label, and the distributor creates our artist profile when it delivers the first release. Prefer one Spotify lists as a preferred provider, since that makes the step 3 access request instant
+2. **Upload the album with a release date set weeks out.** That gives time for step 3's review (a few days if manual) and the 7 day pitch window. The distributor then hands us the artist link and the release's UPC (Universal Product Code)
+3. **Claim Spotify for Artists before release.** Request access at [artists.spotify.com](https://artists.spotify.com). Without a preferred distributor, Spotify reviews by hand and wants a website or social link to prove we are the band, so the Instagram account should exist first. For a profile with no live music yet, send Spotify support the artist link plus the upcoming release's UPC. Only one request can be pending per profile, so one person files it and invites the rest of the band as team members
+4. **Then pitch, then Canvas.** Pitch one song 7+ days ahead, upload Canvas loops once the tracks show in the dashboard
+
 # Do before release day, not after
 
 One part of this cannot wait until the album is live.
@@ -52,3 +61,4 @@ Permission to use our music in commercials, film, video, trailers and games. A s
 
 - [Pitching music to Spotify playlist editors](https://support.spotify.com/artists/article/pitching-music-to-playlist-editors/)
 - [Canvas guidelines](https://support.spotify.com/fj/artists/article/canvas-guidelines/)
+- [Getting access to Spotify for Artists](https://support.spotify.com/us/artists/article/getting-access-to-spotify-for-artists/)
