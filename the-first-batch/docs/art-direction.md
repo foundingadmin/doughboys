@@ -60,7 +60,7 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 - **Silhouette · set by Josh Oct 19 2026** · every track gets its own dough outline. Spice through Traycee all ended in a lobe sagging out the left into a mound, and the covers started to rhyme. Describe a specific shape in each prompt (a brick, a ball, a heap, a braid) instead of reusing the pour language
 
 ## Locked decisions
-- **Album cover** · translucent tangerine Walkman, tape door hanging open, a large wad of dough stuffed in where the cassette goes. Grey placeholder ground for now, v1 catalog ad copy on the canvas
+- **Album cover** · translucent tangerine Walkman, tape door hanging open, a large wad of dough stuffed in where the cassette goes. Grey placeholder ground for now, v1 catalog ad copy on the canvas. Nov 8 2026 Josh opened a top down exploration, 1:1 square: dough edge to edge, devices sinking in a vat of dough, a cookie sheet of the nine devices iced in their track colors, plus three Claude directions (a cassette made of dough, an LP pressed from dough, nine dough portions on a color grid). Round 1 on [Review board 296:12](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=296-12), Josh picks what goes to round 2
 - **Store master** · distributors only accept the band name and album title as text, so the cover sent to Spotify drops the ad copy. Same rule for any track cover released as a single
 - **Naming** · never abbreviate the album name. The band abbreviates to CBDB, so catalog numbers run CBDB 00 for the album and CBDB 01 to CBDB 09 for tracks
 - **Dough look** · too big to fit, sagging out the side, thick slow drips that are never stringy. One deck clearly dominates the spill. Overflow and main drip land near a rule of thirds line

@@ -1907,5 +1907,37 @@
     "cover": "253:138",
     "post": "253:139",
     "note": "Fresh Batch sticker lives in this slot so Josh can move it per track without detaching (Nov 8 2026)"
+  },
+  "album_cover_explore": {
+    "catalog": "CBDB 00",
+    "status": "exploring, round 1 ready for Josh",
+    "next": "Josh picks by number on board 296:12 which directions go to round 2",
+    "rounds": [
+      {
+        "round": 1,
+        "date": "2026-11-08",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 18,
+        "cost_usd": 1.21,
+        "directions": [
+          "1 dough field",
+          "2 sinking vat",
+          "3 cookie sheet",
+          "4 dough cassette",
+          "5 first pressing",
+          "6 nine portions"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/round-1/",
+        "figma_board": "296:12",
+        "review": "the-first-batch/review/00-album/figma-board-explore-r1.png",
+        "claude_picks": [
+          "3-3",
+          "2-2",
+          "4-2"
+        ]
+      }
+    ]
   }
 }
