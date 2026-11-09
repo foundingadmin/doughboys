@@ -572,8 +572,8 @@
    "device": "Virtual pet in a clear pink shell",
    "subhead": "Virtual Pet With Built In Clock",
    "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
-   "status": "exploring, round 3 ready for Josh",
-   "next": "Josh picks on board 177:12 (Claude recommends 3c-3, runner up 3b-3). Then point Josh to the pick in Figma and get his written yes before any 4K run, reusing device_4k_recipe",
+   "status": "backlog",
+   "next": "Parked by Josh Nov 8 2026. When it comes back, pick from round 3 on board 177:12, then reuse device_4k_recipe",
    "source": {
     "figma_node": "73:2",
     "pick": "I4",
@@ -755,7 +755,11 @@
      "model": "gemini-3.1-flash-image-preview",
      "contact_sheet": "the-first-batch/explore/04-suavecita/round-3c/contact-sheet.jpg"
     }
-   ]
+   ],
+   "backlog": {
+    "date": "2026-11-08",
+    "by": "Josh"
+   }
   },
   {
    "n": "05",
@@ -1618,8 +1622,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "exploring, round 7 dough only ready for Josh",
-   "next": "Josh picks the dough on board 222:12 (Claude recommends 5, runner up 2). Then link him to the pick and get a written yes before any 4K. Ask for detail photos of the real toy for the 4K, as on Mancub",
+   "status": "exploring, round 8 ready for Josh",
+   "next": "Josh picks on board 245:12 (Claude recommends 1, runner up 4). Then link him to the pick and get a written yes before the 4K. Ask for detail photos of the real Talkboy to pass as --ref, as on Mancub",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -1694,6 +1698,15 @@
      "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-7/contact-sheet.jpg",
      "model": "gemini-3.1-flash-image-preview",
      "edit_of": "work/09-show-me-your-love/round-6c/03.png alone"
+    },
+    {
+     "round": "8",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-8a.md, 8b, 8c",
+     "frames": "work/09-show-me-your-love/round-8",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-8/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "edit_of": "round-7/05.png with parts/dough-r5-1.jpg crop"
     }
    ],
    "review_boards": [
@@ -1732,10 +1745,16 @@
      "date": "2026-11-08",
      "what": "Round 7: dough variations on the locked 6-3 device",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=222-12"
+    },
+    {
+     "node": "245:12",
+     "date": "2026-11-08",
+     "what": "Round 8: R5-1 dough on the R7-5 device",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=245-12"
     }
    ],
    "device_rule": "Must look exactly like the 1993 Talkboy reference. Generate the original Talkboy script so Josh can retype it as Doughboy in the same style in Photoshop (Josh, Nov 8 2026)",
-   "pick_progress": "Josh Nov 9 2026: 6-3 has every device part right, the others have the wrong red key at the top right. Lock the device, explore dough only",
+   "pick_progress": "Josh Nov 8 2026: R5-1 has the perfect dough texture and shape, R7-5 the perfect device. Round 8 puts R5-1 dough on the R7-5 device",
    "reference_photo": "the-first-batch/reference/09-talkboy-reference-3q.jpg",
    "device_source": "work/09-show-me-your-love/round-6c/03.png (board 217:12, node 217-30)"
   }

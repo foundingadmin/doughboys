@@ -1,15 +1,15 @@
 // Review page layout (Josh, Nov 8 2026): one Figma section per stage of development, left to right
-// Exploration, 4K, Complete. Inside each section, one column per track in album order, rounds stacked
+// Exploration, 4K, Complete, then Backlog for tracks Josh parks. Inside each section, one column per track in album order, rounds stacked
 // oldest at the top. Boards are named "CBDB NN ...". Fill STAGE from tracks.json before running:
 //   placed in Figma -> Complete; source approved, 4K rendered, master finished -> 4K; everything else -> Exploration.
 // figma_review_board.js runs this same pass after adding a board.
-const STAGE = { "01": "Complete", "02": "Complete", "03": "Complete", "04": "Exploration", "05": "Complete", "06": "Complete", "07": "Complete", "08": "Complete", "09": "Exploration" };
+const STAGE = { "01": "Complete", "02": "Complete", "03": "Complete", "04": "Backlog", "05": "Complete", "06": "Complete", "07": "Complete", "08": "Complete", "09": "Exploration" };
 
 async function layoutReview(page) {
   await figma.loadFontAsync({ family: "Anton", style: "Regular" });
   await figma.loadFontAsync({ family: "Archivo", style: "Regular" });
-  const ORDER = ["Exploration", "4K", "Complete"];
-  const NOTE = { "Exploration": "Low res explore rounds on Flash. Josh picks a frame.", "4K": "Approved source, 4K render and check, finish and master review.", "Complete": "Master approved and placed on Cover, Post and Canvas." };
+  const ORDER = ["Exploration", "4K", "Complete", "Backlog"];
+  const NOTE = { "Exploration": "Low res explore rounds on Flash. Josh picks a frame.", "4K": "Approved source, 4K render and check, finish and master review.", "Complete": "Master approved and placed on Cover, Post and Canvas.", "Backlog": "Parked by Josh. Picks up from its last round." };
   const GAP = 400, PAD = 600, HEAD = 1600;
   const boards = page.findAll(n => n.type === "FRAME" && /^CBDB \d\d/.test(n.name) && (n.parent.type === "PAGE" || n.parent.type === "SECTION"));
   const sections = {};
