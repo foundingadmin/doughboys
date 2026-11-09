@@ -20,7 +20,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Silver dual deck boombox",
-      "subhead": "Dual Cassette Boombox With Overflow Control",
+      "subhead": "Torrential · Brooding · Wide",
       "silhouette": "Both tape doors stuffed, one spilling more, a wide flat pool across the surface",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Master is already in Drive Masters.",
@@ -92,7 +92,26 @@
       "drive_masters_files": {
         "01-deluge-final-v1.jpg": "1dz7vz14gf1HqfousUUvPq6buDGiGybTe",
         "01-deluge-4k-render.jpg": "1Bde1e83lbL75QQVrBmh6WzWDAVfeiupr"
-      }
+      },
+      "genre": "Rock, Jazz",
+      "key": "E minor",
+      "runtime": "5:26",
+      "runtime_seconds": 326.376,
+      "master_audio": {
+        "file": "01 Desert Deluge Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "4 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Dual Cassette Boombox With Overflow Control",
+      "genre_global": "Alt Rock, Jazz-Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "The Kind of Rain You Stay Out In"
     },
     {
       "n": "02",
@@ -104,7 +123,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "Yellow sports Walkman",
-      "subhead": "Waterproof Sports Cassette Player",
+      "subhead": "Bright · Biting · Restless",
       "silhouette": "Tape door open and pinched on the dough, the spill sagging out the left, yellow headphones to the right",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Drive upload is not wired here, so Josh drops the master and render B into Masters by hand (files attached in chat Nov 8 2026)",
@@ -279,7 +298,26 @@
       },
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "First finish kept the old backdrop inside the headphone cord loop. finish.py now opens enclosed holes that match the backdrop beside them (holes_opened in the report), re-run Nov 8 2026",
-      "master_approved": "2026-11-08"
+      "master_approved": "2026-11-08",
+      "genre": "Rock, Jazz",
+      "key": "A major",
+      "runtime": "4:21",
+      "runtime_seconds": 261.472,
+      "master_audio": {
+        "file": "02 Spice Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "2 of 4, A minor close",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Waterproof Sports Cassette Player",
+      "genre_global": "Jazz-Rock, Blues",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Bright Heat With a Shadow in It"
     },
     {
       "n": "03",
@@ -292,7 +330,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "Silver direct drive turntable",
-      "subhead": "Direct Drive Turntable With Pitch Control",
+      "subhead": "Winding · Smoky · Patient",
       "silhouette": "A flat round pile the size of a record, spindle through it, a fat edge pouring off the front left",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas and drops them in Drive Exports. Drive upload is not wired here, so Josh drops the master and render G into Masters by hand (attached in chat Nov 8 2026)",
@@ -558,7 +596,26 @@
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "Finished from G with --glass-box 0.21,0.0,0.91,0.39 so the backdrop seen through the dust cover is relit to the new pink. Grain sampler now median and direction free, the first G finish streaked",
       "master_approved": "2026-11-08",
-      "master_note": "Josh approved v1 as is Nov 8 2026, lid square included (\"this master is done\")"
+      "master_note": "Josh approved v1 as is Nov 8 2026, lid square included (\"this master is done\")",
+      "genre": "Jazz, Funk",
+      "key": "C minor",
+      "runtime": "6:12",
+      "runtime_seconds": 372.181,
+      "master_audio": {
+        "file": "03 Danish (Bopkins) Mix 2.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "3 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Direct Drive Turntable With Pitch Control",
+      "genre_global": "Fusion, Jazz-Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Six Minutes of Turning It Over"
     },
     {
       "n": "04",
@@ -570,7 +627,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "Virtual pet in a clear pink shell",
-      "subhead": "Virtual Pet With Built In Clock",
+      "subhead": "Tender · Sultry · Building",
       "silhouette": "Open. Josh dropped the nest Nov 8 2026. Round 3 tries a ball, a disc and an egg tucked under a lip",
       "status": "backlog",
       "next": "Parked by Josh Nov 8 2026. When it comes back, pick from round 3 on board 177:12, then reuse device_4k_recipe",
@@ -759,7 +816,26 @@
       "backlog": {
         "date": "2026-11-08",
         "by": "Josh"
-      }
+      },
+      "genre": "Rock, Funk",
+      "key": "A minor",
+      "runtime": "6:12",
+      "runtime_seconds": 372.992,
+      "master_audio": {
+        "file": "04 Suavecita Mix 2.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "4 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Virtual Pet With Built In Clock",
+      "genre_global": "Ska, Alt Rock",
+      "explicit": false,
+      "language": "Spanish",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": "Jon",
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Soft Spoken, Then Not at All"
     },
     {
       "n": "05",
@@ -772,7 +848,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Tube monitor and tower PC",
-      "subhead": "Multimedia PC With Motorized Disc Tray",
+      "subhead": "Sunny · Nimble · Easy",
       "silhouette": "A heavy lobe over the open CD tray, falling down the front of the tower to a big rounded mound",
       "status": "placed in Figma",
       "next": "Josh exports Cover, Post and Canvas from Figma and drops them in Drive Exports. Master and render B are in Drive Masters (Nov 8 2026).",
@@ -937,7 +1013,26 @@
         "05-traycee-final-v1.jpg": "1uPYO5y9580YiTwo9HCiRMc7jyz4bK8s-",
         "05-traycee-4k-render-3x2-b.jpg": "1KpqqXR6z1IahM9Yq0rp3OSOrY3mJNcGs",
         "05-traycee-4k-render-weave.png": "1zjXrPuPdCxtAb3BM4sfdw2wb_UkhDWeR"
-      }
+      },
+      "genre": "Jazz, Rock",
+      "key": "G major",
+      "runtime": "3:54",
+      "runtime_seconds": 234.728,
+      "master_audio": {
+        "file": "05 Traycee Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "4 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Multimedia PC With Motorized Disc Tray",
+      "genre_global": "Jazz-Funk, Jazz-Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Sunday Light on a Sticky Floor"
     },
     {
       "n": "06",
@@ -949,7 +1044,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "TV VCR combo",
-      "subhead": "13 Inch TV With Built In VCR",
+      "subhead": "Driven · Relentless · Locked",
       "silhouette": "Never a brick (Josh, Nov 8 2026). Round 2a a ball on the floor tied to the slot by a fold, 2b an overstuffed soft bulge sagging out of the slot to a mound",
       "status": "placed in Figma",
       "next": "Josh decides: nudge the photo in the Cover and Post slots, or Claude re-finishes with a smaller device. Then Josh exports. Drive upload is not wired, Josh drops master and render A into Masters (attached in chat Nov 8 2026)",
@@ -1143,7 +1238,26 @@
       },
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "First finish copied the render mottle into the backdrop as blotches. finish.py now copies only grain finer than 12 px, re-run Nov 8 2026",
-      "master_approved": "2026-11-08"
+      "master_approved": "2026-11-08",
+      "genre": "Rock, Funk",
+      "key": "C♯ minor",
+      "runtime": "4:05",
+      "runtime_seconds": 245.588,
+      "master_audio": {
+        "file": "06 Determinator Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "3 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "13 Inch TV With Built In VCR",
+      "genre_global": "Ska, Alt Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Locked In and Leaning Forward"
     },
     {
       "n": "07",
@@ -1156,7 +1270,7 @@
       "ring": "bondi",
       "ring_hex": "#65B8E5",
       "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
-      "subhead": "Clock Radio With Snooze and Sleep Timer",
+      "subhead": "Late · Low · Unbothered",
       "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
       "status": "placed in Figma",
       "next": "Josh Photoshops SNOOZE to the middle of the bar if wanted, exports, and drops the master and render B into Masters (attached in chat Nov 8 2026)",
@@ -1380,7 +1494,26 @@
         ]
       },
       "render_pick_by_josh": "2026-11-08",
-      "master_approved": "2026-11-08"
+      "master_approved": "2026-11-08",
+      "genre": "Rock, Jazz",
+      "key": "C minor",
+      "runtime": "4:14",
+      "runtime_seconds": 254.016,
+      "master_audio": {
+        "file": "07 Midnight Honey (Boom Bap) Mix 2.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "3 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Clock Radio With Snooze and Sleep Timer",
+      "genre_global": "Jazz-Funk, Blues",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Late, Low and Not Sorry"
     },
     {
       "n": "08",
@@ -1392,7 +1525,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Classic grey handheld game console, no logos",
-      "subhead": "Pocket Game System for Young Players",
+      "subhead": "Curious · Untamed · Bouncing",
       "silhouette": "Dough on the floor, console stuck upright in it, thick enough to hold it, uneven and lopsided, never a perfect round mound (Josh, Nov 8 2026)",
       "status": "placed in Figma",
       "next": "Josh nudges the photo on the Cover if he wants the subhead clear, exports, and drops the master and render A into Masters (attached in chat Nov 8 2026)",
@@ -1608,7 +1741,26 @@
       },
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "device_touches_edge flag is the console top within 24 px of the render edge, top is whole, checked Nov 8 2026",
-      "master_approved": "2026-11-08"
+      "master_approved": "2026-11-08",
+      "genre": "Funk, Rock",
+      "key": "E minor",
+      "runtime": "3:47",
+      "runtime_seconds": 227.624,
+      "master_audio": {
+        "file": "08 Man Cub Mix 4.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "3 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Pocket Game System for Young Players",
+      "genre_global": "Ska, Psych Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Small Hours, Wide Eyes"
     },
     {
       "n": "09",
@@ -1620,7 +1772,7 @@
       "ring": "tangerine",
       "ring_hex": "#DE9F65",
       "device": "Talkboy style handheld tape recorder, badged Doughboy",
-      "subhead": "Handheld Tape Recorder With Extending Mic",
+      "subhead": "Open · Yearning · Warm",
       "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
       "status": "master v1 placed in Figma Nov 8 2026, Josh Photoshops later",
       "next": "Josh retypes the Talkboy script as Doughboy in Photoshop and drops the render and master into Masters on Drive",
@@ -1878,7 +2030,26 @@
         ]
       },
       "render_pick_approved": "Josh Nov 8 2026: show me your love A approved. finalize and show me the swatches",
-      "master_approved": "Josh Nov 8 2026: Perfect. Place the show me your love 4k in design now"
+      "master_approved": "Josh Nov 8 2026: Perfect. Place the show me your love 4k in design now",
+      "genre": "Rock, Funk",
+      "key": "E minor",
+      "runtime": "4:47",
+      "runtime_seconds": 287.68,
+      "master_audio": {
+        "file": "09 Show Me Your Love Mix 4.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      },
+      "key_agreement": "3 of 4",
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Handheld Tape Recorder With Extending Mic",
+      "genre_global": "Ska, Afrobeat",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys",
+      "subhead_mood_line": "Every Door Left Open on the Way Out"
     }
   ],
   "figma_review_page": "128:77",
@@ -1907,5 +2078,262 @@
     "cover": "253:138",
     "post": "253:139",
     "note": "Fresh Batch sticker lives in this slot so Josh can move it per track without detaching (Nov 8 2026)"
-  }
+  },
+  "album_cover_explore": {
+    "catalog": "CBDB 00",
+    "status": "album cover final: photo and record label only, no type overlay (Josh, Nov 9 2026). Back cover built as the Album Back component 342:2163, instance 342:2277",
+    "next": "Josh drops master v1 and render A into Album Cover / Masters on Drive and exports the boards",
+    "rounds": [
+      {
+        "round": 1,
+        "date": "2026-11-08",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 18,
+        "cost_usd": 1.21,
+        "directions": [
+          "1 dough field",
+          "2 sinking vat",
+          "3 cookie sheet",
+          "4 dough cassette",
+          "5 first pressing",
+          "6 nine portions"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/round-1/",
+        "figma_board": "296:12",
+        "review": "the-first-batch/review/00-album/figma-board-explore-r1.png",
+        "claude_picks": [
+          "3-3",
+          "2-2",
+          "4-2"
+        ],
+        "josh_notes": "5-3 without the sleeve on the brand pinwheel; 4-2, 1-1, 3-2 and 6-1 into type layer tests; new versions of the sinking vat (Nov 8 2026)"
+      },
+      {
+        "round": 2,
+        "date": "2026-11-08",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 18,
+        "cost_usd": 1.21,
+        "directions": [
+          "A record on the brand pinwheel (edit of 5-3)",
+          "B1 to B6 sinking vat variations",
+          "H nine cassettes shingled",
+          "I striped sweep",
+          "J nine slices"
+        ],
+        "type_tests": {
+          "sources": [
+            "4-2",
+            "1-1",
+            "3-2",
+            "6-1",
+            "R2-A1"
+          ],
+          "treatments": [
+            "no type",
+            "Album Cover Store instance",
+            "Album Cover Ad instance",
+            "bakery label",
+            "quiet corners"
+          ]
+        },
+        "pinwheel": "the-first-batch/assets/brand/pinwheel-2048.png",
+        "prompts": "the-first-batch/prompts/explore/album/round-2/",
+        "contact_sheets": "the-first-batch/explore/00-album/round-2/",
+        "figma_board": "303:12",
+        "review": "the-first-batch/review/00-album/figma-board-explore-r2.png",
+        "claude_picks": [
+          "R2-A1",
+          "R2-J1",
+          "R2-B4"
+        ]
+      },
+      {
+        "round": 3,
+        "date": "2026-11-09",
+        "model": "gemini-3.1-flash-image-preview",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "refs": [
+          "R2-A1",
+          "brand pinwheel"
+        ],
+        "variants": [
+          "fine smooth",
+          "deep grooves",
+          "rough handmade",
+          "slumped",
+          "crust rim",
+          "thin sheet",
+          "track bands",
+          "knife scored",
+          "warped"
+        ],
+        "label_px_1024": {
+          "R3-1": {
+            "cx": 510.0,
+            "cy": 511.1,
+            "d": 329.6
+          },
+          "R3-2": {
+            "cx": 511.1,
+            "cy": 511.1,
+            "d": 246.7
+          },
+          "R3-3": {
+            "cx": 510.9,
+            "cy": 510.9,
+            "d": 246.7
+          },
+          "R3-4": {
+            "cx": 511.2,
+            "cy": 511.6,
+            "d": 248.6
+          },
+          "R3-5": {
+            "cx": 512.4,
+            "cy": 512.2,
+            "d": 288.9
+          },
+          "R3-6": {
+            "cx": 511.4,
+            "cy": 511.5,
+            "d": 247.2
+          },
+          "R3-7": {
+            "cx": 512.5,
+            "cy": 512.3,
+            "d": 284.1
+          },
+          "R3-8": {
+            "cx": 510.8,
+            "cy": 511.2,
+            "d": 248.2
+          },
+          "R3-9": {
+            "cx": 511.3,
+            "cy": 511.9,
+            "d": 318.3
+          }
+        },
+        "prompts": "the-first-batch/prompts/explore/album/round-3/",
+        "contact_sheet": "the-first-batch/explore/00-album/round-3/contact-sheet.jpg",
+        "figma_board": "333:739",
+        "claude_picks": [
+          "R3-4",
+          "R3-6",
+          "R3-9"
+        ]
+      }
+    ],
+    "pick": {
+      "frame": "R2-A1",
+      "date": "2026-11-08",
+      "source": "work/00-album/r2/record-pinwheel/01.png",
+      "figma_hash": "75be89590999128a51da57559a7e6b3dc675d43d",
+      "label_center_px": [
+        511,
+        511
+      ],
+      "label_diameter_px": 244,
+      "label_hex": "#C3662E"
+    },
+    "label": {
+      "figma_board": "308:340",
+      "component_set": "308:339",
+      "type_component": "308:243",
+      "variants": {
+        "Solid": "308:259",
+        "Rings": "308:273",
+        "Pinwheel rim": "308:295",
+        "Stripes": "308:317"
+      },
+      "note": "Label designed at 600, placed at 214.5 on a 900 cover. Solid color layer 'Label color · swap me', bind it to track/ground and pick a Track mode to try the nine. Review copy: the-first-batch/review/00-album/figma-board-label-v1.png",
+      "choice": "Pinwheel rim 308:295",
+      "final": "Pinwheel rim 308:295, final per Josh Nov 9 2026"
+    },
+    "fine_print": {
+      "recorded_at": "The Keep Recording Studio, 1669 S Acoma St, Denver, CO 80223",
+      "engineer": "Andreas Landeck (recording, mixing and mastering)",
+      "label_of_record": "Jungalow Records",
+      "status": "approved by Josh Nov 8 2026. Label arc 317:739. Rolled out to Track Art Cover legal line 116:29 and Post legal line 116:71 (Archivo 8, line height 11, fills the band block, each credit joined with non-breaking spaces so lines break only after a dot). Post meta row 116:51 now Jungalow Records. Canvas has no legal line",
+      "label_arc": "℗ © 2026 JUNGALOW RECORDS · CHILLSBURY DOUGHBOYS · THE FIRST BATCH, STEREO LP · RECORDED at THE KEEP · DENVER, COLORADO, USA · HAND MIXED by ANDREAS LANDECK · ALL RIGHTS RESERVED",
+      "label_arc_note": "Josh's line Nov 8 2026, lowercase at and by on purpose. Josh set Archivo 8, arc rebuilt centered at the bottom, 217 degrees at r 234 (node 317:739). A text path cannot be rotated, rebuild the arc to recenter. Josh typed ANDREA, set as ANDREAS per his earlier message, confirm",
+      "band_members_block": "TITUS bass · CHUK sax · JON keys · WILEY guitar · AARON drums, under the track list",
+      "batch_electronics": "retired Nov 8 2026, replaced by Jungalow Records on Album Cover Ad and copy, Album Post, readme, Brand Guide and Merch. Review and Archive pages left as history"
+    },
+    "source": {
+      "pick": "R3-4",
+      "approved": "2026-11-09",
+      "josh": "r3-4 is my pick here. 4k it.",
+      "repo": "the-first-batch/assets/photos/00-album/00-album-source-r3-4.png"
+    },
+    "prompt_4k": "the-first-batch/prompts/4k/00-album.md",
+    "renders_4k": [
+      {
+        "letter": "a",
+        "file": "the-first-batch/assets/photos/00-album/00-album-4k-render-1x1-a.jpg",
+        "size": "4096x4096",
+        "date": "2026-11-09",
+        "refs": [
+          "pinwheel"
+        ],
+        "board": "335:1018",
+        "check": "Pass on outline, grooves, dough skin, label and edges. Wedges deltaE 1.7 to 5.2 from the hexes, the finish redraws them exact",
+        "crops": "the-first-batch/review/00-album/4k-a/"
+      }
+    ],
+    "render_pick": "a, passed by Josh Nov 9 2026 (approved)",
+    "master": {
+      "file": "the-first-batch/assets/photos/00-album/00-album-final-v1.jpg",
+      "size": "6704x6704",
+      "made_with": "pipeline/finish_album.py: rembg u2net matte of render A, upscaled to 6704, backdrop redrawn in the exact hexes at the measured wedge angles, render shadow and grain kept",
+      "wedge_dE_max": 1.33,
+      "label_frac": {
+        "cx": 0.4996,
+        "cy": 0.5,
+        "d": 0.242
+      }
+    },
+    "figma": {
+      "section": "118:9",
+      "figma_hash": "2610cbc40c7a51cae5d25fa65d8d43c1a16f5c90",
+      "photo_frames": {
+        "ad": "338:2055",
+        "store": "338:2111",
+        "post_sleeve": "338:2149"
+      },
+      "note": "Each Photo slot holds a frame with the 4096 master and a Record Label Pinwheel rim instance, scaled to 0.242 of the slot and centered, so they move together",
+      "album_back": {
+        "frame": "355:7116",
+        "note": "plain frame in the album section, not a component (Josh, Nov 9 2026). Runtime and Nine Tracks sticker inside stay linked instances"
+      },
+      "album_back_newspaper": {
+        "note": "Second back option, dense on purpose, styled after the spec sheet 118:160 (Josh, Nov 9 2026). Side A and B with key, genre and vibe words, side totals 26:07 and 16:54, runtime 43:02, almanac, key tally, personnel, production, release, pressing notes, batch notes, method, palette, band, care, file under, UPC block. Nov 9 2026: palette moved out of the column into a printer's color bar at the bottom left (registration marks, nine track colors in wheel order, ink 100 75 50 25, proof caption). Device list replaced by lead genre share per track (Josh: no device list). Nov 9 2026, rule from Josh: never show the same info twice, track names appear once. Side A and B columns are per song details only, full height (position, catalog, cover color, exact seconds, key and agreement, top three genre shares, vibe words, vocal or instrumental) with side totals. Almanac, key tally, colophon, file under and the separate share list removed. Total runtime moved to Batch Notes, the column for whole batch info",
+        "columns": {
+          "1 Batch Notes": "whole album: copy, features, total runtime, side totals, release, pressing notes, method, care",
+          "2 Side A": "tracks 01 to 05, standard fields",
+          "3 Side B": "tracks 06 to 09, standard fields",
+          "4 The Band": "members, production, studio address, about, label, UPC"
+        },
+        "track_fields": "title and runtime · side position, catalog, cover color, exact seconds · key and profile agreement · top three genre shares · vibe words · vocals",
+        "frame": "355:7188"
+      }
+    },
+    "drive": {
+      "folder": "1O_Ti6onaJIo_XLUqlt85D-oA8oCl_Q87",
+      "masters": "1uK1avIK9JN5OqPyeMg811suMNKvObYeI",
+      "exports": "1Q3OAO-rC3VxrSZrW7aBNatyxDiKLvyCW",
+      "archive": "1kfAFybiGrKcoBdxdqpTP0mdarUfiOnuu"
+    }
+  },
+  "album_runtime": "43:02",
+  "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+  "spec_sheet_metadata": "Figma 330:2057, Track metadata section on the spec sheet 118:160",
+  "release_metadata_sheet": "https://docs.google.com/spreadsheets/d/1kpnBcBHrMWddA_0_E6mdZLtekzb4KOFhCd7dQjkwMXo",
+  "release_date": "TBD, before end of 2026",
+  "release_metadata_sheet_note": "Josh removed the Subhead column from the release metadata sheet Nov 9 2026. Subheads live only in Figma (track/subhead) and tracks.json. Keep them out of the sheet"
 }

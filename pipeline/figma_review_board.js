@@ -19,7 +19,7 @@ const ROWS = [
     ["B · label", "What passed and what failed.", "b-full.jpg", 4096, 2747]],
 ];
 
-let page = figma.root.children.find(p => p.name === "Review");
+let page = figma.root.children.find(p => p.id === "128:77") || figma.root.children.find(p => p.name.trim().endsWith("Review"));  // Josh renamed it "   ↪ Review" (Nov 2026), match by id
 if (!page) {
   page = figma.createPage(); page.name = "Review";
   figma.root.insertChild(figma.root.children.findIndex(p => p.id === "114:4") + 1, page);

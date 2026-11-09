@@ -1,0 +1,281 @@
+{
+ "01": {
+  "fixed_share_pct": {
+   "Rock": 63.3,
+   "Jazz": 17.4,
+   "Funk": 11.3,
+   "Jam": 7.9,
+   "Dance": 0.0
+  },
+  "fixed_top2": [
+   "Rock",
+   "Jazz"
+  ],
+  "global_top": [
+   [
+    "Rock---Alternative Rock",
+    0.102
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.083
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.072
+   ],
+   [
+    "Rock---Punk",
+    0.053
+   ]
+  ]
+ },
+ "02": {
+  "fixed_share_pct": {
+   "Rock": 51.9,
+   "Jazz": 27.5,
+   "Funk": 16.8,
+   "Jam": 3.8,
+   "Dance": 0.0
+  },
+  "fixed_top2": [
+   "Rock",
+   "Jazz"
+  ],
+  "global_top": [
+   [
+    "Jazz---Jazz-Rock",
+    0.102
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.088
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.081
+   ],
+   [
+    "Rock---Ska",
+    0.077
+   ]
+  ]
+ },
+ "03": {
+  "fixed_share_pct": {
+   "Jazz": 42.6,
+   "Funk": 28.9,
+   "Rock": 16.4,
+   "Dance": 6.6,
+   "Jam": 5.5
+  },
+  "fixed_top2": [
+   "Jazz",
+   "Funk"
+  ],
+  "global_top": [
+   [
+    "Jazz---Fusion",
+    0.11
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.102
+   ],
+   [
+    "Jazz---Jazz-Funk",
+    0.093
+   ],
+   [
+    "Jazz---Smooth Jazz",
+    0.09
+   ]
+  ]
+ },
+ "04": {
+  "fixed_share_pct": {
+   "Rock": 68.8,
+   "Funk": 11.8,
+   "Jazz": 8.1,
+   "Jam": 6.2,
+   "Dance": 5.1
+  },
+  "fixed_top2": [
+   "Rock",
+   "Funk"
+  ],
+  "global_top": [
+   [
+    "Rock---Ska",
+    0.086
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.081
+   ],
+   [
+    "Rock---Punk",
+    0.072
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.06
+   ]
+  ]
+ },
+ "05": {
+  "fixed_share_pct": {
+   "Jazz": 36.1,
+   "Rock": 30.3,
+   "Funk": 23.0,
+   "Jam": 6.1,
+   "Dance": 4.5
+  },
+  "fixed_top2": [
+   "Jazz",
+   "Rock"
+  ],
+  "global_top": [
+   [
+    "Jazz---Jazz-Funk",
+    0.109
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.09
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.055
+   ],
+   [
+    "Jazz---Soul-Jazz",
+    0.051
+   ]
+  ]
+ },
+ "06": {
+  "fixed_share_pct": {
+   "Rock": 38.6,
+   "Funk": 25.7,
+   "Jazz": 14.1,
+   "Dance": 12.4,
+   "Jam": 9.3
+  },
+  "fixed_top2": [
+   "Rock",
+   "Funk"
+  ],
+  "global_top": [
+   [
+    "Rock---Ska",
+    0.192
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.099
+   ],
+   [
+    "Reggae---Ska",
+    0.096
+   ],
+   [
+    "Rock---Punk",
+    0.085
+   ]
+  ]
+ },
+ "07": {
+  "fixed_share_pct": {
+   "Rock": 34.8,
+   "Jazz": 34.4,
+   "Funk": 24.1,
+   "Jam": 5.1,
+   "Dance": 1.6
+  },
+  "fixed_top2": [
+   "Rock",
+   "Jazz"
+  ],
+  "global_top": [
+   [
+    "Jazz---Jazz-Funk",
+    0.12
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.106
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.078
+   ],
+   [
+    "Jazz---Smooth Jazz",
+    0.071
+   ]
+  ]
+ },
+ "08": {
+  "fixed_share_pct": {
+   "Funk": 32.4,
+   "Rock": 30.4,
+   "Jam": 17.1,
+   "Jazz": 15.2,
+   "Dance": 4.9
+  },
+  "fixed_top2": [
+   "Funk",
+   "Rock"
+  ],
+  "global_top": [
+   [
+    "Rock---Psychedelic Rock",
+    0.074
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.068
+   ],
+   [
+    "Rock---Ska",
+    0.059
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.058
+   ]
+  ]
+ },
+ "09": {
+  "fixed_share_pct": {
+   "Rock": 40.2,
+   "Funk": 30.1,
+   "Jazz": 19.9,
+   "Jam": 8.0,
+   "Dance": 1.8
+  },
+  "fixed_top2": [
+   "Rock",
+   "Funk"
+  ],
+  "global_top": [
+   [
+    "Rock---Ska",
+    0.069
+   ],
+   [
+    "Reggae---Ska",
+    0.066
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.057
+   ],
+   [
+    "Funk / Soul---Afrobeat",
+    0.053
+   ]
+  ]
+ }
+}
