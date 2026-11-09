@@ -2,6 +2,12 @@
 
 File key `lcNDgyPE02C9Ldw8n2THee`. Built Oct 29 2026 from the Claude design canvas, which is now retired. Figma is the source of truth.
 
+## Pages · Nov 9 2026
+
+Brand, Album Art, then **Release Marketing** `365:3276`, a hub page whose index cards link to each child page. Children sit right under it, named with three spaces and ↪ so they read as nested: ↪ Stickers `360:14`, ↪ Merch `252:1699`, ↪ Zine `354:5584`, ↪ Behind The Scenes `264:12`. Below the divider sit Photo Pipeline `128:77`, Archive and Thumbnail. Look pages up by id, names carry the ↪ prefix.
+
+- **Stickers** · Round 1 `360:15` (4 × 6 promo sheets A Bakery Counter, B Fall Catalog, C Street Team), Round 2 `365:784` (D Facts and name tags sheet, E Gold Seal foil emboss run with its run spec), parked print stickers `273:4231` (Cassette sticker component `256:208`, moved from Merch Nov 9 2026). Sheets are drawn at 150 px per inch, 600 × 900, magenta dash for the kiss cut, grey dash for the 0.125 in safe line.
+
 ## Structure
 
 **Variables** (Kit page)
