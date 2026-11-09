@@ -95,7 +95,14 @@
       },
       "genre": "Funk, Rock",
       "key": "E minor",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "5:26",
+      "runtime_seconds": 326.376,
+      "master_audio": {
+        "file": "01 Desert Deluge Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "02",
@@ -285,7 +292,14 @@
       "master_approved": "2026-11-08",
       "genre": "Dance, Funk",
       "key": "A minor",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "4:21",
+      "runtime_seconds": 261.472,
+      "master_audio": {
+        "file": "02 Spice Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "03",
@@ -567,7 +581,14 @@
       "master_note": "Josh approved v1 as is Nov 8 2026, lid square included (\"this master is done\")",
       "genre": "Jazz, Funk, Jam",
       "key": "B♭ major",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "6:12",
+      "runtime_seconds": 372.181,
+      "master_audio": {
+        "file": "03 Danish (Bopkins) Mix 2.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "04",
@@ -771,7 +792,14 @@
       },
       "genre": "Dance, Jazz",
       "key": "D minor",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "6:12",
+      "runtime_seconds": 372.992,
+      "master_audio": {
+        "file": "04 Suavecita Mix 2.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "05",
@@ -952,7 +980,14 @@
       },
       "genre": "Rock, Jam",
       "key": "G major",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "3:54",
+      "runtime_seconds": 234.728,
+      "master_audio": {
+        "file": "05 Traycee Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "06",
@@ -1161,7 +1196,14 @@
       "master_approved": "2026-11-08",
       "genre": "Rock, Funk, Dance",
       "key": "C♯ minor",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "4:05",
+      "runtime_seconds": 245.588,
+      "master_audio": {
+        "file": "06 Determinator Mix 3.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "07",
@@ -1401,7 +1443,14 @@
       "master_approved": "2026-11-08",
       "genre": "Funk, Jazz",
       "key": "F minor",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "4:14",
+      "runtime_seconds": 254.016,
+      "master_audio": {
+        "file": "07 Midnight Honey (Boom Bap) Mix 2.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "08",
@@ -1632,7 +1681,14 @@
       "master_approved": "2026-11-08",
       "genre": "Jam, Rock",
       "key": "A major",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "3:47",
+      "runtime_seconds": 227.624,
+      "master_audio": {
+        "file": "08 Man Cub Mix 4.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     },
     {
       "n": "09",
@@ -1905,7 +1961,14 @@
       "master_approved": "Josh Nov 8 2026: Perfect. Place the show me your love 4k in design now",
       "genre": "Jazz, Dance, Funk",
       "key": "E♭ major",
-      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13"
+      "genre_key_note": "placeholder values, Josh supplies the real ones (Nov 8 2026). Figma Track variables track/genre 324:12 and track/key 324:13",
+      "runtime": "4:47",
+      "runtime_seconds": 287.68,
+      "master_audio": {
+        "file": "09 Show Me Your Love Mix 4.wav",
+        "drive_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
+        "format": "48 kHz 24 bit stereo WAV"
+      }
     }
   ],
   "figma_review_page": "128:77",
@@ -2043,5 +2106,7 @@
       "band_members_block": "TITUS bass · CHUK sax · JON keys · WILEY guitar · AARON drums, under the track list",
       "still_batch_electronics": "Album Cover Ad 117:36 and copy 117:58, Album Post 4:5 maker 117:90, readme maker 118:162"
     }
-  }
+  },
+  "album_runtime": "43:02",
+  "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW"
 }
