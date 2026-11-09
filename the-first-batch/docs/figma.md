@@ -11,7 +11,8 @@ File key `lcNDgyPE02C9Ldw8n2THee`. Built Oct 29 2026 from the Claude design canv
 
 **Components** (Kit page)
 - `Track Art` component set `116:104` with variants Format = Cover 1:1 `116:2`, Post 4:5 `116:47`, Canvas 9:16 `116:89`.
-  Properties: `Show placeholder#116:0`, `Print pass#116:4`, `Player zones#116:8`, `Photo#133:0` (slot).
+  Properties: `Show placeholder#116:0`, `Print pass#116:4`, `Player zones#116:8`, `Photo#133:0` (slot), `Sticker#253:0` (slot).
+  Sticker is a full bleed slot frame on Cover `253:138` and Post `253:139` (Canvas has no sticker), above Footer and below Print pass, holding the Fresh Batch sticker instance at its old default spot. On any track instance Josh drags, scales or rotates the sticker without detaching. Added Nov 8 2026 so the sticker can sit clear of each device (Josh, Nov 8 2026).
   Photo is a full bleed slot frame in each variant (Cover `133:169`, Post `133:170`, Canvas `133:171`), absolute, clipped, behind everything. Whatever sits in it on an instance can be moved, scaled or swapped without detaching. It replaced a plain Photo rectangle on Oct 29 2026 because Josh needed to reposition the boombox on the Deluge cover.
 - `Album Cover` set `117:87` (Ad `117:32`, Store `117:76`), properties `Show placeholder#117:0` and `Photo#135:0` (slot, Ad `135:179`, Store `135:180`, added Oct 29 2026). `Album Post 4:5` `117:88` carries the Ad cover as its Sleeve instance, so the sleeve has the slot too.
 - Parts: Spec row `115:21`, Runtime `115:32`, Fresh Batch sticker `115:39`, Nine Tracks sticker `117:70`.
@@ -68,7 +69,7 @@ return out;
 
 ## Review boards
 
-Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, inside three Figma sections by stage of development, Exploration, 4K and Complete, left to right (Josh, Nov 8 2026). Inside each section, one column per track in album order, rounds stacked oldest at the top. Name every board starting `CBDB NN`. `pipeline/figma_review_layout.js` holds the STAGE map (fill it from tracks.json) and `layoutReview(page)`, which `figma_review_board.js` calls after adding a board.
+Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, inside Figma sections by stage of development, Exploration, 4K, Complete and Backlog, left to right (Josh, Nov 8 2026). Inside each section, one column per track in album order, rounds stacked oldest at the top. Name every board starting `CBDB NN`. `pipeline/figma_review_layout.js` holds the STAGE map (fill it from tracks.json) and `layoutReview(page)`, which `figma_review_board.js` calls after adding a board.
 
 1. Make the images in `work/NN-track/figma/`. Full frames downscaled to 4096 wide, check crops cut from the full render at native pixels, the same boxes for every option. JPG, under 10 MB each.
 2. Copy `pipeline/figma_review_board.js`, fill in `BOARD` and `ROWS`, run it as one `use_figma` call. It returns `slots` with an empty rectangle per file.
