@@ -2261,5 +2261,6 @@
   "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
   "spec_sheet_metadata": "Figma 330:2057, Track metadata section on the spec sheet 118:160",
   "release_metadata_sheet": "https://docs.google.com/spreadsheets/d/1kpnBcBHrMWddA_0_E6mdZLtekzb4KOFhCd7dQjkwMXo",
-  "release_date": "TBD, before end of 2026"
+  "release_date": "TBD, before end of 2026",
+  "release_metadata_sheet_note": "Josh removed the Subhead column from the release metadata sheet Nov 9 2026. Subheads live only in Figma (track/subhead) and tracks.json. Keep them out of the sheet"
 }
