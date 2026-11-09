@@ -93,7 +93,7 @@
         "01-deluge-final-v1.jpg": "1dz7vz14gf1HqfousUUvPq6buDGiGybTe",
         "01-deluge-4k-render.jpg": "1Bde1e83lbL75QQVrBmh6WzWDAVfeiupr"
       },
-      "genre": "Alt Rock, Jazz-Rock",
+      "genre": "Rock, Jazz",
       "key": "E minor",
       "runtime": "5:26",
       "runtime_seconds": 326.376,
@@ -103,8 +103,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "4 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Dual Cassette Boombox With Overflow Control"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Dual Cassette Boombox With Overflow Control",
+      "genre_global": "Alt Rock, Jazz-Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "02",
@@ -292,7 +298,7 @@
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "First finish kept the old backdrop inside the headphone cord loop. finish.py now opens enclosed holes that match the backdrop beside them (holes_opened in the report), re-run Nov 8 2026",
       "master_approved": "2026-11-08",
-      "genre": "Jazz-Rock, Blues",
+      "genre": "Rock, Jazz",
       "key": "A major",
       "runtime": "4:21",
       "runtime_seconds": 261.472,
@@ -302,8 +308,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "2 of 4, A minor close",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Waterproof Sports Cassette Player"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Waterproof Sports Cassette Player",
+      "genre_global": "Jazz-Rock, Blues",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "03",
@@ -583,7 +595,7 @@
       "finish_note": "Finished from G with --glass-box 0.21,0.0,0.91,0.39 so the backdrop seen through the dust cover is relit to the new pink. Grain sampler now median and direction free, the first G finish streaked",
       "master_approved": "2026-11-08",
       "master_note": "Josh approved v1 as is Nov 8 2026, lid square included (\"this master is done\")",
-      "genre": "Fusion, Jazz-Rock",
+      "genre": "Jazz, Funk",
       "key": "C minor",
       "runtime": "6:12",
       "runtime_seconds": 372.181,
@@ -593,8 +605,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "3 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Direct Drive Turntable With Pitch Control"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Direct Drive Turntable With Pitch Control",
+      "genre_global": "Fusion, Jazz-Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "04",
@@ -796,7 +814,7 @@
         "date": "2026-11-08",
         "by": "Josh"
       },
-      "genre": "Ska, Alt Rock",
+      "genre": "Rock, Funk",
       "key": "A minor",
       "runtime": "6:12",
       "runtime_seconds": 372.992,
@@ -806,8 +824,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "4 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Virtual Pet With Built In Clock"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Virtual Pet With Built In Clock",
+      "genre_global": "Ska, Alt Rock",
+      "explicit": false,
+      "language": "Spanish",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": "Jon",
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "05",
@@ -986,7 +1010,7 @@
         "05-traycee-4k-render-3x2-b.jpg": "1KpqqXR6z1IahM9Yq0rp3OSOrY3mJNcGs",
         "05-traycee-4k-render-weave.png": "1zjXrPuPdCxtAb3BM4sfdw2wb_UkhDWeR"
       },
-      "genre": "Jazz-Funk, Jazz-Rock",
+      "genre": "Jazz, Rock",
       "key": "G major",
       "runtime": "3:54",
       "runtime_seconds": 234.728,
@@ -996,8 +1020,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "4 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Multimedia PC With Motorized Disc Tray"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Multimedia PC With Motorized Disc Tray",
+      "genre_global": "Jazz-Funk, Jazz-Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "06",
@@ -1204,7 +1234,7 @@
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "First finish copied the render mottle into the backdrop as blotches. finish.py now copies only grain finer than 12 px, re-run Nov 8 2026",
       "master_approved": "2026-11-08",
-      "genre": "Ska, Alt Rock",
+      "genre": "Rock, Funk",
       "key": "C♯ minor",
       "runtime": "4:05",
       "runtime_seconds": 245.588,
@@ -1214,8 +1244,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "3 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "13 Inch TV With Built In VCR"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "13 Inch TV With Built In VCR",
+      "genre_global": "Ska, Alt Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "07",
@@ -1453,7 +1489,7 @@
       },
       "render_pick_by_josh": "2026-11-08",
       "master_approved": "2026-11-08",
-      "genre": "Jazz-Funk, Blues",
+      "genre": "Rock, Jazz",
       "key": "C minor",
       "runtime": "4:14",
       "runtime_seconds": 254.016,
@@ -1463,8 +1499,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "3 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Clock Radio With Snooze and Sleep Timer"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Clock Radio With Snooze and Sleep Timer",
+      "genre_global": "Jazz-Funk, Blues",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "08",
@@ -1693,7 +1735,7 @@
       "render_pick_by_josh": "2026-11-08",
       "finish_note": "device_touches_edge flag is the console top within 24 px of the render edge, top is whole, checked Nov 8 2026",
       "master_approved": "2026-11-08",
-      "genre": "Ska, Psych Rock",
+      "genre": "Funk, Rock",
       "key": "E minor",
       "runtime": "3:47",
       "runtime_seconds": 227.624,
@@ -1703,8 +1745,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "3 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Pocket Game System for Young Players"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Pocket Game System for Young Players",
+      "genre_global": "Ska, Psych Rock",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     },
     {
       "n": "09",
@@ -1975,7 +2023,7 @@
       },
       "render_pick_approved": "Josh Nov 8 2026: show me your love A approved. finalize and show me the swatches",
       "master_approved": "Josh Nov 8 2026: Perfect. Place the show me your love 4k in design now",
-      "genre": "Ska, Afrobeat",
+      "genre": "Rock, Funk",
       "key": "E minor",
       "runtime": "4:47",
       "runtime_seconds": 287.68,
@@ -1985,8 +2033,14 @@
         "format": "48 kHz 24 bit stereo WAV"
       },
       "key_agreement": "3 of 4",
-      "analysis_note": "Measured Nov 8 2026 from the mastered WAV with pipeline/analyze_audio.py: Essentia KeyExtractor over four profiles, Discogs-EffNet genre 400. Raw scores in the-first-batch/audio/analysis-2026-11-08.json",
-      "device_line": "Handheld Tape Recorder With Extending Mic"
+      "analysis_note": "Key Nov 8 2026 (Essentia, four profiles). Genre global = Discogs-EffNet top styles, genre = fixed fold of each track's top 20 styles into Rock, Dance, Funk, Jazz, Jam (pipeline/band_genres.py, Nov 9 2026). Raw in the-first-batch/audio/",
+      "device_line": "Handheld Tape Recorder With Extending Mic",
+      "genre_global": "Ska, Afrobeat",
+      "explicit": false,
+      "language": "Instrumental",
+      "composers": "Titus, Chuk, Jon, Wiley, Aaron",
+      "lyricist": null,
+      "producer": "Chillsbury Doughboys"
     }
   ],
   "figma_review_page": "128:77",
@@ -2127,5 +2181,7 @@
   },
   "album_runtime": "43:02",
   "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
-  "spec_sheet_metadata": "Figma 330:2057, Track metadata section on the spec sheet 118:160"
+  "spec_sheet_metadata": "Figma 330:2057, Track metadata section on the spec sheet 118:160",
+  "release_metadata_sheet": "https://docs.google.com/spreadsheets/d/1kpnBcBHrMWddA_0_E6mdZLtekzb4KOFhCd7dQjkwMXo",
+  "release_date": "TBD, before end of 2026"
 }
