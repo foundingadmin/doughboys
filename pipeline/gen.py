@@ -31,7 +31,7 @@ def log_spend(model, size, what, approval=""):
     with open(SPEND, "a") as f:
         if new:
             f.write("time,model,size,what,est_usd,josh_approval\n")
-        f.write(f'{time.strftime("%Y-%m-%d %H:%M")},{model},{size},"{what}",{est:.3f},"{approval.replace(chr(34), chr(39))}"\n')
+        f.write(f'{__import__("datetime").datetime.now(__import__("zoneinfo").ZoneInfo("America/Denver")).strftime("%Y-%m-%d %H:%M")},{model},{size},"{what}",{est:.3f},"{approval.replace(chr(34), chr(39))}"\n')
 
 
 ASPECTS = {"1:1": 1.0, "4:5": 0.8, "3:4": 0.75, "2:3": 2 / 3, "9:16": 9 / 16, "5:4": 1.25, "4:3": 4 / 3, "3:2": 1.5, "16:9": 16 / 9, "21:9": 21 / 9}

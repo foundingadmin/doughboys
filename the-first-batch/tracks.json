@@ -1,7 +1,7 @@
 {
  "album": "The First Batch",
  "band": "Chillsbury Doughboys (CBDB)",
- "updated": "2026-11-09",
+ "updated": "2026-11-08",
  "canvas_px": 6704,
  "dough_hex": "#E9D3A8",
  "paper_hex": "#F5EEDC",
@@ -1274,7 +1274,7 @@
     },
     {
      "node": "223:12",
-     "date": "2026-11-09",
+     "date": "2026-11-08",
      "what": "Finished master v1 next to Deluge v1 and Mancub v1, Tangerine chips without stroke",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=223-12"
     }
@@ -1356,7 +1356,7 @@
      3072
     ]
    },
-   "render_pick_by_josh": "2026-11-09"
+   "render_pick_by_josh": "2026-11-08"
   },
   {
    "n": "08",
@@ -1668,7 +1668,7 @@
     },
     {
      "round": "7",
-     "date": "2026-11-09",
+     "date": "2026-11-08",
      "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-7-v1.md to v6.md",
      "frames": "work/09-show-me-your-love/round-7",
      "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-7/contact-sheet.jpg",
@@ -1709,7 +1709,7 @@
     },
     {
      "node": "222:12",
-     "date": "2026-11-09",
+     "date": "2026-11-08",
      "what": "Round 7: dough variations on the locked 6-3 device",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=222-12"
     }

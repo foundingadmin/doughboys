@@ -20,6 +20,9 @@ one stopped. The playbook that drives it is .claude/skills/build-track-cover/SKI
       saves the picked 4K render and the master into the track's Masters folder on Drive
 """
 import argparse, datetime, glob, json, os, shutil, subprocess, sys
+from zoneinfo import ZoneInfo
+
+DENVER = ZoneInfo('America/Denver')  # Josh's dates are Denver dates, the container clock is UTC (Nov 8 2026)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TFB = os.path.join(ROOT, 'the-first-batch')
@@ -32,7 +35,7 @@ def load():
 
 
 def save(d):
-    d['updated'] = datetime.date.today().isoformat()
+    d['updated'] = datetime.datetime.now(DENVER).date().isoformat()
     json.dump(d, open(TRACKS, 'w'), indent=1, ensure_ascii=False)
     open(TRACKS, 'a').write('\n')
 
@@ -59,7 +62,7 @@ def run(*args):
 
 
 def today():
-    return datetime.date.today().isoformat()
+    return datetime.datetime.now(DENVER).date().isoformat()
 
 
 def photos(t):
