@@ -82,6 +82,7 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 - **Production** · image generation, no photoshoot (decided Oct 18 2026). See the device photo workflow above
 - **Device photo recipe** · name the device parts, add analog knobs and buttons, and a small glowing red power light where a real one would sit (a lit screen counts). No people, hands, logos or brand names. Exploration renders say no readable text, the 4K prompt supplies the exact real label words. Scene and dough come from the series lock
 - **Canva** · any image Claude generates in Canva moves straight into the Titus Tests folder
+- **Behind the scenes · set by Josh Nov 8 2026** · every BTS frame is shot in one garage with one kit, locked on Deluge round 3 frame 2 (Figma 269:3666): nearly bare two car garage, metal sawhorses with a plywood top, seamless paper in the track color, one softbox upper left, one clamped bounce card, one camera on a tripod, one laptop on a wooden folding TV tray, Josh's stainless steel work table as the messy prep station, grocery flour bags, taped orange cord, real spills. No people, no car, no appliances, no logos. Frames vary only the camera angle and where the gear stands, slightly, like stills from one shoot day. Built with `pipeline/bts.py`, lock text in `prompts/bts/environment.md`
 - **Rollout** · Spotify first, then Instagram, then other platforms once the distributor is chosen
 
 ## Track list · best match colors as of Oct 19 2026
