@@ -1910,8 +1910,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "R2-A1 picked by Josh, record label type on board 308:340",
-    "next": "Josh picks a label direction: Solid, Rings, Pinwheel rim or Stripes",
+    "status": "R2-A1 with the Pinwheel rim label (Josh, Nov 8 2026). Josh dialed in the label type and rotated the rim wedges off the backdrop angles",
+    "next": "Josh picks the fine print line for the label arc and other album assets",
     "rounds": [
       {
         "round": 1,
@@ -2003,7 +2003,8 @@
         "Pinwheel rim": "308:295",
         "Stripes": "308:317"
       },
-      "note": "Label designed at 600, placed at 214.5 on a 900 cover. Solid color layer 'Label color · swap me', bind it to track/ground and pick a Track mode to try the nine. Review copy: the-first-batch/review/00-album/figma-board-label-v1.png"
+      "note": "Label designed at 600, placed at 214.5 on a 900 cover. Solid color layer 'Label color · swap me', bind it to track/ground and pick a Track mode to try the nine. Review copy: the-first-batch/review/00-album/figma-board-label-v1.png",
+      "choice": "Pinwheel rim 308:295"
     }
   }
 }
