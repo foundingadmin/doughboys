@@ -95,3 +95,4 @@ Newest at the bottom of each section. Add a dated line when something fails or s
 
 
 - Nov 8 2026 · Behind the scenes side project. Flash explore with the Deluge cover passed as `--ref` held the boombox and dough shape at set scale in all six frames, garage clutter and lighting gear came out convincing on the first pass. Watch for real brand logos on props (a shipping box smile showed up in frame 4) and garbled flour bag labels. Prompts live in `prompts/bts/`.
+- Nov 8 2026 · Behind the scenes round 2. Passing Josh's round 1 pick as a second `--ref` held the layout and still let the model strip the garage bare. Without it the model invented its own layout and drifted toward real looking flour brand marks ("GOLD"). "No brand logos on any product" in the prompt was not enough on its own.
