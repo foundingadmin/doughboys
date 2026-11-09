@@ -2072,8 +2072,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "master v1 finished and placed in Figma on the Ad, Store and Album Post sleeve with the Pinwheel rim label",
-    "next": "Josh reviews the album boards on Album Art (section 118:9), nudges photo or type in the slots, exports",
+    "status": "album cover final: photo and record label only, no type overlay (Josh, Nov 9 2026). Back cover built as the Album Back component 342:2163, instance 342:2277",
+    "next": "Josh drops master v1 and render A into Album Cover / Masters on Drive and exports the boards",
     "rounds": [
       {
         "round": 1,
@@ -2297,7 +2297,12 @@
         "store": "338:2111",
         "post_sleeve": "338:2149"
       },
-      "note": "Each Photo slot holds a frame with the 4096 master and a Record Label Pinwheel rim instance, scaled to 0.242 of the slot and centered, so they move together"
+      "note": "Each Photo slot holds a frame with the 4096 master and a Record Label Pinwheel rim instance, scaled to 0.242 of the slot and centered, so they move together",
+      "album_back": {
+        "component": "342:2163",
+        "instance": "342:2277",
+        "holds": "header, title and subhead, tracklist with runtimes, total runtime, feature list and copy, credits, band name, short fine print, 9 Tracks sticker"
+      }
     },
     "drive": {
       "folder": "1O_Ti6onaJIo_XLUqlt85D-oA8oCl_Q87",
