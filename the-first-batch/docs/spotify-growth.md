@@ -73,6 +73,14 @@ From a second Reddit post Josh saved Nov 9 2026. One independent artist with abo
 2. **Nine tracks means nine releases.** A 4 to 6 week cadence turns the album into a 9 to 12 month run of singles. Each single gets its own pitch and its own Release Radar slot (one pitch at a time), plus its own Canvas, cover and post, all of which are already built per track. This makes the singles question in the brief a strategy decision, not just a scheduling one
 3. **Let the data pick the cover star.** Cheap ad tests on early singles show which track is our winner. That track holds #1 on the playlist and leads the merch ask
 
+# Landing page or straight to Spotify
+
+Claude's recommendation, Nov 9 2026, for Josh to decide. Split it by channel.
+
+- **Paid ads go through a landing page.** Meta can't see what happens inside Spotify, so an ad that links straight to Spotify flies blind. A smart link page (Feature.fm, Hypeddit, ToneDen and the like) carries the Meta pixel, so ads optimize toward people who actually click through to Spotify, and it builds a retargeting audience of real fans. The extra click is the filter. Whoever clicks twice is exactly the intent signal Spotify rewards. It also routes Apple Music people somewhere useful instead of losing them
+- **Merch, stickers and the Instagram bio go direct, through a short link we own.** Something like a band domain /listen that redirects to the playlist. Zero extra taps for the fan, and we can change the destination anytime without reprinting. Never print a QR code that depends on a third party's dynamic QR service, because if their account dies, every printed piece goes dead with it
+- **No full website yet.** One redirect and one smart link page cover it
+
 # Sync licensing
 
 Permission to use our music in commercials, film, video, trailers and games. A separate income and reach channel from streaming. Worth a look once the masters and rights are settled with the distributor.
@@ -82,6 +90,7 @@ Permission to use our music in commercials, film, video, trailers and games. A s
 - Distributor (still open) decides how pitching and sync are handled
 - Which tracks release early as singles (still open) sets the pitch calendar. Option on the table Nov 9 2026 is all nine as singles, one every 4 to 6 weeks, before or around the full album
 - Our playlist's name and cover
+- Band domain for the /listen redirect, and which smart link service runs the ad landing page
 - Ad budget for Meta tests and Showcase campaigns, if any
 - Canvas motion recipe and loop type, settle against the gravity only rule
 - Runtimes per track (still open) cap how long a Canvas loop can feel natural
