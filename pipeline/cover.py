@@ -10,7 +10,8 @@ one stopped. The playbook that drives it is .claude/skills/build-track-cover/SKI
       low res frames from that prompt into work/NN-track/round-R, contact sheet into the repo
   python3 pipeline/cover.py lock NN FRAME_PNG --pick R2-4
       copies Josh's pick to the-first-batch/assets/photos/NN-track/NN-track-source-<pick>.png
-  python3 pipeline/cover.py render NN [--runs 1] [--source PNG]
+  python3 pipeline/cover.py render NN --approved "Josh's words" [--runs 1] [--source PNG]
+      needs Josh's written yes, given after he was pointed to the explore frame in Figma this session
       tight crop, then 4K runs with prompts/4k/NN-track.md, renders saved as .jpg in the repo,
       a 3 x 2 grid of native check crops per render in work/NN-track/check
   python3 pipeline/cover.py finish NN --render JPG [--version v1]
@@ -19,6 +20,9 @@ one stopped. The playbook that drives it is .claude/skills/build-track-cover/SKI
       saves the picked 4K render and the master into the track's Masters folder on Drive
 """
 import argparse, datetime, glob, json, os, shutil, subprocess, sys
+from zoneinfo import ZoneInfo
+
+DENVER = ZoneInfo('America/Denver')  # Josh's dates are Denver dates, the container clock is UTC (Nov 8 2026)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TFB = os.path.join(ROOT, 'the-first-batch')
@@ -31,7 +35,7 @@ def load():
 
 
 def save(d):
-    d['updated'] = datetime.date.today().isoformat()
+    d['updated'] = datetime.datetime.now(DENVER).date().isoformat()
     json.dump(d, open(TRACKS, 'w'), indent=1, ensure_ascii=False)
     open(TRACKS, 'a').write('\n')
 
@@ -58,7 +62,7 @@ def run(*args):
 
 
 def today():
-    return datetime.date.today().isoformat()
+    return datetime.datetime.now(DENVER).date().isoformat()
 
 
 def photos(t):
@@ -169,11 +173,11 @@ def cmd_render(a):
     for i in range(a.runs):
         L = letters[i]
         tmp = os.path.join(work(t), f'render-{L}.bin')
-        run(PY, 'pipeline/gen.py', 'render4k', '--source', crop, '--prompt-file', pf, '--out', tmp)
+        run(PY, 'pipeline/gen.py', 'render4k', '--source', crop, '--prompt-file', pf, '--out', tmp, '--approved', a.approved, *[x for r in a.ref for x in ('--ref', r)])
         out = os.path.join(photos(t), f"{t['slug']}-4k-render-{info['aspect'].replace(':', 'x')}-{L}.jpg")
         shutil.move(tmp, out)          # Gemini returns JPEG bytes whatever the name
         tiles = check_grid(out, chk, L)
-        t['renders_4k'].append({'file': rel(out), 'letter': L, 'aspect': info['aspect'], 'date': today(), 'prompt': rel(pf), 'crop': rel(crop), 'check_tiles': [rel(p) for p in tiles]})
+        t['renders_4k'].append({'file': rel(out), 'letter': L, 'aspect': info['aspect'], 'date': today(), 'prompt': rel(pf), 'crop': rel(crop), 'check_tiles': [rel(p) for p in tiles], 'josh_approval': a.approved})
         print(rel(out))
     t['crop'] = {'file': rel(crop), 'aspect': info['aspect'], 'box': info['box']}
     t['status'] = '4K rendered, check and Josh pick next'
@@ -185,7 +189,9 @@ def cmd_finish(a):
     d = load(); t = get(d, a.n)
     out = os.path.join(photos(t), f"{t['slug']}-final-{a.version}.jpg")
     rep = os.path.join(work(t), f'finish-{a.version}.json')
-    run(PY, 'pipeline/finish.py', a.render, t['ground_hex'], out, '--report', rep)
+    extra = ['--glass-box', a.glass_box] if a.glass_box else []
+    run(PY, 'pipeline/finish.py', a.render, t['ground_hex'], out, '--report', rep, *extra)
+    if a.glass_box: t['finish_glass_box'] = a.glass_box
     r = json.load(open(rep))
     run(PY, 'pipeline/check.py', out, '--ox', str(r['offset'][0]), '--oy', str(r['offset'][1]), '--w', str(r['render'][0]), '--h', str(r['render'][1]), '--name', os.path.join(work(t), f'check-{a.version}'))
     fr = json.loads(run(PY, 'pipeline/framing.py', os.path.splitext(out)[0] + '_alpha_small.npy').strip().splitlines()[-1])
@@ -195,7 +201,7 @@ def cmd_finish(a):
     Image.open(out).resize((4096, 4096), Image.LANCZOS).save(fig, quality=95, subsampling=0)
     t['master'] = rel(out)
     t['render_pick'] = rel(a.render) if os.path.isabs(a.render) else a.render
-    t['finish_report'] = {k: r[k] for k in ('falloff', 'horizon', 'deltaE_glow_vs_swatch', 'backdrop_hue_spread_deg', 'corner_L_minus_glow', 'device_touches_edge', 'offset', 'render') if k in r}
+    t['finish_report'] = {k: r[k] for k in ('falloff', 'horizon', 'holes_opened', 'glass_share_of_device', 'deltaE_glow_vs_swatch', 'backdrop_hue_spread_deg', 'corner_L_minus_glow', 'device_touches_edge', 'offset', 'render') if k in r}
     t['figma']['post_transform'] = fr['post']; t['figma']['canvas_transform'] = fr['canvas']
     t['status'] = f'master {a.version} finished, Josh yes then place'
     t['next'] = 'Put the master next to Deluge v1 on a Review board, on Josh\'s yes place it in the Photo slots and cover.py drive ' + t['n']
@@ -225,10 +231,10 @@ def main():
     s = ap.add_subparsers(dest='cmd', required=True)
     p = s.add_parser('status'); p.add_argument('n', nargs='?')
     p = s.add_parser('prompt'); p.add_argument('n'); p.add_argument('--round', default='1'); p.add_argument('--force', action='store_true')
-    p = s.add_parser('explore'); p.add_argument('n'); p.add_argument('--round', default='1'); p.add_argument('--n', dest='n_frames', type=int, default=6)
+    p = s.add_parser('explore'); p.add_argument('n'); p.add_argument('--round', default='1'); p.add_argument('--n', dest='n_frames', type=int, default=3)
     p = s.add_parser('lock'); p.add_argument('n'); p.add_argument('frame'); p.add_argument('--pick', required=True)
-    p = s.add_parser('render'); p.add_argument('n'); p.add_argument('--runs', type=int, default=1); p.add_argument('--source')
-    p = s.add_parser('finish'); p.add_argument('n'); p.add_argument('--render', required=True); p.add_argument('--version', default='v1')
+    p = s.add_parser('render'); p.add_argument('n'); p.add_argument('--runs', type=int, default=1); p.add_argument('--source'); p.add_argument('--ref', action='append', default=[], help='extra detail reference images'); p.add_argument('--approved', required=True, help="Josh's written yes, quoted, given after Claude pointed him to the explore frame in Figma this session")
+    p = s.add_parser('finish'); p.add_argument('n'); p.add_argument('--render', required=True); p.add_argument('--version', default='v1'); p.add_argument('--glass-box', help='x0,y0,x1,y1 render fractions around a clear part, see finish.py')
     p = s.add_parser('drive'); p.add_argument('n'); p.add_argument('--what', default='both', choices=['render', 'master', 'both'])
     a = ap.parse_args()
     globals()['cmd_' + a.cmd](a)

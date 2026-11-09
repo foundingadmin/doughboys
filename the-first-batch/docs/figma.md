@@ -68,13 +68,17 @@ return out;
 
 ## Review boards
 
-Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, stacked newest at the bottom.
+Josh reviews every image in Figma (set Oct 29 2026). Boards live on the Review page `128:77`, one per review, inside three Figma sections by stage of development, Exploration, 4K and Complete, left to right (Josh, Nov 8 2026). Inside each section, one column per track in album order, rounds stacked oldest at the top. Name every board starting `CBDB NN`. `pipeline/figma_review_layout.js` holds the STAGE map (fill it from tracks.json) and `layoutReview(page)`, which `figma_review_board.js` calls after adding a board.
 
 1. Make the images in `work/NN-track/figma/`. Full frames downscaled to 4096 wide, check crops cut from the full render at native pixels, the same boxes for every option. JPG, under 10 MB each.
 2. Copy `pipeline/figma_review_board.js`, fill in `BOARD` and `ROWS`, run it as one `use_figma` call. It returns `slots` with an empty rectangle per file.
 3. `upload_assets` with `count` and `nodeIds` in slot order, then POST each file to its URL. Each image lands in its slot.
 4. `get_screenshot` the board, look at it, give Josh the link `https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=<board id with - for :>`.
 5. Record the board id in tracks.json under the track's `review_boards`.
+
+## Finish review boards
+
+Put the master next to Deluge v1 and the last placed cover, with swatch chips of the track color on the top corners and over the glow, and a swatch bar under each master. Chips have no stroke (Josh, Nov 8 2026). Josh may add his own chip, for example over the middle of the device, and judges the match by eye.
 
 ## Gotchas learned building it
 

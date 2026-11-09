@@ -26,6 +26,8 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 LOW = 8
+GRAIN_SIGMA = 12  # px: only texture finer than this is copied from the render as film grain. 48 let the soft mottle of the Determinator render through as blotches (Nov 8 2026)
+GLASS_DE = 30.0  # Oklab x100: inside a --glass-box, pixels this close to the old backdrop are backdrop seen through the clear part
 ELLIPSE = (0.51, 0.534, 0.207, 0.37)  # cx, cy, rx, ry as canvas fractions, from Josh's Deluge check
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backdrop_template.npz')
 SHADOW_REF = 0.02  # canvas fraction: blur that defines the local floor brightness a contact shadow is measured against
@@ -78,6 +80,9 @@ def wrap(a):
     return (a + np.pi) % (2 * np.pi) - np.pi
 
 
+HOLE_DE = 8.0   # a hole within this Oklab x100 distance of the backdrop beside it is backdrop
+
+
 def device_mask(rgb):
     from rembg import remove, new_session
     h, w = rgb.shape[:2]
@@ -90,7 +95,28 @@ def device_mask(rgb):
     pad = np.zeros((ff.shape[0] + 2, ff.shape[1] + 2), np.uint8)
     cv2.floodFill(ff, pad, (0, 0), 2)
     m = m.astype(np.float32) / 255.
-    m[ff == 0] = 1.0  # enclosed holes belong to the device
+    # Enclosed holes belong to the device, unless the hole is plain backdrop seen through a loop
+    # (Spice headphone cord, Nov 8 2026): its color matches the backdrop beside it at the same height.
+    lab = oklab(srgb_to_lin(np.asarray(small, np.float32) / 255.))
+    bg = ff == 2
+    n, lbl = cv2.connectedComponents((ff == 0).astype(np.uint8) * (hard == 0).astype(np.uint8))
+    opened = []; holes_seen = []
+    for i in range(1, n):
+        hole = lbl == i
+        area = int(hole.sum())
+        if area < 400:            # specks inside the device stay filled
+            m[hole] = 1.0; continue
+        rows = np.where(hole.any(1))[0]
+        band = bg[rows.min():rows.max() + 1]
+        if band.sum() < 100:
+            m[hole] = 1.0; continue
+        d = np.linalg.norm(np.median(lab[hole], 0) - np.median(lab[rows.min():rows.max() + 1][band], 0)) * 100
+        holes_seen.append(round(float(d), 2))
+        if d < HOLE_DE:
+            m[hole] = np.minimum(m[hole], 0.0); opened.append({'area_px_1600': area, 'deltaE': round(float(d), 2)})
+        else:
+            m[hole] = 1.0
+    device_mask.opened = opened; device_mask.seen = holes_seen
     m = cv2.resize(m, (w, h), interpolation=cv2.INTER_LINEAR)
     return np.clip(cv2.GaussianBlur(m, (0, 0), 1.5), 0, 1)
 
@@ -128,7 +154,15 @@ def texture_spectra(R_lab, alpha, patch=512, sigma=48):
             specs.append(np.abs(np.fft.fft2(hp * win[..., None], axes=(0, 1))) ** 2)
     if not specs:
         return None, 0
-    P = np.mean(specs, 0) / (win ** 2).sum()
+    # Median across patches, so patches that catch a long floor shadow or a gradient do not leak
+    # their direction into the grain, then averaged around each radius: film grain has no direction
+    # (Bopkins G came out streaky with a plain mean, Nov 8 2026).
+    P = np.median(np.stack(specs), 0) / (win ** 2).sum()
+    f = np.fft.fftfreq(patch) * patch
+    rad = np.round(np.hypot(f[:, None], f[None, :])).astype(int)
+    for c in range(P.shape[-1]):
+        prof = np.bincount(rad.ravel(), P[..., c].ravel()) / np.maximum(np.bincount(rad.ravel()), 1)
+        P[..., c] = prof[rad]
     return np.sqrt(P).astype(np.float32), len(specs)
 
 
@@ -166,6 +200,7 @@ def main():
     ap.add_argument('--falloff', type=float, default=0.75, help='depth of the template falloff, 1.0 = Deluge v1, lower = lighter corners. 0.75 set by Josh Nov 8 2026')
     ap.add_argument('--horizon', type=float, default=0.16, help='cyclorama horizon shadow, share of light lost at its center line, 0 = none. 0.16 set by Josh Nov 8 2026')
     ap.add_argument('--horizon-y', type=float, default=None, help='horizon height as a canvas fraction, default sits just above the highest floor contact')
+    ap.add_argument('--glass-box', default=None, help='x0,y0,x1,y1 as render fractions around a clear part (a dust cover): backdrop seen through it is relit to the new backdrop, the acrylic edges and reflections stay')
     a = ap.parse_args()
     rep = {'falloff': a.falloff, 'horizon': a.horizon}
     R = np.array(Image.open(a.render).convert('RGB'))
@@ -179,6 +214,7 @@ def main():
     alpha = np.clip((alpha - 0.1) / 0.8, 0, 1); alpha = alpha * alpha * (3 - 2 * alpha)   # tighter soft edge, no fringe of old floor
     edge_fg = max(alpha[:24].max(), alpha[-24:].max(), alpha[:, :24].max(), alpha[:, -24:].max())
     rep['device_touches_edge'] = bool(edge_fg > 0.5)
+    rep['holes_opened'] = getattr(device_mask, 'opened', [])
     t = hex_lab(a.hex)
     Lt = float(t[0])
     sw_rgb = np.array([int(a.hex.lstrip('#')[i:i + 2], 16) for i in (0, 2, 4)], np.float32) / 255.
@@ -232,7 +268,7 @@ def main():
     R_lab = np.empty((H, W, 3), np.float32)
     for y in range(0, H, step):
         R_lab[y:y + step] = cv2.cvtColor(R[y:y + step].astype(np.float32) / 255., cv2.COLOR_RGB2LAB)
-    amp, npatch = texture_spectra(R_lab, alpha)
+    amp, npatch = texture_spectra(R_lab, alpha, sigma=GRAIN_SIGMA)
     rep['texture_patches'] = npatch
     del R_lab
     canvas_lab = cv2.resize(lab_n, (S, S), interpolation=cv2.INTER_CUBIC)
@@ -253,11 +289,26 @@ def main():
 
     # ---- the device on top, edge pixels freed of the old backdrop color ----
     Bold = cv2.resize(Rb, (W, H), interpolation=cv2.INTER_LINEAR) * 255.
+    G = None
+    if a.glass_box:
+        # see-through weight: inside the box, how close the render is to the old backdrop behind it
+        x0, y0, x1, y1 = [float(v) for v in a.glass_box.split(',')]
+        d = np.linalg.norm(oklab(srgb_to_lin(Rs)) - oklab(srgb_to_lin(Rb)), axis=-1) * 100
+        g = np.clip((GLASS_DE - d) / (GLASS_DE / 2), 0, 1).astype(np.float32)
+        box = np.zeros_like(g); box[int(y0 * hs):int(y1 * hs), int(x0 * ws):int(x1 * ws)] = 1
+        g = cv2.GaussianBlur(g * box, (0, 0), 3.0)
+        G = cv2.resize(g, (W, H), interpolation=cv2.INTER_LINEAR)
+        rep['glass_share_of_device'] = round(float((G * alpha).sum() / max(alpha.sum(), 1)), 3)
     for y in range(0, H, step):
         al = alpha[y:y + step, :, None]
         C = R[y:y + step].astype(np.float32)
         F = np.where(al > 0.98, C, np.clip((C - (1 - al) * Bold[y:y + step]) / np.maximum(al, 0.02), 0, 255))
         sub = canvas[oy + y:oy + y + al.shape[0], ox:ox + W]
+        if G is not None:
+            gw = G[y:y + step, :, None]
+            ratio = srgb_to_lin(sub / 255.) / np.maximum(srgb_to_lin(Bold[y:y + step] / 255.), 1e-4)
+            Fg = lin_to_srgb(srgb_to_lin(F / 255.) * ratio) * 255.
+            F = F * (1 - gw) + Fg * gw
         canvas[oy + y:oy + y + al.shape[0], ox:ox + W] = F * al + sub * (1 - al)
     del Bold
     A = np.zeros((S, S), np.float32); A[oy:oy + H, ox:ox + W] = alpha

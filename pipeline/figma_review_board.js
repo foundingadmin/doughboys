@@ -40,14 +40,13 @@ const text = (s, family, style, size, v, width) => {
   if (width) { t.textAutoResize = "HEIGHT"; t.resize(width, t.height); }
   return t;
 };
-// New boards stack below the existing ones, newest at the bottom
-let maxY = 0;
-for (const c of page.children) maxY = Math.max(maxY, c.y + c.height);
+// Layout (Josh, Nov 8 2026): one column per track, album order left to right,
+// rounds stacked oldest at the top. BOARD.name must start "CBDB NN". The pass at the end re-lays the page.
 
 const COL = 1600, GAP = 48;
 const board = figma.createAutoLayout("VERTICAL", { name: BOARD.name, itemSpacing: 96, paddingLeft: 96, paddingRight: 96, paddingTop: 96, paddingBottom: 96 });
 board.fills = [paint(vPage)];
-board.x = 0; board.y = maxY ? maxY + 400 : 0;
+board.x = -100000; board.y = 0;   // placed by the layout pass below
 const head = figma.createAutoLayout("VERTICAL", { name: "Header", itemSpacing: 16 });
 board.appendChild(head);
 head.appendChild(text(BOARD.title, "Anton", "Regular", 120, vInk));
@@ -73,4 +72,6 @@ for (const [title, ...tiles] of ROWS) {
   s.appendChild(r);
   for (const t of tiles) tile(r, t);
 }
-return { pageId: page.id, boardId: board.id, size: [board.width, board.height], slots };
+// Re-lay the page by stage sections: paste the STAGE map and layoutReview() from figma_review_layout.js above this line, then:
+const layout = await layoutReview(page);
+return { pageId: page.id, boardId: board.id, size: [board.width, board.height], slots, layout };

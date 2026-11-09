@@ -5,49 +5,14 @@ Release artwork for The First Batch by Chillsbury Doughboys. Updated Nov 8 2026.
 - [Creative brief](https://claude.ai/code/artifact/e34a1d07-501a-4033-ba3d-b4bcc4d3668e)
 - [Figma](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee) · source of truth from Oct 29 2026. Pages Toolkits (variables and components), Brand Guide, Album Art and Review (album plus all nine tracks as Cover, Post and Canvas instances driven by one Track variable mode each). Archive (was Page 1) keeps every generated test at full size
 - [Production repo](https://github.com/foundingadmin/doughboys) · Claude Code runs the device photo workflow end to end from here. CLAUDE.md is the manual, the-first-batch/tracks.json holds each track's state
-- **Reviews happen in Figma** · set by Josh Oct 29 2026. Every image up for review is assembled on the Review page, options side by side with matched crops and a pass or fail note under each
+- **Reviews happen in Figma** · set by Josh Oct 29 2026. From Nov 8 2026 the Review page has three sections by stage, Exploration, 4K and Complete, with one column per track inside. Every image up for review is assembled on the Review page, options side by side with matched crops and a pass or fail note under each
 - [Design canvas](https://claude.ai/artifact/AKevZru2Tw5MbhUfXc8KkH) · retired Oct 29 2026, kept for reference
 
 ## 4K queue · approved frames waiting for their 4K run
 Claude Code runs these from the repo (prompts/4k) through the Gemini API: tight crop, 4K edit, check, finish. Say "build a track cover" and it follows `.claude/skills/build-track-cover`, stopping at four gates for Josh: the explore pick, the 4K prompt, the render pick and the finished master. Manual route if needed: crop tight, then Google AI Studio, Gemini 3 Pro Image (Nano Banana Pro), resolution 4K, aspect ratio matched to the crop, prompt pasted as an edit in the same chat.
 
-### Spice · F2 · approved Oct 19 2026
-- **Source image** · [Figma node 53:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=53-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 02 Spice · E4 set"
-- **Prompt**
-
-```
-Keep this exact photograph. Same camera position, framing, lighting, Walkman, headphones, dough, pool and backdrop. Do not move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1990 mail order catalog, with fine film grain and crisp, true detail. Make only these fixes:
-
-1. Cassette door: remove the small yellow tab on the left edge of the door so that edge is plain and flush. The door stays exactly as open as it is now, about 15 degrees, hinged on the right.
-2. Dough: remove the thin threads pulling off the left side of the dough. It is one cohesive mass of raw kneaded bread dough, pale oatmeal beige, satin matte skin with fine stretch lines, no strings, no holes. Keep its shape, the pinch at the door edge, and the pool exactly where and how big they are now.
-3. Tuner window: print a real analog tuner scale in the slim window across the top. Top row reads FM 88 92 96 100 104 108 MHz. Bottom row reads AM 530 600 800 1000 1300 1600 kHz. Small white type, fine tick marks, a thin red needle. No brand name or model number anywhere.
-4. Top edge: four low profile dark grey rubber transport buttons, evenly spaced and barely raised, with a tiny red power light glowing beside them. The headphone plug stays seated in the jack.
-5. Cassette window: dark smoked plastic set into the charcoal grey panel. Behind it, only the shadowy empty well and two reel spindles. No cassette.
-6. Headphones: yellow headband, round orange foam ear pads, thin grey cord, all fully inside the frame with clear backdrop around them.
-7. Backdrop: seamless butter yellow paper with a soft glow behind the device and on the floor, falling to a deeper golden yellow in the top corners. No studio equipment, no seams, no horizon line.
-
-No people, no hands, no logos, no readable text other than the tuner scale.
-```
-
-### Bopkins (was Danish) · G1 · approved Oct 19 2026
-- **Source image** · [Figma node 58:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=58-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 03 Danish · round 1"
-- **Prompt**
-
-```
-Keep this exact photograph. Same camera position, framing, lighting, turntable, raised dust cover, dough, pool and backdrop. Do not move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1990 mail order catalog, with fine film grain and crisp, true detail. Make only these fixes:
-
-1. Dust cover: remove the dark rectangular badge in the middle of the raised smoked lid so the acrylic is plain and clear.
-2. Spindle: keep the center spindle poking up through the middle of the dough exactly as it is.
-3. Tonearm: keep it exactly where it is, and let the stylus sink just slightly into the dough surface with a small soft dent around it.
-4. Platter rim: crisp, evenly spaced strobe dots all the way around the silver rim.
-5. Controls: the knob at the front left with a tiny red power light glowing beside it. The pitch slider and the row of small buttons at the front right stay as they are. Any small control labels read only 33, 45, START, STOP and PITCH. No brand name or model number anywhere, including the small plate at the front left.
-6. Dough: one cohesive mass of raw kneaded bread dough, pale oatmeal beige, satin matte skin with fine stretch lines, no strings, no holes. Keep the flat record shaped pile, the pour off the front left, and the pool exactly where and how big they are now.
-7. Backdrop: seamless bubblegum pink paper with a soft glow behind the turntable and on the floor, falling to a deeper rose pink in the top corners. No studio equipment, no seams, no horizon line.
-
-No people, no hands, no logos.
-```
-
-### Suavecita · I4 · approved Oct 19 2026
+### Suavecita · I4 · approved Oct 19 2026 · back to explore Nov 8 2026, prompt kept for the device
+- **Run** · six renders at 3:2, the approved prompt plus two sharper re-runs on the screen. Everything off the screen passes. The edit will not redraw the LCD: seven of the eight named icons never land and the background stays mottled. [Review board](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=164-137)
 - **Source image** · [Figma node 73:2](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=73-2), 1024 square. Also on the canvas Image Tests page, board "CBDB 04 Suavecita · lean back set"
 - **Prompt**
 
@@ -64,16 +29,21 @@ Keep this exact photograph. Same camera position, framing, lighting, virtual pet
 No people, no hands, no logos.
 ```
 
+### Boombap · R4 +20 · approved Nov 8 2026 · Josh approved text pass B Nov 8 2026, master v1 on its board
+- **Source image** · [Review board 209:12](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=209-30), the +20 percent width
+- **Prompt** · the-first-batch/prompts/4k/07-boombap.md. 6:30 with only AM lit, FM and AM dial rows, SNOOZE, key and switch labels, straight edges
+- **Run** · [Review board 215:12](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=215-12)
+
 ## Concept
 The dough is the media. The only way to play a Doughboys record is to stuff a wad of raw dough into your boombox where the cassette goes. Shot like a 1990 catalog page. Real ink, real paper, scanned for the archive. Nostalgia, youthful joy, fun, curiosity. Flat, dry, ironic humor.
 
 ## Device photo workflow · set Oct 18 2026
 From Oct 29 2026 Claude Code runs every step below from the doughboys repo with the Gemini API, and Josh approves the pick, the prompt and the 4K check. Steps 4 to 6 no longer need AI Studio or Photoshop.
 
-1. **Explore.** Claude generates batches (Gemini through Figma until Oct 29 2026, now the Gemini API with a numbered contact sheet) until Josh approves one as real and on brief. Every prompt opens with the series lock below.
+1. **Explore.** From Nov 8 2026 on Nano Banana 2 Flash, 3 frames per direction, only the rounds Josh asks for. Claude generates batches (Gemini through Figma until Oct 29 2026, now the Gemini API with a numbered contact sheet) until Josh approves one as real and on brief. Every prompt opens with the series lock below.
 2. **Write the 4K prompt.** Claude hands Josh a full prompt that opens with "keep this exact photograph" and then lists every fix by name: exact label words, real dial numbers, which drips to remove, which key is pressed. Specific beats simple, proven on Deluge Oct 18 2026. Approved frames and their prompts wait in the 4K queue above.
 3. **Crop tight · set by Josh Oct 28 2026.** Before the 4K run, crop the source to the device's own shape with only a thin strip of backdrop on every side and the floor shadows kept. AI Studio spends about the same 17 megapixels on any shape, so every inch of empty backdrop is device detail thrown away. Pick the aspect ratio closest to the device: 16:9 for the boombox and the PC, 4:3 for the turntable, 3:4 or 4:5 for upright devices like the Walkman and the virtual pet. Backdrop for the cover comes back in the finish step.
-4. **Render at 4K.** Claude Code sends the crop plus the prompt to Gemini 3 Pro Image (Nano Banana Pro) as an edit, resolution 4K, aspect ratio matched to the crop. Josh's manual route was the same run in Google AI Studio. Output at 4K is about 5504 × 3072 at 16:9, 5056 × 3392 at 3:2 and 4096 square at 1:1.
+4. **Render at 4K · gate set by Josh Nov 8 2026.** No 4K run without Josh's written yes in the session, given after Claude points him to the approved explore frame on its Figma board, even when it was approved before. One run at a time. Claude Code sends the crop plus the prompt to Gemini 3 Pro Image (Nano Banana Pro) as an edit, resolution 4K, aspect ratio matched to the crop. Josh's manual route was the same run in Google AI Studio. Output at 4K is about 5504 × 3072 at 16:9, 5056 × 3392 at 3:2 and 4096 square at 1:1.
 5. **Check.** Claude checks text, drips, pairs and small details at full size and shows Josh the crops. Josh gives the yes.
 6. **Finish · fixed Oct 29 2026 after Josh called the first Traycee finish terrible.** pipeline/finish.py places the untouched 4K render at 1:1 on a 6704 square canvas and builds the rest of the backdrop from Deluge v1's own falloff, colored to the track swatch, so every cover's backdrop falls off like Deluge and the nine read as a set. The backdrop is rebuilt, never kept: one smooth gradation of the swatch like the Deluge Photoshop backdrop, the swatch's own hue and chroma edge to edge. From the render it keeps only the device, its contact shadows and the grain. No hotspots, no bands (Josh flagged mixed greens and hotspots on Traycee Oct 29 2026). The finish adds a really subtle cyclorama horizon, a soft shade where the floor curves into the wall, passing behind the device. Depth 0.75 of Deluge's corners and horizon 0.16, picked by Josh on Traycee Nov 8 2026, are the defaults for every cover. Explore and 4K prompts still ask for no horizon line, the finish owns it. The glow behind the device lands on the swatch, the device is never touched, export is a JPG of about 13 MB. Deluge v1 went from 5056 × 3392 to 6704 square this way in Photoshop with Generative Expand (measured Oct 28 2026), and the template finish re-made from the raw Deluge render lands within deltaE 2.4 of it (Oct 29 2026). Photoshop stays available for last small fixes.
 7. **Place.** The master goes into the Photo layer of the track's Cover, Post and Canvas boards in Figma. Exports are preset on every board.
@@ -107,6 +77,8 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 - **Type** · Anton for titles, Archivo for band name and fine print, Share Tech Mono for model numbers and runtimes. Free Google Fonts only
 - **Track covers** · catalog layout set by Josh on the Deluge cover Oct 18 2026. Meta row and rule, big title with the subhead tight under it, device photo filling about 85 percent of the width and sitting on the footer. Fresh Batch sticker tilted 18 degrees clockwise at the upper right, overlapping the device. Footer is runtime left, band name and legal line centered, spec list right. No features column, no spec rule, halftone and paper textures off for now. Sticker ring is Bondi on warm grounds, Tangerine on cool grounds
 - **Instagram** · native 4:5 post for every track, same layout as the cover scaled to 720 wide with the spec list reading Out Now. The album post is the cover shown as a 7 inch single on paper. The 3:4 profile grid trims the sides, so type stays inside the crop
+- **Iconic devices · set by Josh Nov 8 2026** · where a track's device is a household icon, it must look exactly like the real one or the cultural connection breaks. Boombap is the classic 1985 bedside digital clock radio (dark brown wedge, wood grain slatted top, long snooze bar, red LED clock left, FM AM dial right). Show Me Your Love is the 1993 Talkboy, side profile. Renders carry the original Talkboy script and Josh retypes it as Doughboy in Photoshop in the same style (Josh, Nov 8 2026). Other logos stay off
+- **Dough shapes · set by Josh Nov 8 2026** · never a brick (Determinator). Never forced to hang off the top of a device, it looks fake (Mancub). Never a perfectly round, symmetrical mound, it looks fake and dull (Mancub). Good dough is thick, heavy, plump and saggy; bad dough is pink, wet, dry and stringy, or full of holes (brand guide, Good dough, bad dough)
 - **Production** · image generation, no photoshoot (decided Oct 18 2026). See the device photo workflow above
 - **Device photo recipe** · name the device parts, add analog knobs and buttons, and a small glowing red power light where a real one would sit (a lit screen counts). No people, hands, logos or brand names. Exploration renders say no readable text, the 4K prompt supplies the exact real label words. Scene and dough come from the series lock
 - **Canva** · any image Claude generates in Canva moves straight into the Titus Tests folder
@@ -114,14 +86,14 @@ Figma's generator can't take Deluge as a reference image, so consistency comes f
 
 ## Track list · best match colors as of Oct 19 2026
 1. Deluge · Silver dual deck boombox · Bondi #65B8E5 · Deluge v1 final (drips retouched, square expand, color corrected to Bondi). In the repo and Drive Masters. Placed in Figma on Cover, Post and Canvas Oct 29 2026, exports next
-2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Queued for 4K
-3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. Queued for 4K
-4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. Queued for 4K
+2. Spice · Yellow sports Walkman · Butter #ECCE7B · F2 approved Oct 19 2026 after five rounds. Front door hinged on the right and pinched on the dough, spill at the left third, yellow headphones with orange pads on the right. Josh picked render B Nov 8 2026. Finished with the rebuilt Butter backdrop at depth 0.75 and cyc horizon 0.16, Josh approved and it was placed in Figma Nov 8 2026, exports next
+3. Bopkins (was Danish) · Turntable · Bubblegum #E99CC2 · G1 approved Oct 19 2026 in round 1. Silver deck, flat record shaped pile with the spindle through it, raised front camera, spill at the left third. 4K runs Nov 8 2026. Josh called F the best, then a text pass on F made G, every button and pitch scale mark clean, and Josh picked G Nov 8 2026. Master v1 finished with the dust cover relit to the new pink. Josh approved it as is and it was placed in Figma Nov 8 2026, exports next
+4. Suavecita · Virtual pet in a Bubblegum shell · Cherry #C77171 · I4 approved Oct 19 2026 in round 2. Clear pink shell with the circuit board showing, leaning back in a firm dough nest, no pool. Original pixel pet on the screen, never a real character, no lettering on the shell. 4K runs Nov 8 2026 made a device Josh likes, but he dropped the nest shape. Back to explore Nov 8 2026. Round 3 on Flash (ball, disc, tucked) on its Review board. Reuse the 4K device recipe on the new pick
 5. Traycee · Tube monitor and tower PC · Mint #73D2AB · Moved to node 81:2 on Oct 28 2026 (K4 was the Oct 19 pick). Beige 1996 tower and CRT with two small speakers, no keyboard. A heavy lobe over the open CD tray falling to a big rounded mound on the floor. First 4K run done Oct 28 2026. Tight 3:2 crop re-run Oct 29 2026, Josh picked render B. Finished with the rebuilt backdrop at depth 0.75 and cyc horizon 0.16, placed in Figma Nov 8 2026, exports next
-6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in)
-7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65
-8. Mancub · Classic grey handheld game console, no logos · Lime #82A967
-9. Show Me Your Love · Talkboy with its logo changed to Doughboy · Grape #8E74B7
+6. Determinator · TV VCR combo · Blueberry #6C8DCE · round 1 started Oct 19 2026. Dough jammed in the VHS slot, out the left end to a firm mound. Screen glows video blue. L6 (charcoal 19 inch) carried into a shape set Oct 19 2026 after Josh flagged the silhouettes rhyming. Pick M1 (dough brick shaped like a VHS tape, half in the slot), runner up M5 (the whole batch heaped on the floor, one fold crammed in). Josh Nov 8 2026: never a brick. He liked 2b-2 (device turned right, dough over most buttons, power light showing), then picked R3-5 rustic, finger dimples and some buttons left showing so it reads real. Josh passed render A Nov 8 2026. Master v1 finished at Blueberry, Josh approved and it was placed in Figma Nov 8 2026. The TV top touches the subhead on Cover and Post, Josh nudges or Claude re-finishes smaller
+7. Boombap (was Midnight Honey) · Clock radio with dough plopped on top · Tangerine #DE9F65 · The classic 1985 bedside digital clock radio, exactly as Josh's reference. Josh picked dough on top, then R3-3 with the heavier lobe, device nailed, then the +20 percent wider face with 6:30 and only AM lit (Nov 8 2026). 4K render A, then text pass B fixed the key and switch labels and Josh approved B Nov 8 2026. Master v1 at Tangerine on its Review board, SNOOZE centering left for Photoshop
+8. Mancub · Classic grey handheld game console, no logos · Lime #82A967 · Console stuck upright into the dough, nothing hanging off the top. Device as R3-4 with the grey screen frame. Dough uneven and lopsided, never a perfect round mound (Josh Nov 8 2026). R4-1 dough with its finger smear, a minimal crease and a slight counterclockwise lean. Josh approved R5-5 Nov 8 2026, 4K render A with his detail photos as references, Josh: absolutely perfect. Master v1 at Lime approved and placed in Figma Nov 8 2026, exports next. No logos ever
+9. Show Me Your Love · Talkboy with its logo changed to Doughboy · Grape #8E74B7 · Must look exactly like the 1993 Talkboy, side profile. Josh liked the R3-3 dough, inside the tape drawer and spilling out one side (Nov 8 2026). Explore generates the original Talkboy script, Josh retypes it as Doughboy in Photoshop in the same style. Round 6 Nov 8 2026 frame 3 got every device part right (Josh, Nov 8 2026). Round 7 locks that device and varies only the dough, on its Review board
 
 Watch outs · Bopkins into Suavecita is the one weak border in track order (18.7), so it always gets a gutter. On the 1:1 cover the upper right sticker clips long titles (Determinator, Show Me Your Love). The softbox edge kept sneaking into the top left corner until the series lock stopped naming it (Oct 19 2026). Still check every frame for it.
 

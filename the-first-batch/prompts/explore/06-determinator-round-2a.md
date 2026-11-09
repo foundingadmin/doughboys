@@ -1,0 +1,11 @@
+A real 1990 mail order catalog photograph shot on medium format film with an 80mm lens, fine film grain, muted print color. A charcoal grey 13 inch TV VCR combo from 1990: a rounded plastic cabinet with a curved glass tube screen in the upper two thirds, and below it a VHS slot with a hinged black flap, a row of small rubber transport buttons, a channel up and down rocker, a volume knob and a small glowing red power light at the lower right. Vent slots along the sides. The screen is lit with a plain even video blue glow, no picture, no words, no on screen display. The cabinet is about 35 centimeters wide and stands about as tall as it is wide. The VHS slot is only slightly wider than a standard VHS tape, which is about 19 by 10 by 2.5 centimeters.
+
+Firm, freshly kneaded raw bread dough that holds its shape, one cohesive mass, pale oatmeal beige like raw pizza dough, never pink and never meaty. Satin matte skin with fine stretch lines and soft folds, no holes, no lace, no webbing. Where it meets the floor it stays thick and rounded. No pool, no puddle, nothing runny, wet or glossy. Shaped only by gravity.
+
+A heavy round ball of dough, about as wide as the VHS slot is long, sits on the floor in front of the cabinet at the left third. From the top of the ball one thick soft fold rises and is crammed into the VHS slot, pushing the flap up, so the ball hangs on the slot by that fold and sags toward the floor under its own weight. The ball is slightly flattened where it rests on the floor. Every surface of the dough is soft and rounded, with no flat faces, no square edges and no corners. Never a brick, a block, a slab or a loaf pan shape.
+
+Camera straight on at the device's own height, squared up to its front. The device fills about half the frame height. Every object, accessories and dough included, sits inside the frame with clear backdrop at every edge. Nothing cropped.
+
+Seamless Blueberry paper sweep, no horizon line, no seams, no studio equipment. Soft diffused light from the upper left, from a source well outside the frame, soft contact shadow only. A brighter glow behind the device and on the floor, falling to a deeper Blueberry in the top corners.
+
+No people, no hands, no logos, no brand names, no readable text.

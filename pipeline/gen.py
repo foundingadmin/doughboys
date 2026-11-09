@@ -17,8 +17,23 @@ Model ids change. Defaults below are what we used in Oct 2026; confirm with `mod
 import argparse, base64, json, math, os, sys, time, urllib.request, urllib.error
 
 API = "https://generativelanguage.googleapis.com/v1beta"
-EXPLORE_MODEL = os.environ.get("TFB_EXPLORE_MODEL", "gemini-3-pro-image-preview")
+EXPLORE_MODEL = os.environ.get("TFB_EXPLORE_MODEL", "gemini-3.1-flash-image-preview")   # Flash for explore, Josh Nov 8 2026
 RENDER_MODEL = os.environ.get("TFB_RENDER_MODEL", "gemini-3-pro-image-preview")
+# Estimated USD per image at list price, for the spend log. Check ai.google.dev/pricing if they move.
+PRICE = {("pro", "1K"): 0.134, ("pro", "2K"): 0.134, ("pro", "4K"): 0.24, ("flash", "1K"): 0.067, ("flash", "2K"): 0.067, ("flash", "4K"): 0.15}
+SPEND = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "the-first-batch", "spend.csv")
+
+
+def log_spend(model, size, what, approval=""):
+    tier = "flash" if "flash" in model else "pro"
+    est = PRICE.get((tier, size), 0.24)
+    new = not os.path.exists(SPEND)
+    with open(SPEND, "a") as f:
+        if new:
+            f.write("time,model,size,what,est_usd,josh_approval\n")
+        f.write(f'{__import__("datetime").datetime.now(__import__("zoneinfo").ZoneInfo("America/Denver")).strftime("%Y-%m-%d %H:%M")},{model},{size},"{what}",{est:.3f},"{approval.replace(chr(34), chr(39))}"\n')
+
+
 ASPECTS = {"1:1": 1.0, "4:5": 0.8, "3:4": 0.75, "2:3": 2 / 3, "9:16": 9 / 16, "5:4": 1.25, "4:3": 4 / 3, "3:2": 1.5, "16:9": 16 / 9, "21:9": 21 / 9}
 
 
@@ -132,6 +147,8 @@ def main():
     c = sub.add_parser("crop"); c.add_argument("--source", required=True); c.add_argument("--out", required=True); c.add_argument("--aspect", default="auto"); c.add_argument("--margin", type=float, default=0.025)
     r = sub.add_parser("render4k"); r.add_argument("--source", required=True); r.add_argument("--prompt-file", required=True); r.add_argument("--out", required=True)
     r.add_argument("--aspect", default=None); r.add_argument("--model", default=RENDER_MODEL); r.add_argument("--size", default="4K")
+    r.add_argument("--ref", action="append", default=[], help="extra reference images after the source, for details only (Mancub, Nov 8 2026)")
+    r.add_argument("--approved", required=True, help="Josh's written yes from this conversation, quoted, after Claude pointed him to the explore frame in Figma. No 4K run without it (Josh, Nov 8 2026)")
     a = ap.parse_args()
     if a.cmd == "models":
         res = call("models?pageSize=200", method="GET")
@@ -146,6 +163,7 @@ def main():
         for i in range(a.n):
             p = os.path.join(a.out, f"{i + 1:02d}.png")
             save(generate(a.model, prompt, a.ref, a.aspect, a.size), p); paths.append(p)
+            log_spend(a.model, a.size, f"explore {a.prompt_file} {i + 1}")
         contact_sheet(paths, os.path.join(a.out, "contact-sheet.jpg"))
         return
     if a.cmd == "crop":
@@ -156,7 +174,10 @@ def main():
         if not aspect:
             w, h = Image.open(a.source).size
             aspect = min(ASPECTS, key=lambda k: abs(math.log(ASPECTS[k] / (w / h))))
-        save(generate(a.model, open(a.prompt_file).read(), [a.source], aspect, a.size), a.out)
+        if len(a.approved.strip()) < 3:
+            sys.exit("render4k needs Josh's written approval in --approved")
+        save(generate(a.model, open(a.prompt_file).read(), [a.source] + a.ref, aspect, a.size), a.out)
+        log_spend(a.model, a.size, f"render4k {a.source} {a.prompt_file}", a.approved)
 
 
 if __name__ == "__main__":
