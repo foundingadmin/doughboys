@@ -1,0 +1,11 @@
+Keep this exact first photograph. Same camera position, framing, lighting, cassette recorder, open door angle, dough and backdrop. Keep this tight framing exactly as it is. Do not zoom out, add backdrop, move, redesign or restyle anything. Render it at 4K as a real photograph shot on medium format film for a 1993 mail order catalog, with fine film grain and crisp, true detail. The second photograph is the real toy. Use it only for colors, textures, molded lines and the exact markings listed below. Make only these fixes:
+
+1. Body: silver grey molded plastic with the real toy's fine texture and crisp molded lines, the round dark grey speaker cap on the slanted end with a grid of clean round holes, and the dark grey molded base strip with its rectangular pattern.
+2. Top keys: four black keys and one red key along the top, slightly recessed into the body, exactly where they are now.
+3. Control strip: a separate silver button with a green square for stop, a wide silver button with green double triangles pointing left and right, then a green play triangle pointing left joined by a thin line to a small round red light, as in the second photograph. Clean, crisp shapes, no other marks.
+4. Microphone: the black microphone handle at its current angle, built from stacked segments that step smaller toward the top, with a ribbed stepped tip.
+5. Cassette door: keep it open at its current angle. On it, the small script word Deluxe above the black italic script wordmark Talkboy with a small TM, crisp and exactly as in the second photograph. The sweeping curved line wraps around the round window with its raised silver ring, showing a dark tape reel hub. Three dark grey grip slats on the lower left.
+6. Dough: keep its shape, the chunk in the tape well, the glob out the left and the mound on the floor exactly. One cohesive mass of firm and moist, freshly mixed raw bread dough in one even pale oatmeal beige, matte with fine stretch lines and light speckles, never pink, wet, glossy, dry or stringy, no holes.
+7. Backdrop: seamless grape purple paper with a soft glow behind the recorder and on the floor, falling to a deeper purple in the top corners. No studio equipment, no seams, no horizon line.
+
+No people, no hands, no other logos, no other words.

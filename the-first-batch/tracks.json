@@ -1622,8 +1622,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "exploring, round 8 ready for Josh",
-   "next": "Josh picks on board 245:12 (Claude recommends 1, runner up 4). Then link him to the pick and get a written yes before the 4K. Ask for detail photos of the real Talkboy to pass as --ref, as on Mancub",
+   "status": "4K rendered, Josh passes render A on board 247:12",
+   "next": "Josh passes A, then cover.py finish 09 --render the-first-batch/assets/photos/09-show-me-your-love/09-show-me-your-love-4k-render-1x1-a.jpg. Josh retypes the script as Doughboy in Photoshop",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -1751,12 +1751,61 @@
      "date": "2026-11-08",
      "what": "Round 8: R5-1 dough on the R7-5 device",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=245-12"
+    },
+    {
+     "node": "247:12",
+     "date": "2026-11-08",
+     "what": "4K render A from R8-6 with the reference photo, native crops",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=247-12"
     }
    ],
    "device_rule": "Must look exactly like the 1993 Talkboy reference. Generate the original Talkboy script so Josh can retype it as Doughboy in the same style in Photoshop (Josh, Nov 8 2026)",
    "pick_progress": "Josh Nov 8 2026: R5-1 has the perfect dough texture and shape, R7-5 the perfect device. Round 8 puts R5-1 dough on the R7-5 device",
    "reference_photo": "the-first-batch/reference/09-talkboy-reference-3q.jpg",
-   "device_source": "work/09-show-me-your-love/round-6c/03.png (board 217:12, node 217-30)"
+   "device_source": "work/09-show-me-your-love/round-6c/03.png (board 217:12, node 217-30)",
+   "source": {
+    "pick": "R8-6",
+    "approved": "2026-11-08",
+    "repo": "the-first-batch/assets/photos/09-show-me-your-love/09-show-me-your-love-source-r8-6.png",
+    "from": "work/09-show-me-your-love/round-8/06.png",
+    "figma_board": "245:12",
+    "note": "R8-6: R7-5 device with R5-1 dough. Josh approved Nov 8 2026"
+   },
+   "renders_4k": [
+    {
+     "file": "the-first-batch/assets/photos/09-show-me-your-love/09-show-me-your-love-4k-render-1x1-a.jpg",
+     "letter": "a",
+     "aspect": "1:1",
+     "date": "2026-11-08",
+     "prompt": "the-first-batch/prompts/4k/09-show-me-your-love.md",
+     "crop": "the-first-batch/assets/photos/09-show-me-your-love/09-show-me-your-love-crop.png",
+     "check_tiles": [
+      "work/09-show-me-your-love/check/a-tile1.jpg",
+      "work/09-show-me-your-love/check/a-tile2.jpg",
+      "work/09-show-me-your-love/check/a-tile3.jpg",
+      "work/09-show-me-your-love/check/a-tile4.jpg",
+      "work/09-show-me-your-love/check/a-tile5.jpg",
+      "work/09-show-me-your-love/check/a-tile6.jpg"
+     ],
+     "josh_approval": "Josh, Nov 8 2026: show me your love: 6 is it! Approved spend for 4k now. (board 245:12, node 245-56)",
+     "refs": [
+      "the-first-batch/reference/09-talkboy-reference-3q.jpg"
+     ],
+     "check": "Pass: keys, control strip, mic, Deluxe Talkboy TM script, window, slats, speaker, dough. Reel window shows dough",
+     "recommended": true
+    }
+   ],
+   "crop": {
+    "file": "the-first-batch/assets/photos/09-show-me-your-love/09-show-me-your-love-crop.png",
+    "aspect": "1:1",
+    "box": [
+     44,
+     43,
+     999,
+     997
+    ]
+   },
+   "prompt_4k": "the-first-batch/prompts/4k/09-show-me-your-love.md"
   }
  ],
  "figma_review_page": "128:77",
