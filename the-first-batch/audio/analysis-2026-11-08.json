@@ -1,0 +1,596 @@
+{
+ "01": {
+  "keys": {
+   "bgate": [
+    "E",
+    "minor",
+    0.898
+   ],
+   "edma": [
+    "E",
+    "minor",
+    0.917
+   ],
+   "temperley": [
+    "E",
+    "minor",
+    0.697
+   ],
+   "krumhansl": [
+    "E",
+    "minor",
+    0.842
+   ]
+  },
+  "genres": [
+   [
+    "Rock---Alternative Rock",
+    0.102
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.083
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.072
+   ],
+   [
+    "Rock---Punk",
+    0.053
+   ],
+   [
+    "Rock---Indie Rock",
+    0.051
+   ],
+   [
+    "Rock---Math Rock",
+    0.048
+   ],
+   [
+    "Jazz---Fusion",
+    0.046
+   ],
+   [
+    "Rock---Emo",
+    0.045
+   ],
+   [
+    "Rock---Prog Rock",
+    0.042
+   ],
+   [
+    "Jazz---Jazz-Funk",
+    0.039
+   ]
+  ]
+ },
+ "02": {
+  "keys": {
+   "bgate": [
+    "A",
+    "minor",
+    0.86
+   ],
+   "edma": [
+    "A",
+    "major",
+    0.858
+   ],
+   "temperley": [
+    "E",
+    "minor",
+    0.623
+   ],
+   "krumhansl": [
+    "A",
+    "major",
+    0.777
+   ]
+  },
+  "genres": [
+   [
+    "Jazz---Jazz-Rock",
+    0.102
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.088
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.081
+   ],
+   [
+    "Rock---Ska",
+    0.077
+   ],
+   [
+    "Jazz---Fusion",
+    0.064
+   ],
+   [
+    "Rock---Punk",
+    0.05
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.049
+   ],
+   [
+    "Rock---Blues Rock",
+    0.045
+   ],
+   [
+    "Jazz---Jazz-Funk",
+    0.042
+   ],
+   [
+    "Reggae---Ska",
+    0.041
+   ]
+  ]
+ },
+ "03": {
+  "keys": {
+   "bgate": [
+    "C",
+    "minor",
+    0.847
+   ],
+   "edma": [
+    "C",
+    "minor",
+    0.844
+   ],
+   "temperley": [
+    "Eb",
+    "major",
+    0.853
+   ],
+   "krumhansl": [
+    "C",
+    "minor",
+    0.854
+   ]
+  },
+  "genres": [
+   [
+    "Jazz---Fusion",
+    0.11
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.102
+   ],
+   [
+    "Jazz---Jazz-Funk",
+    0.093
+   ],
+   [
+    "Jazz---Smooth Jazz",
+    0.09
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.066
+   ],
+   [
+    "Jazz---Afrobeat",
+    0.058
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.054
+   ],
+   [
+    "Jazz---Contemporary Jazz",
+    0.048
+   ],
+   [
+    "Funk / Soul---Neo Soul",
+    0.039
+   ],
+   [
+    "Funk / Soul---Soul",
+    0.035
+   ]
+  ]
+ },
+ "04": {
+  "keys": {
+   "bgate": [
+    "A",
+    "minor",
+    0.966
+   ],
+   "edma": [
+    "A",
+    "minor",
+    0.964
+   ],
+   "temperley": [
+    "A",
+    "minor",
+    0.815
+   ],
+   "krumhansl": [
+    "A",
+    "minor",
+    0.937
+   ]
+  },
+  "genres": [
+   [
+    "Rock---Ska",
+    0.086
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.081
+   ],
+   [
+    "Rock---Punk",
+    0.072
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.06
+   ],
+   [
+    "Rock---Blues Rock",
+    0.059
+   ],
+   [
+    "Rock---Indie Rock",
+    0.055
+   ],
+   [
+    "Rock---Pop Rock",
+    0.054
+   ],
+   [
+    "Blues---Chicago Blues",
+    0.054
+   ],
+   [
+    "Reggae---Ska",
+    0.052
+   ],
+   [
+    "Pop---Schlager",
+    0.034
+   ]
+  ]
+ },
+ "05": {
+  "keys": {
+   "bgate": [
+    "G",
+    "major",
+    0.855
+   ],
+   "edma": [
+    "G",
+    "major",
+    0.739
+   ],
+   "temperley": [
+    "G",
+    "major",
+    0.865
+   ],
+   "krumhansl": [
+    "G",
+    "major",
+    0.83
+   ]
+  },
+  "genres": [
+   [
+    "Jazz---Jazz-Funk",
+    0.109
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.09
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.055
+   ],
+   [
+    "Jazz---Soul-Jazz",
+    0.051
+   ],
+   [
+    "Jazz---Smooth Jazz",
+    0.049
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.048
+   ],
+   [
+    "Jazz---Fusion",
+    0.044
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.041
+   ],
+   [
+    "Rock---Ska",
+    0.039
+   ],
+   [
+    "Funk / Soul---Swingbeat",
+    0.039
+   ]
+  ]
+ },
+ "06": {
+  "keys": {
+   "bgate": [
+    "C#",
+    "minor",
+    0.846
+   ],
+   "edma": [
+    "C#",
+    "minor",
+    0.83
+   ],
+   "temperley": [
+    "E",
+    "major",
+    0.777
+   ],
+   "krumhansl": [
+    "C#",
+    "minor",
+    0.765
+   ]
+  },
+  "genres": [
+   [
+    "Rock---Ska",
+    0.192
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.099
+   ],
+   [
+    "Reggae---Ska",
+    0.096
+   ],
+   [
+    "Rock---Punk",
+    0.085
+   ],
+   [
+    "Rock---Psychedelic Rock",
+    0.073
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.068
+   ],
+   [
+    "Reggae---Reggae",
+    0.064
+   ],
+   [
+    "Electronic---Ambient",
+    0.063
+   ],
+   [
+    "Rock---Indie Rock",
+    0.055
+   ],
+   [
+    "Funk / Soul---Soul",
+    0.034
+   ]
+  ]
+ },
+ "07": {
+  "keys": {
+   "bgate": [
+    "C",
+    "minor",
+    0.821
+   ],
+   "edma": [
+    "C",
+    "minor",
+    0.837
+   ],
+   "temperley": [
+    "Eb",
+    "major",
+    0.689
+   ],
+   "krumhansl": [
+    "C",
+    "minor",
+    0.761
+   ]
+  },
+  "genres": [
+   [
+    "Jazz---Jazz-Funk",
+    0.12
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.106
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.078
+   ],
+   [
+    "Jazz---Smooth Jazz",
+    0.071
+   ],
+   [
+    "Rock---Blues Rock",
+    0.061
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.06
+   ],
+   [
+    "Jazz---Fusion",
+    0.055
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.05
+   ],
+   [
+    "Jazz---Contemporary Jazz",
+    0.039
+   ],
+   [
+    "Funk / Soul---Neo Soul",
+    0.038
+   ]
+  ]
+ },
+ "08": {
+  "keys": {
+   "bgate": [
+    "E",
+    "minor",
+    0.915
+   ],
+   "edma": [
+    "E",
+    "minor",
+    0.917
+   ],
+   "temperley": [
+    "G",
+    "major",
+    0.786
+   ],
+   "krumhansl": [
+    "E",
+    "minor",
+    0.84
+   ]
+  },
+  "genres": [
+   [
+    "Rock---Psychedelic Rock",
+    0.074
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.068
+   ],
+   [
+    "Rock---Ska",
+    0.059
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.058
+   ],
+   [
+    "Rock---Prog Rock",
+    0.057
+   ],
+   [
+    "Funk / Soul---Afrobeat",
+    0.056
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.055
+   ],
+   [
+    "Reggae---Ska",
+    0.054
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.051
+   ],
+   [
+    "Jazz---Afrobeat",
+    0.047
+   ]
+  ]
+ },
+ "09": {
+  "keys": {
+   "bgate": [
+    "E",
+    "minor",
+    0.916
+   ],
+   "edma": [
+    "E",
+    "minor",
+    0.943
+   ],
+   "temperley": [
+    "C",
+    "major",
+    0.746
+   ],
+   "krumhansl": [
+    "E",
+    "minor",
+    0.885
+   ]
+  },
+  "genres": [
+   [
+    "Rock---Ska",
+    0.069
+   ],
+   [
+    "Reggae---Ska",
+    0.066
+   ],
+   [
+    "Rock---Alternative Rock",
+    0.057
+   ],
+   [
+    "Funk / Soul---Afrobeat",
+    0.053
+   ],
+   [
+    "Blues---Modern Electric Blues",
+    0.053
+   ],
+   [
+    "Jazz---Afrobeat",
+    0.048
+   ],
+   [
+    "Rock---Punk",
+    0.04
+   ],
+   [
+    "Funk / Soul---Funk",
+    0.039
+   ],
+   [
+    "Rock---Indie Rock",
+    0.035
+   ],
+   [
+    "Jazz---Jazz-Rock",
+    0.034
+   ]
+  ]
+ }
+}
