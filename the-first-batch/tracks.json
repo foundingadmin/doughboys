@@ -2072,8 +2072,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "R2-A1 with the Pinwheel rim label (Josh, Nov 8 2026). Josh dialed in the label type and rotated the rim wedges off the backdrop angles",
-    "next": "Josh answers the subhead questions, one fact per track",
+    "status": "round 3 ready: nine dough record variations with the final Pinwheel rim label, board 333:739",
+    "next": "Josh picks the record, then place it on the Album Art page with the label",
     "rounds": [
       {
         "round": 1,
@@ -2141,6 +2141,83 @@
           "R2-J1",
           "R2-B4"
         ]
+      },
+      {
+        "round": 3,
+        "date": "2026-11-09",
+        "model": "gemini-3.1-flash-image-preview",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "refs": [
+          "R2-A1",
+          "brand pinwheel"
+        ],
+        "variants": [
+          "fine smooth",
+          "deep grooves",
+          "rough handmade",
+          "slumped",
+          "crust rim",
+          "thin sheet",
+          "track bands",
+          "knife scored",
+          "warped"
+        ],
+        "label_px_1024": {
+          "R3-1": {
+            "cx": 510.0,
+            "cy": 511.1,
+            "d": 329.6
+          },
+          "R3-2": {
+            "cx": 511.1,
+            "cy": 511.1,
+            "d": 246.7
+          },
+          "R3-3": {
+            "cx": 510.9,
+            "cy": 510.9,
+            "d": 246.7
+          },
+          "R3-4": {
+            "cx": 511.2,
+            "cy": 511.6,
+            "d": 248.6
+          },
+          "R3-5": {
+            "cx": 512.4,
+            "cy": 512.2,
+            "d": 288.9
+          },
+          "R3-6": {
+            "cx": 511.4,
+            "cy": 511.5,
+            "d": 247.2
+          },
+          "R3-7": {
+            "cx": 512.5,
+            "cy": 512.3,
+            "d": 284.1
+          },
+          "R3-8": {
+            "cx": 510.8,
+            "cy": 511.2,
+            "d": 248.2
+          },
+          "R3-9": {
+            "cx": 511.3,
+            "cy": 511.9,
+            "d": 318.3
+          }
+        },
+        "prompts": "the-first-batch/prompts/explore/album/round-3/",
+        "contact_sheet": "the-first-batch/explore/00-album/round-3/contact-sheet.jpg",
+        "figma_board": "333:739",
+        "claude_picks": [
+          "R3-4",
+          "R3-6",
+          "R3-9"
+        ]
       }
     ],
     "pick": {
@@ -2166,7 +2243,8 @@
         "Stripes": "308:317"
       },
       "note": "Label designed at 600, placed at 214.5 on a 900 cover. Solid color layer 'Label color · swap me', bind it to track/ground and pick a Track mode to try the nine. Review copy: the-first-batch/review/00-album/figma-board-label-v1.png",
-      "choice": "Pinwheel rim 308:295"
+      "choice": "Pinwheel rim 308:295",
+      "final": "Pinwheel rim 308:295, final per Josh Nov 9 2026"
     },
     "fine_print": {
       "recorded_at": "The Keep Recording Studio, 1669 S Acoma St, Denver, CO 80223",
