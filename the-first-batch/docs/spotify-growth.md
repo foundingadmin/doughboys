@@ -46,6 +46,17 @@ Josh's source video [here](https://www.youtube.com/watch?v=sDC4jcv5O-8).
 
 What feeds the algorithm on our side is early listener behavior (saves, follows, adds to playlists, finishing the song) plus accurate genre and mood tags at pitch time.
 
+# Don't buy playlist campaigns
+
+From a Reddit post Josh saved Nov 9 2026 (r/musicmarketing, a former label marketer). Secondhand and unverified, but it lines up with how the algorithm section above works.
+
+- **How the "organic playlist" pitch really works.** Agencies pay playlist owners about $10 to $15 per 1,000 streams, and those owners fill their playlists with paid ads. The streams and listeners are real, but nobody chose us. They pressed play on "Deep Focus" and stayed for the playlist
+- **The pattern.** A big spike during the campaign, the song drops off the playlist, daily streams fall back to where they started, and almost no new followers or saves
+- **What Spotify actually weighs.** Saves, repeat listens, profile visits, people finishing the song, and people looking us up on purpose. Raw stream count matters far less
+- **The active listener ratio.** The post says Spotify wants more than half of all listeners to be active (listeners who chose us) and treats that as more important than total listeners. It's folklore with no source, so treat it as directional only
+
+**What this means for us.** Every listener we bring in should be someone who came looking for the band. That's a job for assets we're already making. The stickers, the Bread Clip pin backing card, the zine and the Instagram posts can each send people straight to our Spotify profile with one ask, save the album. A small crowd that saves and replays beats a big passive one.
+
 # Sync licensing
 
 Permission to use our music in commercials, film, video, trailers and games. A separate income and reach channel from streaming. Worth a look once the masters and rights are settled with the distributor.
