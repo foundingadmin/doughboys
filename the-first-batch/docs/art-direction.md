@@ -29,6 +29,11 @@ Keep this exact photograph. Same camera position, framing, lighting, virtual pet
 No people, no hands, no logos.
 ```
 
+### The First Batch album cover · R3-4 · approved Nov 9 2026 · render A Nov 9 2026
+- **Source image** · [Review board 333:739](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=333-739), R3-4 slumped dough record on the brand pinwheel
+- **Prompt** · the-first-batch/prompts/4k/00-album.md, pinwheel passed as a second image
+- **Run** · [Review board 335:1018](https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=335-1018). Finish rebuilds the backdrop from the exact code drawn pinwheel, the Pinwheel rim label goes on in Figma
+
 ## Concept
 The dough is the media. The only way to play a Doughboys record is to stuff a wad of raw dough into your boombox where the cassette goes. Shot like a 1990 catalog page. Real ink, real paper, scanned for the archive. Nostalgia, youthful joy, fun, curiosity. Flat, dry, ironic humor.
 

@@ -2072,8 +2072,8 @@
   },
   "album_cover_explore": {
     "catalog": "CBDB 00",
-    "status": "round 3 ready: nine dough record variations with the final Pinwheel rim label, board 333:739",
-    "next": "Josh picks the record, then place it on the Album Art page with the label",
+    "status": "4K render A done, on board 335:1018, Josh checks it",
+    "next": "Josh passes render A, then finish at 6704 on the exact code pinwheel and place in the Album Cover Photo slot with the label",
     "rounds": [
       {
         "round": 1,
@@ -2255,7 +2255,28 @@
       "label_arc_note": "Josh's line Nov 8 2026, lowercase at and by on purpose. Josh set Archivo 8, arc rebuilt centered at the bottom, 217 degrees at r 234 (node 317:739). A text path cannot be rotated, rebuild the arc to recenter. Josh typed ANDREA, set as ANDREAS per his earlier message, confirm",
       "band_members_block": "TITUS bass · CHUK sax · JON keys · WILEY guitar · AARON drums, under the track list",
       "batch_electronics": "retired Nov 8 2026, replaced by Jungalow Records on Album Cover Ad and copy, Album Post, readme, Brand Guide and Merch. Review and Archive pages left as history"
-    }
+    },
+    "source": {
+      "pick": "R3-4",
+      "approved": "2026-11-09",
+      "josh": "r3-4 is my pick here. 4k it.",
+      "repo": "the-first-batch/assets/photos/00-album/00-album-source-r3-4.png"
+    },
+    "prompt_4k": "the-first-batch/prompts/4k/00-album.md",
+    "renders_4k": [
+      {
+        "letter": "a",
+        "file": "the-first-batch/assets/photos/00-album/00-album-4k-render-1x1-a.jpg",
+        "size": "4096x4096",
+        "date": "2026-11-09",
+        "refs": [
+          "pinwheel"
+        ],
+        "board": "335:1018",
+        "check": "Pass on outline, grooves, dough skin, label and edges. Wedges deltaE 1.7 to 5.2 from the hexes, the finish redraws them exact",
+        "crops": "the-first-batch/review/00-album/4k-a/"
+      }
+    ]
   },
   "album_runtime": "43:02",
   "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",
