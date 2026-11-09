@@ -33,6 +33,7 @@ Read this file, then `the-first-batch/tracks.json` (the state of all nine tracks
 | Long term storage | Google Drive folder `1QdToArron7EKW16mC68ViS1RBzONWV-i`, Track Covers `1g-RHVswNtj1Jp1VKjKmd3OZwDprvnKfB`. Each track folder holds **Masters**, **Exports** and **Archive** (Josh's old manual step folders, never delete). Ids are in tracks.json. Big files go up with `pipeline/drive.py`, see `docs/drive.md` |
 | Pipeline code | `pipeline/cover.py` (one command per step, keeps tracks.json current), `pipeline/drive.py` and `pipeline/drive_drop.gs` (Drive upload), `pipeline/gen.py` (Gemini), `pipeline/finish.py` (expand, recolor, export), `pipeline/backdrop_template.py` (falloff template from Deluge v1), `pipeline/check.py` (review crops), `pipeline/framing.py` (Post and Canvas crop for Figma), `pipeline/figma_review_board.js` (Review boards) |
 | Track state | `the-first-batch/tracks.json`. Update it and commit whenever a track moves forward |
+| heroshot (generic package) | `packages/heroshot/`. The pipeline with every client detail stripped out, for other projects: `pip install` it, `heroshot init` in the new repo. This repo still runs `pipeline/`. Port a fix to both when it is not client specific |
 | Approved 4K prompts | `the-first-batch/prompts/4k/` |
 | Explore prompt blocks | `the-first-batch/prompts/explore/series-lock.md` |
 | Art direction (the brief) | `the-first-batch/docs/art-direction.md`. Josh's master brief, the same file he keeps for the creative brief. Keep it current, see below |
