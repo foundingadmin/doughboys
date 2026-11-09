@@ -1,7 +1,7 @@
 {
  "album": "The First Batch",
  "band": "Chillsbury Doughboys (CBDB)",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "canvas_px": 6704,
  "dough_hex": "#E9D3A8",
  "paper_hex": "#F5EEDC",
@@ -1154,8 +1154,8 @@
    "device": "The classic 1985 bedside digital clock radio from Josh's reference photo: dark brown wedge cabinet, wood grain slatted top, four keys and a slide switch, long snooze bar, red LED clock left, FM AM dial right. No logo",
    "subhead": "Clock Radio With Snooze and Sleep Timer",
    "silhouette": "Josh wants to see both: dough on top (2a) and dough underneath (2b)",
-   "status": "4K text pass B done, Josh decides on board 218:12",
-   "next": "Josh passes B (SNOOZE centering and MINUTE for Photoshop), then cover.py finish 07 --render the-first-batch/assets/photos/07-boombap/07-boombap-4k-render-16x9-b.jpg",
+   "status": "master v1 finished, Josh reviews on board 223:12",
+   "next": "Josh says yes on board 223:12 (SNOOZE centering and MINUTE for his Photoshop pass), then place in Figma and hand off",
    "figma": {
     "mode_id": "114:8",
     "section": "118:913",
@@ -1163,8 +1163,30 @@
     "post": "118:959",
     "canvas": "118:1001",
     "photo_hash": null,
-    "post_transform": null,
-    "canvas_transform": null
+    "post_transform": [
+     [
+      0.8,
+      0,
+      0.1009
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ],
+    "canvas_transform": [
+     [
+      0.5625,
+      0,
+      0.2196
+     ],
+     [
+      0,
+      1,
+      0
+     ]
+    ]
    },
    "drive": {
     "track_folder": "1hMSYqkDIOpBKVsTtpjfxQ7wLRsHf9vza",
@@ -1249,6 +1271,12 @@
      "date": "2026-11-08",
      "what": "Text pass B from A: keys, switch, SNOOZE",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=218-12"
+    },
+    {
+     "node": "223:12",
+     "date": "2026-11-09",
+     "what": "Finished master v1 next to Deluge v1 and Mancub v1, Tangerine chips without stroke",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=223-12"
     }
    ],
    "device_rule": "Must look exactly like the reference model, a cultural icon (Josh, Nov 8 2026)",
@@ -1289,7 +1317,8 @@
      "source": "render A",
      "josh_approval": "Josh, Nov 8 2026: boombap A 4k render. We're close but we need to spend again ...",
      "check": "Keys and switch labels pass. SNOOZE on the bar but at its back edge right of center. MINUTE sits under the switch, three keys show. Photoshop level",
-     "recommended": true
+     "recommended": true,
+     "josh": "Approved Nov 9 2026"
     }
    ],
    "crop": {
@@ -1302,7 +1331,32 @@
      808
     ]
    },
-   "prompt_4k": "the-first-batch/prompts/4k/07-boombap.md"
+   "prompt_4k": "the-first-batch/prompts/4k/07-boombap.md",
+   "master": "the-first-batch/assets/photos/07-boombap/07-boombap-final-v1.jpg",
+   "render_pick": "the-first-batch/assets/photos/07-boombap/07-boombap-4k-render-16x9-b.jpg",
+   "finish_report": {
+    "falloff": 0.75,
+    "horizon": 0.16,
+    "holes_opened": [],
+    "deltaE_glow_vs_swatch": 0.74,
+    "backdrop_hue_spread_deg": 0.0,
+    "corner_L_minus_glow": [
+     -22.4,
+     -25.0,
+     -4.6,
+     -8.2
+    ],
+    "device_touches_edge": false,
+    "offset": [
+     600,
+     1816
+    ],
+    "render": [
+     5504,
+     3072
+    ]
+   },
+   "render_pick_by_josh": "2026-11-09"
   },
   {
    "n": "08",
@@ -1544,8 +1598,8 @@
    "device": "Talkboy style handheld tape recorder, badged Doughboy",
    "subhead": "Handheld Tape Recorder With Extending Mic",
    "silhouette": "Stuffed in the tape door, overflowing the bottom edge, the badge fully legible",
-   "status": "exploring, round 6 ready for Josh",
-   "next": "Josh picks on board 217:12 (Claude recommends 6, runner up the bonus). Keys still grey, fix in one cheap edit or the 4K prompt",
+   "status": "exploring, round 7 dough only ready for Josh",
+   "next": "Josh picks the dough on board 222:12 (Claude recommends 5, runner up 2). Then link him to the pick and get a written yes before any 4K. Ask for detail photos of the real toy for the 4K, as on Mancub",
    "watch": "Long title, title size already dropped to 84 on the cover and 76 on the post",
    "figma": {
     "mode_id": "114:10",
@@ -1611,6 +1665,15 @@
      "model": "gemini-3.1-flash-image-preview",
      "refs": "R5-6 plus cropped parts (R5-1 dough, R5-1 keys, R5-4 button strip) and the reference photo",
      "note": "Two earlier passes with whole frames as references copied the wrong body, 12 Flash frames, not shown except one bonus"
+    },
+    {
+     "round": "7",
+     "date": "2026-11-09",
+     "prompt": "the-first-batch/prompts/explore/09-show-me-your-love-round-7-v1.md to v6.md",
+     "frames": "work/09-show-me-your-love/round-7",
+     "contact_sheet": "the-first-batch/explore/09-show-me-your-love/round-7/contact-sheet.jpg",
+     "model": "gemini-3.1-flash-image-preview",
+     "edit_of": "work/09-show-me-your-love/round-6c/03.png alone"
     }
    ],
    "review_boards": [
@@ -1643,11 +1706,18 @@
      "date": "2026-11-08",
      "what": "Round 6: R5-6 device, door closed up, R5-1 dough, cropped part references",
      "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=217-12"
+    },
+    {
+     "node": "222:12",
+     "date": "2026-11-09",
+     "what": "Round 7: dough variations on the locked 6-3 device",
+     "url": "https://www.figma.com/design/lcNDgyPE02C9Ldw8n2THee?node-id=222-12"
     }
    ],
    "device_rule": "Must look exactly like the 1993 Talkboy reference. Generate the original Talkboy script so Josh can retype it as Doughboy in the same style in Photoshop (Josh, Nov 8 2026)",
-   "pick_progress": "Josh Nov 8 2026: R4-2 mic angle and top keys, R4-4 body, door, logo and window, R4-1 control panel, bottom hinge and dough. Round 5 combines them",
-   "reference_photo": "the-first-batch/reference/09-talkboy-reference-3q.jpg"
+   "pick_progress": "Josh Nov 9 2026: 6-3 has every device part right, the others have the wrong red key at the top right. Lock the device, explore dough only",
+   "reference_photo": "the-first-batch/reference/09-talkboy-reference-3q.jpg",
+   "device_source": "work/09-show-me-your-love/round-6c/03.png (board 217:12, node 217-30)"
   }
  ],
  "figma_review_page": "128:77",

@@ -1,0 +1,3 @@
+Keep this exact photograph: the same camera, framing, lighting, grape backdrop, and the cassette recorder exactly as it is, every part, button, key, microphone, wordmark and the open door at its current angle. Do not change the device at all. Change only the dough. It stays one cohesive mass of firm and moist, freshly mixed raw bread dough in one even pale oatmeal beige, thick, heavy, plump and saggy, never pink, wet, glossy, dry or stringy, no holes, no strands, shaped only by gravity, sitting realistically in the open tape well. This version: the same spill out the left with finger dimples pressed into its surface, as if someone shoved the dough into the well with their fingers, matte and a little rustic.
+
+No people, no hands, no other words.
