@@ -2423,7 +2423,21 @@
           "3"
         ],
         "josh_notes": "1 is it! Lock it in! (Nov 12 2026)",
-        "josh_pick": "1"
+        "josh_pick": "1",
+        "render_4k": {
+          "date": "2026-11-12",
+          "approved": "Josh, Nov 12 2026: approved to 4k it",
+          "model": "gemini-3-pro-image-preview",
+          "size": "4096x4096",
+          "prompt": "the-first-batch/prompts/4k/00-album-kitchen-memory.md",
+          "reference": "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png",
+          "render": "the-first-batch/assets/photos/00-album/00-album-kitchen-memory-4k-render-a.jpg",
+          "figma_board": "432:20",
+          "review": "the-first-batch/review/00-album/figma-kitchen-4k-render-a-board.png",
+          "checks": "the-first-batch/review/00-album/kitchen-4k/",
+          "claude_read": "pass with three small flaws: rippled floor reflection (in the source too), faint canister label shapes, TV a shade lighter than charcoal",
+          "josh_verdict": ""
+        }
       }
     ],
     "pick": {
