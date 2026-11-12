@@ -1,7 +1,7 @@
 {
   "album": "The First Batch",
   "band": "Chillsbury Doughboys (CBDB)",
-  "updated": "2026-11-08",
+  "updated": "2026-11-11",
   "canvas_px": 6704,
   "dough_hex": "#E9D3A8",
   "paper_hex": "#F5EEDC",
@@ -2227,6 +2227,89 @@
           "R3-6",
           "R3-9"
         ]
+      },
+      {
+        "round": "kitchen 1",
+        "date": "2026-11-11",
+        "concept": "1970s American home kitchen blown apart by flour and baking, broken cabinets. A new album cover concept opened by Josh Nov 11 2026, alongside the locked dough record",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "directions": [
+          "A aftermath, whole kitchen one point (1 to 3)",
+          "B ground zero, range straight on, nine color mixing bowls (4 to 6)",
+          "C frozen blast, strobe on the stand mixer (7 to 9)"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-round-1/",
+        "figma_page": "409:15501",
+        "figma_board": "411:829",
+        "review": "the-first-batch/review/00-album/figma-kitchen-r1-board.png",
+        "claude_picks": [
+          "8",
+          "1",
+          "7"
+        ],
+        "josh_notes": ""
+      },
+      {
+        "round": "kitchen 2",
+        "date": "2026-11-11",
+        "concept": "Nine before and after pairs. Before: a brand new top of the line mid century modern kitchen with 70s orange tile, pristine, near empty counters. After: the same kitchen seconds after a cinematic street fight broke out while a team baked hundreds of cookies. No people, no wallpaper, no mid action, no dough piles (Josh, Nov 11 2026)",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 18,
+        "cost_usd": 1.21,
+        "method": "before generated from text, after generated as an edit of its before (--ref) so room, tile and camera match",
+        "pairs": [
+          "1 galley",
+          "2 peninsula",
+          "3 copper island",
+          "4 tile wall",
+          "5 hacienda",
+          "6 space age",
+          "7 pass through",
+          "8 double oven",
+          "9 skylight"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-round-2/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-round-2/",
+        "figma_page": "409:15501",
+        "figma_board": "412:829",
+        "review": "the-first-batch/review/00-album/figma-kitchen-r2-board.png",
+        "claude_picks": [
+          "6",
+          "5",
+          "4"
+        ],
+        "josh_notes": ""
+      },
+      {
+        "round": "kitchen 3",
+        "date": "2026-11-11",
+        "concept": "Josh picked round 2 pair 2 (peninsula) as the closest kitchen, plus the good parts: tile spiderweb (4), split island (3), cabinet ripped off with wiring and yolk down the doors (6), smashed pass through (7), extinguisher spray (8), chair through a cabinet (9). Wide shot, no finished cookies, liquids, burnt walls, destroyed appliances, broken windows, exposed 2x4 studs (Josh, Nov 11 2026)",
+        "reference": "the-first-batch/reference/00-album/kitchen-r2-good-parts-josh.webp",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "method": "before pulled back as an edit of round 2 pair 2 before (3 frames, Claude picked 3), afters as edits of before 3 in two lighting takes",
+        "frames_numbered": [
+          "1 to 3 before wide",
+          "4 to 6 after daylight",
+          "7 to 9 after smoke"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-round-3/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-round-3/",
+        "figma_page": "409:15501",
+        "figma_board": "413:829",
+        "review": "the-first-batch/review/00-album/figma-kitchen-r3-board.png",
+        "claude_picks": [
+          "before 3 with 7",
+          "before 3 with 5"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {
@@ -2328,7 +2411,9 @@
       "masters": "1uK1avIK9JN5OqPyeMg811suMNKvObYeI",
       "exports": "1Q3OAO-rC3VxrSZrW7aBNatyxDiKLvyCW",
       "archive": "1kfAFybiGrKcoBdxdqpTP0mdarUfiOnuu"
-    }
+    },
+    "kitchen_brief": "the-first-batch/docs/kitchen-brief.md",
+    "kitchen_status": "rounds 1 to 3 missed. Josh's freewrite (Nov 11 2026) reframes it as nostalgia vs truth in a 1995 home with a leftover 70s kitchen. Brief written for a new session to speculate concepts"
   },
   "album_runtime": "43:02",
   "mastered_audio_folder": "17rqigfYrTnIf0SJz0oqu1odB_fKWpkKW",

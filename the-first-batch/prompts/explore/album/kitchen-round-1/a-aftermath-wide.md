@@ -1,0 +1,9 @@
+A real 1970s American home magazine interior photograph shot on medium format film with a wide 50mm lens, fine film grain, muted warm print color like a 1974 Kodachrome page.
+
+A complete 1970s American suburban home kitchen the moment after a baking explosion, everything perfectly still. Harvest gold refrigerator and wall oven, avocado green countertops edged in chrome trim, dark walnut laminate cabinets, orange and brown geometric linoleum floor, a mustard and brown floral wallpaper, a window over the sink with a café curtain. The oven door is blown wide open and hangs from one hinge. A huge cohesive mass of raw bread dough has heaved out of the oven and slumped across the floor in one low broad rounded mound like a loaf that slumped, never coiled, stacked, swirled or piped. Upper cabinet doors are blown off their hinges, one hangs crooked, one lies on the counter. Broken plates, a dented saucepan, wooden spoons and an overturned stand mixer on the counter. Thick white flour coats every surface like fresh snow, drifts in the corners, dusts the curtain, and hangs as a soft haze in the air, lit by sunlight from the window.
+
+Raw dough: firm and moist, freshly mixed raw bread dough, thick, heavy, plump and saggy, one cohesive mass in one even pale oatmeal beige like raw pizza dough, never pink and never meaty. Satin matte skin with fine stretch lines and soft folds. Never dry or stringy: no strands, threads or torn edges, no holes, no lace, no webbing. Shaped only by gravity, an object and never a creature. Nothing pokes out like a tongue, no accidental faces.
+
+Camera straight on at countertop height, squared up to the back wall, one point perspective, the whole kitchen in frame, symmetrical and composed like an album cover. Square frame.
+
+No people, no hands, no logos, no brand names, no readable text.
