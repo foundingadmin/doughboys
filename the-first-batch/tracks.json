@@ -2438,6 +2438,33 @@
           "claude_read": "pass with three small flaws: rippled floor reflection (in the source too), faint canister label shapes, TV a shade lighter than charcoal",
           "josh_verdict": ""
         }
+      },
+      {
+        "round": "kitchen truth 1",
+        "date": "2026-11-12",
+        "concept": "Truth versions of the locked memory kitchen (docs/kitchen-brief.md, memory vs truth). A night under a bare fluorescent tube, B the same hour gone grey, C the wall opened and a renovation stopped halfway. Nothing violent, no food, no people",
+        "reference": "work/00-album/kitchen-truth-r1/base-1024.png (memory 4K render A at 1024)",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.67,
+        "method": "edit of the memory 4K render with a shared truth lock (_truth-lock.md), 3 frames per direction, one night frame retried after a NO_IMAGE response",
+        "frames_numbered": [
+          "1 to 3 fluorescent night",
+          "4 to 6 grey afternoon",
+          "7 to 9 opened wall"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-truth-round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-truth-round-1/",
+        "figma_page": "409:15501",
+        "figma_board": "436:14",
+        "review": "the-first-batch/review/00-album/figma-kitchen-truth-r1-board.png",
+        "claude_picks": [
+          "3",
+          "5",
+          "7"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {
