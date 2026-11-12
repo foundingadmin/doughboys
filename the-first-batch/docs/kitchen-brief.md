@@ -108,6 +108,7 @@ Memory round 1 (board 424:14) set these. They hold for every memory and truth re
 - **Floor.** Round 1 frame 2 is the favorite so far, but not the final one.
 - **Never.** Bright orange on white like round 1 frame 9, which does not feel common to the period.
 - **Trash.** Round 1 frames 1, 3, 5, 7 and 8.
+- **Round 2 notes (Nov 12 2026).** Round 2 frame 1 is the right size of room. The camera sits higher, like round 2 frame 5, and frame 5's light is the light. A dining table sits in the kitchen foreground, and the room through the opening is a living room, seen as much as in round 2 frame 7. The floor is the harvest gold geometric of round 2 frames 2, 5 and 8. No teak. Cabinets are butter yellow or honey oak. Round 3 is on board 428:20.
 
 ## Mandatories
 

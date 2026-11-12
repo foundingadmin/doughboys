@@ -2368,6 +2368,35 @@
           "4",
           "6"
         ],
+        "josh_notes": "1 is strong and the right size of room, camera higher like 5, 5 has beautiful light, a dining table in the foreground, the dining room becomes a living room seen as much as in 7, the floor of 2, 5 and 8, no teak, butter yellow or honey oak (Nov 12 2026)"
+      },
+      {
+        "round": "kitchen memory 3",
+        "date": "2026-11-12",
+        "concept": "Round 2 frame 1's room, camera and light of frame 5, gold geometric floor, eat in dining table in the near right foreground, a wide opening into a living room, honey oak (A) or butter yellow (B)",
+        "reference": [
+          "work/00-album/kitchen-memory-r2/m1-honey-oak-yellow-brick/01.png",
+          "work/00-album/kitchen-memory-r2/m5-butter-yellow-gold-geometric/01.png",
+          "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png"
+        ],
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 6,
+        "cost_usd": 0.4,
+        "method": "text to image with three labeled references (room, camera and light, TV VCR), 3 frames per cabinet direction",
+        "frames_numbered": [
+          "1 to 3 honey oak",
+          "4 to 6 butter yellow"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-3/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-3/",
+        "figma_page": "409:15501",
+        "figma_board": "428:20",
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-r3-board.png",
+        "claude_picks": [
+          "6",
+          "1 for honey oak"
+        ],
         "josh_notes": ""
       }
     ],
