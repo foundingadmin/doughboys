@@ -2284,6 +2284,32 @@
           "4"
         ],
         "josh_notes": ""
+      },
+      {
+        "round": "kitchen 3",
+        "date": "2026-11-11",
+        "concept": "Josh picked round 2 pair 2 (peninsula) as the closest kitchen, plus the good parts: tile spiderweb (4), split island (3), cabinet ripped off with wiring and yolk down the doors (6), smashed pass through (7), extinguisher spray (8), chair through a cabinet (9). Wide shot, no finished cookies, liquids, burnt walls, destroyed appliances, broken windows, exposed 2x4 studs (Josh, Nov 11 2026)",
+        "reference": "the-first-batch/reference/00-album/kitchen-r2-good-parts-josh.webp",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "method": "before pulled back as an edit of round 2 pair 2 before (3 frames, Claude picked 3), afters as edits of before 3 in two lighting takes",
+        "frames_numbered": [
+          "1 to 3 before wide",
+          "4 to 6 after daylight",
+          "7 to 9 after smoke"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-round-3/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-round-3/",
+        "figma_page": "409:15501",
+        "figma_board": "413:829",
+        "review": "the-first-batch/review/00-album/figma-kitchen-r3-board.png",
+        "claude_picks": [
+          "before 3 with 7",
+          "before 3 with 5"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {
