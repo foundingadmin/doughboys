@@ -1,0 +1,10 @@
+Keep this exact photograph, image 1. Same high corner camera, same 14mm framing, same light, same room and every object exactly where it is: the avocado refrigerator, the butter yellow cabinets, the avocado dishwasher, the double sink under the window, the TV VCR on the counter, the canisters, the avocado range with its two dish towels, the narrow base cabinet to the right of the range, the range hood, the burnt orange tile backsplash, the wall phone and coiled cord beside the opening, the living room through the wide opening, the dining table and chairs in the foreground and the gold geometric floor. Do not move, add, remove, redesign or restyle anything. Render it at 4K as a real photograph on medium format color negative film, warm, fine grain, soft highlight halation, with crisp, true detail. Make only these fixes:
+
+1. TV VCR on the counter: the exact design of the TV in image 2, without the dough. A small charcoal grey plastic cabinet with rounded corners and side vent slots, a curved tube screen glowing one plain even video blue with no picture, the VHS slot below the screen with its smoked flap closed, two small buttons and a small red power light at the lower right. No words or logos on it.
+2. No lettering anywhere: the kids' crayon drawings on the refrigerator are simple stick figures and a house with no words, the dishwasher and range panels have plain knobs and buttons with no badges or words, the canisters are plain.
+3. Floor: keep the harvest gold and cream geometric medallion pattern, every medallion even, regular and in straight rows, with the waxed sheen and the sun reflection where they are.
+4. Cabinets: every door and drawer front flat and straight, with its chrome pull, soft satin paint, crisp seams between doors.
+5. Living room: keep the plaid sofa and its pillows, the wood paneled wall, the window with sheers, the lamp on its end table and the sunlit shag carpet, sharp and real.
+6. Light: keep the early dinner sun exactly, the long warm stripes across the floor and the table, the soft shadows on the cabinet doors.
+
+No people, no hands, no pets, no food of any kind. No logos, no brand names, no readable text.

@@ -2310,6 +2310,161 @@
           "before 3 with 5"
         ],
         "josh_notes": ""
+      },
+      {
+        "round": "kitchen memory 1",
+        "date": "2026-11-12",
+        "concept": "Dystopian American dream brief (docs/kitchen-brief.md). Memory version only, clean and pristine, to lock the kitchen layout, design, color, appliances, lens, angle, time of day and aesthetic before any truth version. Nine kitchens, each varying size, layout, camera angle, lens, time of day, light, palette, appliances and their color, decor, floor, cabinets, seating and the view into another room. 1:1, wide angle, true small size the key (Josh, Nov 12 2026)",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "method": "text to image, one frame per kitchen, shared rules in _memory-lock.md (size stated in feet, 8 ft ceiling, ceiling and floor in frame, rectilinear wide lens, orange tile in all nine)",
+        "frames_numbered": [
+          "1 galley",
+          "2 L with a table",
+          "3 U",
+          "4 peninsula from the dining room",
+          "5 one wall at dusk",
+          "6 pass through",
+          "7 eat in with a banquette",
+          "8 1995 snapshot",
+          "9 high corner"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-1/",
+        "figma_page": "409:15501",
+        "figma_board": "424:14",
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-r1-board.png",
+        "claude_picks": [
+          "4",
+          "1 for the size",
+          "7 for the painted on window"
+        ],
+        "josh_notes": "9 best camera position, 4 best interior design and light (early dinner after school), 2 and 6 prove a glimpse into another room, 14mm, as big as 9, no island or peninsula, no U or galley, range always a standard range between two base cabinets, green appliances, Determinator TV VCR on the counter in every render, no food, honey oak (2) then butter yellow (6) cabinets, never cottage (3, 7), 2 favorite floor so far. 1, 3, 5, 7, 8 are trash (Nov 12 2026)"
+      },
+      {
+        "round": "kitchen memory 2",
+        "date": "2026-11-12",
+        "concept": "The memory kitchen locked from Josh's round 1 notes (docs/kitchen-brief.md, The memory kitchen locks). Three cabinet finishes (honey oak cathedral arch, butter yellow slab, teak slab) by three floors (yellow brick, gold geometric, amber pebble)",
+        "reference": "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "method": "text to image with the Determinator source crop as the TV VCR reference, shared lock in _memory-lock-r2.md",
+        "frames_numbered": [
+          "1 to 3 honey oak",
+          "4 to 6 butter yellow",
+          "7 to 9 teak",
+          "columns: yellow brick, gold geometric, amber pebble"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-2/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-2/",
+        "figma_page": "409:15501",
+        "figma_board": "426:23",
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-r2-board.png",
+        "claude_picks": [
+          "4",
+          "6"
+        ],
+        "josh_notes": "1 is strong and the right size of room, camera higher like 5, 5 has beautiful light, a dining table in the foreground, the dining room becomes a living room seen as much as in 7, the floor of 2, 5 and 8, no teak, butter yellow or honey oak (Nov 12 2026)"
+      },
+      {
+        "round": "kitchen memory 3",
+        "date": "2026-11-12",
+        "concept": "Round 2 frame 1's room, camera and light of frame 5, gold geometric floor, eat in dining table in the near right foreground, a wide opening into a living room, honey oak (A) or butter yellow (B)",
+        "reference": [
+          "work/00-album/kitchen-memory-r2/m1-honey-oak-yellow-brick/01.png",
+          "work/00-album/kitchen-memory-r2/m5-butter-yellow-gold-geometric/01.png",
+          "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png"
+        ],
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 6,
+        "cost_usd": 0.4,
+        "method": "text to image with three labeled references (room, camera and light, TV VCR), 3 frames per cabinet direction",
+        "frames_numbered": [
+          "1 to 3 honey oak",
+          "4 to 6 butter yellow"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-3/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-3/",
+        "figma_page": "409:15501",
+        "figma_board": "428:20",
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-r3-board.png",
+        "claude_picks": [
+          "6",
+          "1 for honey oak"
+        ],
+        "josh_notes": "Round 3 frame 4 with frame 6's living room. Done (Nov 12 2026)"
+      },
+      {
+        "round": "kitchen memory final",
+        "date": "2026-11-12",
+        "concept": "Round 3 frame 4 (butter yellow) kept, only the opening and living room changed to match round 3 frame 6 (Josh, Nov 12 2026)",
+        "reference": [
+          "work/00-album/kitchen-memory-r3/b-butter-yellow/01.png",
+          "work/00-album/kitchen-memory-r3/b-butter-yellow/03.png"
+        ],
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 3,
+        "cost_usd": 0.2,
+        "method": "edit of round 3 frame 4 with frame 6 as the living room reference, 3 takes",
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-4-final/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-4-final/",
+        "figma_page": "409:15501",
+        "figma_board": "430:17",
+        "figma_pick_node": null,
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-final-board.png",
+        "source": "the-first-batch/assets/photos/00-album/00-album-kitchen-memory-source-final-1.png",
+        "claude_picks": [
+          "3"
+        ],
+        "josh_notes": "1 is it! Lock it in! (Nov 12 2026)",
+        "josh_pick": "1",
+        "render_4k": {
+          "date": "2026-11-12",
+          "approved": "Josh, Nov 12 2026: approved to 4k it",
+          "model": "gemini-3-pro-image-preview",
+          "size": "4096x4096",
+          "prompt": "the-first-batch/prompts/4k/00-album-kitchen-memory.md",
+          "reference": "the-first-batch/assets/photos/06-determinator/06-determinator-crop.png",
+          "render": "the-first-batch/assets/photos/00-album/00-album-kitchen-memory-4k-render-a.jpg",
+          "figma_board": "432:20",
+          "review": "the-first-batch/review/00-album/figma-kitchen-4k-render-a-board.png",
+          "checks": "the-first-batch/review/00-album/kitchen-4k/",
+          "claude_read": "pass with three small flaws: rippled floor reflection (in the source too), faint canister label shapes, TV a shade lighter than charcoal",
+          "josh_verdict": ""
+        }
+      },
+      {
+        "round": "kitchen truth 1",
+        "date": "2026-11-12",
+        "concept": "Truth versions of the locked memory kitchen (docs/kitchen-brief.md, memory vs truth). A night under a bare fluorescent tube, B the same hour gone grey, C the wall opened and a renovation stopped halfway. Nothing violent, no food, no people",
+        "reference": "work/00-album/kitchen-truth-r1/base-1024.png (memory 4K render A at 1024)",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.67,
+        "method": "edit of the memory 4K render with a shared truth lock (_truth-lock.md), 3 frames per direction, one night frame retried after a NO_IMAGE response",
+        "frames_numbered": [
+          "1 to 3 fluorescent night",
+          "4 to 6 grey afternoon",
+          "7 to 9 opened wall"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-truth-round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-truth-round-1/",
+        "figma_page": "409:15501",
+        "figma_board": "436:14",
+        "review": "the-first-batch/review/00-album/figma-kitchen-truth-r1-board.png",
+        "claude_picks": [
+          "3",
+          "5",
+          "7"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {

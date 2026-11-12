@@ -88,6 +88,29 @@ Rounds 1 to 3 ran Nov 11 2026 in Figma on the Album Cover page (boards 411:829, 
 
 **The core miss:** we built an event when the idea is a state of mind. Every round answered "what happened here" with a fight or a blast. The brief asks for a room where nothing happened that anyone will admit to.
 
+## The memory kitchen · locks from Josh, Nov 12 2026
+
+Memory round 1 (board 424:14) set these. They hold for every memory and truth render from here on. Round 2 (board 426:23) is the first round built on them.
+
+- **Memory first.** Clean and pristine. Lock the exact kitchen before any truth version. Truth versions are edits of the kitchen Josh picks.
+- **Camera.** The position of round 1 frame 9: high in a corner just under the ceiling, looking down across the room. 14mm.
+- **Size.** As big as round 1 frame 9 feels. Round 1 frame 2 was close but too small, frame 8 too closed in.
+- **Layout.** Never an island or a peninsula. Never a U or a galley. A real, compact working layout, not pieces spread far apart like round 1 frame 7. Round 1 frames 2 and 4 influence it.
+- **Range.** Always a standard range, oven with the stovetop on top, set between two base cabinets. Never open on one side, never a wall oven or a separate cooktop.
+- **Realism.** Keep it believable even on cheap explore runs: one dishwasher, one sink, one range, one refrigerator.
+- **Appliances.** Green (avocado).
+- **Another room.** Always a glimpse into another room, like round 1 frames 2 and 6. A glimpse of the dining table, as in frame 4, is loved.
+- **TV VCR.** The TV VCR combo from the Determinator track cover sits on the kitchen counter in every render.
+- **Light.** Round 1 frame 4: early dinner time after school, subtle shadows across the cabinetry.
+- **No food.** No cookies, baked goods or food of any kind in any kitchen, for now.
+- **Aesthetic.** Round 1 frame 4 is the best interior design overall. Frames 2 and 4 influence the next rounds.
+- **Cabinets.** Favorite: round 1 frame 2 (honey oak, cathedral arch). Second: frame 6 (butter yellow slab). Never the cottage style of frames 3 and 7 (knotty pine, colonial, iron strap hinges).
+- **Floor.** Round 1 frame 2 is the favorite so far, but not the final one.
+- **Never.** Bright orange on white like round 1 frame 9, which does not feel common to the period.
+- **Trash.** Round 1 frames 1, 3, 5, 7 and 8.
+- **Round 2 notes (Nov 12 2026).** Round 2 frame 1 is the right size of room. The camera sits higher, like round 2 frame 5, and frame 5's light is the light. A dining table sits in the kitchen foreground, and the room through the opening is a living room, seen as much as in round 2 frame 7. The floor is the harvest gold geometric of round 2 frames 2, 5 and 8. No teak. Cabinets are butter yellow or honey oak. Round 3 is on board 428:20.
+- **The memory kitchen (Nov 12 2026).** Josh: round 3 frame 4 with frame 6's living room. Done. Made as an edit of frame 4. Josh locked take 1: "1 is it! Lock it in!" (Nov 12 2026). On board 430:17, saved as `assets/photos/00-album/00-album-kitchen-memory-source-final-1.png`. Every truth version is an edit of this frame.
+
 ## Mandatories
 
 - Square 1:1, about 1024 px for explore frames. Masters are made later at 4K
