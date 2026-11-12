@@ -1,0 +1,5 @@
+Keep this exact photograph, Image 1. Same camera position, height, angle and 14mm lens, same framing, same light, same butter yellow cabinets, avocado refrigerator, avocado range between its two base cabinets, avocado dishwasher, sink and window, burnt orange tile, gold geometric floor, TV VCR on the counter, storage containers, wall phone, fridge drawings and the dining table with its chairs in the foreground. Do not move, restyle, add or remove anything in the kitchen.
+
+Change only the opening on the right wall and the living room seen through it. Make them like the living room in Image 2: widen the cased opening and set it a little further left so we see much more of the living room, the plaid sofa with a pillow along the back wall, the wood paneled wall, the window with sheer curtains, the table lamp glowing on its end table, and the beige shag carpet, all lit by the same warm low sun as the kitchen. It stays clearly a living room, not a dining room.
+
+No food anywhere. No people, no hands, no pets. No logos, no brand names, no readable text. Square 1:1.

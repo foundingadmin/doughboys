@@ -2397,6 +2397,31 @@
           "6",
           "1 for honey oak"
         ],
+        "josh_notes": "Round 3 frame 4 with frame 6's living room. Done (Nov 12 2026)"
+      },
+      {
+        "round": "kitchen memory final",
+        "date": "2026-11-12",
+        "concept": "Round 3 frame 4 (butter yellow) kept, only the opening and living room changed to match round 3 frame 6 (Josh, Nov 12 2026)",
+        "reference": [
+          "work/00-album/kitchen-memory-r3/b-butter-yellow/01.png",
+          "work/00-album/kitchen-memory-r3/b-butter-yellow/03.png"
+        ],
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 3,
+        "cost_usd": 0.2,
+        "method": "edit of round 3 frame 4 with frame 6 as the living room reference, 3 takes",
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-4-final/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-4-final/",
+        "figma_page": "409:15501",
+        "figma_board": "430:17",
+        "figma_pick_node": "430:33",
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-final-board.png",
+        "source": "the-first-batch/assets/photos/00-album/00-album-kitchen-memory-source-final-3.png",
+        "claude_picks": [
+          "3"
+        ],
         "josh_notes": ""
       }
     ],
