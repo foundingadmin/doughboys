@@ -2252,6 +2252,38 @@
           "7"
         ],
         "josh_notes": ""
+      },
+      {
+        "round": "kitchen 2",
+        "date": "2026-11-11",
+        "concept": "Nine before and after pairs. Before: a brand new top of the line mid century modern kitchen with 70s orange tile, pristine, near empty counters. After: the same kitchen seconds after a cinematic street fight broke out while a team baked hundreds of cookies. No people, no wallpaper, no mid action, no dough piles (Josh, Nov 11 2026)",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 18,
+        "cost_usd": 1.21,
+        "method": "before generated from text, after generated as an edit of its before (--ref) so room, tile and camera match",
+        "pairs": [
+          "1 galley",
+          "2 peninsula",
+          "3 copper island",
+          "4 tile wall",
+          "5 hacienda",
+          "6 space age",
+          "7 pass through",
+          "8 double oven",
+          "9 skylight"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-round-2/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-round-2/",
+        "figma_page": "409:15501",
+        "figma_board": "412:829",
+        "review": "the-first-batch/review/00-album/figma-kitchen-r2-board.png",
+        "claude_picks": [
+          "6",
+          "5",
+          "4"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {
