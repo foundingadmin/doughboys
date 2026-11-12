@@ -2310,6 +2310,38 @@
           "before 3 with 5"
         ],
         "josh_notes": ""
+      },
+      {
+        "round": "kitchen memory 1",
+        "date": "2026-11-12",
+        "concept": "Dystopian American dream brief (docs/kitchen-brief.md). Memory version only, clean and pristine, to lock the kitchen layout, design, color, appliances, lens, angle, time of day and aesthetic before any truth version. Nine kitchens, each varying size, layout, camera angle, lens, time of day, light, palette, appliances and their color, decor, floor, cabinets, seating and the view into another room. 1:1, wide angle, true small size the key (Josh, Nov 12 2026)",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "method": "text to image, one frame per kitchen, shared rules in _memory-lock.md (size stated in feet, 8 ft ceiling, ceiling and floor in frame, rectilinear wide lens, orange tile in all nine)",
+        "frames_numbered": [
+          "1 galley",
+          "2 L with a table",
+          "3 U",
+          "4 peninsula from the dining room",
+          "5 one wall at dusk",
+          "6 pass through",
+          "7 eat in with a banquette",
+          "8 1995 snapshot",
+          "9 high corner"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-memory-round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-1/",
+        "figma_page": "409:15501",
+        "figma_board": "424:14",
+        "review": "the-first-batch/review/00-album/figma-kitchen-memory-r1-board.png",
+        "claude_picks": [
+          "4",
+          "1 for the size",
+          "7 for the painted on window"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {
