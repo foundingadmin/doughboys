@@ -2416,13 +2416,14 @@
         "contact_sheets": "the-first-batch/explore/00-album/kitchen-memory-round-4-final/",
         "figma_page": "409:15501",
         "figma_board": "430:17",
-        "figma_pick_node": "430:33",
+        "figma_pick_node": null,
         "review": "the-first-batch/review/00-album/figma-kitchen-memory-final-board.png",
-        "source": "the-first-batch/assets/photos/00-album/00-album-kitchen-memory-source-final-3.png",
+        "source": "the-first-batch/assets/photos/00-album/00-album-kitchen-memory-source-final-1.png",
         "claude_picks": [
           "3"
         ],
-        "josh_notes": ""
+        "josh_notes": "1 is it! Lock it in! (Nov 12 2026)",
+        "josh_pick": "1"
       }
     ],
     "pick": {
