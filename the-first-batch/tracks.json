@@ -1,7 +1,7 @@
 {
   "album": "The First Batch",
   "band": "Chillsbury Doughboys (CBDB)",
-  "updated": "2026-11-08",
+  "updated": "2026-11-11",
   "canvas_px": 6704,
   "dough_hex": "#E9D3A8",
   "paper_hex": "#F5EEDC",
@@ -2227,6 +2227,31 @@
           "R3-6",
           "R3-9"
         ]
+      },
+      {
+        "round": "kitchen 1",
+        "date": "2026-11-11",
+        "concept": "1970s American home kitchen blown apart by flour and baking, broken cabinets. A new album cover concept opened by Josh Nov 11 2026, alongside the locked dough record",
+        "model": "gemini-3.1-flash-image-preview",
+        "aspect": "1:1",
+        "frames": 9,
+        "cost_usd": 0.6,
+        "directions": [
+          "A aftermath, whole kitchen one point (1 to 3)",
+          "B ground zero, range straight on, nine color mixing bowls (4 to 6)",
+          "C frozen blast, strobe on the stand mixer (7 to 9)"
+        ],
+        "prompts": "the-first-batch/prompts/explore/album/kitchen-round-1/",
+        "contact_sheets": "the-first-batch/explore/00-album/kitchen-round-1/",
+        "figma_page": "409:15501",
+        "figma_board": "411:829",
+        "review": "the-first-batch/review/00-album/figma-kitchen-r1-board.png",
+        "claude_picks": [
+          "8",
+          "1",
+          "7"
+        ],
+        "josh_notes": ""
       }
     ],
     "pick": {
